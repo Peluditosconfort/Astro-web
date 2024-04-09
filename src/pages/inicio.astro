@@ -1,0 +1,274 @@
+---
+import Layout from "../components/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Marcas from "../components/Marcas.astro";
+import MainButton from "../components/MainButton.astro";
+import SliderMarcas from "../components/SliderMarcas.astro";
+---
+
+<Layout title="Index">
+    <header>
+        <Navbar/>
+        <div class="carousel ">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="/public/img/1.jpg">
+                    <div class="content">
+                        <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
+                        <div class="title font-myriad">Repuestos ORIGINALES para tractocamiones</div>
+                        <div class="des font-lato">
+                            <!-- lorem 50 -->
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>TIENDA</button>
+                            <button>BLOG</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/public/img/2.jpg">
+                    <div class="content">
+                        <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
+                        <div class="title">Repuestos ORIGINALES para tractocamiones</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>TIENDA</button>
+                            <button>BLOG</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/public/img/3.jpg">
+                    <div class="content">
+                        <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
+                        <div class="title">Repuestos ORIGINALES para tractocamiones</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>TIENDA</button>
+                            <button>BLOG</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/public/img/2.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail absolute bottom-20 left-1/2 w-max z-50 flex gap-x-5">
+                <div class="item w-36 h-56 relative">
+                    <img src="/public/img/1.jpg" class="w-full h-full object-cover rounded-2xl">
+                    <div class="content text-white absolute bottom-2.5 left-2.5 right-2.5">
+                        <div class="title font-medium">
+                            Name Slider
+                        </div>
+                        <div class="description font-light">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item w-36 h-56 relative">
+                    <img src="/public/img/2.jpg" class="w-full h-full object-cover rounded-2xl">
+                    <div class="content text-white absolute bottom-2.5 left-2.5 right-2.5">
+                        <div class="title font-medium">
+                            Name Slider
+                        </div>
+                        <div class="description font-light">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item w-36 h-56 relative">
+                    <img src="/public/img/3.jpg" class="w-full h-full object-cover rounded-2xl">
+                    <div class="content text-white absolute bottom-2.5 left-2.5 right-2.5">
+                        <div class="title font-medium">
+                            Name Slider
+                        </div>
+                        <div class="description font-light">
+                            Description
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+    
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <!-- <section class="py-32">
+            <div class="mx-auto bg-white rounded-xl shadow-md overflow-hidden w-3/4">
+                <div class="md:flex">
+                  <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-96" src="/public/img/Fertrac.jpg" alt="Modern building architecture">
+                  </div>
+                  <div class="p-8">
+                    <div class=" font-myriad font-extrabold text-6xl text-indigo-500 font-semibold">¿Porque Fertrac?</div>
+                    <p class="mt-2 text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta.</p>
+                  </div>
+                </div>
+              </div>
+        </section> -->
+        <div class="p-12 flex flex-wrap items-center justify-center">
+                <div class="p-8 flex flex-col justify-center items-center text-center">
+                    <div class=" font-myriad font-extrabold text-6xl text-indigo-500 font-semibold text-blue-700">¿Porque Fertrac?</div>
+                    <p class="mt-2 text-xl w-3/4 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta.</p>
+                  </div>
+            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+              <div class="relative flex items-center justify-center">
+                <img class="relative w-full" src="/public/img/Fertrac.jpg" alt="">
+              </div>
+              <div class="relative text-white px-6 pb-6 mt-6">
+                <span class="block opacity-75 -mb-1">Indoor</span>
+                <div class="flex justify-between flex-col">
+                  <span class="block font-semibold text-xl">COMPROMISO</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam quidem cupiditate culpa nam officiis quo nostrum nihil obcaecati delectus ut, quisquam cum et dignissimos, veniam praesentium! Suscipit, animi debitis?</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+                <div class="relative flex items-center justify-center">
+                  <img class="relative w-full" src="/public/img/Fertrac.jpg" alt="">
+                </div>
+                <div class="relative text-white px-6 pb-6 mt-6">
+                  <span class="block opacity-75 -mb-1">Indoor</span>
+                  <div class="flex justify-between flex-col">
+                    <span class="block font-semibold text-xl">COMPROMISO</span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam quidem cupiditate culpa nam officiis quo nostrum nihil obcaecati delectus ut, quisquam cum et dignissimos, veniam praesentium! Suscipit, animi debitis?</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+                <div class="relative flex items-center justify-center">
+                  <img class="relative w-full" src="/public/img/Fertrac.jpg" alt="">
+                </div>
+                <div class="relative text-white px-6 pb-6 mt-6">
+                  <span class="block opacity-75 -mb-1">Indoor</span>
+                  <div class="flex justify-between flex-col">
+                    <span class="block font-semibold text-xl">COMPROMISO</span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam quidem cupiditate culpa nam officiis quo nostrum nihil obcaecati delectus ut, quisquam cum et dignissimos, veniam praesentium! Suscipit, animi debitis?</p>
+                  </div>
+                </div>
+              </div>
+            
+            
+          </div>
+        <section class="marcas bg-gradient-to-r from-orange-600 to-yellow-300 ">
+            <div class="container mx-auto pt-16">
+                <div
+                    class="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-16"
+                >
+                    <h2
+                        tabindex="0"
+                        class="focus:outline-none xl:text-5xl md:text-3xl text-xl text-center text-white font-extrabold mb-5 pt-4"
+                    >
+                        Proveedores
+                    </h2>
+                    <p
+                        tabindex="0"
+                        class="focus:outline-none text-base md:text-lg lg:text-xl text-center text-white font-normal xl:w-10/12 xl:mx-auto"
+                    >
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit harum sed aliquam minus, alias impedit dolor ipsam! Mollitia atque eum nobis nihil nisi quaerat ipsum.
+                    </p>
+                </div>
+                
+                
+            </div>
+            <Marcas/>
+            <MainButton/>
+        </section>
+
+            <!-- component -->
+
+            
+        </article>
+        
+        
+    </main>
+    <Footer/> 
+</Layout>
+<script>
+    let nextDom = document.getElementById("next");
+    let prevDom = document.getElementById("prev");
+
+    let carouselDom = document.querySelector(".carousel");
+    let SliderDom = carouselDom.querySelector(".carousel .list");
+    let thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
+    let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
+    let timeDom = document.querySelector(".carousel .time");
+
+    thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+    let timeRunning = 1000;
+    let timeAutoNext = 10000;
+
+    nextDom.onclick = function () {
+        showSlider("next");
+    };
+
+    prevDom.onclick = function () {
+        showSlider("prev");
+    };
+    let runTimeOut;
+    let runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext);
+    function showSlider(type) {
+        let SliderItemsDom = SliderDom.querySelectorAll(
+            ".carousel .list .item",
+        );
+        let thumbnailItemsDom = document.querySelectorAll(
+            ".carousel .thumbnail .item",
+        );
+
+        if (type === "next") {
+            SliderDom.appendChild(SliderItemsDom[0]);
+            thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+            carouselDom.classList.add("next");
+        } else {
+            SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+            thumbnailBorderDom.prepend(
+                thumbnailItemsDom[thumbnailItemsDom.length - 1],
+            );
+            carouselDom.classList.add("prev");
+        }
+        clearTimeout(runTimeOut);
+        runTimeOut = setTimeout(() => {
+            carouselDom.classList.remove("next");
+            carouselDom.classList.remove("prev");
+        }, timeRunning);
+
+        clearTimeout(runNextAuto);
+        runNextAuto = setTimeout(() => {
+            next.click();
+        }, timeAutoNext);
+    }
+</script>
+<style>
+    .fa-brands {
+        padding: 10px 0;
+        color: white;
+        font-size: 50px;
+    }
+</style>
