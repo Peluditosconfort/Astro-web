@@ -55,13 +55,7 @@ body{
     gap: 5px;
     margin-top: 20px;
 }
-.carousel .list .item .buttons button{
-    border: none;
-    background-color: #F2790C;
-    letter-spacing: 3px;
-    font-family: Poppins;
-    font-weight: 500;
-}
+
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
     border: 1px solid #fff;
@@ -285,4 +279,55 @@ position: absolute;
     .carousel .list .item .content .title{
         font-size: 30px;
     }
+
 }
+
+
+.slider {
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(150px * 14);
+}
+
+.slider .slide {
+    width:150px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-150px * 7));
+        transform: translateX(calc(-150px * 7));
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .slider {
+    width: 100%;
+   }
+
+}
+
+@media screen and (max-width: 780px) {
+    .slider {
+     width: 80%;
+    }
+ 
+ }

@@ -10,6 +10,9 @@ export default {
 			fontFamily : {
 				"myriad" : ["Myriad-pro", "sans-serif"],
 				"lato" : ["Lato", "sans-serif"]
+			},
+			colors : {
+				"naranja" : "#f2790c"
 			}
 		},
 	},

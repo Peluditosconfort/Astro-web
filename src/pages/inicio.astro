@@ -4,7 +4,6 @@ import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import Marcas from "../components/Marcas.astro";
 import MainButton from "../components/MainButton.astro";
-import SliderMarcas from "../components/SliderMarcas.astro";
 ---
 
 <Layout title="Index">
@@ -17,13 +16,13 @@ import SliderMarcas from "../components/SliderMarcas.astro";
                     <img src="/public/img/1.jpg">
                     <div class="content">
                         <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
-                        <div class="title font-myriad">Repuestos ORIGINALES para tractocamiones</div>
+                        <div class="title font-myriad2">Repuestos ORIGINALES para tractocamiones</div>
                         <div class="des font-lato">
                             <!-- lorem 50 -->
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                         </div>
                         <div class="buttons">
-                            <button>TIENDA</button>
+                            <MainButton textoBoton="Texto2"/>
                             <button>BLOG</button>
                         </div>
                     </div>
@@ -37,7 +36,7 @@ import SliderMarcas from "../components/SliderMarcas.astro";
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                         </div>
                         <div class="buttons">
-                            <button>TIENDA</button>
+                            <MainButton textoBoton="Texto2"/>
                             <button>BLOG</button>
                         </div>
                     </div>
@@ -51,7 +50,7 @@ import SliderMarcas from "../components/SliderMarcas.astro";
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                         </div>
                         <div class="buttons">
-                            <button>TIENDA</button>
+                            <MainButton textoBoton="Texto2"/>
                             <button>BLOG</button>
                         </div>
                     </div>
@@ -59,15 +58,14 @@ import SliderMarcas from "../components/SliderMarcas.astro";
                 <div class="item">
                     <img src="/public/img/2.jpg">
                     <div class="content">
-                        <div class="author">LUNDEV</div>
-                        <div class="title">DESIGN SLIDER</div>
-                        <div class="topic">ANIMAL</div>
+                        <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
+                        <div class="title w-12">Repuestos ORIGINALES para tractocamiones</div>
                         <div class="des">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                         </div>
                         <div class="buttons">
-                            <button>SEE MORE</button>
-                            <button>SUBSCRIBE</button>
+                            <MainButton textoBoton="Texto2"/>
+                            <button>BLOG</button>
                         </div>
                     </div>
                 </div>
@@ -116,23 +114,16 @@ import SliderMarcas from "../components/SliderMarcas.astro";
             </div>
         </div>
     </header>
+
     <main>
-        
-        <!-- <section class="py-32">
-            <div class="mx-auto bg-white rounded-xl shadow-md overflow-hidden w-3/4">
-                <div class="md:flex">
-                  <div class="md:shrink-0">
-                    <img class="h-48 w-full object-cover md:h-full md:w-96" src="/public/img/Fertrac.jpg" alt="Modern building architecture">
-                  </div>
-                  <div class="p-8">
-                    <div class=" font-myriad font-extrabold text-6xl text-indigo-500 font-semibold">¿Porque Fertrac?</div>
-                    <p class="mt-2 text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta.</p>
-                  </div>
-                </div>
-              </div>
-        </section> -->
-        <div class="p-12 flex flex-wrap items-center justify-center">
-                <div class="p-8 flex flex-col justify-center items-center text-center">
+        <section class="marcas  py-12">
+                <Marcas/>
+                <Marcas/>                  
+        </section>
+
+        <section>
+            <div class="flex flex-wrap items-center justify-center py-12">
+                <div class="flex flex-col justify-center items-center text-center">
                     <div class=" font-myriad font-extrabold text-6xl text-indigo-500 font-semibold text-blue-700">¿Porque Fertrac?</div>
                     <p class="mt-2 text-xl w-3/4 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta.</p>
                   </div>
@@ -175,40 +166,31 @@ import SliderMarcas from "../components/SliderMarcas.astro";
             
             
           </div>
-        <section class="marcas bg-gradient-to-r from-orange-600 to-yellow-300 ">
-            <div class="container mx-auto pt-16">
-                <div
-                    class="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-16"
-                >
-                    <h2
-                        tabindex="0"
-                        class="focus:outline-none xl:text-5xl md:text-3xl text-xl text-center text-white font-extrabold mb-5 pt-4"
-                    >
-                        Proveedores
-                    </h2>
-                    <p
-                        tabindex="0"
-                        class="focus:outline-none text-base md:text-lg lg:text-xl text-center text-white font-normal xl:w-10/12 xl:mx-auto"
-                    >
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit harum sed aliquam minus, alias impedit dolor ipsam! Mollitia atque eum nobis nihil nisi quaerat ipsum.
-                    </p>
-                </div>
-                
-                
-            </div>
-            <Marcas/>
-            <MainButton/>
         </section>
-
-            <!-- component -->
-
-            
-        </article>
         
+        
+
+        <section class="">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden w-full bg-gradient-to-r from-orange-600 to-yellow-300">
+                <div class="md:flex md:w-full">
+                  <div class="md:shrink-0 md:w-6/12">
+                    <img class="h-48 w-full object-cover md:h-full md:w-full" src="/public/img/Fertrac.jpg" alt="Modern building architecture">
+                  </div>
+                  <div class="p-24 flex flex-col justify-center gap-5">
+                    <h1 class=" font-myriad font-extrabold text-4xl text-white font-semibold text-blue-700 w-9/12">Explora Nuestra Selección De Especialidades Preparadas Para Ti</h1>
+                    <p class="text-xl w-3/4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, enim sunt odit, nihil eius non quod maxime doloribus officia fuga recusandae, reprehenderit quis deleniti perferendis.</p>
+                    <MainButton textoBoton="Ver Especialidades"/>
+                  </div>
+                </div>
+              </div>
+        </section>      
         
     </main>
     <Footer/> 
 </Layout>
+
+
+
 <script>
     let nextDom = document.getElementById("next");
     let prevDom = document.getElementById("prev");
