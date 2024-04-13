@@ -30,21 +30,21 @@ body{
     max-width: 80%;
     left: 50%;
     transform: translateX(-50%);
-    padding-right: 30%;
+    /* padding-right: 20%; */
     box-sizing: border-box;
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }
-.carousel .list .item .author{
+/* .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 10px;
-}
-.carousel .list .item .title,
+} */
+/* .carousel .list .item .title,
 .carousel .list .item .topic{
-    font-size: 5em;
+    font-size: 7em;
     font-weight: bold;
-    line-height: 1.3em;
-}
+
+} */
 .carousel .list .item .topic{
     color: #f1683a;
 }
@@ -275,9 +275,6 @@ position: absolute;
 @media screen and (max-width: 678px) {
     .carousel .list .item .content{
         padding-right: 0;
-    }
-    .carousel .list .item .content .title{
-        font-size: 30px;
     }
 
 }

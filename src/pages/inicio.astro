@@ -4,22 +4,21 @@ import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import Marcas from "../components/Marcas.astro";
 import MainButton from "../components/MainButton.astro";
+import Blog from "../components/Blog.astro";
 ---
 
 <Layout title="Index">
     <header>
         <Navbar/>
-        <div class="carousel ">
+        <div class="carousel">
             <!-- list item -->
-            <div class="list">
+            <div class="list ">
                 <div class="item">
                     <img src="/public/img/1.jpg">
-                    <div class="content">
-                        <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
-                        <div class="title font-myriad2">Repuestos ORIGINALES para tractocamiones</div>
-                        <div class="des font-lato">
-                            <!-- lorem 50 -->
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    <div class="content pr-64 xl-w-3/4 lg:pr-96 sm:pr-4 2xl: ">
+                        <div class="author md:tracking-[10px] sm:tracking-wide	">SIEMPRE CALIDAD ORIGINAL</div>
+                        <div class="title  font-myriad leading-tight md:text-6xl   sm:text-4xl ">Repuestos ORIGINALES para tractocamiones</div>
+                        <div class="des font-lato text-base pr-96 sm:pr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                         </div>
                         <div class="buttons">
                             <MainButton textoBoton="Texto2"/>
@@ -59,7 +58,7 @@ import MainButton from "../components/MainButton.astro";
                     <img src="/public/img/2.jpg">
                     <div class="content">
                         <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
-                        <div class="title w-12">Repuestos ORIGINALES para tractocamiones</div>
+                        <div class="title">Repuestos ORIGINALES para tractocamiones</div>
                         <div class="des">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                         </div>
@@ -116,49 +115,52 @@ import MainButton from "../components/MainButton.astro";
     </header>
 
     <main>
+
+        <!-- SLIDER PROVEEDORES -->
         <section class="marcas  py-12">
                 <Marcas/>
                 <Marcas/>                  
         </section>
 
+        <!-- PORQUE FERTRAC -->
         <section>
             <div class="flex flex-wrap items-center justify-center py-12">
                 <div class="flex flex-col justify-center items-center text-center">
-                    <div class=" font-myriad font-extrabold text-6xl text-indigo-500 font-semibold text-blue-700">¿Porque Fertrac?</div>
+                    <div class="font-myriad font-extrabold text-6xl text-azul">¿Porque Fertrac?</div>
                     <p class="mt-2 text-xl w-3/4 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta.</p>
                   </div>
-            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg">
               <div class="relative flex items-center justify-center">
                 <img class="relative w-full" src="/public/img/Fertrac.jpg" alt="">
               </div>
               <div class="relative text-white px-6 pb-6 mt-6">
                 <span class="block opacity-75 -mb-1">Indoor</span>
                 <div class="flex justify-between flex-col">
-                  <span class="block font-semibold text-xl">COMPROMISO</span>
+                  <span class="font-myriad block font-semibold text-xl">COMPROMISO</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam quidem cupiditate culpa nam officiis quo nostrum nihil obcaecati delectus ut, quisquam cum et dignissimos, veniam praesentium! Suscipit, animi debitis?</p>
                 </div>
               </div>
             </div>
-            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg">
                 <div class="relative flex items-center justify-center">
                   <img class="relative w-full" src="/public/img/Fertrac.jpg" alt="">
                 </div>
                 <div class="relative text-white px-6 pb-6 mt-6">
                   <span class="block opacity-75 -mb-1">Indoor</span>
                   <div class="flex justify-between flex-col">
-                    <span class="block font-semibold text-xl">COMPROMISO</span>
+                    <span class="font-myriad block font-semibold text-xl">COMPROMISO</span>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam quidem cupiditate culpa nam officiis quo nostrum nihil obcaecati delectus ut, quisquam cum et dignissimos, veniam praesentium! Suscipit, animi debitis?</p>
                   </div>
                 </div>
               </div>
-              <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+              <div class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg">
                 <div class="relative flex items-center justify-center">
                   <img class="relative w-full" src="/public/img/Fertrac.jpg" alt="">
                 </div>
                 <div class="relative text-white px-6 pb-6 mt-6">
                   <span class="block opacity-75 -mb-1">Indoor</span>
                   <div class="flex justify-between flex-col">
-                    <span class="block font-semibold text-xl">COMPROMISO</span>
+                    <span class="font-myriad block font-semibold text-xl">COMPROMISO</span>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam quidem cupiditate culpa nam officiis quo nostrum nihil obcaecati delectus ut, quisquam cum et dignissimos, veniam praesentium! Suscipit, animi debitis?</p>
                   </div>
                 </div>
@@ -167,24 +169,27 @@ import MainButton from "../components/MainButton.astro";
             
           </div>
         </section>
-        
-        
 
+        <!-- NUEVOS PRODUCTOS -->
         <section class="">
             <div class="bg-white rounded-xl shadow-md overflow-hidden w-full bg-gradient-to-r from-orange-600 to-yellow-300">
                 <div class="md:flex md:w-full">
                   <div class="md:shrink-0 md:w-6/12">
                     <img class="h-48 w-full object-cover md:h-full md:w-full" src="/public/img/Fertrac.jpg" alt="Modern building architecture">
                   </div>
-                  <div class="p-24 flex flex-col justify-center gap-5">
-                    <h1 class=" font-myriad font-extrabold text-4xl text-white font-semibold text-blue-700 w-9/12">Explora Nuestra Selección De Especialidades Preparadas Para Ti</h1>
-                    <p class="text-xl w-3/4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, enim sunt odit, nihil eius non quod maxime doloribus officia fuga recusandae, reprehenderit quis deleniti perferendis.</p>
+                  <div class="p-56 flex flex-col justify-center gap-5 2xl: p-24 sm:p-8 ">
+                    <h1 class="font-myriad font-extrabold text-5xl text-white font-semibold w-4/5 sm:w-full sm:text-3xl">Explora Nuestra Selección De Especialidades Preparadas Para Ti</h1>
+                    <p class="text-xl w-7/12 w-4/5 sm: w-auto sm:w-full text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, enim sunt odit, nihil eius non quod maxime doloribus officia fuga recusandae, reprehenderit quis deleniti perferendis.</p>
                     <MainButton textoBoton="Ver Especialidades"/>
                   </div>
                 </div>
               </div>
         </section>      
         
+        <!-- BLOG -->
+        <section>
+            <Blog/>
+        </section>
     </main>
     <Footer/> 
 </Layout>
@@ -192,14 +197,14 @@ import MainButton from "../components/MainButton.astro";
 
 
 <script>
-    let nextDom = document.getElementById("next");
+     let nextDom = document.getElementById("next");
     let prevDom = document.getElementById("prev");
 
     let carouselDom = document.querySelector(".carousel");
     let SliderDom = carouselDom.querySelector(".carousel .list");
     let thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
     let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
-    let timeDom = document.querySelector(".carousel .time");
+
 
     thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
     let timeRunning = 1000;
