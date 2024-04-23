@@ -5,30 +5,32 @@ import Navbar from "../components/Navbar.astro";
 import Marcas from "../components/Marcas.astro";
 import MainButton from "../components/MainButton.astro";
 import Blog from "../components/Blog.astro";
+import Boton2 from "../components/Boton2.astro";
 ---
 
 <Layout title="Index">
     <header>
         <Navbar/>
+        
         <div class="carousel">
             <!-- list item -->
-            <div class="list ">
+            <div class="list">
                 <div class="item">
                     <img src="/public/img/1.jpg">
-                    <div class="content pr-64 xl-w-3/4 lg:pr-96 sm:pr-4 2xl: ">
-                        <div class="author md:tracking-[10px] sm:tracking-wide	">SIEMPRE CALIDAD ORIGINAL</div>
-                        <div class="title  font-myriad leading-tight md:text-6xl   sm:text-4xl ">Repuestos ORIGINALES para tractocamiones</div>
-                        <div class="des font-lato text-base pr-96 sm:pr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    <div class="content pr-64 xl-w-3/4 lg:pr-96 sm:pr-4 sm:top-28 md:top-52">
+                        <div class="author md:tracking-[10px] sm:tracking-wide">SIEMPRE CALIDAD ORIGINAL</div>
+                        <div class="title font-myriad leading-tight md:text-4xl sm:text-2xl ">Repuestos ORIGINALES para tractocamiones</div>
+                        <div class="des font-lato text-base pr-96 sm:pr-4">iisumquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unam nisi reprehenderit tempora at laborum natus unam nisi reprehender
                         </div>
                         <div class="buttons">
-                            <MainButton textoBoton="Texto2"/>
-                            <button>BLOG</button>
+                            <MainButton textoBoton="¡Comprar!" iconoBoton="fa-solid fa-cart-shopping"/>
+                            <Boton2 textoBoton="Blog" iconoBoton=""/>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <img src="/public/img/2.jpg">
-                    <div class="content">
+                    <div class="content ">
                         <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
                         <div class="title">Repuestos ORIGINALES para tractocamiones</div>
                         <div class="des">
@@ -70,9 +72,9 @@ import Blog from "../components/Blog.astro";
                 </div>
             </div>
             <!-- list thumnail -->
-            <div class="thumbnail absolute bottom-20 left-1/2 w-max z-50 flex gap-x-5">
-                <div class="item w-36 h-56 relative">
-                    <img src="/public/img/1.jpg" class="w-full h-full object-cover rounded-2xl">
+            <div class="thumbnail absolute bottom-20 left-1/2 w-max z-50 flex gap-x-5 sm:bottom-8">
+                <div class="item w-36 h-56 relative ">
+                    <img src="/public/img/1.jpg" class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                     <div class="content text-white absolute bottom-2.5 left-2.5 right-2.5">
                         <div class="title font-medium">
                             Name Slider
@@ -83,7 +85,7 @@ import Blog from "../components/Blog.astro";
                     </div>
                 </div>
                 <div class="item w-36 h-56 relative">
-                    <img src="/public/img/2.jpg" class="w-full h-full object-cover rounded-2xl">
+                    <img src="/public/img/2.jpg" class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                     <div class="content text-white absolute bottom-2.5 left-2.5 right-2.5">
                         <div class="title font-medium">
                             Name Slider
@@ -94,7 +96,7 @@ import Blog from "../components/Blog.astro";
                     </div>
                 </div>
                 <div class="item w-36 h-56 relative">
-                    <img src="/public/img/3.jpg" class="w-full h-full object-cover rounded-2xl">
+                    <img src="/public/img/3.jpg" class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                     <div class="content text-white absolute bottom-2.5 left-2.5 right-2.5">
                         <div class="title font-medium">
                             Name Slider
@@ -108,8 +110,8 @@ import Blog from "../components/Blog.astro";
             <!-- next prev -->
     
             <div class="arrows">
-                <button id="prev"><</button>
-                <button id="next">></button>
+                <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </header>
@@ -117,17 +119,47 @@ import Blog from "../components/Blog.astro";
     <main>
 
         <!-- SLIDER PROVEEDORES -->
-        <section class="marcas  py-12">
-                <Marcas/>
-                <Marcas/>                  
+        <section class="marcas py-6">
+                <Marcas/>             
         </section>
 
         <!-- PORQUE FERTRAC -->
         <section>
-            <div class="flex flex-wrap items-center justify-center py-12">
-                <div class="flex flex-col justify-center items-center text-center">
+            <div class="flex items-center justify-center py-16 gap-x-20 flex-wrap">
+                <div><img src="/public/img/iso web-8.png" alt="" class="w-72"></div>
+            <div class="w-2/6 sm:w-full">
+                <h1 class="font-myriad text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, veritatis?</h1>
+                <p class="text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, unde delectus. Laudantium eaque cupiditate consequuntur impedit, illum possimus atque deleniti neque incidunt quae, quidem fugiat!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, unde delectus. Laudantium eaque cupiditate consequuntur impedit, illum possimus atque deleniti neque incidunt quae, quidem fugiat!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, unde delectus. Laudantium eaque cupiditate consequuntur impedit, illum possimus atque deleniti neque incidunt quae, quidem fugiat!</p>
+                    
+                </div>
+                
+            
+            </div>
+            
+        </section>
+
+        <!-- NUEVOS PRODUCTOS -->
+        <section class="">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden w-full bg-gradient-to-r from-orange-600 to-yellow-300">
+                <div class="md:flex md:w-full">
+                  <div class="md:shrink-0 md:w-6/12">
+                    <img class="h-48 w-full object-cover md:h-full md:w-full" src="/public/img/Fertrac.jpg" alt="Modern building architecture">
+                  </div>
+                  <div class="p-56 flex flex-col justify-center gap-5 2xl: p-24 sm:p-8 ">
+                    <h1 class="font-myriad font-extrabold text-5xl text-white font-semibold w-4/5 sm:w-full sm:text-3xl">Explora Nuestra Selección De Especialidades Preparadas Para Ti</h1>
+                    <p class="text-xl w-7/12 w-4/5 sm: w-auto sm:w-full text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, enim sunt odit, nihil eius non quod maxime doloribus officia fuga recusandae, reprehenderit quis deleniti perferendis.</p>
+                    <Boton2 textoBoton="Ver Especialidades" iconoBoton="fa-regular fa-paper-plane"/>
+                  </div>
+                </div>
+              </div>
+        </section>      
+        
+        <section>
+            <div class="flex flex-wrap items-center justify-center py-">
+                <div class="flex flex-col justify-center items-center text-center w-full">
                     <div class="font-myriad font-extrabold text-6xl text-azul">¿Porque Fertrac?</div>
-                    <p class="mt-2 text-xl w-3/4 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloremque temporibus nostrum odit ab quasi. Rem doloribus eum molestiae? Commodi eaque neque dignissimos totam, mollitia beatae odit molestias provident soluta.</p>
+                    <p class="mt-2 text-xl w-3/4 text-justify">Somos una empresa con 15 años de experiencia dedicada a la importación y comercialización directa de partes originales para tractocamiones, que nació por el deseo de suplir las necesidades del cliente.
+                        .</p>
                   </div>
             <div class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg">
               <div class="relative flex items-center justify-center">
@@ -170,22 +202,22 @@ import Blog from "../components/Blog.astro";
           </div>
         </section>
 
-        <!-- NUEVOS PRODUCTOS -->
-        <section class="">
-            <div class="bg-white rounded-xl shadow-md overflow-hidden w-full bg-gradient-to-r from-orange-600 to-yellow-300">
-                <div class="md:flex md:w-full">
-                  <div class="md:shrink-0 md:w-6/12">
-                    <img class="h-48 w-full object-cover md:h-full md:w-full" src="/public/img/Fertrac.jpg" alt="Modern building architecture">
-                  </div>
-                  <div class="p-56 flex flex-col justify-center gap-5 2xl: p-24 sm:p-8 ">
-                    <h1 class="font-myriad font-extrabold text-5xl text-white font-semibold w-4/5 sm:w-full sm:text-3xl">Explora Nuestra Selección De Especialidades Preparadas Para Ti</h1>
-                    <p class="text-xl w-7/12 w-4/5 sm: w-auto sm:w-full text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, enim sunt odit, nihil eius non quod maxime doloribus officia fuga recusandae, reprehenderit quis deleniti perferendis.</p>
-                    <MainButton textoBoton="Ver Especialidades"/>
-                  </div>
+
+        <section>
+            <div class="w-full bg-gradient-to-r from-orange-600 to-yellow-300 flex justify-center items-center py-12 flex-wrap">
+                <div class="">
+                    <h1 class="font-myriad text-white text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, optio!</h1>
                 </div>
-              </div>
-        </section>      
-        
+                
+                <div>
+                    <Boton2 textoBoton="Llamanos" iconoBoton="fa-solid fa-phone"/>
+                    <br>
+                    <Boton2 textoBoton="Escribenos" iconoBoton="fa-brands fa-whatsapp"/>
+                </div>
+            </div>
+            
+        </section>
+
         <!-- BLOG -->
         <section>
             <Blog/>
@@ -196,7 +228,7 @@ import Blog from "../components/Blog.astro";
 
 
 
-<script>
+<!-- <script>
      let nextDom = document.getElementById("next");
     let prevDom = document.getElementById("prev");
 
@@ -251,7 +283,7 @@ import Blog from "../components/Blog.astro";
             next.click();
         }, timeAutoNext);
     }
-</script>
+</script> -->
 <style>
     .fa-brands {
         padding: 10px 0;

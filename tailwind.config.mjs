@@ -16,10 +16,10 @@ export default {
 				"azul" : "#04297e"
 			},
 			screens :{
-				"sm" : "460px",
-				"md" : "768px",
-				"lg" : "1024px",
-				"xl" : "1280px",
+				"sm" : "360px",
+				"md" : "640px",
+				"lg" : "768px",
+				"xl" : "1080px",
 				"2xl" : "1536px",
 			},letterSpacing : {
 				"wider" : "10px"

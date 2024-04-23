@@ -1,36 +1,39 @@
 ---
-import MainButton from "./MainButton.astro"
+import Boton2 from "./Boton2.astro"
 ---
 
 <nav
-  class="absolute w-full z-40 top-0 start-0 border-b border-gray-200"
+  class="absolute w-full z-40 top-0 start-0 border-b border-gray-200 bg-[#f2790c]"
 >
   <div
-    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8"
+    class="flex flex-wrap items-center justify-between mx-auto p-8 sm:py-4 sm:px-8 me:py-4 mx-8 lg:px-12 lg:py-8 2xl:mx-28"
   >
     <a
       href=""
-      class="flex items-center space-x-3 rtl:space-x-reverse"
+      class="flex items-center"
     >
       <img
-        src="/public/img/fertrac-footer.png"
-        class="h-16"
+        src="/public/img/fertrac-footerb.png"
+        class="xl:h-20 sm:h-12 lg:h-16"
         alt=""
 
       />
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <MainButton textoBoton="Texto1"/>
+      <div class="content-center">
+        <div><a href="#"><i class="fa-solid fa-shop text-white text-2xl lg:hidden"></i></a></div>
+        <span class="sm:hidden md:hidden lg:block"><Boton2 textoBoton="Tienda" iconoBoton="fa-solid fa-shop text-naranja"/></span>
+      </div>
       <button
         data-collapse-toggle="navbar-sticky"
         type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
         aria-controls="navbar-sticky"
         aria-expanded="false"
       >
         <span class="sr-only">Open main menu</span>
         <svg
-          class="w-5 h-5"
+          class="w-7 h-7"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -45,55 +48,69 @@ import MainButton from "./MainButton.astro"
         </svg>
       </button>
     </div>
+    
     <div
       class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
       id="navbar-sticky"
     >
       <ul
-        class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+        class="flex flex-col p-4 md:p-0 font-medium md:flex-row md:gap-10"
       >
-        <li>
-          <a
+        <li class="text-center">
+          <i class="fa-solid fa-house text-white text-2xl"></i>
+          <span class="md:hidden xl:block">
+            <a
             href="/inicio"
-            class="block font-myriad text-base py-2 px-3 text-white rounded md:bg-transparent md:p-0"
+            class="block font-lato font-medium text-white text-base rounded md:bg-transparent md:p-0"
             aria-current="page">Inicio</a
           >
+            </span>
         </li>
-        <li>
-          <a
+        
+        <li class="text-center">
+          <i class="fa-solid fa-gear text-white text-2xl"></i>
+          <span class="md:hidden xl:block">
+            <a
             href="/especialidades/"
-            class="block font-myriad text-base py-2 px-3 text-white  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            class="block font-lato font-medium text-base text-white"
             >Especialidades</a
           >
+          </span>
+          <li class="text-center">
+            <i class="fa-solid fa-wrench text-white text-2xl"></i>
+            <span class="md:hidden xl:block">
+              <a
+              href="/especialidades/"
+              class="block font-lato font-medium text-base text-white"
+              >Servicios</a
+            >
+            </span>
+            
+          </li>
         </li>
-        <li>
-          <a
-            href="/servicios/"
-            class="block font-myriad text-base py-2 px-3 text-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-            >Servicios</a
-          >
-        </li>
-        <li>
-          <a
-            href="/sobrenosotros/"
-            class="block font-myriad text-base py-2 px-3 text-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+        <li class="text-center">
+          <i class="fa-solid fa-users text-white text-2xl"></i>
+          <span class="md:hidden xl:block" >
+            <a
+            href="/especialidades/"
+            class="block font-lato font-medium text-base text-white"
             >Sobre Nosotros</a
           >
+          </span>
+          
         </li>
-        <li>
-          <a
-            href="/contactanos/"
-            class="block font-myriad text-base py-2 px-3 text-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+        <li class="text-center">
+          <i class="fa-solid fa-phone text-white text-2xl"></i>
+          <span class="md:hidden xl:block">
+            <a
+            href="/especialidades/"
+            class="block font-lato font-medium text-base text-white"
             >Contactanos</a
           >
+          </span>
+          
         </li>
-        <li>
-          <a
-            href="/blog/"
-            class="block font-myriad text-base py-2 px-3 text-white md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-            >Blog</a
-          >
-        </li>
+        
       </ul>
     </div>
   </div>
