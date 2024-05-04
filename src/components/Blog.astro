@@ -2,13 +2,53 @@
 import MainButton from "./MainButton.astro";
 ---
 
-<section class="">
-    <div class="container mx-auto py-10 xl:px- sm:px-4">
-        <h2 class="font-myriad font-extrabold text-6xl text-azul text-3xl">NOTICIAS</h2>
-        <h3 class="my-4 text-sm w-3/4 sm:w-full text-azul font-bold">No te pierdas nuestras publicaciones más recientes y únete a la conversación. ¡Explora, aprende y encuentra inspiración en nuestro blog!</h3>
+<section>
+    <div class="container mx-auto py-10 sm:px-4">
+        <h2 class="font-myriad font-extrabold text-6xl sm:text-3xl text-azul">NOTICIAS</h2>
+        <h3 class="my-4 text-xl w-3/4 sm:w-full text-azul font-bold">No te pierdas nuestras publicaciones más recientes y únete a la conversación. ¡Explora, aprende y encuentra inspiración en nuestro blog!</h3>
+            
+            <div class="grid grid-cols-1 gap-8 md:mt-6 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-2">
+
+                <div role="status" class="border border-gray-200 rounded shadow dark:border-gray-800">
+                    <div class="flex items-center justify-center">
+                        <img src="/public/img/Fertrac.jpg" alt="" class="">
+                    </div>
+                    
+                    <div class="flex flex-col gap-2 px-6 py-4">
+                        <p class="">18/18/1212</p>
+                        <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
+                        <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
+                        </div>
         
-        <div class="grid grid-cols-1 gap-8 md:mt-6 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-2">
-            <div role="status" class="border border-gray-200 rounded shadow animate-pulse dark:border-gray-700">
+                        <div class="flex items-center">
+                            <MainButton textoBoton="Leer Mas" iconoBoton="fa-brands fa-readme text-lg text-naranja"/>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div role="status" class="border border-gray-200 rounded shadow dark:border-gray-800">
+                    <div class="flex items-center justify-center">
+                        <img src="/public/img/Fertrac.jpg" alt="" class="">
+                    </div>
+                    
+                    <div class="flex flex-col gap-2 px-6 py-4">
+                        <p class="">18/18/1212</p>
+                        <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
+                        <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
+                        </div>
+        
+                        <div class="flex items-center">
+                            <MainButton textoBoton="Leer Mas" iconoBoton="fa-brands fa-readme text-lg text-naranja"/>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+            <div role="status" class="border border-gray-200 rounded shadow  dark:border-gray-700">
                 <div class="flex items-center justify-center">
                     <img src="/public/img/Fertrac.jpg" alt="" class="">
                 </div>
@@ -16,37 +56,18 @@ import MainButton from "./MainButton.astro";
                 <div class="flex flex-col gap-2 px-6 py-4">
                     <p class="">18/18/1212</p>
                     <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
-                    <div class=" mb-4 text-xl text-justify leading-tight">
+                    <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
                     </div>
     
                     <div class="flex items-center">
-                        <MainButton textoBoton="Leer Articulo" iconoBoton=""/>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div role="status" class="border border-gray-200 rounded shadow animate-pulse dark:border-gray-700">
-                <div class="flex items-center justify-center">
-                    <img src="/public/img/Fertrac.jpg" alt="" class="">
-                </div>
-                
-                <div class="flex flex-col gap-2 px-6 py-4">
-                    <p class="">18/18/1212</p>
-                    <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
-                    <div class=" mb-4 text-xl text-justify leading-tight">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis</p>
-                    </div>
-    
-                    <div class="flex items-center">
-                        <MainButton textoBoton="Leer Articulo" iconoBoton=""/>
+                        <MainButton textoBoton="Leer Mas" iconoBoton="fa-brands fa-readme text-lg text-naranja"/>
                     </div>
                 </div>
                 
             </div>
 
-            <div role="status" class="border border-gray-200 rounded shadow animate-pulse dark:border-gray-700">
+            <div role="status" class="border border-gray-200 rounded shadow  dark:border-gray-700">
                 <div class="flex items-center justify-center">
                     <img src="/public/img/Fertrac.jpg" alt="" class="">
                 </div>
@@ -54,41 +75,21 @@ import MainButton from "./MainButton.astro";
                 <div class="flex flex-col gap-2 px-6 py-4">
                     <p class="">18/18/1212</p>
                     <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
-                    <div class=" mb-4 text-xl text-justify leading-tight">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis</p>
+                    <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
                     </div>
     
                     <div class="flex items-center">
-                        <MainButton textoBoton="Leer Articulo" iconoBoton=""/>
+                        <MainButton textoBoton="Leer Mas" iconoBoton="fa-brands fa-readme text-lg text-naranja"/>
                     </div>
                 </div>
                 
             </div>
-
-            <div role="status" class="border border-gray-200 rounded shadow animate-pulse dark:border-gray-700">
-                <div class="flex items-center justify-center">
-                    <img src="/public/img/Fertrac.jpg" alt="" class="">
-                </div>
-                
-                <div class="flex flex-col gap-2 px-6 py-4">
-                    <p class="">18/18/1212</p>
-                    <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
-                    <div class=" mb-4 text-xl text-justify leading-tight">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis</p>
-                    </div>
-    
-                    <div class="flex items-center">
-                        <MainButton textoBoton="Leer Articulo" iconoBoton=""/>
-                    </div>
-                </div>
-                
-            </div>
-            
 
             
             
         </div>
 
-
         </div>
+    </div>
 </section>

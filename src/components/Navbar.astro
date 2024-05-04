@@ -1,33 +1,37 @@
 ---
-import Boton2 from "./Boton2.astro"
+import Boton2 from "./Boton2.astro";
 ---
 
 <nav
   class="absolute w-full z-40 top-0 start-0 border-b border-gray-200 bg-[#f2790c]"
 >
   <div
-    class="flex flex-wrap items-center justify-between mx-auto p-8 sm:py-4 sm:px-8 me:py-4 mx-8 lg:px-12 lg:py-8 2xl:mx-28"
+    class="flex flex-wrap items-center justify-between mx-auto p-8 sm:py-4 sm:px-8 me:py-4 mx-8 lg:px-12 lg:py-4 2xl:mx-28"
   >
-    <a
-      href=""
-      class="flex items-center"
-    >
+    <a href="" class="flex items-center">
       <img
         src="/public/img/fertrac-footerb.png"
         class="xl:h-20 sm:h-12 lg:h-16"
         alt=""
-
       />
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <div class="content-center">
-        <div><a href="#"><i class="fa-solid fa-shop text-white text-2xl lg:hidden"></i></a></div>
-        <span class="sm:hidden md:hidden lg:block"><Boton2 textoBoton="Tienda" iconoBoton="fa-solid fa-shop text-naranja"/></span>
+        <div>
+          <a href="#"
+            ><i class="fa-solid fa-shop text-white text-2xl lg:block xl:hidden"></i></a>
+        </div>
+        <span class="sm:hidden md:hidden lg:hidden xl:block">
+          <Boton2
+            textoBoton="Nuestra Tienda"
+            iconoBoton="fa-solid fa-shop text-naranja text-lg"
+          /></span
+        >
       </div>
       <button
         data-collapse-toggle="navbar-sticky"
         type="button"
-        class="inline-flex items-center w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
+        class="items-center w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
         aria-controls="navbar-sticky"
         aria-expanded="false"
       >
@@ -48,69 +52,63 @@ import Boton2 from "./Boton2.astro"
         </svg>
       </button>
     </div>
-    
+
     <div
       class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
       id="navbar-sticky"
     >
-      <ul
-        class="flex flex-col p-4 md:p-0 font-medium md:flex-row md:gap-10"
-      >
+      <ul class="flex flex-col p-4 md:p-0 font-medium md:flex-row md:gap-10">
         <li class="text-center">
           <i class="fa-solid fa-house text-white text-2xl"></i>
           <span class="md:hidden xl:block">
             <a
-            href="/inicio"
-            class="block font-lato font-medium text-white text-base rounded md:bg-transparent md:p-0"
-            aria-current="page">Inicio</a
-          >
-            </span>
+              href="/inicio"
+              class="block font-lato font-medium text-white text-base rounded md:bg-transparent md:p-0"
+              aria-current="page">Inicio</a
+            >
+          </span>
         </li>
-        
+
         <li class="text-center">
           <i class="fa-solid fa-gear text-white text-2xl"></i>
           <span class="md:hidden xl:block">
             <a
-            href="/especialidades/"
-            class="block font-lato font-medium text-base text-white"
-            >Especialidades</a
-          >
+              href="/especialidades/"
+              class="block font-lato font-medium text-base text-white"
+              >Especialidades</a
+            >
           </span>
           <li class="text-center">
             <i class="fa-solid fa-wrench text-white text-2xl"></i>
             <span class="md:hidden xl:block">
               <a
-              href="/especialidades/"
-              class="block font-lato font-medium text-base text-white"
-              >Servicios</a
-            >
+                href="/especialidades/"
+                class="block font-lato font-medium text-base text-white"
+                >Servicios</a
+              >
             </span>
-            
           </li>
         </li>
         <li class="text-center">
           <i class="fa-solid fa-users text-white text-2xl"></i>
-          <span class="md:hidden xl:block" >
+          <span class="md:hidden xl:block">
             <a
-            href="/especialidades/"
-            class="block font-lato font-medium text-base text-white"
-            >Sobre Nosotros</a
-          >
+              href="/especialidades/"
+              class="block font-lato font-medium text-base text-white"
+              >Sobre Nosotros</a
+            >
           </span>
-          
         </li>
         <li class="text-center">
           <i class="fa-solid fa-phone text-white text-2xl"></i>
           <span class="md:hidden xl:block">
             <a
-            href="/especialidades/"
-            class="block font-lato font-medium text-base text-white"
-            >Contactanos</a
-          >
+              href="/especialidades/"
+              class="block font-lato font-medium text-base text-white"
+              >Contactanos</a
+            >
           </span>
-          
         </li>
-        
       </ul>
     </div>
   </div>

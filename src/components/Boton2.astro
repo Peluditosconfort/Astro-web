@@ -1,7 +1,7 @@
 ---
  interface Props {
-    textoBoton: string
-    iconoBoton: string
+    textoBoton: string;
+    iconoBoton: string;
  }
 
  const {textoBoton} = Astro.props
@@ -10,9 +10,23 @@
 
 <div>
     <button
+  class="rounded-lg relative sm:w-72 xl:w-44 md:w-64 2xl:w-60 h-14 cursor-pointer flex items-center border border-white bg-transparent group hover:bg-naranja active:bg-white active:border-white  text-lg text-naranja"
+>
+  <span
+    class="text-white font-black text-base ml-8 transform group-hover:translate-x-10 transition-all duration-300"
+    >{textoBoton}</span
+  >
+  <span
+    class="absolute right-0 h-full w-16 rounded-lg bg-white flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300"
+  >
+    <i class={iconoBoton}></i>
+  </span>
+</button>
+
+    <!-- <button
         type="button"
         class="bg-white text-sm text-naranja font-bold  hover:text-[#f2790c] border border-white hover:bg-white py-3.5 px-4 rounded shadow-lg"
         >{textoBoton}
         <i class={iconoBoton}></i></button
-    >
+    > -->
 </div>
