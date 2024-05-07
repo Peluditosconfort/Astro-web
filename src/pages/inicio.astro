@@ -3,16 +3,18 @@ import Layout from "../components/Layout.astro";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import Marcas from "../components/Marcas.astro";
-import MainButton from "../components/MainButton.astro";
+import BotonRelleno from "../components/BotonRelleno.astro";
 import Blog from "../components/Blog.astro";
-import Boton2 from "../components/Boton2.astro";
+import BotonLimpio from "../components/BotonLimpio.astro";
+import BotonSimple from "../components/BotonSimple.astro";
+import TarjetaProducto from "../components/TarjetaProducto.astro";
+
 ---
 
 <Layout title="Index">
-
     <header>
         <Navbar />
-
+        <!-- HEADER CARRUSEL -->
         <div class="carousel">
             <!-- list item -->
             <div class="list">
@@ -22,27 +24,32 @@ import Boton2 from "../components/Boton2.astro";
                         class="content pr-64 sm:pr-4 sm:top-32 md:top-34 lg:top-48"
                     >
                         <div
-                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide xl:w-3/6 "
+                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide xl:w-3/6"
                         >
                             SIEMPRE CALIDAD ORIGINAL
                         </div>
                         <div
                             class="title font-myriad leading-tight sm:text-3xl md:text-4xl xl:w-4/6 xl:text-7xl"
                         >
-                        <h1>Venta de Repuestos ORIGINALES para tractocamiones</h1>
-                            
+                            <h1>
+                                Venta de Repuestos ORIGINALES para
+                                tractocamiones
+                            </h1>
                         </div>
                         <div
                             class="des font-lato text-base pr-96 sm:pr-4 xl:w-3/6 sm: leading-4 xl:text-2xl"
                         >
-                            <p>Somos tu destino confiable para encontrar los repuestos de calidad que necesitas para mantener tus tractocamiones en óptimas condiciones.</p>
+                            <p>
+                                Somos tu destino confiable para encontrar los
+                                repuestos de calidad que necesitas para mantener
+                                tus tractocamiones en óptimas condiciones.
+                            </p>
                         </div>
                         <div class="buttons gap-x-14 sm:gap-x-8">
-                            <MainButton
+                            <BotonRelleno
                                 textoBoton="Productos"
                                 iconoBoton="fa-solid fa-gear text-lg text-naranja"
                             />
-                           
                         </div>
                     </div>
                 </div>
@@ -63,7 +70,7 @@ import Boton2 from "../components/Boton2.astro";
                             exercitationem eum aperiam illo illum laudantium?
                         </div>
                         <div class="buttons">
-                            <MainButton textoBoton="Texto2" />
+                            <BotonRelleno textoBoton="Texto2" />
                             <button>BLOG</button>
                         </div>
                     </div>
@@ -85,7 +92,7 @@ import Boton2 from "../components/Boton2.astro";
                             exercitationem eum aperiam illo illum laudantium?
                         </div>
                         <div class="buttons">
-                            <MainButton textoBoton="Texto2" />
+                            <BotonRelleno textoBoton="Texto2" />
                             <button>BLOG</button>
                         </div>
                     </div>
@@ -107,7 +114,7 @@ import Boton2 from "../components/Boton2.astro";
                             exercitationem eum aperiam illo illum laudantium?
                         </div>
                         <div class="buttons">
-                            <MainButton textoBoton="Texto2" />
+                            <BotonRelleno textoBoton="Texto2" />
                             <button>BLOG</button>
                         </div>
                     </div>
@@ -156,8 +163,7 @@ import Boton2 from "../components/Boton2.astro";
             </div>
             <!-- next prev -->
 
-            <div class="arrows">
-
+            <div class="arrows z-10">
                 <button
                     id="prev"
                     class="group flex items-center justify-center w-11 h-11 bg-white rounded-full cursor-pointer relative overflow-hidden transition-all duration-700 shadow-lg hover:bg-white xl:hover:w-32 xl:hover:rounded-lg"
@@ -176,7 +182,7 @@ import Boton2 from "../components/Boton2.astro";
                         Anterior
                     </div>
                 </button>
-                
+
                 <button
                     id="next"
                     class="group flex items-center justify-center w-11 h-11 bg-white rounded-full cursor-pointer relative overflow-hidden transition-all duration-700 shadow-lg hover:bg-white xl:hover:w-32"
@@ -196,8 +202,6 @@ import Boton2 from "../components/Boton2.astro";
                     </div>
                 </button>
 
-                
-
                 <!-- <div class="arrows">
                 <button id="prev"
                     ><i class="fa-solid fa-chevron-left"></i></button
@@ -208,11 +212,9 @@ import Boton2 from "../components/Boton2.astro";
             </div> -->
             </div>
         </div>
-
     </header>
 
     <main>
-
         <!-- SLIDER PROVEEDORES -->
         <section class="marcas py-6">
             <Marcas />
@@ -221,30 +223,38 @@ import Boton2 from "../components/Boton2.astro";
         <!-- FERTRAC -->
         <section>
             <div
-                class="flex items-center justify-center gap-x-20 sm:px-8"
+                class="flex items-center justify-center gap-x-20 sm:px-8 flex-wrap"
             >
-                <div class="sm:w-32 sm:pb-4 lg:w-72 lg:py-16" >
-                    <img
-                        src="/public/img/iso web-8.png"
-                        alt=""
-                        class=""
-                    />
+                <div class="sm:w-32 sm:pb-4 lg:w-72 lg:py-16">
+                    <img src="/public/img/iso web-8.png" alt="" class="" />
                 </div>
                 <div class="w-2/6 sm:w-full lg:w-2/4">
-                    <h2 class="font-myriad text-3xl sm:pb-4">
-                        En Fertrac, entendemos la importancia de la fiabilidad y la eficiencia en el mundo del transporte de carga.
+                    <h2
+                        class="font-myriad text-3xl sm:pb-4 text-6xl sm:text-3xl text-azul"
+                    >
+                        En Fertrac, entendemos la importancia de la fiabilidad y
+                        la eficiencia en el mundo del transporte de carga.
                     </h2>
-                    <p class="text-lg sm:pb-4 text-gray-600">
-                        Es por eso que nos comprometemos a proporcionar repuestos duraderos y de alta calidad que te ayudarán a maximizar el rendimiento y la vida útil de tus vehículos.
-                        <br>
-                        <br>
-                        Nuestro equipo está compuesto por expertos en la industria que están aquí para asistirte en cada paso del camino. Ya sea que necesites asesoramiento sobre qué repuesto es el adecuado para tu vehículo o asistencia con la instalación, estamos aquí para ayudarte.
-     
+                    <p class="text-xl sm:pb-4 text-gray-600">
+                        Es por eso que nos comprometemos a proporcionar
+                        repuestos duraderos y de alta calidad que te ayudarán a
+                        maximizar el rendimiento y la vida útil de tus
+                        vehículos.
+                        <br />
+                        <br />
+                        Nuestro equipo está compuesto por expertos en la industria
+                        que están aquí para asistirte en cada paso del camino. Ya
+                        sea que necesites asesoramiento sobre qué repuesto es el
+                        adecuado para tu vehículo o asistencia con la instalación,
+                        estamos aquí para ayudarte.
                     </p>
-
                 </div>
             </div>
         </section>
+
+        <!-- PRODUCTOS -->
+
+        <TarjetaProducto />
 
         <!-- NUEVOS ESPECIALIDADES -->
         <section class="">
@@ -262,24 +272,153 @@ import Boton2 from "../components/Boton2.astro";
                     <div
                         class="p-56 flex flex-col justify-center gap-5 2xl: p-24 sm:p-8"
                     >
-
-                        <h2 class="font-myriad font-extrabold text-5xl text-white font-semibold w-4/5 sm:w-full sm:text-3xl">Explora Nuestra Selección De Especialidades
-                            Preparadas Para Ti</h2>
+                        <h2
+                            class="font-myriad font-extrabold text-5xl text-white font-semibold w-4/5 sm:w-full sm:text-3xl"
+                        >
+                            Explora Nuestra Selección De Especialidades
+                            Preparadas Para Ti
+                        </h2>
 
                         <p
                             class="text-xl w-7/12 w-4/5 sm: w-auto sm:w-full text-slate-200"
                         >
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Dolorum, enim sunt odit,
-                            nihil eius non quod maxime doloribus officia
-                            fuga recusandae, reprehenderit quis deleniti
-                            perferendis.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorum, enim sunt odit, nihil eius non quod
+                            maxime doloribus officia fuga recusandae,
+                            reprehenderit quis deleniti perferendis.
                         </p>
-                        <Boton2
-                            textoBoton="Ver Especialidades"
+                        <BotonLimpio
+                            textoBoton="Especialidades"
                             iconoBoton="fa-regular fa-paper-plane text-naranja"
                         />
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section>
+            <div
+                class="mx-auto max-w-screen-xl px-4 pt-12 pb-4 sm:px-6 lg:px-8 lg:py-16"
+            >
+                <h2
+                    class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl font-myriad"
+                >
+                    Nuestos clientes siempre listos para elegirnos
+                </h2>
+
+                <div
+                    class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8"
+                >
+
+                    <div class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div class="flex items-center gap-4">
+                            <img
+                                alt=""
+                                src="/public/img/avatar.png"
+                                class="size-14 rounded-full object-cover"
+                            />
+
+                            <div>
+                                <div
+                                    class="flex justify-center gap-0.5 text-azul text-sm gap-2"
+                                >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p
+                                    class="mt-0.5 text-lg font-medium text-gray-900"
+                                >
+                                    Raul Rodriguez
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="mt-4 text-gray-700 text-sm">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Culpa sit rerum incidunt, a consequuntur
+                            recusandae ab saepe illo est quia obcaecati neque
+                            quibusdam eius accusamus error officiis atque
+                            voluptates magnam!
+                        </p>
+                    </div>
+
+                    <div class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div class="flex items-center gap-4">
+                            <img
+                                alt=""
+                                src="/public/img/avatar.png"
+                                class="size-14 rounded-full object-cover"
+                            />
+
+                            <div>
+                                <div
+                                    class="flex justify-center gap-0.5 text-azul text-sm gap-2"
+                                >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p
+                                    class="mt-0.5 text-lg font-medium text-gray-900"
+                                >
+                                    Paulo Hernandez
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="mt-4 text-gray-700 text-sm">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Culpa sit rerum incidunt, a consequuntur
+                            recusandae ab saepe illo est quia obcaecati neque
+                            quibusdam eius accusamus error officiis atque
+                            voluptates magnam!
+                        </p>
+                    </div>
+
+                    <div class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                        <div class="flex items-center gap-4">
+                            <img
+                                alt=""
+                                src="/public/img/avatar.png"
+                                class="size-14 rounded-full object-cover"
+                            />
+
+                            <div>
+                                <div
+                                    class="flex justify-center gap-0.5 text-azul text-sm gap-2"
+                                >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p
+                                    class="mt-0.5 text-lg font-medium text-gray-900"
+                                >
+                                    Sandra Martinez
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="mt-4 text-gray-700 text-sm">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Culpa sit rerum incidunt, a consequuntur
+                            recusandae ab saepe illo est quia obcaecati neque
+                            quibusdam eius accusamus error officiis atque
+                            voluptates magnam!
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -293,21 +432,23 @@ import Boton2 from "../components/Boton2.astro";
                     <div
                         class="font-myriad font-extrabold text-3xl text-azul text-left"
                     >
-                    <h2>
-                        Ofrecemos una amplia gama de servicios para satisfacer todas tus necesidades relacionadas con los tractocamiones.
-                    </h2>
-                    
+                        <h2>
+                            Ofrecemos una amplia gama de servicios para
+                            satisfacer todas tus necesidades relacionadas con
+                            los tractocamiones.
+                        </h2>
                     </div>
-                    <p class="mt-2 text-xl w-3/4 sm:w-auto sm:text-left text-gray-600">
-                        Desde la venta de repuestos de alta calidad hasta servicios de mantenimiento y asesoramiento técnico
+                    <p
+                        class="mt-2 text-xl w-3/4 sm:w-auto sm:text-left text-gray-600"
+                    >
+                        Desde la venta de repuestos de alta calidad hasta
+                        servicios de mantenimiento y asesoramiento técnico
                     </p>
                 </div>
                 <div
                     class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg"
                 >
-                    <div
-                        class="relative flex items-center justify-center"
-                    >
+                    <div class="relative flex items-center justify-center">
                         <img
                             class="relative w-full"
                             src="/public/img/mecanica.jpg"
@@ -320,7 +461,10 @@ import Boton2 from "../components/Boton2.astro";
                                 ASESORIA TECNICA
                             </h3>
                             <p class="sm:text-sm">
-                                Nuestro equipo de expertos en asesoría técnica está aquí para brindarte el conocimiento y la orientación necesarios para resolver cualquier problema o duda que puedas tener.
+                                Nuestro equipo de expertos en asesoría técnica
+                                está aquí para brindarte el conocimiento y la
+                                orientación necesarios para resolver cualquier
+                                problema o duda que puedas tener.
                             </p>
                         </div>
                     </div>
@@ -328,9 +472,7 @@ import Boton2 from "../components/Boton2.astro";
                 <div
                     class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg"
                 >
-                    <div
-                        class="relative flex items-center justify-center"
-                    >
+                    <div class="relative flex items-center justify-center">
                         <img
                             class="relative w-full"
                             src="/public/img/Fertrac.jpg"
@@ -344,7 +486,10 @@ import Boton2 from "../components/Boton2.astro";
                             </h3>
 
                             <p class="sm:text-sm">
-                                Nuestro equipo especializado en gestión de garantías está comprometido en garantizar que tus reclamaciones sean procesadas de manera rápida, eficiente y sin complicaciones
+                                Nuestro equipo especializado en gestión de
+                                garantías está comprometido en garantizar que
+                                tus reclamaciones sean procesadas de manera
+                                rápida, eficiente y sin complicaciones
                             </p>
                         </div>
                     </div>
@@ -352,9 +497,7 @@ import Boton2 from "../components/Boton2.astro";
                 <div
                     class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg"
                 >
-                    <div
-                        class="relative flex items-center justify-center"
-                    >
+                    <div class="relative flex items-center justify-center">
                         <img
                             class="relative w-full"
                             src="/public/img/Fertrac.jpg"
@@ -367,7 +510,12 @@ import Boton2 from "../components/Boton2.astro";
                                 PRODUCTOS DE CALIDAD
                             </h3>
                             <p class="sm:text-sm">
-                                Nos enorgullecemos de ser productores de calidad en la industria de repuestos para tractocamiones. Nos esforzamos por ofrecer productos que superen las expectativas de nuestros clientes en términos de durabilidad, rendimiento y fiabilidad
+                                Nos enorgullecemos de ser productores de calidad
+                                en la industria de repuestos para
+                                tractocamiones. Nos esforzamos por ofrecer
+                                productos que superen las expectativas de
+                                nuestros clientes en términos de durabilidad,
+                                rendimiento y fiabilidad
                             </p>
                         </div>
                     </div>
@@ -375,9 +523,11 @@ import Boton2 from "../components/Boton2.astro";
             </div>
         </section>
 
+        <!-- ASESORIA -->
         <section>
             <div
-                class="w-full flex justify-center items-center py-12 flex-wrap gap-4 bg-cover bg-center h-2/4 bg-slate-800" style="background-image: url(/public/img/asesoria.jpg"
+                class="w-full flex justify-center items-center py-12 flex-wrap gap-4 bg-cover bg-center h-2/4 bg-slate-800"
+                style="background-image: url(/public/img/asesoria.jpg"
             >
                 <div class="">
                     <h2 class="font-myriad text-white text-3xl px-12">
@@ -386,12 +536,12 @@ import Boton2 from "../components/Boton2.astro";
                 </div>
 
                 <div>
-                    <Boton2
+                    <BotonLimpio
                         textoBoton="Llamanos"
                         iconoBoton="fa-solid fa-phone"
                     />
                     <br />
-                    <Boton2
+                    <BotonLimpio
                         textoBoton="Escribenos"
                         iconoBoton="fa-brands fa-whatsapp"
                     />
@@ -400,80 +550,78 @@ import Boton2 from "../components/Boton2.astro";
         </section>
 
         <!-- BLOG -->
-        <section>
+        <article>
             <Blog />
-        </section>
+        </article>
     </main>
+</Layout>
 
-    <footer>
-        <Footer />
-    </footer>
+<footer>
+    <Footer />
+</footer>
 
-<!--     <script>
-        let nextDom = document.getElementById("next");
-        let prevDom = document.getElementById("prev");
+<!-- <script>
 
-        let carouselDom = document.querySelector(".carousel");
-        let SliderDom = carouselDom.querySelector(".carousel .list");
-        let thumbnailBorderDom = document.querySelector(
-            ".carousel .thumbnail",
+let nextDom = document.getElementById("next");
+    let prevDom = document.getElementById("prev");
+
+    let carouselDom = document.querySelector(".carousel");
+    let SliderDom = carouselDom.querySelector(".carousel .list");
+    let thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
+    let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
+
+    thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+    let timeRunning = 1000;
+    let timeAutoNext = 10000;
+
+    nextDom.onclick = function () {
+        showSlider("next");
+    };
+
+    prevDom.onclick = function () {
+        showSlider("prev");
+    };
+    let runTimeOut;
+    let runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext);
+
+    function showSlider(type) {
+        let SliderItemsDom = SliderDom.querySelectorAll(
+            ".carousel .list .item",
         );
-        let thumbnailItemsDom =
-            thumbnailBorderDom.querySelectorAll(".item");
+        let thumbnailItemsDom = document.querySelectorAll(
+            ".carousel .thumbnail .item",
+        );
 
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-        let timeRunning = 1000;
-        let timeAutoNext = 10000;
+        if (type === "next") {
+            SliderDom.appendChild(SliderItemsDom[0]);
+            thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+            carouselDom.classList.add("next");
+        } else {
+            SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+            thumbnailBorderDom.prepend(
+                thumbnailItemsDom[thumbnailItemsDom.length - 1],
+            );
+            carouselDom.classList.add("prev");
+        }
+        clearTimeout(runTimeOut);
+        runTimeOut = setTimeout(() => {
+            carouselDom.classList.remove("next");
+            carouselDom.classList.remove("prev");
+        }, timeRunning);
 
-        nextDom.onclick = function () {
-            showSlider("next");
-        };
-
-        prevDom.onclick = function () {
-            showSlider("prev");
-        };
-        let runTimeOut;
-        let runNextAuto = setTimeout(() => {
+        clearTimeout(runNextAuto);
+        runNextAuto = setTimeout(() => {
             next.click();
         }, timeAutoNext);
-        function showSlider(type) {
-            let SliderItemsDom = SliderDom.querySelectorAll(
-                ".carousel .list .item",
-            );
-            let thumbnailItemsDom = document.querySelectorAll(
-                ".carousel .thumbnail .item",
-            );
+    } 
+</script> -->
 
-            if (type === "next") {
-                SliderDom.appendChild(SliderItemsDom[0]);
-                thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-                carouselDom.classList.add("next");
-            } else {
-                SliderDom.prepend(
-                    SliderItemsDom[SliderItemsDom.length - 1],
-                );
-                thumbnailBorderDom.prepend(
-                    thumbnailItemsDom[thumbnailItemsDom.length - 1],
-                );
-                carouselDom.classList.add("prev");
-            }
-            clearTimeout(runTimeOut);
-            runTimeOut = setTimeout(() => {
-                carouselDom.classList.remove("next");
-                carouselDom.classList.remove("prev");
-            }, timeRunning);
-
-            clearTimeout(runNextAuto);
-            runNextAuto = setTimeout(() => {
-                next.click();
-            }, timeAutoNext);
-        }
-    </script> -->
-    <style>
-        .fa-brands {
-            padding: 10px 0;
-            color: white;
-            font-size: 50px;
-        }
-    </style>
-</Layout>
+<style>
+    .fa-brands {
+        padding: 10px 0;
+        color: white;
+        font-size: 50px;
+    }
+</style>

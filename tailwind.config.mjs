@@ -22,9 +22,11 @@ export default {
 				"lg" : "768px",
 				"xl" : "1080px",
 				"2xl" : "1536px",
-			},letterSpacing : {
+			},
+			letterSpacing : {
 				"wider" : "10px"
-			}
+			},
+			
 		},
 	},
 	plugins: [

@@ -1,12 +1,12 @@
 ---
-import Boton2 from "./Boton2.astro";
+import BotonLimpio from "./BotonLimpio.astro";
 ---
 
 <nav
   class="absolute w-full z-40 top-0 start-0 bg-[#f2790c] sm:z-20"
 >
   <div
-    class="flex flex-wrap items-center justify-between mx-auto p-8 sm:py-4 sm:px-8 me:py-4 mx-8 lg:px-12 lg:py-4 2xl:mx-28"
+    class="flex flex-wrap items-center justify-between mx-auto p-8 sm:py-4 sm:px-8 me:py-4 mx-8 lg:px-12 lg:py-4"
   >
     <a href="" class="flex items-center">
       <img
@@ -22,7 +22,7 @@ import Boton2 from "./Boton2.astro";
             ><i class="fa-solid fa-shop text-white text-2xl lg:block xl:hidden"></i></a>
         </div>
         <span class="sm:hidden md:hidden lg:hidden xl:block">
-          <Boton2
+          <BotonLimpio
             textoBoton="Nuestra Tienda"
             iconoBoton="fa-solid fa-shop text-naranja text-lg"
           /></span
@@ -36,31 +36,20 @@ import Boton2 from "./Boton2.astro";
         aria-expanded="false"
       >
         <span class="sr-only">Open main menu</span>
-        <svg
-          class="w-7 h-7"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"></path>
-        </svg>
+        <i class="fa-solid fa-bars text-3xl"></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
       </button>
     </div>
 
     <div
+    
       class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
       id="navbar-sticky"
     >
     <div class="">
       <ul class="flex flex-col md:p-0 font-medium md:flex-row md:gap-10 sm:gap-y-9 sm:py-12">
 
-        <li class="text-center sm:flex border-b pb-4 items-baselin">
+        <li class="text-center sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-baseline">
           <i class="fa-solid fa-house text-white text-2xl pr-4	"></i>
           <span class="md:hidden xl:block">
             <a
@@ -71,7 +60,7 @@ import Boton2 from "./Boton2.astro";
           </span>
         </li>
 
-        <li class="text-center sm:flex border-b pb-4 items-baseline">
+        <li class="text-center sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-baseline">
           <i class="fa-solid fa-gear text-white text-2xl pr-4	"></i>
           <span class="md:hidden xl:block">
             <a
@@ -80,7 +69,7 @@ import Boton2 from "./Boton2.astro";
               >Especialidades</a
             >
           </span>
-          <li class="text-center sm:flex border-b pb-4 items-baseline">
+          <li class="text-center sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-baseline">
             <i class="fa-solid fa-wrench text-white text-2xl pr-4"></i>
             <span class="md:hidden xl:block">
               <a
@@ -91,7 +80,7 @@ import Boton2 from "./Boton2.astro";
             </span>
           </li>
         </li>
-        <li class="text-center sm:flex border-b pb-4 items-baseline">
+        <li class="text-center sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-baseline">
           <i class="fa-solid fa-users text-white text-2xl pr-4"></i>
           <span class="md:hidden xl:block">
             <a
@@ -101,7 +90,7 @@ import Boton2 from "./Boton2.astro";
             >
           </span>
         </li>
-        <li class="text-center sm:flex border-b pb-4 items-baseline">
+        <li class="text-center sm:flex sm:border-b md:border-none sm:pb-4 md:pb-0 items-baseline">
           <i class="fa-solid fa-phone text-white text-2xl pr-4"></i>
           <span class="md:hidden xl:block">
             <a
