@@ -1,9 +1,19 @@
-body{
-    margin: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-    font-family: Poppins;
-    font-size: 12px;
+
+@layer {
+    p{
+        @apply font-lato
+    }
+
+    h1, h2, h3, h4 {
+        @apply font-myriad
+    }
 }
+
+
 
 /* carousel */
 .carousel{
@@ -258,6 +268,7 @@ position: absolute;
 }
 
 
+
 .slider {
     width: 50vw;
     height: auto;
@@ -292,3 +303,4 @@ position: absolute;
         transform: translateX(calc(-150px * 7));
     }
 }
+

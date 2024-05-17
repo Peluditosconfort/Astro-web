@@ -6,38 +6,47 @@ import Marcas from "../components/Marcas.astro";
 import BotonRelleno from "../components/BotonRelleno.astro";
 import Blog from "../components/Blog.astro";
 import BotonLimpio from "../components/BotonLimpio.astro";
-import BotonSimple from "../components/BotonSimple.astro";
+
 import TarjetaProducto from "../components/TarjetaProducto.astro";
+
+import CarouselTestimonial from "../components/CarouselTestimonial.astro";
 
 ---
 
 <Layout title="Index">
+
+    <Navbar/>
+
     <header>
-        <Navbar />
+
         <!-- HEADER CARRUSEL -->
         <div class="carousel">
             <!-- list item -->
             <div class="list">
-                <div class="item">
+                <div class="item ">
                     <img src="/public/img/1.jpg" />
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
                     <div
-                        class="content pr-64 sm:pr-4 sm:top-32 md:top-34 lg:top-48"
+                        class="content  2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80 "
                     >
                         <div
-                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide xl:w-3/6"
+                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide font-myriad"
                         >
+                        <p>
                             SIEMPRE CALIDAD ORIGINAL
+                        </p>
+                            
                         </div>
                         <div
-                            class="title font-myriad leading-tight sm:text-3xl md:text-4xl xl:w-4/6 xl:text-7xl"
+                            class="title font-myriad leading-tight sm:text-3xl md:text-6xl  xl:text-7xl"
                         >
                             <h1>
-                                Venta de Repuestos ORIGINALES para
+                                Venta de Repuestos <span class="text-naranja">ORIGINALES</span> para
                                 tractocamiones
                             </h1>
                         </div>
                         <div
-                            class="des font-lato text-base pr-96 sm:pr-4 xl:w-3/6 sm: leading-4 xl:text-2xl"
+                            class="des font-lato text-base pr-96 sm:pr-4 md:text-2xl xl:w-3/6 xl:text-2xl"
                         >
                             <p>
                                 Somos tu destino confiable para encontrar los
@@ -45,7 +54,7 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
                                 tus tractocamiones en óptimas condiciones.
                             </p>
                         </div>
-                        <div class="buttons gap-x-14 sm:gap-x-8">
+                        <div class="buttons sm:pt-4 2xl:pt-0">
                             <BotonRelleno
                                 textoBoton="Productos"
                                 iconoBoton="fa-solid fa-gear text-lg text-naranja"
@@ -54,77 +63,90 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/public/img/2.jpg" />
-                    <div class="content">
-                        <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
-                        <div class="title">
-                            Repuestos ORIGINALES para tractocamiones
+                    <img src="/public/img/2.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+                    <div
+                        class="content  2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80 "
+                    >
+                        <div
+                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide font-myriad"
+                        >
+                        <p>
+                            SIEMPRE CALIDAD ORIGINAL
+                        </p>
+                            
                         </div>
-                        <div class="des">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Ut sequi, rem magnam nesciunt minima placeat,
-                            itaque eum neque officiis unde, eaque optio ratione
-                            aliquid assumenda facere ab et quasi ducimus aut
-                            doloribus non numquam. Explicabo, laboriosam nisi
-                            reprehenderit tempora at laborum natus unde. Ut,
-                            exercitationem eum aperiam illo illum laudantium?
+                        <div
+                            class="title font-myriad leading-tight sm:text-3xl md:text-6xl xl:text-7xl"
+                        >
+                            <h1>
+                                Venta de Repuestos <span class="text-naranja">ORIGINALES</span> para
+                                tractocamiones
+                            </h1>
                         </div>
-                        <div class="buttons">
-                            <BotonRelleno textoBoton="Texto2" />
-                            <button>BLOG</button>
+                        <div
+                            class="des font-lato text-base pr-96 sm:pr-4 md:text-2xl xl:w-3/6 xl:text-2xl"
+                        >
+                            <p>
+                                Somos tu destino confiable para encontrar los
+                                repuestos de calidad que necesitas para mantener
+                                tus tractocamiones en óptimas condiciones.
+                            </p>
+                        </div>
+                        <div class="buttons sm:pt-4 2xl:pt-0">
+                            <BotonRelleno
+                                textoBoton="Productos"
+                                iconoBoton="fa-solid fa-gear text-lg text-naranja"
+                            />
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <img src="/public/img/3.jpg" />
-                    <div class="content">
-                        <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
-                        <div class="title">
-                            Repuestos ORIGINALES para tractocamiones
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+                    <div
+                        class="content  2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80 "
+                    >
+                        <div
+                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide xl:w-4/6 font-myriad"
+                        >
+                        <p>
+                            SIEMPRE CALIDAD ORIGINAL
+                        </p>
+                            
                         </div>
-                        <div class="des">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Ut sequi, rem magnam nesciunt minima placeat,
-                            itaque eum neque officiis unde, eaque optio ratione
-                            aliquid assumenda facere ab et quasi ducimus aut
-                            doloribus non numquam. Explicabo, laboriosam nisi
-                            reprehenderit tempora at laborum natus unde. Ut,
-                            exercitationem eum aperiam illo illum laudantium?
+                        <div
+                            class="title font-myriad leading-tight sm:text-3xl md:text-6xl xl:text-7xl"
+                        >
+                            <h1>
+                                Venta de Repuestos <span class="text-naranja">ORIGINALES</span> para
+                                tractocamiones
+                            </h1>
                         </div>
-                        <div class="buttons">
-                            <BotonRelleno textoBoton="Texto2" />
-                            <button>BLOG</button>
+                        <div
+                            class="des font-lato text-base pr-96 sm:pr-4 md:text-2xl xl:w-3/6 xl:text-2xl"
+                        >
+                            <p>
+                                Somos tu destino confiable para encontrar los
+                                repuestos de calidad que necesitas para mantener
+                                tus tractocamiones en óptimas condiciones.
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/public/img/2.jpg" />
-                    <div class="content">
-                        <div class="author">SIEMPRE CALIDAD ORIGINAL</div>
-                        <div class="title">
-                            Repuestos ORIGINALES para tractocamiones
-                        </div>
-                        <div class="des">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Ut sequi, rem magnam nesciunt minima placeat,
-                            itaque eum neque officiis unde, eaque optio ratione
-                            aliquid assumenda facere ab et quasi ducimus aut
-                            doloribus non numquam. Explicabo, laboriosam nisi
-                            reprehenderit tempora at laborum natus unde. Ut,
-                            exercitationem eum aperiam illo illum laudantium?
-                        </div>
-                        <div class="buttons">
-                            <BotonRelleno textoBoton="Texto2" />
-                            <button>BLOG</button>
+                        <div class="buttons sm:pt-4 2xl:pt-0">
+                            <BotonRelleno
+                                textoBoton="Productos"
+                                iconoBoton="fa-solid fa-gear text-lg text-naranja"
+                            />
                         </div>
                     </div>
                 </div>
+
             </div>
             <!-- list thumnail -->
             <div
-                class="thumbnail absolute bottom-20 left-1/2 w-max z-10 flex gap-x-5 sm:bottom-8 xl:"
+                class="thumbnail absolute bottom-20 left-1/2 w-max z-10 flex gap-x-5 sm:bottom-8 md:bottom-16"
             >
-                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 relative">
+                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative">
                     <img
                         src="/public/img/1.jpg"
                         class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
@@ -136,7 +158,7 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
                         <div class="description font-light">Description</div>
                     </div>
                 </div>
-                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 relative">
+                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative">
                     <img
                         src="/public/img/2.jpg"
                         class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
@@ -148,7 +170,7 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
                         <div class="description font-light">Description</div>
                     </div>
                 </div>
-                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 relative">
+                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative">
                     <img
                         src="/public/img/3.jpg"
                         class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
@@ -166,10 +188,10 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
             <div class="arrows z-10">
                 <button
                     id="prev"
-                    class="group flex items-center justify-center w-11 h-11 bg-white rounded-full cursor-pointer relative overflow-hidden transition-all duration-700 shadow-lg hover:bg-white xl:hover:w-32 xl:hover:rounded-lg"
+                    class="group flex items-center justify-center w-11 h-11 bg-white rounded-full cursor-pointer relative overflow-hidden transition-all duration-700 shadow-lg xl:hover:w-32 active:bg-naranja"
                 >
                     <div
-                        class="flex items-center justify-center w-full transition-all duration-700 group-hover:justify-start group-hover:px-3 flex-row-reverse"
+                        class="flex items-center justify-center w-full group-hover:justify-start group-hover:px-3 flex-row-reverse"
                     >
                         <i
                             class="fa-regular fa-circle-left text-xl text-naranja"
@@ -185,10 +207,10 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
 
                 <button
                     id="next"
-                    class="group flex items-center justify-center w-11 h-11 bg-white rounded-full cursor-pointer relative overflow-hidden transition-all duration-700 shadow-lg hover:bg-white xl:hover:w-32"
+                    class="group flex items-center justify-center w-11 h-11 bg-white rounded-full cursor-pointer relative overflow-hidden transition-all duration-700 shadow-lg xl:hover:w-32 active:bg-naranja"
                 >
                     <div
-                        class="flex items-center justify-center w-full transition-all duration-700 group-hover:justify-start group-hover:px-3 flex-row-reverse"
+                        class="flex items-center justify-center w-full group-hover:justify-start group-hover:px-3 flex-row-reverse"
                     >
                         <i
                             class="fa-regular fa-circle-right text-xl text-naranja"
@@ -223,7 +245,7 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
         <!-- FERTRAC -->
         <section>
             <div
-                class="flex items-center justify-center gap-x-20 sm:px-8 flex-wrap"
+                class="flex items-center justify-center gap-x-16 sm:px-4 flex-wrap md:px-8"
             >
                 <div class="sm:w-32 sm:pb-4 lg:w-72 lg:py-16">
                     <img src="/public/img/iso web-8.png" alt="" class="" />
@@ -297,140 +319,144 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
         </section>
 
         <!-- TESTIMONIOS -->
+
         <section>
-            <div
-                class="mx-auto max-w-screen-xl px-4 pt-12 pb-4 sm:px-6 lg:px-8 lg:py-16"
-            >
-                <h2
-                    class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl font-myriad"
-                >
-                    Nuestos clientes siempre listos para elegirnos
-                </h2>
-
+            <CarouselTestimonial />
+        </section>
+        <section>
+            <div class="flex flex-wrap justify-center mt-8">
                 <div
-                    class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8"
+                    class="flex flex-col justify-center items-center sm:text-left md:text-center w-full sm:p-4 md:px-16"
                 >
-
-                    <div class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
-                            <img
-                                alt=""
-                                src="/public/img/avatar.png"
-                                class="size-14 rounded-full object-cover"
-                            />
-
-                            <div>
-                                <div
-                                    class="flex justify-center gap-0.5 text-azul text-sm gap-2"
-                                >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                </div>
-
-                                <p
-                                    class="mt-0.5 text-lg font-medium text-gray-900"
-                                >
-                                    Raul Rodriguez
-                                </p>
-                            </div>
-                        </div>
-
-                        <p class="mt-4 text-gray-700 text-sm">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa sit rerum incidunt, a consequuntur
-                            recusandae ab saepe illo est quia obcaecati neque
-                            quibusdam eius accusamus error officiis atque
-                            voluptates magnam!
-                        </p>
+                    <div
+                        class="font-myriad font-extrabold text-3xl text-azul"
+                    >
+                        <h2>
+                            Nuestos clientes siempre listos para elergirnos
+                        </h2>
                     </div>
-
-                    <div class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
-                            <img
-                                alt=""
-                                src="/public/img/avatar.png"
-                                class="size-14 rounded-full object-cover"
-                            />
-
-                            <div>
-                                <div
-                                    class="flex justify-center gap-0.5 text-azul text-sm gap-2"
-                                >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                </div>
-
-                                <p
-                                    class="mt-0.5 text-lg font-medium text-gray-900"
-                                >
-                                    Paulo Hernandez
-                                </p>
-                            </div>
-                        </div>
-
-                        <p class="mt-4 text-gray-700 text-sm">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa sit rerum incidunt, a consequuntur
-                            recusandae ab saepe illo est quia obcaecati neque
-                            quibusdam eius accusamus error officiis atque
-                            voluptates magnam!
-                        </p>
-                    </div>
-
-                    <div class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                        <div class="flex items-center gap-4">
-                            <img
-                                alt=""
-                                src="/public/img/avatar.png"
-                                class="size-14 rounded-full object-cover"
-                            />
-
-                            <div>
-                                <div
-                                    class="flex justify-center gap-0.5 text-azul text-sm gap-2"
-                                >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                </div>
-
-                                <p
-                                    class="mt-0.5 text-lg font-medium text-gray-900"
-                                >
-                                    Sandra Martinez
-                                </p>
-                            </div>
-                        </div>
-
-                        <p class="mt-4 text-gray-700 text-sm">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa sit rerum incidunt, a consequuntur
-                            recusandae ab saepe illo est quia obcaecati neque
-                            quibusdam eius accusamus error officiis atque
-                            voluptates magnam!
-                        </p>
-                    </div>
-
+                    
                 </div>
-            </div>
+                <div class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4">
+                    <div class="flex items-center gap-4">
+                        <img
+                            alt=""
+                            src="/public/img/avatar.png"
+                            class="size-14 rounded-full object-cover"
+                        />
+
+                        <div>
+                            <div
+                                class="flex justify-center gap-0.5 text-azul text-sm "
+                            >
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p
+                                class="mt-0.5 text-lg font-medium text-gray-900"
+                            >
+                                Raul Rodriguez
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 text-gray-700 text-sm text-justify	">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Culpa sit rerum incidunt, a consequuntur
+                        recusandae ab saepe illo est quia obcaecati neque
+                        quibusdam eius accusamus error officiis atque
+                        voluptates magnam!
+                    </p>
+                </div>
+
+                <div class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4">
+                    <div class="flex items-center gap-4">
+                        <img
+                            alt=""
+                            src="/public/img/avatar.png"
+                            class="size-14 rounded-full object-cover"
+                        />
+
+                        <div>
+                            <div
+                                class="flex justify-center gap-0.5 text-azul text-sm" 
+                            >
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p
+                                class="mt-0.5 text-lg font-medium text-gray-900"
+                            >
+                                Raul Rodriguez
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 text-gray-700 text-sm text-justify	">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Culpa sit rerum incidunt, a consequuntur
+                        recusandae ab saepe illo est quia obcaecati neque
+                        quibusdam eius accusamus error officiis atque
+                        voluptates magnam!
+                    </p>
+                </div>
+
+                <div class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4">
+                    <div class="flex items-center gap-4">
+                        <img
+                            alt=""
+                            src="/public/img/avatar.png"
+                            class="size-14 rounded-full object-cover"
+                        />
+
+                        <div>
+                            <div
+                                class="flex justify-center gap-0.5 text-azul text-sm"
+                            >
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p
+                                class="mt-0.5 text-lg font-medium text-gray-900"
+                            >
+                                Raul Rodriguez
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 text-gray-700 text-sm text-justify	">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Culpa sit rerum incidunt, a consequuntur
+                        recusandae ab saepe illo est quia obcaecati neque
+                        quibusdam eius accusamus error officiis atque
+                        voluptates magnam!
+                    </p>
+                </div>
+
+                
+                
         </section>
 
         <!-- SERVICIOS FT -->
         <section>
-            <div class="flex flex-wrap items-center justify-center">
+            <div class="flex flex-wrap justify-center mt-8">
                 <div
-                    class="flex flex-col justify-center items-center text-center w-full sm:p-8"
+                    class="flex flex-col justify-center items-center sm:text-left md:text-center w-full sm:p-4 md:px-36"
                 >
                     <div
-                        class="font-myriad font-extrabold text-3xl text-azul text-left"
+                        class="font-myriad font-extrabold text-3xl text-azul"
                     >
                         <h2>
                             Ofrecemos una amplia gama de servicios para
@@ -439,14 +465,14 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
                         </h2>
                     </div>
                     <p
-                        class="mt-2 text-xl w-3/4 sm:w-auto sm:text-left text-gray-600"
+                        class="mt-2 text-xl w-3/4 sm:w-auto text-gray-600"
                     >
                         Desde la venta de repuestos de alta calidad hasta
                         servicios de mantenimiento y asesoramiento técnico
                     </p>
                 </div>
                 <div
-                    class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg"
+                    class="flex-shrink-0 relative overflow-hidden bg-naranja rounded-lg max-w-xs sm:m-4 shadow-lg"
                 >
                     <div class="relative flex items-center justify-center">
                         <img
@@ -470,7 +496,7 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
                     </div>
                 </div>
                 <div
-                    class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg"
+                    class="flex-shrink-0 relative overflow-hidden bg-naranja rounded-lg max-w-xs sm:m-4 shadow-lg"
                 >
                     <div class="relative flex items-center justify-center">
                         <img
@@ -495,7 +521,7 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
                     </div>
                 </div>
                 <div
-                    class="flex-shrink-0 m-6 relative overflow-hidden bg-naranja rounded-lg max-w-xs shadow-lg"
+                    class="flex-shrink-0 relative overflow-hidden bg-naranja rounded-lg max-w-xs sm:m-4 shadow-lg"
                 >
                     <div class="relative flex items-center justify-center">
                         <img
@@ -559,69 +585,4 @@ import TarjetaProducto from "../components/TarjetaProducto.astro";
 <footer>
     <Footer />
 </footer>
-
-<!-- <script>
-
-let nextDom = document.getElementById("next");
-    let prevDom = document.getElementById("prev");
-
-    let carouselDom = document.querySelector(".carousel");
-    let SliderDom = carouselDom.querySelector(".carousel .list");
-    let thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
-    let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
-
-    thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-    let timeRunning = 1000;
-    let timeAutoNext = 10000;
-
-    nextDom.onclick = function () {
-        showSlider("next");
-    };
-
-    prevDom.onclick = function () {
-        showSlider("prev");
-    };
-    let runTimeOut;
-    let runNextAuto = setTimeout(() => {
-        next.click();
-    }, timeAutoNext);
-
-    function showSlider(type) {
-        let SliderItemsDom = SliderDom.querySelectorAll(
-            ".carousel .list .item",
-        );
-        let thumbnailItemsDom = document.querySelectorAll(
-            ".carousel .thumbnail .item",
-        );
-
-        if (type === "next") {
-            SliderDom.appendChild(SliderItemsDom[0]);
-            thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-            carouselDom.classList.add("next");
-        } else {
-            SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-            thumbnailBorderDom.prepend(
-                thumbnailItemsDom[thumbnailItemsDom.length - 1],
-            );
-            carouselDom.classList.add("prev");
-        }
-        clearTimeout(runTimeOut);
-        runTimeOut = setTimeout(() => {
-            carouselDom.classList.remove("next");
-            carouselDom.classList.remove("prev");
-        }, timeRunning);
-
-        clearTimeout(runNextAuto);
-        runNextAuto = setTimeout(() => {
-            next.click();
-        }, timeAutoNext);
-    } 
-</script> -->
-
-<style>
-    .fa-brands {
-        padding: 10px 0;
-        color: white;
-        font-size: 50px;
-    }
-</style>
+ 

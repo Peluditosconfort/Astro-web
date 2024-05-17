@@ -1,17 +1,24 @@
 ---
 import BotonLimpio from "./BotonLimpio.astro";
+import BotonRelleno from "./BotonRelleno.astro";
+
 ---
 
 <nav
-  class="absolute w-full z-40 top-0 start-0 bg-[#f2790c] sm:z-20"
+  class="navbar transition duration-1000 ease-in-out fixed bg-transparent transition background-color w-full z-40 top-0 start-0 sm:z-20 sm:bg-naranja md:bg-transparent"
 >
   <div
-    class="flex flex-wrap items-center justify-between mx-auto p-8 sm:py-4 sm:px-8 me:py-4 mx-8 lg:px-12 lg:py-4"
+    class="flex flex-wrap items-center justify-between mx-auto p-8 sm:py-4 sm:px-8 me:py-4 mx-8 lg:px-12 lg:py-4 2xl:mx-48"
   >
-    <a href="" class="flex items-center">
-      <img
+    <a href="" class="flex items-center ">
+      <img id="imagen1"
+        src="/public/img/fertrac-footer.png"
+        class="xl:h-12 sm:h-12 lg:h-16 2xl:h-24 "
+        alt=""
+      />
+      <img id="imagen2"
         src="/public/img/fertrac-footerb.png"
-        class="xl:h-20 sm:h-12 lg:h-16"
+        class="ocultar xl:h-12 sm:h-12 lg:h-16 2xl:h-24"
         alt=""
       />
     </a>
@@ -22,10 +29,13 @@ import BotonLimpio from "./BotonLimpio.astro";
             ><i class="fa-solid fa-shop text-white text-2xl lg:block xl:hidden"></i></a>
         </div>
         <span class="sm:hidden md:hidden lg:hidden xl:block">
-          <BotonLimpio
-            textoBoton="Nuestra Tienda"
-            iconoBoton="fa-solid fa-shop text-naranja text-lg"
-          /></span
+          <div class="buttons sm:pt-4">
+            <BotonLimpio
+                textoBoton="Ver Tienda"
+                iconoBoton="fa-solid fa-shop text-lg text-naranja"
+            />
+        </div>
+          </span
         >
       </div>
       <button
@@ -33,7 +43,7 @@ import BotonLimpio from "./BotonLimpio.astro";
         type="button"
         class="items-center w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
         aria-controls="navbar-sticky"
-        aria-expanded="false"
+        aria-expanded="false" 
       >
         <span class="sr-only">Open main menu</span>
         <i class="fa-solid fa-bars text-3xl"></i>
@@ -47,59 +57,45 @@ import BotonLimpio from "./BotonLimpio.astro";
       id="navbar-sticky"
     >
     <div class="">
-      <ul class="flex flex-col md:p-0 font-medium md:flex-row md:gap-10 sm:gap-y-9 sm:py-12">
+      <ul class="flex flex-col md:p-0 font-medium md:flex-row md:gap-4 sm:gap-y-9 sm:py-12 xl:gap-8 xl:text-base">
+        <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
+          <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between ">
+            <span class="md:hidden xl:block font-lato font-black text-xl text-white">Inicio</span>
+           <i class="fa-solid fa-house text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+          </a>
+        </li>
+        
+        <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
+          <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between">
+            <span class="md:hidden xl:block font-lato font-black text-xl text-white">Especialidades</span>
+           <i class="fa-solid fa-gear text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+          </a>
+        </li>
+        
+        <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
+          <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between ">
+            <span class="md:hidden xl:block font-lato font-black text-xl text-white">Servicios</span>
+           <i class="fa-solid fa-wrench text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+          </a>
+        </li>
+        
+        <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
+          <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between">
+            <span class="md:hidden xl:block font-lato font-black text-xl text-white">Sobre Nosotros</span>
+           <i class="fa-solid fa-users text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+          </a>
+        </li>
+        
+        <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
+          <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between">
+            <span class="md:hidden xl:block font-lato font-black text-xl text-white">Contacto</span>
+           <i class="fa-solid fa-phone text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+          </a>
+        </li>
+        
 
-        <li class="text-center sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-baseline">
-          <i class="fa-solid fa-house text-white text-2xl pr-4	"></i>
-          <span class="md:hidden xl:block">
-            <a
-              href="/inicio"
-              class="block font-lato font-medium text-white text-lg rounded md:bg-transparent md:p-0"
-              aria-current="page">Inicio</a
-            >
-          </span>
-        </li>
-
-        <li class="text-center sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-baseline">
-          <i class="fa-solid fa-gear text-white text-2xl pr-4	"></i>
-          <span class="md:hidden xl:block">
-            <a
-              href="/especialidades/"
-              class="block font-lato font-medium text-lg text-white"
-              >Especialidades</a
-            >
-          </span>
-          <li class="text-center sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-baseline">
-            <i class="fa-solid fa-wrench text-white text-2xl pr-4"></i>
-            <span class="md:hidden xl:block">
-              <a
-                href="/especialidades/"
-                class="block font-lato font-medium text-lg text-white"
-                >Servicios</a
-              >
-            </span>
-          </li>
-        </li>
-        <li class="text-center sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-baseline">
-          <i class="fa-solid fa-users text-white text-2xl pr-4"></i>
-          <span class="md:hidden xl:block">
-            <a
-              href="/especialidades/"
-              class="block font-lato font-medium text-lg text-white"
-              >Sobre Nosotros</a
-            >
-          </span>
-        </li>
-        <li class="text-center sm:flex sm:border-b md:border-none sm:pb-4 md:pb-0 items-baseline">
-          <i class="fa-solid fa-phone text-white text-2xl pr-4"></i>
-          <span class="md:hidden xl:block">
-            <a
-              href="/especialidades/"
-              class="block font-lato font-medium text-lg text-white"
-              >Contactanos</a
-            >
-          </span>
-        </li>     
+        
+   
       </ul>
     </div>
 
@@ -118,3 +114,42 @@ import BotonLimpio from "./BotonLimpio.astro";
     </div>
   </div>
 </nav>
+
+<style>
+
+
+  .ocultar {
+    display: none;
+  }
+
+  .navbar.scrolled {
+    background-color: #f2790c;
+}
+</style>
+
+<script>
+
+window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) { 
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+document.addEventListener('scroll', function () {
+      const scrollY = window.scrollY;
+      const imagen1 = document.getElementById('imagen1');
+      const imagen2 = document.getElementById('imagen2');
+
+      if (scrollY > 50) { // Cambia este valor según tus necesidades
+        imagen1.classList.add('ocultar');
+        imagen2.classList.remove('ocultar');
+      } else {
+        imagen1.classList.remove('ocultar');
+        imagen2.classList.add('ocultar');
+      }
+    });
+
+</script>

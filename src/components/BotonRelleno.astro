@@ -9,13 +9,13 @@ const { iconoBoton } = Astro.props;
 ---
 
 <div>
-  <a href="#" class="rounded-lg relative w-56 h-14 cursor-pointer flex items-center border border-naranja bg-naranja group hover:bg-white active:bg-white active:border-white sm:w-40">
+  <a href="#" class="rounded-lg relative h-14 xl:w-52 cursor-pointer flex items-center border border-naranja bg-naranja group hover:bg-white active:bg-white active:border-white sm:w-40">
     <span
-    class="text-white font-black text-base sm:ml-4 ml-8 transform group-hover:translate-x-10 sm:group-hover:translate-x-10 transition-all duration-300"
+    class="text-white font-lato text-lg sm:ml-4 transform group-hover:translate-x-10 sm:group-hover:translate-x-10 transition-all duration-300 md:ml-8"
     >{textoBoton}</span
   >
   <span
-    class="absolute right-0 h-full w-14 rounded-lg bg-white flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300"
+    class="absolute right-0 h-14 w-14 rounded-lg bg-white flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300 active:bg-naranja"
   >
     <i class={iconoBoton}></i>
   </span>
