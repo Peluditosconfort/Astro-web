@@ -10,7 +10,9 @@ import BotonRelleno from "./BotonRelleno.astro";
   <div
     class="flex flex-wrap items-center justify-between mx-auto p-8 sm:py-4 sm:px-8 me:py-4 mx-8 lg:px-12 lg:py-4 2xl:mx-48"
   >
-    <a href="" class="flex items-center ">
+
+  <div>
+     <a href="" class="flex items-center ">
       <img id="imagen1"
         src="/public/img/fertrac-footer.png"
         class="xl:h-12 sm:h-12 lg:h-16 2xl:h-24 "
@@ -22,37 +24,38 @@ import BotonRelleno from "./BotonRelleno.astro";
         alt=""
       />
     </a>
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <div class="content-center">
-        <div>
-          <a href="#"
-            ><i class="fa-solid fa-shop text-white text-2xl lg:block xl:hidden"></i></a>
-        </div>
-        <span class="sm:hidden md:hidden lg:hidden xl:block">
-          <div class="buttons sm:pt-4">
-            <BotonLimpio
-                textoBoton="Ver Tienda"
-                iconoBoton="fa-solid fa-shop text-lg text-naranja"
-            />
-        </div>
-          </span
-        >
+    
+  </div>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    <div class="content-center">
+      <div>
+        <a href="#"
+          ><i class="fa-solid fa-shop text-white text-2xl lg:block xl:hidden"></i></a>
       </div>
-      <button
-        data-collapse-toggle="navbar-sticky"
-        type="button"
-        class="items-center w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
-        aria-controls="navbar-sticky"
-        aria-expanded="false" 
+      <span class="sm:hidden md:hidden lg:hidden xl:block">
+        <div class="buttons sm:pt-4">
+          <BotonRelleno
+              textoBoton="Ver Tienda"
+              iconoBoton="fa-solid fa-shop text-lg text-naranja"
+          />
+      </div>
+        </span
       >
-        <span class="sr-only">Open main menu</span>
-        <i class="fa-solid fa-bars text-3xl"></i>
-        <!-- <i class="fa-solid fa-xmark"></i> -->
-      </button>
     </div>
+    <button
+      data-collapse-toggle="navbar-sticky"
+      type="button"
+      class="items-center w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
+      aria-controls="navbar-sticky"
+      aria-expanded="false" 
+    >
+      <span class="sr-only">Open main menu</span>
+      <i class="fa-solid fa-bars text-3xl"></i>
+      <!-- <i class="fa-solid fa-xmark"></i> -->
+    </button>
+  </div>
 
     <div
-    
       class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
       id="navbar-sticky"
     >
@@ -61,35 +64,35 @@ import BotonRelleno from "./BotonRelleno.astro";
         <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
           <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between ">
             <span class="md:hidden xl:block font-lato font-black text-xl text-white">Inicio</span>
-           <i class="fa-solid fa-house text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+           <i class="fa-solid fa-house text-white text-2xl pr-4 xl:hidden lg:hidden"></i>
           </a>
         </li>
         
         <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
           <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between">
             <span class="md:hidden xl:block font-lato font-black text-xl text-white">Especialidades</span>
-           <i class="fa-solid fa-gear text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+           <i class="fa-solid fa-gear text-white text-2xl pr-4 xl:hidden lg:hidden"></i>
           </a>
         </li>
         
         <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
           <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between ">
             <span class="md:hidden xl:block font-lato font-black text-xl text-white">Servicios</span>
-           <i class="fa-solid fa-wrench text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+           <i class="fa-solid fa-wrench text-white text-2xl pr-4 xl:hidden lg:hidden"></i>
           </a>
         </li>
         
         <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
           <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between">
             <span class="md:hidden xl:block font-lato font-black text-xl text-white">Sobre Nosotros</span>
-           <i class="fa-solid fa-users text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+           <i class="fa-solid fa-users text-white text-2xl pr-4 xl:hidden lg:hidden"></i>
           </a>
         </li>
         
         <li class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:bg-blue-900 hover:py-2 px-4 rounded">
           <a href="/inicio" class="text-center text-white sm:flex sm:border-b md:border-none pb-4 md:pb-0 items-center 2xl:flex-row-reverse justify-between">
             <span class="md:hidden xl:block font-lato font-black text-xl text-white">Contacto</span>
-           <i class="fa-solid fa-phone text-white text-2xl pr-4 xl:hidden 2xl:block"></i>
+           <i class="fa-solid fa-phone text-white text-2xl pr-4 xl:hidden lg:hidden"></i>
           </a>
         </li>
         
@@ -112,6 +115,9 @@ import BotonRelleno from "./BotonRelleno.astro";
       </div>
         
     </div>
+
+    
+
   </div>
 </nav>
 

@@ -5,83 +5,80 @@ import Navbar from "../components/Navbar.astro";
 import Marcas from "../components/Marcas.astro";
 import BotonRelleno from "../components/BotonRelleno.astro";
 import Blog from "../components/Blog.astro";
-import BotonLimpio from "../components/BotonLimpio.astro";
-
-import TarjetaProducto from "../components/TarjetaProducto.astro";
-
+import TarjetaEspecialidades from "../components/TarjetaEspecialidades.astro";
 import CarouselTestimonial from "../components/CarouselTestimonial.astro";
-
 ---
 
 <Layout title="Index">
-
-    <Navbar/>
+    <Navbar />
 
     <header>
-
         <!-- HEADER CARRUSEL -->
         <div class="carousel">
             <!-- list item -->
             <div class="list">
-                <div class="item ">
-                    <img src="/public/img/1.jpg" />
-                    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
-                    <div
-                        class="content  2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80 "
-                    >
-                        <div
-                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide font-myriad"
-                        >
-                        <p>
-                            SIEMPRE CALIDAD ORIGINAL
-                        </p>
-                            
-                        </div>
-                        <div
-                            class="title font-myriad leading-tight sm:text-3xl md:text-6xl  xl:text-7xl"
-                        >
-                            <h1>
-                                Venta de Repuestos <span class="text-naranja">ORIGINALES</span> para
-                                tractocamiones
-                            </h1>
-                        </div>
-                        <div
-                            class="des font-lato text-base pr-96 sm:pr-4 md:text-2xl xl:w-3/6 xl:text-2xl"
-                        >
-                            <p>
-                                Somos tu destino confiable para encontrar los
-                                repuestos de calidad que necesitas para mantener
-                                tus tractocamiones en óptimas condiciones.
-                            </p>
-                        </div>
-                        <div class="buttons sm:pt-4 2xl:pt-0">
-                            <BotonRelleno
-                                textoBoton="Productos"
-                                iconoBoton="fa-solid fa-gear text-lg text-naranja"
-                            />
-                        </div>
-                    </div>
-                </div>
                 <div class="item">
-                    <img src="/public/img/2.jpg"/>
-                    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+                    <img src="/public/img/1.jpg" />
                     <div
-                        class="content  2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80 "
+                        class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"
+                    >
+                    </div>
+                    <div
+                        class="content 2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-36 2xl:top-80"
                     >
                         <div
                             class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide font-myriad"
                         >
-                        <p>
-                            SIEMPRE CALIDAD ORIGINAL
-                        </p>
-                            
+                            <p>SIEMPRE CALIDAD ORIGINAL</p>
                         </div>
                         <div
                             class="title font-myriad leading-tight sm:text-3xl md:text-6xl xl:text-7xl"
                         >
                             <h1>
-                                Venta de Repuestos <span class="text-naranja">ORIGINALES</span> para
-                                tractocamiones
+                                Venta de Repuestos <span class="text-naranja"
+                                    >ORIGINALES</span
+                                > para tractocamiones
+                            </h1>
+                        </div>
+                        <div
+                            class="des font-lato text-base pr-96 sm:pr-4 md:text-2xl xl:w-3/6 xl:text-2xl"
+                        >
+                            <p>
+                                Somos tu destino confiable para encontrar los
+                                repuestos de calidad que necesitas para mantener
+                                tus tractocamiones en óptimas condiciones.
+                            </p>
+                        </div>
+                        <div class="buttons sm:pt-4 2xl:pt-0">
+                            <BotonRelleno
+                                textoBoton="Productos"
+                                iconoBoton="fa-solid fa-gear text-naranja"
+                                fondo="naranja"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/public/img/2.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"
+                    >
+                    </div>
+                    <div
+                        class="content 2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80"
+                    >
+                        <div
+                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide font-myriad"
+                        >
+                            <p>SIEMPRE CALIDAD ORIGINAL</p>
+                        </div>
+                        <div
+                            class="title font-myriad leading-tight sm:text-3xl md:text-6xl xl:text-7xl"
+                        >
+                            <h1>
+                                Venta de Repuestos <span class="text-naranja"
+                                    >ORIGINALES</span
+                                > para tractocamiones
                             </h1>
                         </div>
                         <div
@@ -97,30 +94,32 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                             <BotonRelleno
                                 textoBoton="Productos"
                                 iconoBoton="fa-solid fa-gear text-lg text-naranja"
+                                fondo="naranja"
                             />
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <img src="/public/img/3.jpg" />
-                    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
                     <div
-                        class="content  2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80 "
+                        class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"
+                    >
+                    </div>
+                    <div
+                        class="content 2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80"
                     >
                         <div
                             class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide xl:w-4/6 font-myriad"
                         >
-                        <p>
-                            SIEMPRE CALIDAD ORIGINAL
-                        </p>
-                            
+                            <p>SIEMPRE CALIDAD ORIGINAL</p>
                         </div>
                         <div
                             class="title font-myriad leading-tight sm:text-3xl md:text-6xl xl:text-7xl"
                         >
                             <h1>
-                                Venta de Repuestos <span class="text-naranja">ORIGINALES</span> para
-                                tractocamiones
+                                Venta de Repuestos <span class="text-naranja"
+                                    >ORIGINALES</span
+                                > para tractocamiones
                             </h1>
                         </div>
                         <div
@@ -136,17 +135,19 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                             <BotonRelleno
                                 textoBoton="Productos"
                                 iconoBoton="fa-solid fa-gear text-lg text-naranja"
+                                fondo="naranja"
                             />
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- list thumnail -->
             <div
                 class="thumbnail absolute bottom-20 left-1/2 w-max z-10 flex gap-x-5 sm:bottom-8 md:bottom-16"
             >
-                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative">
+                <div
+                    class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative"
+                >
                     <img
                         src="/public/img/1.jpg"
                         class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
@@ -158,7 +159,9 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                         <div class="description font-light">Description</div>
                     </div>
                 </div>
-                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative">
+                <div
+                    class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative"
+                >
                     <img
                         src="/public/img/2.jpg"
                         class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
@@ -170,7 +173,9 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                         <div class="description font-light">Description</div>
                     </div>
                 </div>
-                <div class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative">
+                <div
+                    class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative"
+                >
                     <img
                         src="/public/img/3.jpg"
                         class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
@@ -251,9 +256,7 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                     <img src="/public/img/iso web-8.png" alt="" class="" />
                 </div>
                 <div class="w-2/6 sm:w-full lg:w-2/4">
-                    <h2
-                        class="font-myriad text-3xl sm:pb-4 text-6xl sm:text-3xl text-azul"
-                    >
+                    <h2 class="prueba sm:pb-4 text-azul">
                         En Fertrac, entendemos la importancia de la fiabilidad y
                         la eficiencia en el mundo del transporte de carga.
                     </h2>
@@ -274,11 +277,11 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
             </div>
         </section>
 
-        <!-- PRODUCTOS -->
+        <!-- ESPECIALIDADES -->
 
-        <TarjetaProducto />
+        <TarjetaEspecialidades />
 
-        <!-- NUEVOS ESPECIALIDADES -->
+        <!-- PROMOCIONES -->
         <section class="">
             <div
                 class="bg-white rounded-xl shadow-md overflow-hidden w-full bg-gradient-to-r from-orange-600 to-yellow-300"
@@ -295,121 +298,47 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                         class="p-56 flex flex-col justify-center gap-5 2xl: p-24 sm:p-8"
                     >
                         <h2
-                            class="font-myriad font-extrabold text-5xl text-white font-semibold w-4/5 sm:w-full sm:text-3xl"
+                            class="font-myriad font-extrabold text-white font-semibold w-4/5"
                         >
-                            Explora Nuestra Selección De Especialidades
-                            Preparadas Para Ti
+                            Marcas nuevas y novedades
                         </h2>
 
                         <p
-                            class="text-xl w-7/12 w-4/5 sm: w-auto sm:w-full text-slate-200"
+                            class="text-xl w-7/12 w-4/5 sm: w-auto sm:w-full text-white"
                         >
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorum, enim sunt odit, nihil eius non quod
-                            maxime doloribus officia fuga recusandae,
-                            reprehenderit quis deleniti perferendis.
+                        Te mantenemos al tanto de las últimas tendencias y lanzamientos en el mundo de las marcas. Descubre las incorporaciones más recientes a nuestro catálogo y mantente informado sobre las innovaciones y productos destacados de tus marcas favoritas. 
                         </p>
-                        <BotonLimpio
-                            textoBoton="Especialidades"
-                            iconoBoton="fa-regular fa-paper-plane text-naranja"
-                        />
+                        <ul class="flex">
+                            <li>
+                                <img src="/public/img/eaton.png" alt="" class="w-56">
+                            </li>
+                            <li>
+                                <img src="/public/img/eaton.png" alt="" class="w-56">
+                            </li>
+                            <li>
+                                <img src="/public/img/eaton.png" alt="" class="w-56">
+                                
+                            </li>
+                            <BotonRelleno textoBoton="Explorar" iconoBoton=""/>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- TESTIMONIOS -->
-
-        <section>
-            <CarouselTestimonial />
-        </section>
         <section>
             <div class="flex flex-wrap justify-center mt-8">
                 <div
                     class="flex flex-col justify-center items-center sm:text-left md:text-center w-full sm:p-4 md:px-16"
                 >
-                    <div
-                        class="font-myriad font-extrabold text-3xl text-azul"
-                    >
-                        <h2>
-                            Nuestos clientes siempre listos para elergirnos
-                        </h2>
+                    <div class="">
+                        <h2>Nuestros clientes siempre listos para elegirnos</h2>
                     </div>
-                    
                 </div>
-                <div class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4">
-                    <div class="flex items-center gap-4">
-                        <img
-                            alt=""
-                            src="/public/img/avatar.png"
-                            class="size-14 rounded-full object-cover"
-                        />
-
-                        <div>
-                            <div
-                                class="flex justify-center gap-0.5 text-azul text-sm "
-                            >
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            </div>
-
-                            <p
-                                class="mt-0.5 text-lg font-medium text-gray-900"
-                            >
-                                Raul Rodriguez
-                            </p>
-                        </div>
-                    </div>
-
-                    <p class="mt-4 text-gray-700 text-sm text-justify	">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Culpa sit rerum incidunt, a consequuntur
-                        recusandae ab saepe illo est quia obcaecati neque
-                        quibusdam eius accusamus error officiis atque
-                        voluptates magnam!
-                    </p>
-                </div>
-
-                <div class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4">
-                    <div class="flex items-center gap-4">
-                        <img
-                            alt=""
-                            src="/public/img/avatar.png"
-                            class="size-14 rounded-full object-cover"
-                        />
-
-                        <div>
-                            <div
-                                class="flex justify-center gap-0.5 text-azul text-sm" 
-                            >
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            </div>
-
-                            <p
-                                class="mt-0.5 text-lg font-medium text-gray-900"
-                            >
-                                Raul Rodriguez
-                            </p>
-                        </div>
-                    </div>
-
-                    <p class="mt-4 text-gray-700 text-sm text-justify	">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Culpa sit rerum incidunt, a consequuntur
-                        recusandae ab saepe illo est quia obcaecati neque
-                        quibusdam eius accusamus error officiis atque
-                        voluptates magnam!
-                    </p>
-                </div>
-
-                <div class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4">
+                <div
+                    class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4"
+                >
                     <div class="flex items-center gap-4">
                         <img
                             alt=""
@@ -421,32 +350,115 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                             <div
                                 class="flex justify-center gap-0.5 text-azul text-sm"
                             >
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
 
-                            <p
-                                class="mt-0.5 text-lg font-medium text-gray-900"
-                            >
+                            <p class="mt-0.5 text-lg font-medium text-gray-900">
                                 Raul Rodriguez
                             </p>
                         </div>
                     </div>
 
-                    <p class="mt-4 text-gray-700 text-sm text-justify	">
+                    <p class="mt-4 text-gray-700 text-sm text-justify">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Culpa sit rerum incidunt, a consequuntur
                         recusandae ab saepe illo est quia obcaecati neque
-                        quibusdam eius accusamus error officiis atque
-                        voluptates magnam!
+                        quibusdam eius accusamus error officiis atque voluptates
+                        magnam!
                     </p>
                 </div>
 
-                
-                
+                <div
+                    class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4"
+                >
+                    <div class="flex items-center gap-4">
+                        <img
+                            alt=""
+                            src="/public/img/avatar.png"
+                            class="size-14 rounded-full object-cover"
+                        />
+
+                        <div>
+                            <div
+                                class="flex justify-center gap-0.5 text-azul text-sm"
+                            >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                                Raul Rodriguez
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 text-gray-700 text-sm text-justify">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Culpa sit rerum incidunt, a consequuntur
+                        recusandae ab saepe illo est quia obcaecati neque
+                        quibusdam eius accusamus error officiis atque voluptates
+                        magnam!
+                    </p>
+                </div>
+
+                <div
+                    class="rounded-lg bg-gray-50 p-6 shadow-md sm:p-8 max-w-xs sm:m-4"
+                >
+                    <div class="flex items-center gap-4">
+                        <img
+                            alt=""
+                            src="/public/img/avatar.png"
+                            class="size-14 rounded-full object-cover"
+                        />
+
+                        <div>
+                            <div
+                                class="flex justify-center gap-0.5 text-azul text-sm"
+                            >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="mt-0.5 text-lg font-medium text-gray-900">
+                                Raul Rodriguez
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 text-gray-700 text-sm text-justify">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Culpa sit rerum incidunt, a consequuntur
+                        recusandae ab saepe illo est quia obcaecati neque
+                        quibusdam eius accusamus error officiis atque voluptates
+                        magnam!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER SECUNDARIO -->
+
+        <section class="">
+            <div class="text-center">
+                <h2 class="sm:pb-4 text-azul">
+                    Distribución de partes para tractocamiones
+                </h2>
+                <p class="text-xl sm:pb-4 text-gray-600">
+                    Somos la primera distribuidora de productos originales en
+                    Colombia
+                </p>
+            </div>
+            <img src="/public/img/bannersecundario.jpg" alt="" />
         </section>
 
         <!-- SERVICIOS FT -->
@@ -455,18 +467,14 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                 <div
                     class="flex flex-col justify-center items-center sm:text-left md:text-center w-full sm:p-4 md:px-36"
                 >
-                    <div
-                        class="font-myriad font-extrabold text-3xl text-azul"
-                    >
+                    <div class="font-myriad font-extrabold text-3xl text-azul">
                         <h2>
                             Ofrecemos una amplia gama de servicios para
                             satisfacer todas tus necesidades relacionadas con
                             los tractocamiones.
                         </h2>
                     </div>
-                    <p
-                        class="mt-2 text-xl w-3/4 sm:w-auto text-gray-600"
-                    >
+                    <p class="mt-2 text-xl w-3/4 sm:w-auto text-gray-600">
                         Desde la venta de repuestos de alta calidad hasta
                         servicios de mantenimiento y asesoramiento técnico
                     </p>
@@ -552,24 +560,25 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
         <!-- ASESORIA -->
         <section>
             <div
-                class="w-full flex justify-center items-center py-12 flex-wrap gap-4 bg-cover bg-center h-2/4 bg-slate-800"
+                class="w-full flex justify-center items-center py-12 flex-wrap gap-16 bg-cover bg-center h-2/4 bg-slate-800"
                 style="background-image: url(/public/img/asesoria.jpg"
             >
-                <div class="">
-                    <h2 class="font-myriad text-white text-3xl px-12">
+                <div class="text-left">
+                    <h2 class="font-myriad text-white text-3xl">
                         ¿Tienes alguna duda o necesitas Asesoria?
                     </h2>
+                    <p class="text-white w-">
+                        ¡Nos encantaría saber de ti! Si tienes alguna pregunta,
+                        comentario o sugerencia, <br />no dudes en ponerte en
+                        contacto con nosotros.
+                    </p>
                 </div>
 
                 <div>
-                    <BotonLimpio
-                        textoBoton="Llamanos"
-                        iconoBoton="fa-solid fa-phone"
-                    />
-                    <br />
-                    <BotonLimpio
-                        textoBoton="Escribenos"
-                        iconoBoton="fa-brands fa-whatsapp"
+                    <BotonRelleno
+                        textoBoton="Contactar"
+                        iconoBoton="fa-solid fa-headset text-naranja"
+                        fondo="transparent"
                     />
                 </div>
             </div>
@@ -580,9 +589,8 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
             <Blog />
         </article>
     </main>
-</Layout>
 
-<footer>
-    <Footer />
-</footer>
- 
+    <footer>
+        <Footer />
+    </footer>
+</Layout>

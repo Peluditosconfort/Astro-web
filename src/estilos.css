@@ -2,19 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer {
-    p{
-        @apply font-lato
-    }
-
-    h1, h2, h3, h4 {
-        @apply font-myriad
-    }
+.titulo {
+    @apply text-5xl font-myriad font-extrabold text-azul;
 }
 
-
-
+.parrafo {
+    @apply text-xl sm:pb-4;
+}
 /* carousel */
 .carousel{
     height: 100vh;
