@@ -6,239 +6,18 @@ import Marcas from "../components/Marcas.astro";
 import BotonRelleno from "../components/BotonRelleno.astro";
 import Blog from "../components/Blog.astro";
 import TarjetaEspecialidades from "../components/TarjetaEspecialidades.astro";
+import MainHero from "../components/MainHero.astro";
+import MegaMenu from "../components/MegaMenu.astro";
 import CarouselTestimonial from "../components/CarouselTestimonial.astro";
+
 ---
 
 <Layout title="Index">
-    <Navbar />
-
+    <!-- <Navbar /> -->
+    
     <header>
         <!-- HEADER CARRUSEL -->
-        <div class="carousel">
-            <!-- list item -->
-            <div class="list">
-                <div class="item">
-                    <img src="/public/img/1.jpg" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"
-                    >
-                    </div>
-                    <div
-                        class="content 2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-36 2xl:top-80"
-                    >
-                        <div
-                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide font-myriad"
-                        >
-                            <p>SIEMPRE CALIDAD ORIGINAL</p>
-                        </div>
-                        <div
-                            class="title font-myriad leading-tight sm:text-3xl md:text-6xl xl:text-7xl"
-                        >
-                            <h1>
-                                Venta de Repuestos <span class="text-naranja"
-                                    >ORIGINALES</span
-                                > para tractocamiones
-                            </h1>
-                        </div>
-                        <div
-                            class="des font-lato text-base pr-96 sm:pr-4 md:text-2xl xl:w-3/6 xl:text-2xl"
-                        >
-                            <p>
-                                Somos tu destino confiable para encontrar los
-                                repuestos de calidad que necesitas para mantener
-                                tus tractocamiones en óptimas condiciones.
-                            </p>
-                        </div>
-                        <div class="buttons sm:pt-4 2xl:pt-0">
-                            <BotonRelleno
-                                textoBoton="Productos"
-                                iconoBoton="fa-solid fa-gear text-naranja"
-                                fondo="naranja"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/public/img/2.jpg" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"
-                    >
-                    </div>
-                    <div
-                        class="content 2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80"
-                    >
-                        <div
-                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide font-myriad"
-                        >
-                            <p>SIEMPRE CALIDAD ORIGINAL</p>
-                        </div>
-                        <div
-                            class="title font-myriad leading-tight sm:text-3xl md:text-6xl xl:text-7xl"
-                        >
-                            <h1>
-                                Venta de Repuestos <span class="text-naranja"
-                                    >ORIGINALES</span
-                                > para tractocamiones
-                            </h1>
-                        </div>
-                        <div
-                            class="des font-lato text-base pr-96 sm:pr-4 md:text-2xl xl:w-3/6 xl:text-2xl"
-                        >
-                            <p>
-                                Somos tu destino confiable para encontrar los
-                                repuestos de calidad que necesitas para mantener
-                                tus tractocamiones en óptimas condiciones.
-                            </p>
-                        </div>
-                        <div class="buttons sm:pt-4 2xl:pt-0">
-                            <BotonRelleno
-                                textoBoton="Productos"
-                                iconoBoton="fa-solid fa-gear text-lg text-naranja"
-                                fondo="naranja"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/public/img/3.jpg" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"
-                    >
-                    </div>
-                    <div
-                        class="content 2xl:pr-64 sm:pr-4 sm:top-28 md:top-34 lg:top-44 xl:top-80"
-                    >
-                        <div
-                            class="author sm:hidden md:block md:tracking-[10px] sm:tracking-wide xl:w-4/6 font-myriad"
-                        >
-                            <p>SIEMPRE CALIDAD ORIGINAL</p>
-                        </div>
-                        <div
-                            class="title font-myriad leading-tight sm:text-3xl md:text-6xl xl:text-7xl"
-                        >
-                            <h1>
-                                Venta de Repuestos <span class="text-naranja"
-                                    >ORIGINALES</span
-                                > para tractocamiones
-                            </h1>
-                        </div>
-                        <div
-                            class="des font-lato text-base pr-96 sm:pr-4 md:text-2xl xl:w-3/6 xl:text-2xl"
-                        >
-                            <p>
-                                Somos tu destino confiable para encontrar los
-                                repuestos de calidad que necesitas para mantener
-                                tus tractocamiones en óptimas condiciones.
-                            </p>
-                        </div>
-                        <div class="buttons sm:pt-4 2xl:pt-0">
-                            <BotonRelleno
-                                textoBoton="Productos"
-                                iconoBoton="fa-solid fa-gear text-lg text-naranja"
-                                fondo="naranja"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- list thumnail -->
-            <div
-                class="thumbnail absolute bottom-20 left-1/2 w-max z-10 flex gap-x-5 sm:bottom-8 md:bottom-16"
-            >
-                <div
-                    class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative"
-                >
-                    <img
-                        src="/public/img/1.jpg"
-                        class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
-                    />
-                    <div
-                        class="content text-white absolute bottom-2.5 left-2.5 right-2.5"
-                    >
-                        <div class="title font-medium">Name Slider</div>
-                        <div class="description font-light">Description</div>
-                    </div>
-                </div>
-                <div
-                    class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative"
-                >
-                    <img
-                        src="/public/img/2.jpg"
-                        class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
-                    />
-                    <div
-                        class="content text-white absolute bottom-2.5 left-2.5 right-2.5"
-                    >
-                        <div class="title font-medium">Name Slider</div>
-                        <div class="description font-light">Description</div>
-                    </div>
-                </div>
-                <div
-                    class="item 2xl:w-40 2xl:h-60 sm:w-36 sm:h-56 md:w-48 md:h-72 relative"
-                >
-                    <img
-                        src="/public/img/3.jpg"
-                        class="w-full h-full object-cover rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
-                    />
-                    <div
-                        class="content text-white absolute bottom-2.5 left-2.5 right-2.5"
-                    >
-                        <div class="title font-medium">Name Slider</div>
-                        <div class="description font-light">Description</div>
-                    </div>
-                </div>
-            </div>
-            <!-- next prev -->
-
-            <div class="arrows z-10">
-                <button
-                    id="prev"
-                    class="group flex items-center justify-center w-11 h-11 bg-white rounded-full cursor-pointer relative overflow-hidden transition-all duration-700 shadow-lg xl:hover:w-32 active:bg-naranja"
-                >
-                    <div
-                        class="flex items-center justify-center w-full group-hover:justify-start group-hover:px-3 flex-row-reverse"
-                    >
-                        <i
-                            class="fa-regular fa-circle-left text-xl text-naranja"
-                        ></i>
-                    </div>
-                    <div
-                        class="absolute text-naranja left-5 transform translate-x-full opacity-0 text-lg font-semibold transition-all duration-700 group-hover:translate-x-0 xl:group-hover:opacity-100
-                        sm:group-hover:opacity-0"
-                    >
-                        Anterior
-                    </div>
-                </button>
-
-                <button
-                    id="next"
-                    class="group flex items-center justify-center w-11 h-11 bg-white rounded-full cursor-pointer relative overflow-hidden transition-all duration-700 shadow-lg xl:hover:w-32 active:bg-naranja"
-                >
-                    <div
-                        class="flex items-center justify-center w-full group-hover:justify-start group-hover:px-3 flex-row-reverse"
-                    >
-                        <i
-                            class="fa-regular fa-circle-right text-xl text-naranja"
-                        ></i>
-                    </div>
-                    <div
-                        class="absolute text-naranja left-5 transform translate-x-full opacity-0 text-lg font-semibold transition-all duration-700 group-hover:translate-x-0 xl:group-hover:opacity-100
-                        sm:group-hover:opacity-0"
-                    >
-                        Siguiente
-                    </div>
-                </button>
-
-                <!-- <div class="arrows">
-                <button id="prev"
-                    ><i class="fa-solid fa-chevron-left"></i></button
-                >
-                <button id="next"
-                    ><i class="fa-solid fa-chevron-right"></i></button
-                >
-            </div> -->
-            </div>
-        </div>
+    <MainHero />    
     </header>
 
     <main>
@@ -276,11 +55,12 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                 </div>
             </div>
         </section>
-
+        
         <!-- ESPECIALIDADES -->
 
-        <TarjetaEspecialidades />
-
+         <TarjetaEspecialidades />
+        
+        
         <!-- PROMOCIONES -->
         <section class="">
             <div
@@ -445,7 +225,6 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                 </div>
             </div>
         </section>
-
         <!-- BANNER SECUNDARIO -->
 
         <section class="">
@@ -593,4 +372,5 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
     <footer>
         <Footer />
     </footer>
+
 </Layout>

@@ -43,16 +43,19 @@ import BotonRelleno from "./BotonRelleno.astro";
       >
     </div>
     <button
-      data-collapse-toggle="navbar-sticky"
-      type="button"
-      class="items-center w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
-      aria-controls="navbar-sticky"
-      aria-expanded="false" 
-    >
-      <span class="sr-only">Open main menu</span>
-      <i class="fa-solid fa-bars text-3xl"></i>
-      <!-- <i class="fa-solid fa-xmark"></i> -->
+    data-collapse-toggle="navbar-sticky"
+        type="button"
+        class="items-center w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+      >
+        <div class="barras_menu">
+            <span class="linea1__barras"></span>
+            <span class="linea2__barras"></span>
+            <span class="linea3__barras"></span>
+        </div>
     </button>
+
   </div>
 
     <div
@@ -131,9 +134,56 @@ import BotonRelleno from "./BotonRelleno.astro";
   .navbar.scrolled {
     background-color: #f2790c;
 }
+
+
+.barras_menu {
+    width: 30px;
+    height: 30px;   
+    cursor: pointer;
+    
+}
+
+.barras_menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 600ms;
+}
+
+.activar1 {
+    transform: rotate(45deg)
+    translate(-2px, 1px);
+
+}
+.activar2 {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activar3 {
+    transform: rotate(-45deg)
+    translate(-4px, 2px);
+}
 </style>
 
+
 <script>
+  document.querySelector(".barras_menu").addEventListener("click", animacion);
+
+var linea1__barras = document.querySelector(".linea1__barras");
+var linea2__barras = document.querySelector(".linea2__barras");
+var linea3__barras = document.querySelector(".linea3__barras");
+
+function animacion () {
+    linea1__barras.classList.toggle("activar1")
+    linea2__barras.classList.toggle("activar2")
+    linea3__barras.classList.toggle("activar3")
+
+}
+
 
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
