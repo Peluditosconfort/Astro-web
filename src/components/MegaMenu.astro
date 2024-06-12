@@ -395,7 +395,7 @@
     </ul>
       
   </nav>
-  <button id="mobile-menu-button" class="md:hidden">
+  <button id="mobile-menu-button" class="md:hidden ">
     <div class="barras_menu">
       <span class="linea1__barras"></span>
       <span class="linea2__barras"></span>
@@ -897,13 +897,13 @@ ul {
     const mobileMenu = document.getElementById('mobile-menu');
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-    // hamburger menu
+    //
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
-    // end hamburger menu
+    // 
 
-    // dropdown mobile
+    // 
     dropdownToggles.forEach((toggle) => {
       toggle.addEventListener('click', () => {
         const dropdown = toggle.nextElementSibling;
@@ -959,7 +959,7 @@ document.addEventListener('scroll', function () {
       const imagen1 = document.getElementById('imagen1');
       const imagen2 = document.getElementById('imagen2');
 
-      if (scrollY > 50) { // Cambia este valor según tus necesidades
+      if (scrollY > 50) { //
         imagen1.classList.add('ocultar');
         imagen2.classList.remove('ocultar');
       } else {
