@@ -9,6 +9,10 @@
 .parrafo {
     @apply text-xl sm:pb-4;
 }
-/* carousel */
+
+.h3 {
+    @apply text-4xl font-myriad font-extrabold;
+}
+
 
 

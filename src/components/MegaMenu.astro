@@ -1,19 +1,20 @@
 
 
-<div class="sm:w-screen flex items-center justify-between px-4 py-6 md:justify-around fixed z-50">
+<div class="navbar transition duration-1000 ease-in-out sm:w-screen flex items-center justify-between px-4 py-6 md:justify-around fixed z-50">
   <a href="#">
-    <img src="/public/img/fertrac-footerb.png" alt="" class="w-44">
+    <img id="imagen1" src="/public/img/fertrac-footer.png" alt="" class="w-44" >
+    <img id="imagen2" src="/public/img/fertrac-footerb.png" class="ocultar w-44" alt=""
+      />
   </a>
 
   <nav class="hidden md:flex">
     <ul class="flex items-center justify-center font-semibold text-white">
         <li class="relative px-3 py-2 group">
-            <a href="#" class="cursor-default hover:opacity-50">Inicio
-            </a>
+            <a href="#" class="effect">Inicio</a>
           </li>
 
       <li class="relative px-3 py-2  cursor-pointer group">
-        <a href="#" class="">Especialidades</a>
+        <a href="#">Especialidades</a>
         <i class="fa-solid fa-caret-down"></i>
         <div
           class="absolute w-[800px] top-0 -left-48 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[560px] transform">
@@ -308,7 +309,8 @@
       </li>
 
       <li class="relative px-3 py-2 group">
-        <button class="cursor-default hover:opacity-50">Contactanos</button>
+        <a href="#" class="effect">Contactanos</a>
+        
         <!-- <div
           class="absolute top-0 -left-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform">
           <div class="relative w-full p-6 bg-white shadow-xl top-6 rounded-xl">
@@ -354,42 +356,24 @@
   <nav class="md:flex sm:hidden">
     <ul>
       <section class="flex justify-center items-center gap-4">
-        <button
+        <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-facebook"></i>
 
-          class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"
-        >
-        <i class="fa-brands fa-facebook"></i>
-      
-          <span
-            class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700"
-          >
+          <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
             Facebook
           </span>
-        </button>
-        <button
+      </a>
+      <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-instagram"></i>
 
-          class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500  hover:text-naranja hover:bg-white"
-        >
-        <i class="fa-brands fa-instagram"></i>
-      
-          <span
-            class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700"
-          >
-            Instagram
-          </span>
-        </button>
-        <button
+        <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
+          Instagram
+        </span>
+    </a>
+    <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-tiktok"></i>
 
-          class="group flex justify-center p-2 rounded-md drop-shadow-xl  bg-naranja from-gray-800 to-black text-white font-semibold hover:rounded-[50%] transition-all duration-500  hover:text-naranja hover:bg-white"
-        >
-        <i class="fa-brands fa-tiktok"></i>
-      
-          <span
-            class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700"
-          >
-            TikTok
-          </span>
-        </button>
+      <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
+        TikTok
+      </span>
+  </a>
       </section>
       
     </ul>
@@ -411,15 +395,12 @@
       <nav class="p-4 pt-32">
         <ul class="flex flex-col items-start justify-start w-full gap-2 font-semibold">
           <li class="relative w-full">
-            <button
-              class="flex items-center w-full p-4 focus:outline-none hover:bg-gray-100 rounded-xl hover:text-gray-600 dropdown-toggle">
-              Inicio
-            </button>
+            <a href="#" class="flex items-center w-full p-4 cursor-pointer active:bg-gray-100 active:rounded-xl dropdown-toggle">Inicio</a>
 
           </li>
           <li class="relative w-full">
             <button
-              class="flex items-center w-full p-4 focus:outline-none hover:bg-gray-100 rounded-xl hover:text-gray-600 dropdown-toggle">
+              class="flex items-center w-full p-4 dropdown-toggle">
               Especialidades
               <svg class="w-4 h-4 ml-2 stroke-current" fill="none" stroke="currentColor" stroke-width="1.5"
                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -597,9 +578,10 @@
               </div>
             </div>
           </li>
+
           <li class="relative w-full">
             <button
-              class="flex items-center w-full p-4 focus:outline-none hover:bg-gray-100 rounded-xl hover:text-gray-600 dropdown-toggle">
+              class="flex items-center w-full p-4 dropdown-toggle">
               Servicios
               <svg class="w-4 h-4 ml-2 stroke-current" fill="none" stroke="currentColor" stroke-width="1.5"
                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -667,8 +649,8 @@
           </li>
           <li class="relative w-full">
             <button
-              class="flex items-center w-full p-4 focus:outline-none hover:bg-gray-100 rounded-xl hover:text-gray-600 dropdown-toggle">
-              Servicios
+              class="flex items-center w-full p-4 dropdown-toggle">
+              Sobre Nosotros
               <svg class="w-4 h-4 ml-2 stroke-current" fill="none" stroke="currentColor" stroke-width="1.5"
                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
@@ -735,10 +717,7 @@
           </li>
 
           <li class="relative w-full">
-            <button
-              class="flex items-center w-full p-4 focus:outline-none hover:bg-gray-100 rounded-xl hover:text-gray-600 dropdown-toggle">
-              Contactanos
-            </button>
+            <a href="#" class="flex items-center w-full p-4  dropdown-toggle">Contactanos</a>
           </li>
         </ul>
       </nav>
@@ -756,6 +735,23 @@
     </div>
 
     <style>
+
+
+.effect:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+
+}
+.effect:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
 
 
 
@@ -887,7 +883,15 @@ ul {
   background-color: #0088cc;
 }
 
+.bgsocial{
+  background-color: white;
+  color: #f2790c;
+}
 
+.bgsocial:hover {
+  background-color: black;
+  color: white;
+}
 
 
 </style>
@@ -944,11 +948,13 @@ function animacion () {
 
 }
 
-
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
+    
+
     if (window.scrollY > 50) { 
         navbar.classList.add('scrolled');
+        
     } else {
         navbar.classList.remove('scrolled');
     }
@@ -958,13 +964,20 @@ document.addEventListener('scroll', function () {
       const scrollY = window.scrollY;
       const imagen1 = document.getElementById('imagen1');
       const imagen2 = document.getElementById('imagen2');
+      const social = document.querySelectorAll('.social');
+      
 
-      if (scrollY > 50) { //
+      if (scrollY > 50) { // Cambia este valor según tus necesidades
         imagen1.classList.add('ocultar');
         imagen2.classList.remove('ocultar');
-      } else {
+        social.forEach(node => {node.classList.add('bgsocial');
+      })
+    }else {
         imagen1.classList.remove('ocultar');
         imagen2.classList.add('ocultar');
+        social.forEach(node => {node.classList.remove('bgsocial');
+      })
       }
-    });
+    }
+  );
 </script>

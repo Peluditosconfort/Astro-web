@@ -1,29 +1,62 @@
+
 <div class="bodi">
-  <div class="wrapper">
+  <div class="wrapper h-[500px]">
     <i id="left" class="fa-solid fa-angle-left"></i>
-    <ul class="carrusel">
+    <ul class="carrusel h-full">
      
-      <li class="card">
+      <li class="card group h-fit bg-white border-2 ">
+
+        <div class="bg-naranja flex justify-center gap-4 items-center py-2">
+          <img src="/public/img/iso-fertrac.png" alt="" class="w-16 h-16">
+          <h3 class="text-white">Motor</h3>
+        </div>
+
         <img src="/public/img/c2.png" alt="imagen2">
-        
+
+        <div class="text-center pb-4 info">
+          <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
+      </div>
       </li>
-      <li class="card">
-        <img src="/public/img/c1.png" alt="">
-      </li>
-      <li class="card">
+      <li class="card group h-fit bg-white border-2 ">
+
+        <div class="bg-naranja flex justify-center gap-4 items-center py-2">
+          <img src="/public/img/iso-fertrac.png" alt="" class="w-16 h-16">
+          <h3 class="text-white">Motor</h3>
+        </div>
+
         <img src="/public/img/c2.png" alt="imagen2">
-        
+
+        <div class="text-center pb-4 info">
+          <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
+      </div>
       </li>
-      <li class="card">
-        <img src="/public/img/c1.png" alt="">
-      </li>
-      <li class="card">
+      <li class="card group h-fit bg-white border-2 ">
+
+        <div class="bg-naranja flex justify-center gap-4 items-center py-2">
+          <img src="/public/img/iso-fertrac.png" alt="" class="w-16 h-16">
+          <h3 class="text-white">Motor</h3>
+        </div>
+
         <img src="/public/img/c2.png" alt="imagen2">
-        
+
+        <div class="text-center pb-4 info">
+          <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
+      </div>
       </li>
-      <li class="card">
-        <img src="/public/img/c1.png" alt="">
+      <li class="card group h-fit bg-white border-2 ">
+
+        <div class="bg-naranja flex justify-center gap-4 items-center py-2">
+          <img src="/public/img/iso-fertrac.png" alt="" class="w-16 h-16">
+          <h3 class="text-white">Motor</h3>
+        </div>
+
+        <img src="/public/img/c2.png" alt="imagen2">
+
+        <div class="text-center pb-4 info">
+          <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
+      </div>
       </li>
+
 
     </ul>
     <i id="right" class="fa-solid fa-angle-right"></i>
@@ -31,6 +64,18 @@
 </div>
 
 <style>
+
+.group .info {
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .group:hover .info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 .bodi {
   display: flex;
   margin: 100px 0;
@@ -94,16 +139,12 @@
   cursor: grab;
   user-select: none;
 }
-.carrusel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .carrusel .card {
   scroll-snap-align: start;
-  height: 342px;
+  height: auto;
   list-style: none;
-  background: #f2790c;
+  background: #white;
   cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column;
@@ -122,15 +163,7 @@
   object-fit: cover;
   border: 4px solid #fff;
 }
-.carrusel .card h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
-}
-.carrusel .card span {
-  color: #6A6D78;
-  font-size: 1.31rem;
-}
+
 @media screen and (max-width: 900px) {
   .wrapper .carrusel {
     grid-auto-columns: calc((100% / 2) - 9px);
@@ -204,11 +237,11 @@ const infiniteScroll = () => {
     clearTimeout(timeoutId);
     if(!wrapper.matches(":hover")) autoPlay();
 }
-const autoPlay = () => {
+/* const autoPlay = () => {
     if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
     // Autoplay the carrusel after every 2500 ms
     timeoutId = setTimeout(() => carrusel.scrollLeft += firstCardWidth, 2500);
-}
+} */
 autoPlay();
 carrusel.addEventListener("mousedown", dragStart);
 carrusel.addEventListener("mousemove", dragging);
