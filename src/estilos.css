@@ -7,11 +7,11 @@
 }
 
 .parrafo {
-    @apply text-xl sm:pb-4;
+    @apply text-xl;
 }
 
 .h3 {
-    @apply text-4xl font-myriad font-extrabold;
+    @apply text-3xl font-myriad font-extrabold;
 }
 
 
