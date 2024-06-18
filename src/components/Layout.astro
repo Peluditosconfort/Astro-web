@@ -1,4 +1,7 @@
 ---
+import MegaMenu from './MegaMenu.astro'
+import Footer from './Footer.astro'
+
  interface Props {
     title: string
  }
@@ -29,8 +32,21 @@
     
 </head>
 <body>
+    <header>
+      <!-- <MegaMenu positionNav='fixed'/>  -->
+    </header>
+
+    <main>
+
+        <slot />
+    </main>
     
-    <slot />
+
+    <footer>
+         <Footer/>
+    </footer>
+
+
     <script src="/src/main.js"></script>
     <script src="flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
