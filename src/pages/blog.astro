@@ -3,6 +3,7 @@ import Noticias from "../components/Noticias.astro"
 import Form from "../components/Form.astro";
 import Layout from "../components/Layout.astro"
 import BlogLayout from "../components/Blog/BlogLayout.astro";
+import Blog from "../components/Blog.astro";
 
 
 const postList = await Astro.glob("../pages/posts/*.md");
@@ -12,7 +13,7 @@ const postList = await Astro.glob("../pages/posts/*.md");
     <BlogLayout title="Blog">
         
         <!-- component -->
-<div class="max-w-[1500px] mx-auto">
+<div class="max-w-[1500px] mx-auto mt-32">
     <h2>Categorias</h2>
     <div class="w-full md:w-4/7 grid grid-cols-2	">
         <!-- post 1 -->
@@ -159,9 +160,9 @@ const postList = await Astro.glob("../pages/posts/*.md");
       <!-- recent posts -->
       
       <!-- end recent posts -->
-       <Form/>
+       <Form bgBlog="bg-naranja"/>
       <!-- popular posts -->
-      <Noticias/>
+      <Blog/>
       <!-- end popular posts -->
 
     </main>

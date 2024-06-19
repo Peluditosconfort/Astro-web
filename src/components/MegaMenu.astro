@@ -1,18 +1,18 @@
 ---
- interface Props {
+/*  interface Props {
   positionNav: string
   bgNav: string
  }
 
 
 const {positionNav} = Astro.props;
-const {bgNav} = Astro.props;
+const {bgNav} = Astro.props; */
 ---
 
-<div class={`navbar transition duration-1000 ease-in-out sm:w-screen flex items-center justify-between px-4 py-6 md:justify-around ${positionNav} ${bgNav} z-50`}>
+<div class="navbar transition duration-1000 ease-in-out sm:w-screen flex items-center justify-between px-4 py-6 md:justify-around top-0 bg-naranja fixed z-50">
   <a href="#">
-    <img id="imagen1" src="/public/img/fertrac-footer.png" alt="" class="w-44" >
-    <img id="imagen2" src="/public/img/fertrac-footerb.png" class="ocultar w-44" alt=""
+    <!-- <img id="imagen1" src="/public/img/fertrac-footer.png" alt="" class="w-44" > -->
+    <img id="imagen2" src="/public/img/fertrac-footerb.png" class="sm:w-32 lg:w-44" alt=""
       />
   </a>
 
@@ -318,7 +318,7 @@ const {bgNav} = Astro.props;
       </li>
 
       <li class="relative px-3 py-2 group">
-        <a href="#" class="effect">Contactanos</a>
+        <a href="/inicio/" class="effect">Contactanos</a>
         
         <!-- <div
           class="absolute top-0 -left-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform">
@@ -365,14 +365,14 @@ const {bgNav} = Astro.props;
   <nav class="md:flex sm:hidden">
     <ul>
       <section class="flex justify-center items-center gap-4">
-        <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-solid fa-shop"></i>
+        <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-solid fa-shop"></i>
 
           <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
             Tienda
           </span>
       </a>
 
-      <a href="/blog/" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-regular fa-newspaper"></i>
+      <a href="/blog/" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-regular fa-newspaper"></i>
 
         <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
           Blog
@@ -739,7 +739,7 @@ const {bgNav} = Astro.props;
           </li>
 
           <li class="relative w-full">
-            <a href="#" class="flex items-center w-full p-4  dropdown-toggle">Contactanos</a>
+            <a href="/inicio/" class="flex items-center w-full p-4  dropdown-toggle">Contactanos</a>
           </li>
         </ul>
       </nav>
@@ -778,46 +778,10 @@ const {bgNav} = Astro.props;
 
 
 
-.ocultar {
+/* .ocultar {
   display: none;
-}
+}*/
 
-.navbar.scrolled {
-  background-color: #f2790c;
-}
-
-
-.barras_menu {
-  width: 30px;
-  height: 30px;   
-  cursor: pointer;
-  
-}
-
-.barras_menu span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: rgb(255, 255, 255);
-  margin-top: 6px;
-  transform-origin: 0px 100%;
-  transition: all 600ms;
-}
-
-.activar1 {
-  transform: rotate(45deg)
-  translate(-2px, 1px);
-
-}
-.activar2 {
-  opacity: 0;
-  margin-left: -30px;
-}
-
-.activar3 {
-  transform: rotate(-45deg)
-  translate(-4px, 2px);
-}
 
 
 ul {
@@ -906,7 +870,7 @@ ul {
   background-color: #0088cc;
 }
 
-.bgsocial{
+/* .bgsocial{
   background-color: white;
   color: #f2790c;
 }
@@ -914,8 +878,40 @@ ul {
 .bgsocial:hover {
   background-color: black;
   color: white;
+} */
+
+
+.barras_menu {
+  width: 30px;
+  height: 30px;   
+  cursor: pointer;
+  
 }
 
+.barras_menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  margin-top: 6px;
+  transform-origin: 0px 100%;
+  transition: all 600ms;
+}
+
+.activar1 {
+  transform: rotate(45deg)
+  translate(-2px, 1px);
+
+}
+.activar2 {
+  opacity: 0;
+  margin-left: -30px;
+}
+
+.activar3 {
+  transform: rotate(-45deg)
+  translate(-4px, 2px);
+}
 
 </style>
 
@@ -971,7 +967,7 @@ function animacion () {
 
 }
 
-window.addEventListener('scroll', function() {
+ window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
     
 
@@ -982,7 +978,7 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
-
+/* 
 document.addEventListener('scroll', function () {
       const scrollY = window.scrollY;
       const imagen1 = document.getElementById('imagen1');
@@ -1002,5 +998,5 @@ document.addEventListener('scroll', function () {
       })
       }
     }
-  );
+  ); */
 </script>

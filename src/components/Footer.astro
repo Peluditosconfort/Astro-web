@@ -1,20 +1,27 @@
-<!-- Footer container -->
+---
+import Form from "./Form.astro"
+---
 <footer
   class="text-center lg:text-left bg-gradient-to-r from-naranja to-yellow-400">
   <div
     class="flex items-center justify-center border-b-2 border-neutral-200 py-6 px-16 lg:justify-between">
-    <div class="me-12 hidden lg:block">
-      <span class="text-lg text-white font-bold">Encuentranos y siguenos en nuestras redes sociales</span>
-    </div>
-
-    <!-- LOGOS -->
-    <div class="flex justify-center items-center gap-9">
-      <a href="#!" class=""> <i class="fa-brands fa-facebook text-4xl text-white"></i></a>
     
+    <div class="hidden lg:block ">
+      
+      <span class="text-lg text-white font-bold">Encuentranos y siguenos en nuestras redes sociales</span>
+       <!-- LOGOS -->
+    <div class="flex justify-center items-center gap-9">
+      
+      <a href="#!" class=""> <i class="fa-brands fa-facebook text-4xl text-white"></i></a>
       <a href="#!" class=""> <i class="fa-brands fa-instagram text-4xl text-white"></i></a>
       <a href="#!" class=""> <i class="fa-brands fa-tiktok text-4xl text-white"></i></a>
       <a href="#!" class=""> <i class="fa-brands fa-linkedin-in text-4xl text-white"></i></a>
     </div>
+    </div>
+    
+   
+
+    <Form bgBlog=""/>
   </div>
 
   <div class="mx-24 sm:mx-4 py-10 text-center md:text-left">

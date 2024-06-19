@@ -1,10 +1,12 @@
-
-<div class="bodi">
+---
+import NormalButton from "./NormalButton.astro";
+---
+<div class="bodi sm:my-8">
   <div class="wrapper">
     <i id="left" class="fa-solid fa-angle-left"></i>
     <ul class="carrusel h-full">
      
-      <li class="card group h-fit bg-white border-2 ">
+      <li class="card group h-fit bg-white border-2">
 
         <div class="bg-naranja flex justify-center gap-4 items-center py-2">
           <img src="/public/img/iso-fertrac.png" alt="" class="w-16 h-16">
@@ -12,7 +14,7 @@
         </div>
 
         <img src="/public/img/EJE DELANTERO.png" alt="imagen2">
-
+        
         <div class="text-center info">
           <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
       </div>
@@ -122,6 +124,8 @@
 
         <img src="/public/img/FRENADO.png" alt="imagen2">
 
+
+        
         <div class="text-center info">
           <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
       </div>
@@ -135,7 +139,8 @@
 
 <style>
 
-.group .info {
+
+    .group .info {
         opacity: 0;
         transform: translateY(10px);
         transition: 0.5s ease, transform 0.5s ease;
@@ -146,14 +151,20 @@
         transform: translateY(0);
     }
 
+
+
 .bodi {
   display: flex;
-  margin: 100px 0;
+
   padding: 0 35px;
   align-items: center;
   justify-content: center;
 
 
+}
+
+.info {
+  margin-bottom: 10px;
 }
 .wrapper {
   max-width: 1500px;
@@ -211,10 +222,11 @@
 }
 
 .carrusel .card {
-
+  display: flex;
+  justify-content: space-between;
   scroll-snap-align: start;
-  width: auto;
-  height: 500px;
+  height: 550px;
+  max-height: 550px;
   list-style: none;
   background: #white;
   cursor: pointer;
@@ -233,7 +245,12 @@
   .wrapper .carrusel {
     grid-auto-columns: 100%;
   }
+  .card {
+    
+  }
 }
+
+
 </style>
 
 <script>

@@ -1,14 +1,16 @@
+
 ---
 const { textoBoton } = Astro.props;
 const { iconoBoton } = Astro.props;
 const { fondo } = Astro.props;
+const { ancho } = Astro.props;
 
 ---
 
 <div>
-  <a href="#" class={`rounded-lg relative h-14 xl:w-52 cursor-pointer flex items-center border border-white group hover:bg-white active:bg-white active:border-white sm:w-40 text-lg bg-${fondo}`}>
+  <a href="#" class={`rounded-lg relative h-14 xl:w-52 cursor-pointer flex items-center border border-white group hover:bg-white active:bg-white active:border-white sm:w-40 text-lg bg-${fondo} ${ancho}`}>
     <span
-    class="text-white font-lato  sm:ml-4 transform group-hover:translate-x-10 sm:group-hover:translate-x-10 transition-all duration-300 md:ml-8"
+    class= "text-white font-lato  sm:ml-4 transform group-hover:translate-x-10 sm:group-hover:translate-x-10 transition-all duration-300 md:ml-8"
     >{textoBoton}</span
   >
   <span

@@ -2,25 +2,24 @@
 import Layout from "../components/Layout.astro";
 import Marcas from "../components/Marcas.astro";
 import BotonRelleno from "../components/BotonRelleno.astro";
-
+import Form from "../components/Form.astro";
 import TarjetaEspecialidades from "../components/TarjetaEspecialidades.astro";
 import MainHero from "../components/MainHero.astro";
-
+import Blog from "../components/Blog.astro";
 
 import Noticias from "../components/Noticias.astro";
-
+import NormalButton from "../components/NormalButton.astro";
 ---
 
 <Layout title="Inicio">
-  
     <header>
         <!-- HEADER CARRUSEL -->
-    <MainHero />    
+        <MainHero />
     </header>
 
     <main>
         <!-- SLIDER PROVEEDORES -->
-        <section class="marcas py-6">
+        <section class="marcas py-4">
             <Marcas />
             <Marcas />
         </section>
@@ -34,11 +33,11 @@ import Noticias from "../components/Noticias.astro";
                     <img src="/public/img/iso web-8.png" alt="" class="" />
                 </div>
                 <div class="w-2/6 sm:w-full lg:w-2/4">
-                    <h2 class="prueba sm:pb-4 text-azul">
+                    <h2 class="prueba sm:pb-4 text-justify">
                         En Fertrac, entendemos la importancia de la fiabilidad y
                         la eficiencia en el mundo del transporte de carga.
                     </h2>
-                    <p class="text-xl sm:pb-4 text-gray-600">
+                    <p class="text-xl sm:pb-4 text-gray-600 text-justify">
                         Es por eso que nos comprometemos a proporcionar
                         repuestos duraderos y de alta calidad que te ayudarán a
                         maximizar el rendimiento y la vida útil de tus
@@ -54,12 +53,11 @@ import Noticias from "../components/Noticias.astro";
                 </div>
             </div>
         </section>
-        
+
         <!-- ESPECIALIDADES -->
 
-         <TarjetaEspecialidades />
-        
-        
+        <TarjetaEspecialidades />
+
         <!-- PROMOCIONES -->
         <section class="">
             <div
@@ -69,37 +67,30 @@ import Noticias from "../components/Noticias.astro";
                     <div class="md:shrink-0 md:w-6/12">
                         <img
                             class="h-48 w-full object-cover md:h-full md:w-full"
-                            src="/public/img/Fertrac.jpg"
+                            src="/public/img/nueva-lineas.jpg"
                             alt="Modern building architecture"
+                            style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+"
                         />
                     </div>
                     <div
-                        class="p-56 flex flex-col justify-center gap-5 2xl: p-24 sm:p-8"
+                        class="flex flex-col justify-center gap-5 2xl:pr-56 sm:p-8 sm:items-center lg:items-start"
                     >
-                        <h2
-                            class="font-myriad font-extrabold text-white font-semibold w-4/5"
-                        >
+                        <h2 class="text-white lg:w-4/5">
                             Marcas nuevas y novedades
                         </h2>
 
                         <p
-                            class="text-xl w-7/12 w-4/5 sm: w-auto sm:w-full text-white"
+                            class="text-xl w-7/12 w-4/5 sm:w-auto sm:w-full text-white"
                         >
-                        Te mantenemos al tanto de las últimas tendencias y lanzamientos en el mundo de las marcas. Descubre las incorporaciones más recientes a nuestro catálogo y mantente informado sobre las innovaciones y productos destacados de tus marcas favoritas. 
+                            Te mantenemos al tanto de las últimas tendencias y
+                            lanzamientos en el mundo de las marcas. Descubre las
+                            incorporaciones más recientes a nuestro catálogo y
+                            mantente informado sobre las innovaciones y
+                            productos destacados de tus marcas favoritas.
                         </p>
-                        <ul class="flex">
-                            <li>
-                                <img src="/public/img/eaton.png" alt="" class="w-56">
-                            </li>
-                            <li>
-                                <img src="/public/img/eaton.png" alt="" class="w-56">
-                            </li>
-                            <li>
-                                <img src="/public/img/eaton.png" alt="" class="w-56">
-                                
-                            </li>
-                            <BotonRelleno textoBoton="Explorar" iconoBoton=""/>
-                        </ul>
+
+                        <NormalButton text="Novedades" estilos="bg-white px-8 py-2"/>
                     </div>
                 </div>
             </div>
@@ -107,11 +98,11 @@ import Noticias from "../components/Noticias.astro";
 
         <!-- TESTIMONIOS -->
         <section>
-            <div class="flex flex-wrap justify-center mt-8">
+            <div class="flex flex-wrap justify-center lg:my-16">
                 <div
-                    class="flex flex-col justify-center items-center sm:text-left md:text-center w-full sm:p-4 md:px-16"
+                    class="flex flex-col justify-center items-center sm:text-left md:text-center w-full sm:px-4 md:px-16"
                 >
-                    <div class="">
+                    <div class="mt-8">
                         <h2>Nuestros clientes siempre listos para elegirnos</h2>
                     </div>
                 </div>
@@ -224,39 +215,26 @@ import Noticias from "../components/Noticias.astro";
                 </div>
             </div>
         </section>
-        <!-- BANNER SECUNDARIO -->
 
-        <section class="">
-            <div class="text-center">
-                <h2 class="sm:pb-4 text-azul">
-                    Distribución de partes para tractocamiones
-                </h2>
-                <p class="text-xl sm:pb-4 text-gray-600">
-                    Somos la primera distribuidora de productos originales en
-                    Colombia
-                </p>
-            </div>
-            <img src="/public/img/bannersecundario.jpg" alt="" />
-        </section>
+
 
         <!-- SERVICIOS FT -->
         <section>
             <div class="flex flex-wrap justify-center mt-8">
-                <div
-                    class="flex flex-col justify-center items-center sm:text-left md:text-center w-full sm:p-4 md:px-36"
-                >
-                    <div class="font-myriad font-extrabold text-3xl text-azul">
-                        <h2>
-                            Ofrecemos una amplia gama de servicios para
-                            satisfacer todas tus necesidades relacionadas con
-                            los tractocamiones.
-                        </h2>
+                   
+                    <div
+                        class="flex flex-col justify-center items-center sm:text-left md:text-center w-full sm:px-4 md:px-36"
+                    ><h2>
+                        Ofrecemos una amplia gama de servicios para satisfacer
+                        tus necesidades.
+                    </h2>
+                        <p class="mt-2 text-xl w-3/4 sm:w-auto text-gray-600">
+                            Desde la venta de repuestos de alta calidad hasta
+                            servicios de mantenimiento y asesoramiento técnico
+                        </p>
                     </div>
-                    <p class="mt-2 text-xl w-3/4 sm:w-auto text-gray-600">
-                        Desde la venta de repuestos de alta calidad hasta
-                        servicios de mantenimiento y asesoramiento técnico
-                    </p>
-                </div>
+
+
                 <div
                     class="flex-shrink-0 relative overflow-hidden bg-naranja rounded-lg max-w-xs sm:m-4 shadow-lg"
                 >
@@ -312,14 +290,14 @@ import Noticias from "../components/Noticias.astro";
                     <div class="relative flex items-center justify-center">
                         <img
                             class="relative w-full"
-                            src="/public/img/Fertrac.jpg"
+                            src="/public/img/credito.jpg"
                             alt=""
                         />
                     </div>
                     <div class="relative text-white px-6 pb-6 mt-6">
                         <div class="flex justify-between flex-col">
                             <h3 class="font-myriad block font-semibold text-xl">
-                                PRODUCTOS DE CALIDAD
+                                Credito
                             </h3>
                             <p class="sm:text-sm">
                                 Nos enorgullecemos de ser productores de calidad
@@ -335,37 +313,36 @@ import Noticias from "../components/Noticias.astro";
             </div>
         </section>
 
+        
+
         <!-- ASESORIA -->
         <section>
             <div
-                class="w-full flex justify-center items-center py-12 flex-wrap gap-16 bg-cover bg-center h-2/4 bg-slate-800"
+                class="w-full flex justify-center items-center py-12 px-4 flex-wrap lg:gap-16 bg-cover bg-center h-2/4 bg-slate-800"
                 style="background-image: url(/public/img/asesoria.jpg"
             >
-                <div class="text-left">
-                    <h2 class="font-myriad text-white text-3xl">
+                <div class="text-left sm:px-4">
+                    <h2 class="text-white">
                         ¿Tienes alguna duda o necesitas Asesoria?
                     </h2>
-                    <p class="text-white w-">
+                    <p class="text-white py-4">
                         ¡Nos encantaría saber de ti! Si tienes alguna pregunta,
-                        comentario o sugerencia, <br />no dudes en ponerte en
+                        comentario o sugerencia, no dudes en ponerte en
                         contacto con nosotros.
                     </p>
                 </div>
 
-                <div>
-                    <BotonRelleno
-                        textoBoton="Contactar"
-                        iconoBoton="fa-solid fa-headset text-naranja"
-                        fondo="transparent"
-                    />
-                </div>
+                    <NormalButton text="Contactar" estilos="bg-white px-8 py-2"/>
+            
             </div>
         </section>
 
         <!-- BLOG -->
         <article>
-            <Noticias />
+            <Blog />
         </article>
+        
     </main>
+    
 
 </Layout>

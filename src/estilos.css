@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 .titulo {
-    @apply text-5xl font-myriad font-extrabold text-azul;
+    @apply sm:text-3xl lg:text-5xl font-myriad font-extrabold text-azul text-justify;
 }
 
 .parrafo {
-    @apply text-xl;
+    @apply text-xl font-lato text-justify;
 }
+h3 {
 
-.h3 {
-    @apply text-3xl font-myriad font-extrabold;
 }
-
-
-

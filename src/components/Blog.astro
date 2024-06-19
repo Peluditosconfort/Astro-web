@@ -1,144 +1,76 @@
 ---
 import BotonSimple from "./BotonSimple.astro";
+import ButtonBlog from "./ButtonBlog.astro";
+import NormalButton from "./NormalButton.astro";
 ---
-      <div class="flex mt-16 mb-4 px-4 lg:px-0 items-center justify-between">
-        <h2 class="font-bold text-3xl">Recientes</h2>
-        <a class="bg-gray-200 hover:bg-green-200 text-gray-800 px-3 py-1 rounded cursor-pointer">
-          View all
-        </a>
-      </div>
-      <div class="block space-x-0 lg:flex lg:space-x-6">
-
-        <div class="rounded w-full lg:w-1/2 lg:w-1/3 p-4 lg:p-0">
-          <img src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="rounded" alt="technology" />
-          <div class="p-4 pl-0">
-            <h2 class="font-bold text-2xl text-gray-800">Put all speaking her delicate recurred possible.</h2>
-            <p class="text-gray-700 mt-2">
-              Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions.
-              So continued he or commanded household smallness delivered. Door poor on do walk in half. Roof his head the what.
-            </p>
-
-            <a href="#" class="inline-block py-2 rounded text-green-900 mt-2 ml-auto"> Read more </a>
-          </div>
-        </div>
-
-        <div class="rounded w-full lg:w-1/2 lg:w-1/3 p-4 lg:p-0">
-          <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="rounded" alt="technology" />
-          <div class="p-4 pl-0">
-            <h2 class="font-bold text-2xl text-gray-800">Is at purse tried jokes china ready decay an. </h2>
-            <p class="text-gray-700 mt-2">
-              Small its shy way had woody downs power. To denoting admitted speaking learning my exercise so in. 
-              Procured shutters mr it feelings. To or three offer house begin taken am at. 
-            </p>
-
-            <a href="#" class="inline-block py-2 rounded text-green-900 mt-2 ml-auto"> Read more </a>
-          </div>
-        </div>
-
-        <div class="rounded w-full lg:w-1/2 lg:w-1/3 p-4 lg:p-0">
-          <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="rounded" alt="technology" />
-          <div class="p-4 pl-0">
-            <h2 class="font-bold text-2xl text-gray-800">As dissuade cheerful overcame so of friendly he indulged unpacked.</h2>
-            <p class="text-gray-700 mt-2">
-              Alteration connection to so as collecting me. 
-              Difficult in delivered extensive at direction allowance. 
-              Alteration put use diminution can considered sentiments interested discretion.
-            </p>
-
-            <a href="#" class="inline-block py-2 rounded text-green-900 mt-2 ml-auto"> Read more </a>
-          </div>
-        </div>
-
-         <div class="rounded w-full lg:w-1/2 lg:w-1/3 p-4 lg:p-0">
-          <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="rounded" alt="technology" />
-          <div class="p-4 pl-0">
-            <h2 class="font-bold text-2xl text-gray-800">As dissuade cheerful overcame so of friendly he indulged unpacked.</h2>
-            <p class="text-gray-700 mt-2">
-              Alteration connection to so as collecting me. 
-              Difficult in delivered extensive at direction allowance. 
-              Alteration put use diminution can considered sentiments interested discretion.
-            </p>
-
-            <a href="#" class="inline-block py-2 rounded text-green-900 mt-2 ml-auto"> Read more </a>
-          </div>
-        </div>
-
-      </div>
-<!-- <section>
+<section>
     <div class="mx-auto py-10 2xl:px-12 sm:px-4">
-        <h2 class="font-myriad font-extrabold text-6xl sm:text-3xl text-azul">NOTICIAS</h2>
+      <div class="flex">
+        <h2 class="font-myriad font-extrabold text-6xl sm:text-3xl text-azul mr-4">NOTICIAS</h2>
+        <NormalButton text="Blog" estilos="bg-white border border-naranja px-8 py-2"/>
+      </div>
+        
+        
         <h3 class="my-4 text-xl w-3/4 sm:w-full text-azul font-bold">No te pierdas nuestras publicaciones más recientes y únete a la conversación. ¡Explora, aprende y encuentra inspiración en nuestro blog!</h3>
             
             <div class="grid grid-cols-1 gap-8 md:mt-6 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-2">
 
-                <div role="status" class="border border-gray-200 rounded shadow dark:border-gray-800">
-                    <div class="flex items-center justify-center">
-                        <img src="/public/img/Fertrac.jpg" alt="" class="">
-                    </div>
-                    
-                    <div class="flex flex-col gap-2 px-6 py-4">
-                        <p class="">18/18/1212</p>
-                        <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
-                        <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
-                        </div>
-        
-                        <BotonSimple textoBoton="Leer Más"/>
-                    </div>
-                    
-                </div>
-
-                <div role="status" class="border border-gray-200 rounded shadow dark:border-gray-800">
-                    <div class="flex items-center justify-center">
-                        <img src="/public/img/Fertrac.jpg" alt="" class="">
-                    </div>
-                    
-                    <div class="flex flex-col gap-2 px-6 py-4">
-                        <p class="">18/18/1212</p>
-                        <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
-                        <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
-                        </div>
-        
-                        <BotonSimple textoBoton="Leer Más"/>
-                    </div>
-                    
-                </div>
-                
-
-            <div role="status" class="border border-gray-200 rounded shadow  dark:border-gray-700">
+            <div role="status" class="">
                 <div class="flex items-center justify-center">
                     <img src="/public/img/Fertrac.jpg" alt="" class="">
                 </div>
                 
                 <div class="flex flex-col gap-2 px-6 py-4">
                     <p class="">18/18/1212</p>
-                    <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
+                    <h2 class="block font-myriad  text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
                     <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
                     </div>
-    
-                    <BotonSimple textoBoton="Leer Más"/>
+                    <ButtonBlog/>
                 </div>
-                
             </div>
-
-            <div role="status" class="border border-gray-200 rounded shadow  dark:border-gray-700">
-                <div class="flex items-center justify-center">
-                    <img src="/public/img/Fertrac.jpg" alt="" class="">
-                </div>
-                
-                <div class="flex flex-col gap-2 px-6 py-4">
-                    <p class="">18/18/1212</p>
-                    <h2 class="block font-semibold text-xl font-myriad font-extrabold text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
-                    <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
-                    </div>
-    
-                    <BotonSimple textoBoton="Leer Más"/>
-                </div>
-                
+            <div role="status" class="">
+              <div class="flex items-center justify-center">
+                  <img src="/public/img/Fertrac.jpg" alt="" class="">
+              </div>
+              
+              <div class="flex flex-col gap-2 px-6 py-4">
+                  <p class="">18/18/1212</p>
+                  <h2 class="block font-myriad  text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
+                  <div class=>
+                      <p class="mb-4 text-xl text-justify text-black font-lato">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
+                  </div>
+                  <ButtonBlog/>
+              </div>
+          </div>
+          <div role="status" class="">
+            <div class="flex items-center justify-center">
+                <img src="/public/img/Fertrac.jpg" alt="" class="">
             </div>
+            
+            <div class="flex flex-col gap-2 px-6 py-4">
+                <p class="">18/18/1212</p>
+                <h2 class="block font-myriad  text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
+                <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
+                </div>
+                <ButtonBlog/>
+            </div>
+        </div>
+        <div role="status" class="">
+          <div class="flex items-center justify-center">
+              <img src="/public/img/Fertrac.jpg" alt="" class="">
+          </div>
+          
+          <div class="flex flex-col gap-2 px-6 py-4">
+              <p class="">18/18/1212</p>
+              <h2 class="block font-myriad  text-2xl font-semibold text-[#f2790c]">TITULO ARTICULO</h1>
+              <div class=" mb-4 text-xl text-justify leading-tight text-gray-600">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, impedit nisi fugiat deserunt odit vero nihil voluptatibus repellendus ea autem quae architecto sint dolorem debitis nulla illum in cumque inventore blanditiis.</p>
+              </div>
+              <ButtonBlog/>
+          </div>
+      </div>
 
             
             
@@ -146,4 +78,4 @@ import BotonSimple from "./BotonSimple.astro";
 
         </div>
     </div>
-</section> -->
+</section> 

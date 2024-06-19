@@ -1,5 +1,5 @@
-<div class="slider sm:w-screen 2xl:w-3/4">
-    <div class="slide-track">
+<div class="slider sm:w-full 2xl:w-3/4 w-[70vw] mx-auto overflow-hidden  ">
+    <div class="slide-track lg:gap-12 lg:py-[20px] sm:py-[0px] sm:gap-8 lg:my-8 sm:my-4 items-center">
         <div class="slide">
             <img src="/public/img/meritor.png" alt="">
         </div>
@@ -81,16 +81,9 @@
 </div>
 
 <style>
-    .slider {
-    width: 70vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
+
 
 .slider .slide-track {
-    padding: 20px;
-    gap: 50px;
     display: flex;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
@@ -115,4 +108,11 @@
         transform: translateX(calc(-150px * 7));
     }
 }
+
+@media (max-width: 1080px) {
+    .slider .slide-track {
+        width: calc(100px * 25);
+    }
+}
+
 </style>
