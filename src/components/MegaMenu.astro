@@ -1,13 +1,15 @@
 ---
  interface Props {
   positionNav: string
+  bgNav: string
  }
 
 
 const {positionNav} = Astro.props;
+const {bgNav} = Astro.props;
 ---
 
-<div class={`navbar transition duration-1000 ease-in-out sm:w-screen flex items-center justify-between px-4 py-6 md:justify-around ${positionNav} z-50`}>
+<div class={`navbar transition duration-1000 ease-in-out sm:w-screen flex items-center justify-between px-4 py-6 md:justify-around ${positionNav} ${bgNav} z-50`}>
   <a href="#">
     <img id="imagen1" src="/public/img/fertrac-footer.png" alt="" class="w-44" >
     <img id="imagen2" src="/public/img/fertrac-footerb.png" class="ocultar w-44" alt=""
