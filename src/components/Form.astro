@@ -1,4 +1,6 @@
 ---
+import ButtonBlog from './ButtonBlog.astro'
+
  interface Props {
   bgBlog: string
  }
@@ -7,19 +9,22 @@
 ---
 
 
-<div class="rounded md:shadow">
-    <div class={`px-8 py-4 flex items-center ${bgBlog}`}>
-      <div class="mr-8">
-        <h3 class="text-3xl text-white font-bold">Suscribete a nuestro boletin informativo</h3>
-      <p class="text-xl text-white">Recibe Información sobre nuestros productos y enterate de todas las novedades</p>
+<div class="rounded md:shadow ">
+    <div class={`lg:w-[500px] xl:w-auto flex items-center justify-center flex-wrap ${bgBlog}  xl:gap-8`}>
+      <div class="lg:text-center xl:text-left">
+        <h3 class="text-3xl text-white font-bold mb-4">Suscribete a nuestro boletin informativo</h3>
+      <p class="text-lg text-center text-white mb-4">Recibe Información sobre nuestros productos y enterate de todas las novedades</p>
       </div>
       
-      <form class="">
-        <input type="email" class="rounded bg-gray-100 px-4 py-2 border focus:border-green-400" placeholder="edwincamilo@live.com"/>
-        <button class="px-4 py-2 rounded bg-naranja text-white">
-          Suscribir
-          <i class='bx bx-right-arrow-alt' ></i>
-        </button>
-      </form>
+      <div>
+        <form class="">
+          <input type="email" class="rounded bg-gray-100 px-4 py-2 border focus:border-naranja w-full mb-4" placeholder="Ingresa tu correo electronico"/>
+          <button class="px-4 py-2 rounded bg-naranja text-white w-full font-bold font-lato hover:bg-white hover:text-naranja transition-all duration-500 ease-in-out">
+            Suscribir
+            <i class='bx bx-right-arrow-alt' ></i>
+          </button>
+        </form>
+      </div>
+      
     </div>
   </div>

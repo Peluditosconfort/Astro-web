@@ -4,67 +4,71 @@ import Form from "./Form.astro"
 <footer
   class="text-center lg:text-left bg-gradient-to-r from-naranja to-yellow-400">
   <div
-    class="flex items-center justify-center border-b-2 border-neutral-200 py-6 px-16 lg:justify-between">
-    
-    <div class="hidden lg:block ">
+    class="flex flex-wrap gap-8 items-center justify-center lg:flex-row-reverse bg-gradient-to-r from-azul to-gray-700 border-b-2 border-neutral-200 lg:p-16 lg:justify-evenly sm:p-8 md:px-24">
+
+    <Form bgBlog=""/>
+    <hr class="border boder-white w-full lg:hidden">
+    <hr class="h-36 w-[.1vw] border-0 bg-white sm:hidden lg:block">
+
+    <div class="text-center">
       
-      <span class="text-lg text-white font-bold">Encuentranos y siguenos en nuestras redes sociales</span>
+      <span class="text-lg text-white font-bold">Encuentranos y siguenos en nuestras<br>redes sociales</span>
        <!-- LOGOS -->
-    <div class="flex justify-center items-center gap-9">
+    <div class="flex justify-center items-center gap-9 mt-4 ">
       
-      <a href="#!" class=""> <i class="fa-brands fa-facebook text-4xl text-white"></i></a>
-      <a href="#!" class=""> <i class="fa-brands fa-instagram text-4xl text-white"></i></a>
-      <a href="#!" class=""> <i class="fa-brands fa-tiktok text-4xl text-white"></i></a>
-      <a href="#!" class=""> <i class="fa-brands fa-linkedin-in text-4xl text-white"></i></a>
+      <a href="#!" class=""> <i class="fa-brands fa-facebook text-2xl text-white transition-transform duration-300 ease-in-out transform hover:scale-150"></i></a>
+      <a href="#!" class=""> <i class="fa-brands fa-instagram text-2xl text-white transition-transform duration-300 ease-in-out transform hover:scale-150"></i></a>
+      <a href="#!" class=""> <i class="fa-brands fa-tiktok text-2xl text-white transition-transform duration-300 ease-in-out transform hover:scale-150"></i></a>
+      <a href="#!" class=""> <i class="fa-brands fa-linkedin-in text-2xl text-white transition-transform duration-300 ease-in-out transform hover:scale-150"></i></a>
     </div>
     </div>
     
    
 
-    <Form bgBlog=""/>
+    
   </div>
 
-  <div class="mx-24 sm:mx-4 py-10 text-center md:text-left">
-    <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+  <div class="sm:p-8 lg:py-8 lg:px-16 xl:p-24 text-center md:text-left">
+    <div class="grid-1 grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
       <!-- LOGO -->
       <div class="">
           <span class="w-52">
             <img src="/public/img/fertrac-footerb.png" alt="">
           </span>
-        <p class="text-white text-base font-bold pt-4">
+        <p class="text-white text-sm font-bold pt-4">
           Gracias por visitar nuestra página web. Queremos agradecerte por tu interés en nuestro contenido.
         </p>
       </div>
 
       <!-- Products section -->
 
-      <div>
+      <div class="text-left">
         <h6
-          class="mb-4 flex justify-center md:justify-start font-myriad font-bold text-white text-lg">
+          class="mb-4 font-myriad font-bold text-white text-lg">
           NAVEGACIÓN
         </h6>
         <p class="mb-4 text-white text-base">
           <a href="#!">Inicio</a>
         </p>
-        <p class="mb-4 text-white text-base text-base">
+        <p class="mb-4 text-white text-base">
           <a href="#!">Especialidades</a>
         </p>
-        <p class="mb-4 text-white text-base text-base">
+        <p class="mb-4 text-white text-base ">
           <a href="#!">Servicios</a>
         </p>
-        <p class="mb-4 text-white text-base text-base">
+        <p class="mb-4 text-white text-base">
           <a href="#!">Sobre Nosotros</a>
         </p>
-        <p class="mb-4 text-white text-base text-base">
+        <p class="mb-4 text-white text-base">
           <a href="#!">Contactanos</a>
         </p>
       </div>
 
       <!-- Useful links section -->
 
-      <div>
+      <div class="text-left">
         <h6
-          class="mb-4 flex justify-center uppercase md:justify-start font-myriad font-bold text-white text-lg">
+          class="mb-4 uppercase md:justify-start font-myriad font-bold text-white text-lg">
           ENLACES DE INTERES
         </h6>
         <p class="mb-4 text-white text-base">
@@ -73,8 +77,9 @@ import Form from "./Form.astro"
         <p class="mb-4 text-white text-base">
           <a href="#!">Blog</a>
         </p>
+
         <h6
-          class="mb-4 flex justify-center font-myriad font-semibold uppercase md:justify-start text-white text-lg">
+          class="mb-4 font-myriad font-semibold uppercase md:justify-start text-white text-lg">
           LEGAL
         </h6>
         <p class="mb-4 text-white text-base">
@@ -87,35 +92,35 @@ import Form from "./Form.astro"
 
       <!-- Contact section -->
 
-      <div>
+      <div class="sm:text-center md:text-left">
         <h6
-          class="mb-4 flex justify-center font-myriad font-semibold uppercase md:justify-start text-white text-lg">
+          class="mb-4 font-myriad font-semibold uppercase md:justify-start text-white text-lg">
           Contacto
         </h6>
-        <div class="sm:flex flex-col">
-          <div class="">
-            <p class="mb-4 flex items-center justify-center md:justify-start gap-2.5 text-base text-white">
+        <div class="">
+          <div class="mb-4 flex items-center justify-center md:justify-start gap-2.5 ">
+            <p class="text-base text-white">
               <a href="#!" class=""> <i class="fa-solid fa-house"></i></a>
               <span class="w-64">TV. 93 # 51-98 Bodega 17 Barrio Alamos Parque Empresarial Puerta del Sol</span>
             </p>
           </div>
           
-          <div class="">
-            <p class="mb-4 flex items-center justify-center md:justify-start gap-2.5 text-base text-white">
+          <div class="mb-4 flex items-center justify-center md:justify-start gap-2.5 ">
+            <p class="text-base text-white">
               <a href="#!" class=""> <i class="fa-solid fa-envelope"></i></a>
               ventas@fertrac.com
             </p>
           </div>
           
-          <div class="">
-            <p class="mb-4 flex items-center justify-center md:justify-start gap-2.5 text-base text-white">
+          <div class="mb-4 flex items-center justify-center md:justify-start gap-2.5 ">
+            <p class="text-base text-white">
               <a href="#!" class=""> <i class="fa-solid fa-phone"></i></a>
               310 201 5333 / 312 461 5606
             </p>
           </div>
 
-          <div class="">
-            <p class="mb-4 flex items-center justify-center md:justify-start gap-2.5 text-base text-white">
+          <div class="mb-4 flex items-center justify-center md:justify-start gap-2.5 ">
+            <p class="text-base text-white">
               <a href="#!" class=""> <i class="fa-brands fa-whatsapp"></i></a>
               310 201 5333 / 312 461 5606
             </p>
