@@ -1,0 +1,249 @@
+<div class="wrapper">
+    <div class="swiper swiperFade">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/17568780/pexels-photo-17568780/free-photo-of-street-in-london-with-st-pauls-cathedral-behind.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <div class="card-description">
+                        <h1>London</h1>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/460740/pexels-photo-460740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <div class="card-description">
+                        <h1>Paris</h1>
+                        <p>France</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/2225440/pexels-photo-2225440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    />
+                    <div class="card-description">
+                        <h1>Rome</h1>
+                        <p>Italy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/14415275/pexels-photo-14415275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <div class="card-description">
+                        <h1>Washington Dc</h1>
+                        <p>USA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/2097616/pexels-photo-2097616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <div class="card-description">
+                        <h1>Melbourne</h1>
+                        <p>Australia</p>
+                    </div>
+                </div>
+            </div> </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="swiper swiperFade">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/17568780/pexels-photo-17568780/free-photo-of-street-in-london-with-st-pauls-cathedral-behind.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <div class="card-description">
+                        <h1>London</h1>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/460740/pexels-photo-460740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <div class="card-description">
+                        <h1>Paris</h1>
+                        <p>France</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/2225440/pexels-photo-2225440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    />
+                    <div class="card-description">
+                        <h1>Rome</h1>
+                        <p>Italy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/14415275/pexels-photo-14415275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <div class="card-description">
+                        <h1>Washington Dc</h1>
+                        <p>USA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/2097616/pexels-photo-2097616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <div class="card-description">
+                        <h1>Melbourne</h1>
+                        <p>Australia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<style>
+    .wrapper {
+        width: 100%;
+        overflow-x: hidden;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1199px) {
+            flex-flow: column;
+        }
+    }
+
+    .swiper {
+        width: 300px;
+        height: 400px;
+        margin: 45px;
+        border-radius: 15px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+        .card-image {
+            position: relative;
+            transition: opacity 0.3s ease-out;
+            width: 100%;
+            height: 100%;
+        }
+        .card-description {
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            color: #fff;
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: 9;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgb(255, 255, 255);
+                background: linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0) 50%,
+                    rgba(0, 0, 0, 0.5) 100%
+                );
+            }
+            h1,
+            p {
+                position: relative;
+                z-index: 10;
+                text-align: left;
+            }
+            h1 {
+                font-size: 28px;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            p {
+                margin-top: 0;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #000;
+        &::after {
+            font-size: 20px;
+        }
+    }
+
+    .swiperEffect {
+        border-radius: 0;
+        .swiper-slide {
+            border-radius: 18px;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+        }
+    }
+</style>
+
+<script>
+    import Swiper from "swiper/bundle";
+    import "swiper/swiper-bundle.css";
+
+    var swiperFade = new Swiper(".swiperFade", {
+        loop: true,
+        effect: "fade",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+
+
+</script>

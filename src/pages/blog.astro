@@ -4,6 +4,7 @@ import Form from "../components/Form.astro";
 import Layout from "../components/Layout.astro"
 import BlogLayout from "../components/Blog/BlogLayout.astro";
 import Blog from "../components/Blog.astro";
+import CarouselTestimonial from "../components/CarouselTestimonial.astro";
 
 
 const postList = await Astro.glob("../pages/posts/*.md");
@@ -167,7 +168,7 @@ const postList = await Astro.glob("../pages/posts/*.md");
 
     </main>
     <!-- main ends here -->
-
+    <CarouselTestimonial/>
   </div>
         
         <ul>
