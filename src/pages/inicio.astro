@@ -1,4 +1,6 @@
 ---
+
+
 import Layout from "../components/Layout.astro";
 import Marcas from "../components/Marcas.astro";
 import BotonRelleno from "../components/BotonRelleno.astro";
@@ -10,13 +12,28 @@ import Blog from "../components/Blog.astro";
 import Noticias from "../components/Noticias.astro";
 import NormalButton from "../components/NormalButton.astro";
 import CarouselTestimonial from "../components/CarouselTestimonial.astro";
+import CardsInicio from "../components/Blog/CardsInicio.astro";
+import type { preview } from "astro";
+
+const title="Inicio"
+const postList = await Astro.glob("../pages/posts/*.md");
+
+const postsArray = Object.values(postList).map(post => ({
+  title: post.frontmatter.title,
+  previewText: post.frontmatter.previewText,
+  image: post.frontmatter.image,
+  date: new Date(post.frontmatter.pubDate),
+  url: post.url
+})).sort((a, b) => b.date - a.date);
+
+const latestPosts = postsArray.slice(0, 4);
+
 ---
 
-<Layout title="Inicio">
-    <header>
+<Layout title={title}>
+
         <!-- HEADER CARRUSEL -->
         <MainHero />
-    </header>
 
     <main>
         <!-- SLIDER PROVEEDORES -->
@@ -54,8 +71,6 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                 </div>
             </div>
         </section>
-
-        
 
         <!-- ESPECIALIDADES -->
 
@@ -98,11 +113,7 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
                 </div>
             </div>
         </section>
-
-        
-        <!-- TESTIMONIOS -->
-        <CarouselTestimonial/>
-
+ 
 
 
         <!-- SERVICIOS FT -->
@@ -201,38 +212,8 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
             </div>
         </section>
 
-
-<!--         PAGINA WEB -->
-        <section class="">
-            <div
-                class="bg-white rounded-xl shadow-md overflow-hidden w-full bg-gradient-to-r from-orange-600 to-yellow-300 mb-16"
-            >
-            <div>
-                <div class="m-16">
-
-                    <div class="border rounded">
-                        <img src="/public/img/banner-pagina-web.jpg" alt="" class="w-full">
-                    </div>
-                    <div class="flex justify-between">
-                        <h2 class="text-white">
-                         Streamline Your <br> Operations
-                        </h2>
-
-                        <h4 class="text-white">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aliquam optio doloribus numquam similique illo placeat ea a vero suscipit! Officia distinctio amet quia minima.
-                        </h4>
-                        
-                </div>
-                <NormalButton text="Novedades" estilos="bg-white px-8 py-2"/>
-                
-
-                </div>
-
-                       
-                    </div>
-                </div>
-
-        </section>
+        <!-- TESTIMONIOS -->
+        <CarouselTestimonial/>
 
         <!-- ASESORIA -->
         <section>
@@ -257,9 +238,16 @@ import CarouselTestimonial from "../components/CarouselTestimonial.astro";
         </section>
 
         <!-- BLOG -->
-        <article>
-            <Blog />
-        </article>
+         
+        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 bg-gray-100 rounded-2xl">
+            <ul class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-10">
+                    {latestPosts.map(post => (
+                        <li><CardsInicio title={post.title} image={post.image} url={post.url} previewText={post.previewText}/></li>
+                      
+                    ))}
+            </ul>
+          </div>
+
         
     </main>
     

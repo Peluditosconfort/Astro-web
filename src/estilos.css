@@ -9,6 +9,6 @@
 .parrafo {
     @apply text-xl font-lato text-justify;
 }
-h3 {
-
+.titulos-blog {
+    @apply text-2xl font-myriad font-bold  text-justify;
 }

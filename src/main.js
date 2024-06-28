@@ -7,5 +7,6 @@ document.querySelectorAll('p').forEach((element) => {
 });
 
 document.querySelectorAll('h3').forEach((element) => {
-    element.classList.add('h3');
+    element.classList.add('titulos-blog');
 });
+

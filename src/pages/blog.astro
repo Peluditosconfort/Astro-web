@@ -1,23 +1,20 @@
 ---
-import Noticias from "../components/Noticias.astro"
-import Form from "../components/Form.astro";
-import Layout from "../components/Layout.astro"
 import BlogLayout from "../components/Blog/BlogLayout.astro";
-import Blog from "../components/Blog.astro";
-import CarouselTestimonial from "../components/CarouselTestimonial.astro";
+import PostCard from "../components/Blog/PostCard.astro";
 
 
 const postList = await Astro.glob("../pages/posts/*.md");
 
+const title = "BlogInterfaz";
 ---
-<body>
-    <BlogLayout title="Blog">
-        
-        <!-- component -->
+
+<BlogLayout title={title}>
+  <!-- 
 <div class="max-w-[1500px] mx-auto mt-32">
     <h2>Categorias</h2>
     <div class="w-full md:w-4/7 grid grid-cols-2	">
-        <!-- post 1 -->
+ 
+
         <div class="rounded w-full flex flex-col md:flex-row mb-10">
           <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="block md:hidden lg:block rounded-md h-64 md:h-32 m-4 md:m-0" />
           <div class="bg-white rounded px-4">
@@ -31,7 +28,7 @@ const postList = await Astro.glob("../pages/posts/*.md");
           </div>
         </div>
 
-        <!-- post 2 -->
+
         <div class="rounded w-full flex flex-col md:flex-row mb-10">
           <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="block md:hidden lg:block rounded-md h-64 md:h-32 m-4 md:m-0" />
           <div class="bg-white rounded px-4">
@@ -45,7 +42,9 @@ const postList = await Astro.glob("../pages/posts/*.md");
             </p>
           </div>
         </div>
-        <!-- post 3 -->
+
+        
+
         <div class="rounded w-full flex flex-col md:flex-row mb-10">
           <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="block md:hidden lg:block rounded-md h-64 md:h-32 m-4 md:m-0" />
           <div class="bg-white rounded px-4">
@@ -58,7 +57,9 @@ const postList = await Astro.glob("../pages/posts/*.md");
             </p>
           </div>
         </div>
-        <!-- post 4 -->
+
+        
+
         <div class="rounded w-full flex flex-col md:flex-row mb-10">
           <img src="https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="block md:hidden lg:block rounded-md h-64 md:h-32 m-4 md:m-0" />
           <div class="bg-white rounded px-4">
@@ -75,9 +76,8 @@ const postList = await Astro.glob("../pages/posts/*.md");
       </div>
     <h2> LISTA DE ARTICULOS</h2>
     <main class="mt-12">
-      <!-- featured section -->
+
       <div class="flex flex-wrap md:flex-nowrap space-x-0 md:space-x-6 mb-16">
-        <!-- main post -->
         <div class="mb-4 lg:mb-0  p-4 lg:p-0 w-full md:w-4/7 relative rounded block">
           <img src="https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="rounded-md object-cover w-full h-64">
           <span class="text-green-700 text-sm hidden md:block mt-4"> Technology </span>
@@ -95,9 +95,7 @@ const postList = await Astro.glob("../pages/posts/*.md");
           </a>
         </div>
 
-        <!-- CATEGORIAS -->
         <div class="w-full md:w-4/7 ">
-          <!-- post 1 -->
           <div class="rounded w-full flex flex-col md:flex-row mb-10">
             <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="block md:hidden lg:block rounded-md h-64 md:h-32 m-4 md:m-0" />
             <div class="bg-white rounded px-4">
@@ -111,7 +109,6 @@ const postList = await Astro.glob("../pages/posts/*.md");
             </div>
           </div>
 
-          <!-- post 2 -->
           <div class="rounded w-full flex flex-col md:flex-row mb-10">
             <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="block md:hidden lg:block rounded-md h-64 md:h-32 m-4 md:m-0" />
             <div class="bg-white rounded px-4">
@@ -125,7 +122,7 @@ const postList = await Astro.glob("../pages/posts/*.md");
               </p>
             </div>
           </div>
-          <!-- post 3 -->
+                  
           <div class="rounded w-full flex flex-col md:flex-row mb-10">
             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="block md:hidden lg:block rounded-md h-64 md:h-32 m-4 md:m-0" />
             <div class="bg-white rounded px-4">
@@ -138,7 +135,8 @@ const postList = await Astro.glob("../pages/posts/*.md");
               </p>
             </div>
           </div>
-          <!-- post 4 -->
+
+
           <div class="rounded w-full flex flex-col md:flex-row mb-10">
             <img src="https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="block md:hidden lg:block rounded-md h-64 md:h-32 m-4 md:m-0" />
             <div class="bg-white rounded px-4">
@@ -155,31 +153,32 @@ const postList = await Astro.glob("../pages/posts/*.md");
         </div>
 
       </div>
-      <!-- end featured section -->
     
       
-      <!-- recent posts -->
-      
-      <!-- end recent posts -->
-       <Form bgBlog="bg-naranja"/>
-      <!-- popular posts -->
+           <Form bgBlog="bg-naranja"/>
       <Blog/>
-      <!-- end popular posts -->
 
-    </main>
-    <!-- main ends here -->
-    <CarouselTestimonial/>
+    </main> 
+
+  </div> -->
+ 
+  <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 bg-gray-100 rounded-2xl">
+    <ul class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-10">
+      {
+        postList.map((post) => (
+          <li>
+            <PostCard
+              image={post.frontmatter.image}
+              url={post.url}
+              title={post.frontmatter.title}
+              pubDate={post.frontmatter.pubDate}
+              previewText={post.frontmatter.previewText}
+              tags={post.frontmatter.tags[1]}
+            />
+          </li>
+        ))
+      }
+    </ul>
   </div>
-        
-        <ul>
-            {
-                postList.map((post) =>(
-                    <li>
-                    <a href={post.url}>{post.frontmatter.title}</a>
-                    </li>
-                ))
-            }
-        </ul>
-    </BlogLayout>
-</body>
-</html>
+  
+</BlogLayout>

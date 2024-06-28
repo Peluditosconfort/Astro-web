@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayouts.astro
-pubDate: "2023-12-03"
-title: "Historia de los camiones"
+pubDate: 2023-12-03
+title: "Los camiones"
 author: "Edwin Camilo"
 image:
     url: "/public/img/03.jpg"
