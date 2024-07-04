@@ -9,14 +9,20 @@ const { image, url, title, pubDate, previewText, tags} = Astro.props;
         <a href={url}>
         
         <img src={image.url} alt={image.alt} class="rounded-2xl">
-        <span class="flex gap-4 my-2">
-            <h4 class="bg-blue-200 rounded-lg px-2">{pubDate}</h4>
-            <h4 class="bg-orange-200 rounded-lg px-2">{tags}</h4>
-        </span>
-        <h3 class="py-2">{title}</h3>
 
-        <p class="text-gray-500 text-lg">{previewText}</p>
+        <div class="flex flex-col">
+            <div class="flex flex-row gap-4 my-2">
+                <h4 class="bg-blue-200 rounded-lg px-2">{pubDate}</h4>
+                <h4 class="bg-orange-200 rounded-lg px-2">{tags}</h4>
+            </div>
+
+            <h3 class="py-2">{title}</h3>
+    
+            <p class="text-gray-500 text-lg">{previewText}</p>
+            
+        </div>
         <ButtonBlog/>
+        
     </a>
     </div>
 </section>

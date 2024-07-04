@@ -22,7 +22,8 @@ const postsArray = Object.values(postList).map(post => ({
   title: post.frontmatter.title,
   previewText: post.frontmatter.previewText,
   image: post.frontmatter.image,
-  date: new Date(post.frontmatter.pubDate),
+  pubDate: post.frontmatter.pubDate,
+  tags: post.frontmatter.tags,
   url: post.url
 })).sort((a, b) => b.date - a.date);
 
@@ -39,7 +40,7 @@ const latestPosts = postsArray.slice(0, 4);
         <!-- SLIDER PROVEEDORES -->
         <section class="marcas py-4">
             <Marcas />
-            <Marcas />
+
         </section>
 
         <!-- FERTRAC -->
@@ -242,7 +243,7 @@ const latestPosts = postsArray.slice(0, 4);
         <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 bg-gray-100 rounded-2xl">
             <ul class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-10">
                     {latestPosts.map(post => (
-                        <li><CardsInicio title={post.title} image={post.image} url={post.url} previewText={post.previewText}/></li>
+                        <li><CardsInicio title={post.title} image={post.image} url={post.url} previewText={post.previewText} pubDate={post.pubDate} tags={post.tags} /></li>
                       
                     ))}
             </ul>

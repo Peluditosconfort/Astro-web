@@ -1,15 +1,17 @@
 ---
 import BlogLayout from "../components/Blog/BlogLayout.astro";
-import PostImage from "../components/Blog/PostImage.astro";
 
 const { frontmatter, image } = Astro.props;
+
+
 ---
 
 <BlogLayout title={frontmatter.title}>
+
+    <img src={frontmatter.image.url} alt="">
+    <slot/>
+
     
-    <div>
-        <slot />
-        <p>prueba titulo {frontmatter.author}</p>
-        <p>prueba fecha {frontmatter.pubDate.slice(0, 10)}</p>
-    </div>
+    <p>prueba titulo {frontmatter.author}</p>
+    <p>prueba fecha {frontmatter.pubDate.slice(0, 10)}</p>
 </BlogLayout>

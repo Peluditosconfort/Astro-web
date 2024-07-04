@@ -10,5 +10,5 @@
     @apply text-xl font-lato text-justify;
 }
 .titulos-blog {
-    @apply text-2xl font-myriad font-bold  text-justify;
+    @apply text-2xl font-myriad font-bold;
 }
