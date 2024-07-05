@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayouts.astro
 pubDate: "2024-12-03"
-title: "Exporpartes 2024"
+title: "Exporpartes 2024 Medellin"
 author: "Edwin Camilo"
 image:
     url: "/public/img/03.jpg"

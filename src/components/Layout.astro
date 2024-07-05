@@ -1,7 +1,7 @@
 ---
 import MegaMenu from "./MegaMenu.astro";
 import Footer from "./Footer.astro";
-
+import LatestPosts from "../components/Blog/LatestPosts.astro"
 interface Props {
   title: string;
 }
@@ -36,6 +36,8 @@ const { title } = Astro.props;
 
     <main>
       <slot />
+      
+      <LatestPosts/>
     </main>
 
     <footer>

@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/PostLayouts.astro
 pubDate: "2023-12-03"
-title: "Los taxis"
+title: "Historia de los motores"
 author: "Edwin Camilo"
 image:
     url: "/public/img/03.jpg"
     alt: "imagen de post"
 tags: ["Articulos"]
+previewText: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor"
 ---
 
 ## Los taxis
