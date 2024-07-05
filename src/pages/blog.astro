@@ -5,6 +5,15 @@ import PostCard from "../components/Blog/PostCard.astro";
 
 const postList = await Astro.glob("../pages/posts/*.md");
 
+const postsArray = Object.values(postList).map(post => ({
+  title: post.frontmatter.title,
+  previewText: post.frontmatter.previewText,
+  image: post.frontmatter.image,
+  pubDate: post.frontmatter.pubDate,
+  tags: post.frontmatter.tags,
+  url: post.url
+})).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+
 const title = "BlogInterfaz";
 ---
 
@@ -165,15 +174,15 @@ const title = "BlogInterfaz";
   <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 bg-gray-100 rounded-2xl">
     <ul class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-10">
       {
-        postList.map((post) => (
+        postsArray.map((post) => (
           <li>
             <PostCard
-              image={post.frontmatter.image}
+              image={post.image}
               url={post.url}
-              title={post.frontmatter.title}
-              pubDate={post.frontmatter.pubDate}
-              previewText={post.frontmatter.previewText}
-              tags={post.frontmatter.tags[1]}
+              title={post.title}
+              pubDate={post.pubDate}
+              previewText={post.previewText}
+              tags={post.tags}
             />
           </li>
         ))

@@ -12,7 +12,7 @@ const postsArray = Object.values(postList).map(post => ({
   pubDate: post.frontmatter.pubDate,
   tags: post.frontmatter.tags,
   url: post.url
-})).sort((a, b) => b.date - a.date);
+})).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
 const latestPosts = postsArray.slice(0, 4);
 ---

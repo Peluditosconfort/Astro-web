@@ -945,14 +945,6 @@ ul {
       });
     });
 
-    window.addEventListener('click', (event) => {
-      if (!event.target.matches('.dropdown-toggle') && !event.target.closest('.dropdown')) {
-        dropdownToggles.forEach((toggle) => {
-          toggle.nextElementSibling.classList.add('hidden');
-          toggle.querySelector('svg').classList.remove('rotate-180');
-        });
-      }
-    });
 
 
 document.querySelector(".barras_menu").addEventListener("click", animacion);
