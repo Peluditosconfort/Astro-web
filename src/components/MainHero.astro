@@ -535,50 +535,61 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 </style>
 
-<script>
-import Swiper from "swiper/bundle";
-import "swiper/swiper-bundle.css";
+<!-- <script>
 
-    document.addEventListener('DOMContentLoaded', function() {
-    const progressFill = document.querySelector(".progress-fill");
-    var swiper = new Swiper(".parallax-slider", {
-        speed: 1000,
-        parallax: true,
-        loop: true,
-        autoplay: {
-            delay: 10000, // Adjust autoplay delay as needed
-            disableOnInteraction: false
-        },
-        grabCursor: true,
-        effect: "creative",
-        creativeEffect: {
-            prev: {
-                shadow: true,
-                translate: [0, 0, -1000]
-            },
-            next: {
-                translate: ["100%", 0, 0]
-            }
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        on: {
-            slideChange: function () {
-                // Reset progress bar when slide changes
-                progressFill.style.width = '0%';
-            },
-            autoplayTimeLeft: function(s, time, progress) {
-                // Update progress bar width based on autoplay time left
-                progressFill.style.width = (1 - progress) * 100 + '%';
-            }
-        }
-    });
-});
+let nextDom = document.getElementById("next");
+let prevDom = document.getElementById("prev");
 
-</script>
+let carouselDom = document.querySelector(".carousel");
+let SliderDom = carouselDom.querySelector(".carousel .list");
+let thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
+let timeDom = document.querySelector('.carousel .time');
+
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 1000;
+let timeAutoNext = 10000;
+
+nextDom.onclick = function () {
+    showSlider("next");
+};
+
+prevDom.onclick = function () {
+    showSlider("prev");
+};
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+    next.click();
+}, timeAutoNext);
+
+function showSlider(type) {
+    let SliderItemsDom = SliderDom.querySelectorAll(
+        ".carousel .list .item",
+    );
+    let thumbnailItemsDom = document.querySelectorAll(
+        ".carousel .thumbnail .item",
+    );
+
+    if (type === "next") {
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carouselDom.classList.add("next");
+    } else {
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(
+            thumbnailItemsDom[thumbnailItemsDom.length - 1],
+        );
+        carouselDom.classList.add("prev");
+    }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove("next");
+        carouselDom.classList.remove("prev");
+    }, timeRunning);
+
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext);
+} 
+</script> -->
