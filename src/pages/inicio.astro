@@ -1,19 +1,16 @@
 ---
 
 
-import Layout from "../components/Layout.astro";
+import Layout from "../layouts/MainLayout.astro";
 import Marcas from "../components/Marcas.astro";
-import BotonRelleno from "../components/BotonRelleno.astro";
-import Form from "../components/Form.astro";
-import TarjetaEspecialidades from "../components/TarjetaEspecialidades.astro";
-import MainHero from "../components/MainHero.astro";
-import Blog from "../components/Blog.astro";
 
-import Noticias from "../components/Noticias.astro";
-import NormalButton from "../components/NormalButton.astro";
+import SpecialityCards from "../components/SpecialityCards.astro";
+import MainHero from "../components/MainHero.astro";
+
+import NormalButton from "../components/MainButton.astro";
 import CarouselTestimonial from "../components/CarouselTestimonial.astro";
-import CardsInicio from "../components/Blog/CardsInicio.astro";
-import type { preview } from "astro";
+
+
 
 const title="Inicio"
 
@@ -29,7 +26,7 @@ const title="Inicio"
         <!-- SLIDER PROVEEDORES -->
         <section class="marcas py-4">
             <Marcas />
-
+            
         </section>
 
         <!-- FERTRAC -->
@@ -64,7 +61,7 @@ const title="Inicio"
 
         <!-- ESPECIALIDADES -->
 
-        <TarjetaEspecialidades />
+        <SpecialityCards />
 
         <!-- NOVEDADES BLOG -->
         <section class="">
