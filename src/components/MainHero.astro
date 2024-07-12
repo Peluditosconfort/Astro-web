@@ -1,18 +1,16 @@
+---
+import MainButton from "./MainButton.astro";
+---
+
 <section class="creative-parallax--slider">
     <div class="slider-inner">
         <div class="slider-row">
             <div class="parallax-slider slider-wrap">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide" style="background-image: url('https://imgpanda.com/upload/ib/7h4GtHmC8Y.jpg');">
+                    <div class="swiper-slide" style="background-image: url(/public/img/bg.png);">           
                         <div class="swiper-slide--inner">
-                            <div class="slide--bg">
-                                <div class="slide-bg--inner"></div>
-                            </div>
-                            <div class="slide-detail">
-                                <div class="slide-main--subheading">
-                                    <span><i class="fa-solid fa-award"></i> On demand live support</span>
-                                </div>
+                            <div class="slide-detail w-fit top-[25%] left-[10%] relative">
                                 <div class="slide-main--heading">
                                     <div class="from-left">Delivering creative</div>
                                     <div class="from-right">digital products</div>
@@ -22,7 +20,8 @@
                                     all over the world.</p>
                                 </div>
                                 <div class="slide-cta">
-                                    <a href="https://www.fiverr.com/aliali44/develop-or-customize-a-wordpress-theme" class="slide-btn gradient-btn">Get Started Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <span class="slide-btn"><MainButton text="Novedades" estilos=" bg-white px-8 py-2"/></span>
+                                    <span class="slide-btn"><MainButton text="Novedades" estilos=" border px-8 py-2 text-white hover:bg-white hover:text-naranja"/></span>
                                 </div>
                                 
                             </div>							
@@ -31,13 +30,8 @@
                     <!-- Slide 2 -->
                     <div class="swiper-slide" style="background-image: url('https://imgpanda.com/upload/ib/NqHhOwv4t0.jpg');">
                         <div class="swiper-slide--inner">
-                            <div class="slide--bg">
-                                <div class="slide-bg--inner"></div>
-                            </div>
                             <div class="slide-detail">
-                                <div class="slide-main--subheading">
-                                    <span><i class="fa-solid fa-award"></i> On demand live support</span>
-                                </div>
+
                                 <div class="slide-main--heading">
                                     <div class="from-left">Start your online</div>
                                     <div class="from-right">business today</div>
@@ -47,7 +41,7 @@
                                     all over the world.</p>
                                 </div>
                                 <div class="slide-cta">
-                                    <a href="https://www.fiverr.com/aliali44/develop-or-customize-a-wordpress-theme" class="slide-btn gradient-btn">Get Started Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <span class="slide-btn"><MainButton text="Novedades" estilos=" bg-white px-8 py-2"/></span>
                                 </div>
                                 
                             </div>							
@@ -56,13 +50,9 @@
                     <!-- Slide 3 -->
                     <div class="swiper-slide" style="background-image: url('https://imgpanda.com/upload/ib/bRqJVoCe3b.jpg');">
                         <div class="swiper-slide--inner">
-                            <div class="slide--bg">
-                                <div class="slide-bg--inner"></div>
-                            </div>
+
                             <div class="slide-detail">
-                                <div class="slide-main--subheading">
-                                    <span><i class="fa-solid fa-award"></i> On demand live support</span>
-                                </div>
+  
                                 <div class="slide-main--heading">
                                     <div class="from-left">Awesome Solutions</div>
                                     <div class="from-right">For your Business</div>
@@ -93,39 +83,17 @@
 <style>
 
 .slider-wrap{
-    background: #162340;
+    overflow: hidden;
+    background: -webkit-linear-gradient(150deg, #f2790c,#db6600,#000000);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(150deg, #f2790c,#db6600,#000000);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                                                                         
     height: 100vh;
 }
 .swiper-slide--inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
 }
 .swiper-slide{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-}
-.slide--bg {
-  z-index: 0;
-  visibility: inherit;
-  font-weight: 400;
-  white-space: nowrap;
-  min-height: 834px;
-  min-width: 834px;
-  max-height: 834px;
-  max-width: 834px;
-  background-color: #16234033;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  overflow: auto;
-}
-.swiper-slide-active .slide--bg{
-  animation: zoomInBg 1.5s ease forwards;
 }
 
 .slide--bg .slide-bg--inner {
@@ -138,21 +106,17 @@
 .swiper-slide-active .slide--bg .slide-bg--inner{
   animation: zoomInInner 1s ease forwards;
 }
-.slide-detail {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
+
 
 .slide-main--heading {
     display: block;
-    text-align: center;
+    text-align: left;
     color: #fff;
     line-height: normal;
-    text-shadow: rgb(11, 18, 54) 3px 3px 15px;
+    text-shadow: 2px 0px 0px rgba(0,0,0,0.6);
     padding: 0px 0px 23px;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 86px;
     white-space: normal;
     text-transform: capitalize;
 }
@@ -170,23 +134,9 @@
   animation: fadeInRight 1s ease forwards; 
   animation-delay: 1s; 
 }
-.slide-main--subheading {
-    color: #ffffff;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 20px;
-    padding-bottom: 25px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    opacity: 0;
-    filter: blur(4px); 
 
-}
-.swiper-slide-active .slide-main--subheading{
-  transition: opacity 0.5s ease, filter 0.5s ease; 
-  animation: fadeInDown 1s ease forwards; 
-  animation-delay: 1.2s;
-}
+
+
 
 .slide-des {
     text-align: center;
@@ -202,7 +152,6 @@
     max-height: none;
     max-width: 347px;
     color: rgb(255, 255, 255);
-    margin: auto;
     opacity: 0;
 }
 .swiper-slide-active .slide-des{
@@ -211,23 +160,7 @@
    animation-delay: 1.4s;
 }
 .slide-cta .slide-btn{
-    text-align: inherit;
-    line-height: 27px;
-    border-width: 1px;
-    margin: 0px;
-    padding: 18px 70px 18px 46px;
-    letter-spacing: 0px;
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    background-image: linear-gradient(to right, #f7693c, #c74e45, #7d3785, #582d9f, #3928af, #582d9f, #7d3785, #c74e45, #f7693c);
-    background-size: 200% auto;
-    color: #ffffff;
-    display: inline-block;
-    border: 2px solid transparent;
-    width: auto;
-    border-radius: 50px;
-    position: relative;
+
     transition: .3s ease-in-out !important;
     opacity: 0;     
 }
@@ -440,62 +373,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: var(--progress, 0%);
     transition: width 0.5s ease; 
 }
-/* ======== Sticky Footer ========= */
-  .sticky-footer{
-       position: fixed;
-    width: 100%;
-        background: #333;
-    z-index: 999;
-    bottom: 0;
-  }
-.sticky-footer .footer-row{
-      display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 10px;
-    padding-right: 15px;
-}
-.creditd a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-        font-size: 16px;
-}
-.social ul{
-      display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    column-gap: 10px;
-    align-items: center;
-}
-.social ul li a{
-     display: flex;
-    background: #fff;
-    height: 30px;
-    width: 30px;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-}
-.social ul li a img{
-       max-width: 20px;
-}
+/
 /* ==================== Responsive Ipad ========================== */
 @media only screen and (max-width: 981px) {
 .slider-wrap{
     height: 750px;
 }
-.slide--bg{
-        min-height: 720px;
-    min-width: 720px;
-    max-height: 720px;
-    max-width: 720px;
-}
-.slide--bg .slide-bg--inner{
-    width: 590px;
-    height: 590px;
-}
+
 .slide-badge{
         right: -116px;
 }
@@ -535,61 +419,52 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 </style>
 
-<!-- <script>
+<script>
 
-let nextDom = document.getElementById("next");
-let prevDom = document.getElementById("prev");
 
-let carouselDom = document.querySelector(".carousel");
-let SliderDom = carouselDom.querySelector(".carousel .list");
-let thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
-let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
-let timeDom = document.querySelector('.carousel .time');
+import Swiper from "swiper/bundle";
+import "swiper/swiper-bundle.css";
 
-thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 1000;
-let timeAutoNext = 10000;
+document.addEventListener('DOMContentLoaded', function() {
+    const progressFill = document.querySelector(".progress-fill");
+    var swiper = new Swiper(".parallax-slider", {
+        speed: 1000,
+        parallax: true,
+        loop: true,
+        /* autoplay: {
+            delay: 10000, // Adjust autoplay delay as needed
+            disableOnInteraction: false
+        }, */
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: [0, 0, -1000]
+            },
+            next: {
+                translate: ["100%", 0, 0]
+            }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        on: {
+            slideChange: function () {
+                // Reset progress bar when slide changes
+                progressFill.style.width = '0%';
+            },
+            autoplayTimeLeft: function(s, time, progress) {
+                // Update progress bar width based on autoplay time left
+                progressFill.style.width = (1 - progress) * 100 + '%';
+            }
+        }
+    });
+});
 
-nextDom.onclick = function () {
-    showSlider("next");
-};
-
-prevDom.onclick = function () {
-    showSlider("prev");
-};
-let runTimeOut;
-let runNextAuto = setTimeout(() => {
-    next.click();
-}, timeAutoNext);
-
-function showSlider(type) {
-    let SliderItemsDom = SliderDom.querySelectorAll(
-        ".carousel .list .item",
-    );
-    let thumbnailItemsDom = document.querySelectorAll(
-        ".carousel .thumbnail .item",
-    );
-
-    if (type === "next") {
-        SliderDom.appendChild(SliderItemsDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-        carouselDom.classList.add("next");
-    } else {
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-        thumbnailBorderDom.prepend(
-            thumbnailItemsDom[thumbnailItemsDom.length - 1],
-        );
-        carouselDom.classList.add("prev");
-    }
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-        carouselDom.classList.remove("next");
-        carouselDom.classList.remove("prev");
-    }, timeRunning);
-
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-        next.click();
-    }, timeAutoNext);
-} 
-</script> -->
+</script>
