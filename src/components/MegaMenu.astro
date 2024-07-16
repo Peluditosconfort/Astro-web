@@ -5,9 +5,9 @@ const {positionNav} = Astro.props;
 const {bgNav} = Astro.props;
 ---
 
-<div class={`navbar transition duration-1000 ease-in-out sm:w-screen flex items-center justify-between px-4 py-6 md:justify-around top-0 ${positionNav} z-50`}>
+<div class={`navbar bg-transparent transition duration-1000 ease-in-out sm:w-screen flex items-center justify-between px-4 py-6 md:justify-around top-0 ${positionNav} z-50`}>
   <a href="#">
-    <!-- <img id="imagen1" src="/public/img/fertrac-footer.png" alt="" class="w-44" > -->
+    <!-- <img id="imagen1" src="/public/img/fertrac-footer.png" alt="" class="w-44 hidden" > -->
     <img id="imagen2" src="/public/img/fertrac-footerb.png" class="sm:w-32 lg:w-44" alt=""
       />
   </a>
@@ -871,15 +871,7 @@ ul {
   background-color: #0088cc;
 }
 
-/* .bgsocial{
-  background-color: white;
-  color: #f2790c;
-}
 
-.bgsocial:hover {
-  background-color: black;
-  color: white;
-} */
 
 
 .barras_menu {
@@ -914,9 +906,16 @@ ul {
   translate(-4px, 2px);
 }
 
+
+.scrolled {
+  background: #f2790c;
+}
 </style>
 
 <script>
+
+
+
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
@@ -960,7 +959,7 @@ function animacion () {
 
 }
 
- window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
     
 
@@ -971,8 +970,8 @@ function animacion () {
         navbar.classList.remove('scrolled');
     }
 });
-/* 
-document.addEventListener('scroll', function () {
+
+/* document.addEventListener('scroll', function () {
       const scrollY = window.scrollY;
       const imagen1 = document.getElementById('imagen1');
       const imagen2 = document.getElementById('imagen2');
@@ -991,5 +990,5 @@ document.addEventListener('scroll', function () {
       })
       }
     }
-  ); */
+  );  */
 </script> 

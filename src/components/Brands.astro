@@ -1,0 +1,144 @@
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide-track-1">
+            <div class="slide"><img src="/public/img/wabco.png" alt="Wabco"></div>
+            <div class="slide"><img src="/public/img/victor-reinz.png" alt="Victor Reinz"></div>
+            <div class="slide"><img src="/public/img/vaden.png" alt="Vaden"></div>
+            <div class="slide"><img src="/public/img/tyj.png" alt="TYJ"></div>
+            <div class="slide"><img src="/public/img/transtec.png" alt="Transtec"></div>
+            <div class="slide"><img src="/public/img/timken.png" alt="Timken"></div>
+            <div class="slide"><img src="/public/img/tenneco.png" alt="Tenneco"></div>
+            <div class="slide"><img src="/public/img/sys.png" alt="SYS"></div>
+            <div class="slide"><img src="/public/img/stemco.png" alt="Stemco"></div>
+            <div class="slide"><img src="/public/img/vaden.png" alt="Vaden"></div>
+
+            <!-- Duplicates to create infinite loop -->
+
+            <div class="slide"><img src="/public/img/wabco.png" alt="Wabco"></div>
+            <div class="slide"><img src="/public/img/victor-reinz.png" alt="Victor Reinz"></div>
+            <div class="slide"><img src="/public/img/vaden.png" alt="Vaden"></div>
+            <div class="slide"><img src="/public/img/tyj.png" alt="TYJ"></div>
+            <div class="slide"><img src="/public/img/transtec.png" alt="Transtec"></div>
+            <div class="slide"><img src="/public/img/timken.png" alt="Timken"></div>
+            <div class="slide"><img src="/public/img/tenneco.png" alt="Tenneco"></div>
+            <div class="slide"><img src="/public/img/sys.png" alt="SYS"></div>
+            <div class="slide"><img src="/public/img/stemco.png" alt="Stemco"></div>
+            <div class="slide"><img src="/public/img/vaden.png" alt="Vaden"></div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slide-track-2">
+            <div class="slide"><img src="/public/img/wabco.png" alt="Wabco"></div>
+            <div class="slide"><img src="/public/img/victor-reinz.png" alt="Victor Reinz"></div>
+            <div class="slide"><img src="/public/img/vaden.png" alt="Vaden"></div>
+            <div class="slide"><img src="/public/img/tyj.png" alt="TYJ"></div>
+            <div class="slide"><img src="/public/img/transtec.png" alt="Transtec"></div>
+            <div class="slide"><img src="/public/img/timken.png" alt="Timken"></div>
+            <div class="slide"><img src="/public/img/tenneco.png" alt="Tenneco"></div>
+            <div class="slide"><img src="/public/img/sys.png" alt="SYS"></div>
+            <div class="slide"><img src="/public/img/stemco.png" alt="Stemco"></div>
+            <div class="slide"><img src="/public/img/vaden.png" alt="Vaden"></div>
+
+            <!-- Duplicates to create infinite loop -->
+
+            <div class="slide"><img src="/public/img/wabco.png" alt="Wabco"></div>
+            <div class="slide"><img src="/public/img/victor-reinz.png" alt="Victor Reinz"></div>
+            <div class="slide"><img src="/public/img/vaden.png" alt="Vaden"></div>
+            <div class="slide"><img src="/public/img/tyj.png" alt="TYJ"></div>
+            <div class="slide"><img src="/public/img/transtec.png" alt="Transtec"></div>
+            <div class="slide"><img src="/public/img/timken.png" alt="Timken"></div>
+            <div class="slide"><img src="/public/img/tenneco.png" alt="Tenneco"></div>
+            <div class="slide"><img src="/public/img/sys.png" alt="SYS"></div>
+            <div class="slide"><img src="/public/img/stemco.png" alt="Stemco"></div>
+            <div class="slide"><img src="/public/img/vaden.png" alt="Vaden"></div>
+        </div>
+</div>
+
+<style>
+    .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider {
+    height: 75pt;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    user-select: none;
+    touch-action: none;
+}
+
+.slider:before {
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #efeef2 0%, hsla(0, 0%, 100%, 0) 100%);
+    content: "";
+    height: 75pt;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider:after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+    background: linear-gradient(to right, #efeef2 0%, hsla(0, 0%, 100%, 0) 100%);
+    content: "";
+    height: 75pt;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider .slide-track-1 {
+    animation: scroll-l 60s linear infinite;
+    display: flex;
+    width: calc(250px * 20); /* Ancho ajustado para 36 imágenes (18 originales + 18 duplicadas) */
+}
+.slider .slide-track-2 {
+    animation: scroll-r 60s linear infinite;
+    display: flex;
+    width: calc(250px * 20); /* Ancho ajustado para 36 imágenes (18 originales + 18 duplicadas) */
+}
+
+
+.slider .slide {
+    height: 75pt;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.slider .slide img {
+    width: 180px;
+    padding: 1pc;
+    vertical-align: middle;
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes scroll-l {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 10));
+    }
+}
+@keyframes scroll-r {
+    100% {
+        transform: translateX(0);
+    }
+    0% {
+        transform: translateX(calc(-250px * 10));
+    }
+}
+</style>

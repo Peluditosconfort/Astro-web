@@ -8,20 +8,19 @@ import MainButton from "./MainButton.astro";
             <div class="parallax-slider slider-wrap">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide" style="background-image: url(/public/img/bg.png);">           
+                    <div class="swiper-slide" style="background-image: url(/public/img/bg.jpg);">           
                         <div class="swiper-slide--inner">
                             <div class="slide-detail w-fit top-[25%] left-[10%] relative">
                                 <div class="slide-main--heading">
-                                    <div class="from-left">Delivering creative</div>
-                                    <div class="from-right">digital products</div>
+                                    <div class="from-left">Venta de respuestos</div>
+                                    <div class="from-right">originales para <br>tractocamiones</div>
                                 </div>
                                 <div class="slide-des">
-                                    <p>We're a fully dedicated corporate service agency collaborating with brands
-                                    all over the world.</p>
+                                    <p>Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
                                 </div>
                                 <div class="slide-cta">
-                                    <span class="slide-btn"><MainButton text="Novedades" estilos=" bg-white px-8 py-2"/></span>
-                                    <span class="slide-btn"><MainButton text="Novedades" estilos=" border px-8 py-2 text-white hover:bg-white hover:text-naranja"/></span>
+                                    <span class="slide-btn"><MainButton text="Asesoria" estilos="bg-naranja text-white px-8 py-2 mr-2"/></span> 
+                                    <span class="slide-btn"><MainButton text="Nuestas Marcas" estilos=" border px-8 py-2 text-white hover:bg-naranja hover:text-naranja"/></span>
                                 </div>
                                 
                             </div>							
@@ -112,7 +111,7 @@ import MainButton from "./MainButton.astro";
     display: block;
     text-align: left;
     color: #fff;
-    line-height: normal;
+    line-height: 80px;
     text-shadow: 2px 0px 0px rgba(0,0,0,0.6);
     padding: 0px 0px 23px;
     font-weight: 700;
@@ -169,57 +168,8 @@ import MainButton from "./MainButton.astro";
   animation: fadeInUp2 1s ease forwards; 
   animation-delay: 1.4s;  
 }
-.slide-cta .slide-btn:hover{
-    -webkit-box-shadow: 0 8px 30px 0 rgba(0, 0, 0, .15);
-    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, .15);
-    -webkit-transform: translate3d(0, -2px, 0);
-    transform: translate3d(0, -2px, 0);
-    background-position: right center;
 
 
-}
-.slide-cta .slide-btn span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    border-radius: 100%;
-    right: 8px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .35);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .35);
-    background: #fff;
-    color: #3c2fc0;
-}
-.slide-badge {
-    display: flex;
-    flex-direction: column;
-    width: 69px;
-    height: 69px;
-    background: #3c2fc0;
-    line-height: normal;
-    font-size: 9px;
-    justify-content: center;
-    border-radius: 50%;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
-    position: absolute;
-    right: -184px;
-    top: 0;
-    transition: .3s ease-in-out !important;
-    opacity: 0;
-
-}
-.swiper-slide-active .slide-badge{
-  transition: opacity 0.5s ease, filter 0.5s ease; 
-  animation: fadeInUp3 1s ease forwards; 
-  animation-delay: 1.5s;   
-}  
 
 /* Keyframe animations for Badge */
 @keyframes fadeInUp3 {
@@ -353,36 +303,14 @@ span.swiper-pagination-bullet {
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #fff;
 }
- .autoplay-progress {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 10;
-    width:100%;
-    height: 10px;
-}
 
-.progress-fill {
-    --progress: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    height: 100%;
-    background-color: #00000026; 
-    width: var(--progress, 0%);
-    transition: width 0.5s ease; 
-}
-/
+
 /* ==================== Responsive Ipad ========================== */
 @media only screen and (max-width: 981px) {
 .slider-wrap{
     height: 750px;
 }
 
-.slide-badge{
-        right: -116px;
-}
 }
 
 /* ==================== Responsive Ipad ========================== */
