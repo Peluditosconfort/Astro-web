@@ -10,6 +10,7 @@ import MainHero from "../components/MainHero.astro";
 import CarouselTestimonial from "../components/CarouselTestimonial.astro";
 import MainButton from "../components/MainButton.astro";
 import Brands from "../components/Brands.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 
 
 
@@ -18,7 +19,7 @@ const title="Inicio"
 
 ---
 
-<Layout title={title}>
+<MainLayout title={title}>
 
         <!-- HEADER CARRUSEL -->
         <MainHero />
@@ -233,4 +234,4 @@ const title="Inicio"
     </main>
     
 
-</Layout>
+</MainLayout>

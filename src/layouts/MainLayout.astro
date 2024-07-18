@@ -26,12 +26,18 @@ const { title } = Astro.props;
     />
     <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/nfy3ymk.css" />
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('spB4LlCX64uCkft7n')
+</script>
 
     <title>{title}</title>
   </head>
   <body class="bg-gray-100 ">
     <header>
-      <MegaMenu positionNav="fixed"/>
+      <MegaMenu positionNav="fixed" bgNav="bg-naranja"/>
     </header>
 
     <main>

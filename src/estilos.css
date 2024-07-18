@@ -12,3 +12,11 @@
 .titulos-blog {
     @apply text-2xl font-myriad font-bold;
 }
+
+.title-blog {
+    @apply text-black font-lato font-semibold text-2xl;
+}
+
+.text-blog {
+    @apply text-black text-base;
+}

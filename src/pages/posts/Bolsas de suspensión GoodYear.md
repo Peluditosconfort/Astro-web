@@ -1,19 +1,31 @@
 ---
 layout: ../../layouts/PostLayouts.astro
-pubDate: "2023-12-03"
-title: "Bolsas de suspensión GoodYear"
+pubDate: "17 Julio 2024"
+title: "GRAN PREMIO MOBIL DELVAC™ EDICIÓN 36 AÑOS"
 author: "Edwin Camilo"
 image:
-    url: "/public/img/1.jpg"
+    url: "/public/img/santiago.webp"
     alt: "imagen de post"
 tags: ["Noticias"]
 previewText: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor"
 ---
 
-## QUE PAS OCON LAS BOLSAS
+## <span class="title-blog">Jornada de eliminación en el GP de Tractomulas <span>
 
-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+<span class="text-blog"> En horas de la mañana del sábado 13 de julio se desarrollaron las diferentes pruebas de eliminación entre los 150 participantes que se inscribieron para este Gran Premio que prueba a los conductores de estos vehículos de carga pesada que recorren durante el año las diferentes carreteras del país <br>
+Vale recordar que en esta edición estuvieron presentes tres mujeres, quienes hicieron vibrar a los cientos de espectadores con sus maniobras en el autódromo. Todas lograron su segunda participación en este GP Mobil Delvac:.<span>
 
-## FECHA DE CREACION
 
-SE CREARON EN Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+<span class="text-blog flex flex-col my-8">
+ <ul>
+    <li><strong>Julie Patricia Huertas Aponte</strong>, de Tibaná, Boyacá</li>
+    <li>Yuly Tatiana Vargas Parra, de Samacá, Boyacá</li>
+    <li>Zully Mariane Rodríguez, de Sogamoso, Boyacá</li>
+ </ul>
+
+<span>
+
+<span class="text-blog flex flex-col my-8">
+Entre los pilotos habían representantes de distintos departamentos de Colombia como Nariño, Cundinamarca, Huila, Santander, Atlántico y el ya mencionado Boyacá. Además, se contó con la participación especial del ecuatoriano Andrés Vivero, quien quedó eliminado del GP en la jornada del sábado luego de un vibrante duelo que consistió en el frenar y acelerar en diferentes tramos de la pista en el menor tiempo posible.
+    
+<span>
