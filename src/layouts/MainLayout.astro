@@ -2,6 +2,7 @@
 import MegaMenu from "../components/MegaMenu.astro";
 import Footer from "../components/Footer.astro";
 import LatestPosts from "../components/Blog/LatestPosts.astro"
+import FloatButtons from "../components/Blog/FloatButtons.astro";
 interface Props {
   title: string;
 }
@@ -26,6 +27,7 @@ const { title } = Astro.props;
     />
     <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/nfy3ymk.css" />
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
     <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
@@ -42,7 +44,8 @@ const { title } = Astro.props;
 
     <main>
       <slot />
-      
+
+      <FloatButtons/>
       <LatestPosts/>
     </main>
 
