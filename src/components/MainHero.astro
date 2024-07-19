@@ -1,7 +1,13 @@
 ---
 import MainButton from "./MainButton.astro";
----
 
+const postList = await Astro.glob("/src/pages/posts/*.md");
+
+const specificTitle = "GRAN PREMIO MOBIL DELVAC™ EDICIÓN 36 AÑOS";
+const specificPost = Object.values(postList).find(post => post.frontmatter.title === specificTitle);
+const specificUrl = specificPost ? specificPost.url : "#";
+
+---
 <section class="creative-parallax--slider">
     <div class="slider-inner">
         <div class="slider-row">
@@ -26,47 +32,46 @@ import MainButton from "./MainButton.astro";
                             </div>							
                         </div>
                     </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide" style="background-image: url('https://imgpanda.com/upload/ib/NqHhOwv4t0.jpg');">
-                        <div class="swiper-slide--inner">
-                            <div class="slide-detail">
 
+                    <div class="swiper-slide" style="background-image: url(/public/img/santiago-figueroa.jpg);">           
+                        <div class="swiper-slide--inner">
+                            <div class="slide-detail w-fit top-[25%] left-[10%] relative">
                                 <div class="slide-main--heading">
-                                    <div class="from-left">Start your online</div>
-                                    <div class="from-right">business today</div>
+                                    <div class="from-left">Santiago Figueroa</div>
+                                    <div class="from-right">Campeon 2024 <br>GPNT</div>
                                 </div>
                                 <div class="slide-des">
-                                    <p>We're a fully dedicated corporate service agency collaborating with brands
-                                    all over the world.</p>
+                                    <p>El Nariñense Santiago Figueroa logró ser el mejor novato del año y entrar en el top 20 del Gran Premio Nacional de Tractomulas (GPNT) 2018, realizado este 28 y 29 de julio en la autopista del Autódromo de Tocancipá.</p>
                                 </div>
                                 <div class="slide-cta">
-                                    <span class="slide-btn"><MainButton text="Novedades" estilos=" bg-white px-8 py-2"/></span>
+                                    <span class="slide-btn"><MainButton url={specificUrl} text="Seguir Leyendo" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white px-8 py-2 mr-2 "/></span> 
+
                                 </div>
                                 
                             </div>							
                         </div>
                     </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide" style="background-image: url('https://imgpanda.com/upload/ib/bRqJVoCe3b.jpg');">
-                        <div class="swiper-slide--inner">
 
-                            <div class="slide-detail">
-  
+                    <div class="swiper-slide" style="background-image: url(/public/img/2.jpg);">           
+                        <div class="swiper-slide--inner">
+                            <div class="slide-detail w-fit top-[25%] left-[10%] relative">
                                 <div class="slide-main--heading">
-                                    <div class="from-left">Awesome Solutions</div>
-                                    <div class="from-right">For your Business</div>
+                                    <div class="from-left">Santiago Figueroa</div>
+                                    <div class="from-right">Campeon 2024<br>GPNT</div>
                                 </div>
                                 <div class="slide-des">
-                                    <p>We're a fully dedicated corporate service agency collaborating with brands
-                                    all over the world.</p>
+                                    <p>Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
                                 </div>
                                 <div class="slide-cta">
-                                    <a href="https://www.fiverr.com/aliali44/develop-or-customize-a-wordpress-theme" class="slide-btn gradient-btn">Get Started Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <span class="slide-btn"><MainButton text="Asesoria" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white px-8 py-2 mr-2 "/></span> 
+                                    <span class="slide-btn"><MainButton text="Nuestas Marcas" estilos="hover:bg-white hover:text-naranja hover:border text-white border px-8 py-2 text-white hover:bg-naranja hover:text-naranja"/></span>
                                 </div>
-                               
+                                
                             </div>							
                         </div>
-                    </div>						
+                    </div>
+
+					
                 </div>
                 <div class="swiper-button-next slide-btns"></div>
                 <div class="swiper-button-prev slide-btns"></div>

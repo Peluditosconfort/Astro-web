@@ -2,7 +2,7 @@
 import MegaMenu from "../components/MegaMenu.astro";
 import Footer from "../components/Footer.astro";
 import LatestPosts from "../components/Blog/LatestPosts.astro"
-import FloatButtons from "../components/Blog/FloatButtons.astro";
+import FloatButtons from "../components/FloatButtons.astro";
 interface Props {
   title: string;
 }
@@ -14,9 +14,12 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/src/estilos.css" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="icon" href="/public/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/estilos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -35,7 +38,7 @@ const { title } = Astro.props;
   emailjs.init('spB4LlCX64uCkft7n')
 </script>
 
-    <title>{title}</title>
+    
   </head>
   <body class="bg-gray-100 ">
     <header>
