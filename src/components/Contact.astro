@@ -1,132 +1,185 @@
 ---
 import MainButton from "./MainButton.astro";
-
-
 ---
 
-<div class="mt-56 w-[1000px] mx-auto ">
+<div class="mt-56 sm:mt-36 sm:w-auto lg:w-[1000px] mx-auto ">
+
   <h1 class="text-center mb-4">
-    Estamos aqui para ti, <span class="text-naranja">contactanos</span> en cualquier momento
+    Estamos aqui para ti, <span class="text-naranja">contactanos</span> en cualquier
+    momento
   </h1>
-  <p class="text-center"> 
+  <p class="text-center">
     Si tienes alguna duda sobre nuestros servicios, no dudes en hacernoslo saber
   </p>
+</div>
+
+<div class="mb-56 mt-8 max-w-6xl max-lg:max-w-3xl mx-auto bg-azul rounded-lg">
+
+    <section class="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4">
+
+      <div class="flex flex-col gap-8">
+        <div
+          class="flex flex-col items-center bg-white rounded-lg shadow-md shadow-[0px_0px_5px_1px_#cbd5e0] px-4"
+        >
+          <div class="pt-4 px-16 flex flex-col items-center">
+            <div class="w-fit bg-blue-200 p-4 bg-blue-200 rounded-full">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/parakeet-line/96/04297e/communication.png"
+                alt="communication"
+              />
+            </div>
   
-
-  <div class="flex justify-center items-center gap-12 my-16">
-
-    <form id="form" class=" bg-red-200">
-      <div class="field">
-        <label for="from_name">from_name</label>
-        <input type="text" name="from_name" id="from_name">
-      </div>
-      <div class="field">
-        <label for="message">message</label>
-        <input type="text" name="message" id="message">
-      </div>
-      <div class="field">
-        <label for="email_id">email_id</label>
-        <input type="text" name="email_id" id="email_id">
-      </div>
-      <div class="field">
-        <label for="reply_to">reply_to</label>
-        <input type="text" name="reply_to" id="reply_to">
-      </div>
-    
-      <input type="submit" id="button" value="Send Email" >
-    </form>
-
-
-    <section class="flex flex-col gap-8 ">
-
-      <div class="flex flex-col items-center bg-white rounded-lg shadow-md  shadow-[0px_0px_5px_1px_#cbd5e0] px-4">
-
-        <div class="pt-4 px-16 flex flex-col items-center">
-
-          <div class="w-fit bg-blue-200 p-4 bg-blue-200 rounded-full">
-            <img width="30" height="30" src="https://img.icons8.com/parakeet-line/96/04297e/communication.png" alt="communication"/>
+            <h3 class="text-2xl text-center">Chatear con Asesor</h3>
+            <p class="text-lg pb-2 text-center">Te respondemos enseguida!</p>
           </div>
   
-          <h3 class="text-2xl">Chatear con Asesor</h3>
+          <a
+            href="#"
+            class="text-center w-full border-black py-4"
+            style="border-top: 1px solid rgba(179, 179, 179, 0.5);"
+          >
+            <span
+              class="bg-naranja w-full text-white display inline-block py-2 px-4 rounded hover:bg-white hover:border border-naranja hover:text-naranja"
+              >Empezar Chat <i class="fa-solid fa-arrow-right ml-2"></i></span
+            >
+          </a>
+        </div>
+  
+        <div
+          class="flex flex-col items-center bg-white rounded-lg shadow-md pt-4 px-4 shadow-[0px_0px_5px_1px_#cbd5e0]"
+        >
+          <div class="w-fit bg-blue-200 p-4 bg-blue-200 rounded-full">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/04297e/man-on-phone.png"
+              alt="man-on-phone"
+            />
+          </div>
+  
+          <h3 class="text-2xl">Llamar a Asesor</h3>
           <p class="text-lg pb-2">Te respondemos enseguida!</p>
+  
+          <button
+            class="text-center w-full border-black py-4"
+            style="border-top: 1px solid rgba(179, 179, 179, 0.5);"
+          >
+            <span
+              class="bg-white text-naranja border border-naranja w-full display inline-block py-2 px-4 rounded"
+              >+57 314-448-0992 <i class="fa-solid fa-phone-volume ml-2"
+              ></i></span
+            >
+          </button>
         </div>
-        
-        <a href="#" class="text-center w-full border-black py-4 " style="border-top: 1px solid rgba(179, 179, 179, 0.5);">
-          <span class="bg-naranja w-full text-white display inline-block py-2 px-4 rounded hover:bg-white hover:border border-naranja hover:text-naranja">Empezar Chat <i class="fa-solid fa-arrow-right ml-2"></i></span>
-        </a>
-
       </div>
+
+      <form id="form" class="bg-white p-6 rounded-lg">
+
+        <div class="field">
+          <label for="nombre">Nombre</label>
   
-      <div class="flex flex-col items-center bg-white rounded-lg shadow-md pt-4 px-4 shadow-[0px_0px_5px_1px_#cbd5e0]">
-        
-        <div class="w-fit bg-blue-200 p-4 bg-blue-200 rounded-full">
-          <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/04297e/man-on-phone.png" alt="man-on-phone"/>
+          <div class="relative"><div
+            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
+          <input type="text" id="nombre" name="nombre" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
+          />
+          </div>
         </div>
 
-        <h3 class="text-2xl">Llamar a Asesor</h3>
-        <p class="text-lg pb-2">Te respondemos enseguida!</p>
   
-        <button class="text-center w-full border-black py-4" style="border-top: 1px solid rgba(179, 179, 179, 0.5);">
-          <span class="bg-white text-naranja  border border-naranja w-full display inline-block py-2 px-4 rounded">+57 314-448-0992 <i class="fa-solid fa-phone-volume ml-2"></i></span>
-        </button>
+        <div class="field">
+          <label for="empresa">Empresa</label>
+  
+          <div class="relative"><div
+            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
+          <input type="text" id="empresa" name="empresa" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
+          />
+          </div>
+        </div>
+  
+  
+        <div class="field">
+          <label for="celular">Numero</label>
+          <div class="relative"><div
+            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
+          <input type="text" id="celular" name="celular" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="+XX XXXXXXXXXX" required
+          />
+          </div>
+        </div>
+        
+        <div class="field">
+          <label for="correo">Correo electronico</label>
+          <div class="relative"><div
+            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
+          <input type="text" id="correo" name="correo" class="w-full border-gray-300  bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
+          />
+          </div>
+        </div>
+  
+        <div class="field">
+          <label for="correo">Mensaje</label>
+          <div class="relative"><div
+            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"></div>
+          <textarea rows="6" id="correo" name="correo" class="w-full border-gray-300  bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block " placeholder="Hola, quiero saber mas sobre..." required
+          />
+          </div>
+        </div>
+
+        <button class="w-full">
           
-      </div>
+          <input class="cursor-pointer text-white hover:text-naranja w-full bg-naranja w-full display inline-block py-2 px-4 rounded hover:bg-white hover:border border-naranja hover:text-naranja " type="submit" id="button" value="Send Email"/>
+        </button>
+        
+  
+      </form>
+  
+      
     </section>
     
   </div>
-  
-</div>
 
-
-  
 
 <style>
-    .field {
-  margin-bottom: 10px;
-}
+  .field {
+    margin-bottom: 10px;
+  }
 
-.field label {
-  display: block;
-  font-size: 12px;
-  color: #777;
-}
+  .field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+  }
 
-.field input {
-  display: block;
-  min-width: 250px;
-  line-height: 1.5;
-  font-size: 14px;
-}
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
 
-input[type="submit"] {
-  display: block;
-  padding: 6px 30px;
-  font-size: 14px;
-  background-color: #4460AA;
-  color: #fff;
-  border: none
-}
 </style>
 
 <script>
-    const btn = document.getElementById('button');
+  const btn = document.getElementById("button");
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+  document.getElementById("form").addEventListener("submit", function (event) {
+    event.preventDefault();
 
-   btn.value = 'Sending...';
+    btn.value = "Sending...";
 
-   const serviceID = 'default_service';
-   const templateID = 'template_0rtmj7n';
+    const serviceID = "default_service";
+    const templateID = "template_0rtmj7n";
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.value = "Send Email";
+        alert("Sent!");
+      },
+      (err) => {
+        btn.value = "Send Email";
+        alert(JSON.stringify(err));
+      },
+    );
+  });
 </script>
