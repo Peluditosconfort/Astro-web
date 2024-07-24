@@ -17,7 +17,7 @@ const specificUrl = specificPost ? specificPost.url : "#";
                     <div class="swiper-slide" style="background-image: url(/public/img/bg.jpg);">           
                         <div class="swiper-slide--inner">
                             <div class="slide-detail w-fit lg:top-[25%] sm:top-[17%] lg:left-[10%] sm:mx-auto lg:mx-0 relative">
-                                <div class="slide-main--heading">
+                                <div class="slide-main--heading lg:leading-none sm:leading-2">
                                     <div class="from-left">Venta de respuestos</div>
                                     <div class="from-right">originales para <br>tractocamiones</div>
                                 </div>
@@ -363,10 +363,10 @@ document.addEventListener('DOMContentLoaded', function() {
         speed: 1000,
         parallax: true,
         loop: true,
-        autoplay: {
+        /* autoplay: {
             delay: 10000, // Adjust autoplay delay as needed
             disableOnInteraction: false
-        },
+        }, */
         grabCursor: true,
         effect: "creative",
         creativeEffect: {

@@ -115,6 +115,28 @@
     text-align: center;
 }
 
+@media screen and (max-width: 360px) {
+    .slider .slide {
+        width: 150px; /* Ajusta el ancho para pantallas de 360px */
+    }
+
+    .slider .slide img {
+        width: 120px; /* Ajusta el tamaño de la imagen */
+    }
+
+    .slider .slide-track-1 {
+        width: calc(150px * 20);
+        animation: scroll-l 90s linear infinite;
+    }
+
+    .slider .slide-track-2 {
+        width: calc(150px * 20);
+        animation: scroll-r 90s linear infinite;
+    }
+}
+
+
+
 .slider .slide img {
     width: 180px;
     padding: 1pc;
@@ -141,4 +163,6 @@
         transform: translateX(calc(-250px * 10));
     }
 }
+
+
 </style>
