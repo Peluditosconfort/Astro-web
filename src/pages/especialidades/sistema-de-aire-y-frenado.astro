@@ -1,0 +1,70 @@
+---
+import LayoutSimple from "../../layouts/LayoutSimple.astro";
+import MainButton from "../../components/MainButton.astro";
+const title = "Sistema de aire y frenado";
+---
+
+<LayoutSimple title={title}>
+  <div class="sm:mt-24 lg:h-[500px]">
+    <img class="w-full h-full object-bottom object-cover" src="/public/img/fertrac-diferenciales.jpg" alt="" />
+  </div>
+
+  <div
+    class="flex justify-center flex-col text-center lg:w-[1000px] sm:w-auto lg:mx-auto sm:mx-4 my-12"
+  >
+    <div>
+      <h1 class="mb-4">SISTEMA DE AIRE Y FRENADO</h1>
+      <p class="text-center font-bold">
+        El eje delantero es una pieza clave en el sistema de dirección y suspensión de su vehículo. Su función principal es soportar el peso del vehículo y permitir un control preciso durante la conducción, garantizando una experiencia de manejo segura y estable. Ya sea en vehículos de pasajeros, camiones o maquinaria pesada, la calidad y el mantenimiento del eje delantero son esenciales para la durabilidad y el rendimiento.
+      </p>
+    </div>
+
+
+    <div class="mb-16">
+      <img class="mx-auto" src="/public/img/EJE DELANTERO.png" alt=""/>
+<!--       <div class="flex justify-center">
+        <div>
+          <img class="w-64" src="/public/img/c1.png" alt="">
+        </div>
+
+        <img class="w-64" src="/public/img/c1.png" alt="">
+        <img class="w-64" src="/public/img/c1.png" alt="">
+      </div> -->
+    </div>
+    
+
+    <div class="flex flex-wrap justify-center items-center gap-28 mx-auto">
+      <img class="w-56" src="/public/img/wabco.png" alt="" />
+      <img class="w-56" src="/public/img/vaden.png" alt="" />
+      <img class="w-56" src="/public/img/meritor.png" alt="" />
+      <img class="w-56" src="/public/img/frasle.png" alt="" />
+      <img class="w-56" src="/public/img/sealco.png" alt="" />
+
+  </div>
+
+  </div>
+
+  <section>
+    <div
+        class="w-full flex justify-center items-center sm:p-8 lg:py-12 flex-wrap lg:gap-16 bg-cover bg-center h-2/4 bg-slate-800 my-16"
+        style="background-image: url(/public/img/asesoria.jpg"
+    >
+        <div class="text-left">
+            <h2 class="text-white">
+                ¿Tienes alguna duda o necesitas Asesoria?
+            </h2>
+            <p class="text-white py-4">
+                ¡Nos encantaría saber de ti! Si tienes alguna pregunta,
+                comentario o sugerencia, no dudes en ponerte en contacto con
+                nosotros.
+            </p>
+        </div>
+
+        <MainButton
+            text="Contactar"
+            estilos="bg-white px-8 py-2 hover:text-white"
+        />
+    </div>
+</section>
+
+</LayoutSimple>

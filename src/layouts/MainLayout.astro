@@ -14,7 +14,6 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -41,7 +40,7 @@ const { title } = Astro.props;
     
   </head>
 
-  <body class="bg-gray-100 w-screen">
+  <body class="bg-gray-100 overflow-x-hidden">
     <header>
       <MegaMenu positionNav="fixed" bgNav="bg-naranja"/>
     </header>

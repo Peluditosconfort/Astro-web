@@ -1,16 +1,16 @@
 ---
-import LayoutSpecialties from "../../../layouts/LayoutSpecialties.astro";
-import MainButton from "../../../components/MainButton.astro";
+import LayoutSimple from "../../layouts/LayoutSimple.astro";
+import MainButton from "../../components/MainButton.astro";
 const title = "Eje delantero";
 ---
 
-<LayoutSpecialties title={title}>
-  <div>
-    <img class="w-full" src="/public/img/fertrac-diferenciales.jpg" alt="" />
+<LayoutSimple title={title}>
+  <div class="sm:mt-24 lg:h-[500px]">
+    <img class="w-full h-full object-bottom object-cover" src="/public/img/fertrac-diferenciales.jpg" alt="" />
   </div>
 
   <div
-    class="flex justify-center flex-col text-center w-[1000px] mx-auto my-12"
+    class="flex justify-center flex-col text-center lg:w-[1000px] sm:w-auto lg:mx-auto sm:mx-4 my-12"
   >
     <div>
       <h1 class="mb-4">EJE DELANTERO</h1>
@@ -26,7 +26,7 @@ const title = "Eje delantero";
         <div>
           <img class="w-64" src="/public/img/c1.png" alt="">
         </div>
-        
+
         <img class="w-64" src="/public/img/c1.png" alt="">
         <img class="w-64" src="/public/img/c1.png" alt="">
       </div> -->
@@ -68,4 +68,4 @@ const title = "Eje delantero";
     </div>
 </section>
 
-</LayoutSpecialties>
+</LayoutSimple>

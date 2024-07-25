@@ -1,19 +1,19 @@
 ---
-import LayoutSpecialties from "../../../layouts/LayoutSpecialties.astro";
-import MainButton from "../../../components/MainButton.astro";
-const title = "Eje delantero";
+import LayoutSimple from "../../layouts/LayoutSimple.astro";
+import MainButton from "../../components/MainButton.astro";
+const title = "FILTRACIÓN";
 ---
 
-<LayoutSpecialties title={title}>
-  <div>
-    <img class="w-full" src="/public/img/fertrac-diferenciales.jpg" alt="" />
+<LayoutSimple title={title}>
+  <div class="sm:mt-24 lg:h-[500px]">
+    <img class="w-full h-full object-bottom object-cover" src="/public/img/fertrac-diferenciales.jpg" alt="" />
   </div>
 
   <div
-    class="flex justify-center flex-col text-center w-[1000px] mx-auto my-12"
+    class="flex justify-center flex-col text-center lg:w-[1000px] sm:w-auto lg:mx-auto sm:mx-4 my-12"
   >
     <div>
-      <h1 class="mb-4">EJE DELANTERO</h1>
+      <h1 class="mb-4">FILTRACIÓN</h1>
       <p class="text-center font-bold">
         El eje delantero es una pieza clave en el sistema de dirección y suspensión de su vehículo. Su función principal es soportar el peso del vehículo y permitir un control preciso durante la conducción, garantizando una experiencia de manejo segura y estable. Ya sea en vehículos de pasajeros, camiones o maquinaria pesada, la calidad y el mantenimiento del eje delantero son esenciales para la durabilidad y el rendimiento.
       </p>
@@ -26,7 +26,7 @@ const title = "Eje delantero";
         <div>
           <img class="w-64" src="/public/img/c1.png" alt="">
         </div>
-        
+
         <img class="w-64" src="/public/img/c1.png" alt="">
         <img class="w-64" src="/public/img/c1.png" alt="">
       </div> -->
@@ -34,13 +34,8 @@ const title = "Eje delantero";
     
 
     <div class="flex flex-wrap justify-center items-center gap-28 mx-auto">
-      <img class="w-56" src="/public/img/dana-spicer.png" alt="" />
-      <img class="w-56" src="/public/img/spicer-select.png" alt="" />
-      <img class="w-56" src="/public/img/skf.png" alt="" />
-      <img class="w-56" src="/public/img/elgin.png" alt="" />
-      <img class="w-56" src="/public/img/meritor.png" alt="" />
-      <img class="w-56" src="/public/img/stemco.png" alt="" />
-      <img class="w-56" src="/public/img/timken.png" alt="" />
+      <img class="w-56" src="/public/img/fleetguard.png" alt="" />
+
   </div>
 
   </div>
@@ -68,4 +63,4 @@ const title = "Eje delantero";
     </div>
 </section>
 
-</LayoutSpecialties>
+</LayoutSimple>

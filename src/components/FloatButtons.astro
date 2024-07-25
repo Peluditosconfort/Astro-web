@@ -1,57 +1,55 @@
-<div class="flex fixed bottom-10 right-10 flex-col gap-4 z-30 items-center">
+<div class="flex fixed bottom-10 lg:right-10 sm:right-4 flex-col gap-4 z-30 items-center">
 
     <div data-dial-init class=" end-6 bottom-6 group ">
       
-        <div id="speed-dial-menu-default" class=" flex-col items-center hidden mb-4 space-y-2">
-              <a href="https://drive.google.com/file/d/1Vy8W1-bOAmzp-PkuxcNWcgiPiUU3G4Sd/view?usp=drive_link" target="_blank" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" data-tooltip-target="tooltip-share" data-tooltip-placement="left">
+        <div id="lg:speed-dial-menu-hover sm:speed-dial-menu-click" class=" flex-col items-center hidden mb-4 space-y-2">
+
+              <a href="https://drive.google.com/file/d/1Vy8W1-bOAmzp-PkuxcNWcgiPiUU3G4Sd/view?usp=drive_link" data-tooltip-target="tooltip-share" data-tooltip-placement="left" target="_blank" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 focus:ring-4 focus:ring-gray-300 focus:outline-none" >
                 <i class="fa-solid fa-book-open text-xl"></i>
               <span class="sr-only">Catalogo</span>
               
-    <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+    <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
       Catalogo
       <div class="tooltip-arrow" data-popper-arrow></div>
   </div>
               </a>
 
-                
+              <a href="https://www.facebook.com/fertac.col?mibextid=9R9pXO" data-tooltip-target="tooltip-print" data-tooltip-placement="left" target="_blank" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 focus:ring-gray-300 focus:outline-none" >
+                <i class="fa-brands fa-facebook text-2xl"></i>
+              <span class="sr-only">Catalogo</span>
+              
+    <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+      Facebook
+      <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+              </a>
 
-           
-            <div>
-                <button type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
-                    <i class="fa-brands fa-facebook text-2xl"></i>
-                    <span class="sr-only">Facebook</span>
-                </button>
-                <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                    Facebook
-                    <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-            </div>
 
-            <div>
-                <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
-                    <i class="fa-brands fa-instagram text-2xl"></i>
-                    <span class="sr-only">Instagram</span>
-                </button>
-                <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                    Instagram
-                    <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-            </div>    
+              <a href="https://instagram.com/fertrac.col?igshid=MzMyNGUyNmU2YQ==" data-tooltip-target="tooltip-download" data-tooltip-placement="left" target="_blank" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 focus:ring-gray-300 focus:outline-none" >
+                <i class="fa-brands fa-instagram text-2xl"></i>
+              <span class="sr-only">Instagram</span>
+              
+    <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+      Instagram
+      <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+              </a>
 
-            <div>
-                <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
-                    <i class="fa-brands fa-tiktok text-2xl"></i>
-                    <span class="sr-only">TikTok</span>
-                </button>
-                <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                    TikTok
-                    <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-            </div>
-        
+
+              <a href="https://www.tiktok.com/@fertrac.col?_t=8n0duv13nev&_r=1" data-tooltip-target="tooltip-copy" data-tooltip-placement="left" target="_blank" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 focus:ring-gray-300 focus:outline-none" >
+                <i class="fa-brands fa-tiktok text-2xl"></i>
+              <span class="sr-only">Instagram</span>
+              
+    <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+      Instagram
+      <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+              </a>
+
         </div>
+
         <div>
-            <button type="button" data-dial-toggle="speed-dial-menu-default" aria-controls="speed-dial-menu-default" aria-expanded="false" class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+            <button type="button" data-dial-toggle="lg:speed-dial-menu-hover sm:speed-dial-menu-click" aria-controls="lg:speed-dial-menu-hover sm:speed-dial-menu-click" aria-expanded="false" class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-non">
                 <i class="fa-solid fa-plus text-2xl transition-transform group-hover:rotate-45" aria-hidden="true"></i>
                 <span class="sr-only">Open actions menu</span>
                 <span class="absolute right-full w-32 text-center mr-4 px-2 py-1 bg-azul text-white text-sm rounded hide-tooltip transition-opacity duration-300 opacity-0 group-hover:opacity-100">
