@@ -12,8 +12,8 @@ const { frontmatter, image, title, tags } = Astro.props;
 
         <div class="max-w- mx-auto">
             
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 px-4 py-4">
-                <article class="col-span-2 row-span-0">
+            <div class="grid grid-cols-1 xl:grid-cols-1 gap-4 px-4 py-4">
+                <article class="">
                     <img class="w-auto" src={frontmatter.image.url} alt="" />
                     <div class="flex items-center">   
                         <a
@@ -36,15 +36,9 @@ const { frontmatter, image, title, tags } = Astro.props;
         <section class="post-body">
             <slot />
         </section>
-                        
-
-                   
+    
                 </article>
 
-                <div class="row-span-1 col-start-3">
-                    <Categories />
-                </div>
-            </div>
         </div>
     </div>
 </BlogLayout>
