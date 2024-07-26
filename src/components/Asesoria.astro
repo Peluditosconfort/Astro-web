@@ -1,0 +1,24 @@
+---
+import MainButton from "./MainButton.astro"
+---
+    <div
+        class="w-full flex justify-center items-center sm:p-4 sm:py-8 lg:py-12 flex-wrap lg:gap-16 bg-cover bg-center h-2/4 bg-slate-800"
+        style="background-image: url(/public/img/asesoria.jpg"
+    >
+        <div class="text-left">
+            <h2 class="text-white">
+                ¿Tienes alguna duda o necesitas Asesoria?
+            </h2>
+            <p class="text-white py-4">
+                ¡Nos encantaría saber de ti! Si tienes alguna pregunta,
+                comentario o sugerencia, no dudes en ponerte en contacto con
+                nosotros.
+            </p>
+        </div>
+
+        <MainButton
+            url="#"
+            text="Contactar"
+            estilos="bg-white px-8 py-2 hover:text-white hover:bg-naranja"
+        />
+    </div>
