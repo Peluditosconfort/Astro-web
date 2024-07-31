@@ -5,6 +5,7 @@ import MainHero from "../components/MainHero.astro";
 import MainButton from "../components/MainButton.astro";
 import Brands from "../components/Brands.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import CarouselTestimonial from "../components/CarouselTestimonial.astro";
 
 const title = "Inicio";
 ---
@@ -144,54 +145,9 @@ const title = "Inicio";
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-
-            <div class="swiper-container xl:w-[500px] 2xl:w-[750px] sm:w-auto">
-
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/10.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/11.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/10.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/11.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg"
-                            alt=""
-                        />
-                    </div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
         </section>
 
+        <CarouselTestimonial/>
 
 <!--         
         <section class="">
@@ -294,7 +250,7 @@ const title = "Inicio";
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
-            rotate: 0,
+            rotate: 10,
             stretch: 10,
             depth: 100,
             modifier: 1,
