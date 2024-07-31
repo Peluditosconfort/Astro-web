@@ -6,6 +6,7 @@ import MainButton from "../components/MainButton.astro";
 import Brands from "../components/Brands.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import CarouselTestimonial from "../components/CarouselTestimonial.astro";
+import Services from "../components/Blog/Services.astro";
 
 const title = "Inicio";
 ---
@@ -33,7 +34,7 @@ const title = "Inicio";
                         En Fertrac, entendemos la importancia de la fiabilidad y
                         la eficiencia en el mundo del transporte de carga.
                     </h2>
-                    <p class="text-xl sm:pb-4 text-gray-600 text-justify">
+                    <p class=" sm:pb-4 text-justify">
                         Es por eso que nos comprometemos a proporcionar
                         repuestos duraderos y de alta calidad que te ayudarán a
                         maximizar el rendimiento y la vida útil de tus
@@ -96,57 +97,11 @@ const title = "Inicio";
             </div>
         </section>
 
+       <!--  SERVICIOS -->
+
+        <Services/>
+
         <!-- TESTIMONIOS -->
-        <section class="flex flex-wrap gap-8 my-24">
-
-
-            <div class="swiper-container xl:w-[500px] 2xl:w-[750px] sm:w-auto">
-
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/10.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/11.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/10.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/11.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="swiper-slide">
-                        <img
-                            src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg"
-                            alt=""
-                        />
-                    </div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </section>
-
         <CarouselTestimonial/>
 
 <!--         
@@ -218,49 +173,3 @@ const title = "Inicio";
 </MainLayout>
 
 
-<style>
-    .swiper-container {
-        margin: 0 auto;
-        height: 100%
-        ;
-        overflow: hidden;
-    }
-
-    .swiper-slide {
-        width: 300px;
-    }
-
-    .swiper-wrapper {
-        height: 80%;
-    }
-</style>
-
-<script>
-    import Swiper from "swiper/bundle";
-    import "swiper/swiper-bundle.css";
-
-    var mySwiper = new Swiper(".swiper-container", {
-        loop: true,
-        speed: 1000,
-        /*  autoplay: {
-           delay: 3000,
-       }, */
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 10,
-            stretch: 10,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>

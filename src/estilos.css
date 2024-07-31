@@ -3,20 +3,24 @@
 @tailwind utilities;
 
 .titulos {
-    @apply  text-azul text-4xl font-myriad font-bold ;
+    @apply  text-azul lg:text-6xl font-myriad font-bold  sm:text-center lg:text-left;
 }
 .subtitulos {
     @apply sm:text-3xl lg:text-5xl font-myriad font-extrabold text-azul text-justify;
 }
 
 .parrafo {
-    @apply text-xl font-lato;
+    @apply text-xl font-lato text-black;
 }
 
-.title-blog {
-    @apply text-black font-lato font-semibold text-2xl;
+.titulos-blog {
+    @apply text-black font-myriad font-bold  text-2xl;
 }
 
 .text-blog {
     @apply text-black text-base;
+}
+
+.introduce {
+    @apply text-black text-2xl;
 }

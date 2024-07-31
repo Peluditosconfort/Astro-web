@@ -1,12 +1,12 @@
 ---
 const { estilos } = Astro.props;
 const { text } = Astro.props;
-
+const { icon } = Astro.props;
 const { url} = Astro.props;
 ---
 
 <a
     href={ url }
-    class={`font-lato font-bold sm:w-full lg:w-auto rounded text-center transition-all duration-500 ease-in-out transform active:bg-naranja cursor-pointer ${estilos}`}
-    >{text}</a
+    class={`font-lato font-semibold inline-flex items-center px-3 py-2 text-sm text-center text-white bg-naranja rounded-lg  ${estilos}`}
+    >{text} <i class=`ml-2 ${icon}`></i></a
 >

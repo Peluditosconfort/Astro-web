@@ -16,13 +16,12 @@ const specificUrl = specificPost ? specificPost.url : "#";
                     <!-- Slide 1 -->
                     <div class="swiper-slide" style="background-image: url(/public/img/bg.jpg);">           
                         <div class="swiper-slide--inner">
-                            <div class="slide-detail w-fit lg:top-[25%] sm:top-[17%] lg:left-[10%] sm:mx-auto lg:mx-0 relative">
-                                <div class="slide-main--heading lg:leading-none sm:leading-2">
-                                    <div class="from-left">Venta de respuestos</div>
-                                    <div class="from-right">originales para <br>tractocamiones</div>
-                                </div>
-                                <div class="slide-des text-center text-white font-bold leading-[25px] border-0 p-0 pb-[25px] tracking-normal text-[14px] whitespace-normal min-h-0 min-w-[347px] max-h-none max-w-[347px]  opacity-0">
-                                    <p>Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
+                            <div class="slide-detail w-fit lg:top-[25%] sm:top-[17%] lg:left-[10%] sm:px-4 lg:mx-0 relative">
+                                    <h1 class="text-white lg:text-8xl sm:text-[40px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left" >Venta de respuestos originales para tractocamiones
+                                    </h1>
+
+                                <div class="slide-des  border-0 p-0 pb-[25px] tracking-normal max-w-[600px]  opacity-0">
+                                    <p class="text-white text-left font-bold leading-[25px]">Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
                                 </div>
                                 <div class="slide-cta">
                                     <span class="slide-btn"><MainButton text="Asesoria" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white px-8 py-2 mr-2 "/></span> 
@@ -100,13 +99,6 @@ const specificUrl = specificPost ? specificPost.url : "#";
     background-repeat: no-repeat;
 }
 
-.slide--bg .slide-bg--inner {
-  width: 650px;
-  height: 650px;
-  background: #16234096;
-  margin: auto;
-  border-radius: 50%;
-}
 .swiper-slide-active .slide--bg .slide-bg--inner{
   animation: zoomInInner 1s ease forwards;
 }
@@ -114,13 +106,11 @@ const specificUrl = specificPost ? specificPost.url : "#";
 
 .slide-main--heading {
     display: block;
-    text-align: left;
     color: #fff;
     
     text-shadow: 2px 0px 0px rgba(0,0,0,0.6);
     padding: 0px 0px 23px;
     font-weight: 700;
-    font-size: 86px;
     white-space: normal;
     text-transform: capitalize;
 }
@@ -133,10 +123,6 @@ const specificUrl = specificPost ? specificPost.url : "#";
 .swiper-slide-active .from-left {
   animation: fadeInLeft 1s ease forwards;
   animation-delay: 0.8s; 
-}
-.swiper-slide-active .from-right {
-  animation: fadeInRight 1s ease forwards; 
-  animation-delay: 1s; 
 }
 
 
@@ -334,9 +320,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     }
     .parallax-slider .slide-btns{
         display: none;
-    }
-    .slide-main--heading{
-            font-size: 32px;
     }
     .swiper-pagination{
             display: flex;
