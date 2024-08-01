@@ -16,16 +16,15 @@ const specificUrl = specificPost ? specificPost.url : "#";
                     <!-- Slide 1 -->
                     <div class="swiper-slide" style="background-image: url(/public/img/bg.jpg);">           
                         <div class="swiper-slide--inner">
-                            <div class="slide-detail w-fit lg:top-[25%] sm:top-[17%] lg:left-[10%] sm:px-4 lg:mx-0 relative">
-                                    <h1 class="text-white lg:text-8xl sm:text-[40px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left" >Venta de respuestos originales para tractocamiones
+                            <div class="slide-detail 2xl:w-2/4 lg:top-[25%] sm:top-[17%] lg:left-[10%] sm:px-4 lg:mx-0 relative">
+                                    <h1 class="text-white text-left lg:text-8xl sm:text-[34px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left" >Venta de respuestos originales para tractocamiones
                                     </h1>
 
                                 <div class="slide-des  border-0 p-0 pb-[25px] tracking-normal max-w-[600px]  opacity-0">
-                                    <p class="text-white text-left font-bold leading-[25px]">Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
+                                    <p class="text-white lg:text-left sm:text-justify font-bold leading-[25px]">Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
                                 </div>
-                                <div class="slide-cta">
-                                    <span class="slide-btn"><MainButton text="Asesoria" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white px-8 py-2 mr-2 "/></span> 
-                                    <span class="slide-btn"><MainButton text="Nuestas Marcas" estilos="hover:bg-white hover:text-naranja hover:border text-white border px-8 py-2 text-white hover:bg-naranja hover:text-naranja"/></span>
+                                <div class="slide-cta ">
+                                    <span class="slide-btn"><MainButton url="https://api.whatsapp.com/send?phone=573124615606&text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre..." icon="fa-brands fa-whatsapp" text="Asesoria" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white mr-2 "/></span> 
                                 </div>
                                 
                             </div>							
@@ -42,11 +41,7 @@ const specificUrl = specificPost ? specificPost.url : "#";
                                 <div class="slide-des">
                                     <p>El Nariñense Santiago Figueroa logró ser el mejor novato del año y entrar en el top 20 del Gran Premio Nacional de Tractomulas (GPNT) 2018, realizado este 28 y 29 de julio en la autopista del Autódromo de Tocancipá.</p>
                                 </div>
-                                <div class="slide-cta">
-                                    <span class="slide-btn"><MainButton url={specificUrl} text="Seguir Leyendo" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white px-8 py-2 mr-2 "/></span> 
-
-                                </div>
-                                
+                                    <MainButton url={specificUrl} text="Seguir Leyendo" estilos="slide-btn bg-naranja hover:bg-white hover:text-naranja hover:border text-white px-8 py-2 mr-2 "/>
                             </div>							
                         </div>
                     </div>

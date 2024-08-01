@@ -1,10 +1,10 @@
 ---
 import MainButton from "./MainButton.astro"
 ---
-<section class="services flex flex-col flex-wrap gap-8 mt-24 ">
-    <div class="flex flex-col items-center justify-center gap-8">
+<section class="services flex flex-col flex-wrap lg:gap-8 sm:gap-2 lg:mt-24 sm:mt-8 sm:px-4 ">
+    <div class="flex flex-col items-center justify-center lg:gap-8 sm:gap-2">
         <h2>Nuestros Servicios</h2>
-        <h4 class="w-2/4 text-center">
+        <h4 class="lg:w-2/4 sm:w-full">
             Estamos comprometidos a ofrecer soluciones completas para el mantenimiento y reparación de tractocamiones.
         </h4>
     </div>
@@ -26,7 +26,7 @@ import MainButton from "./MainButton.astro"
                     />
                     <div class="p-5">
                         <h5
-                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
                         >
                             Aseroria Tecnica
                         </h5>
@@ -38,7 +38,7 @@ import MainButton from "./MainButton.astro"
                         </p>
                         <MainButton
                             text="Mas Información"
-                            estilos="hover:bg-transparent hover:border border-naranja hover:text-naranja"
+                            estilos="hover:bg-white text-white bg-naranja hover:border border-naranja hover:text-naranja lg:w-full"
                             icon="fa-solid fa-arrow-right"
                         />
                     </div>
@@ -70,7 +70,7 @@ import MainButton from "./MainButton.astro"
                         </p>
                         <MainButton
                             text="Mas Información"
-                            estilos="hover:bg-transparent hover:border border-naranja hover:text-naranja"
+                            estilos="hover:bg-white text-white bg-naranja hover:border border-naranja hover:text-naranja lg:w-full"
                             icon="fa-solid fa-arrow-right"
                         />
                     </div>
@@ -103,7 +103,7 @@ import MainButton from "./MainButton.astro"
                         </p>
                         <MainButton
                             text="Mas Información"
-                            estilos="hover:bg-transparent hover:border border-naranja hover:text-naranja"
+                            estilos="hover:bg-white text-white bg-naranja hover:border border-naranja hover:text-naranja lg:w-full"
                             icon="fa-solid fa-arrow-right"
                         />
                     </div>
@@ -120,7 +120,7 @@ import MainButton from "./MainButton.astro"
                     <div class="p-5">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Aseroria Tecnica</h5>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Te ayudamos a seleccionar los repuestos adecuados y resolver cualquier duda técnica que puedas tener. </p>
-                        <MainButton text="Mas Información" estilos="hover:bg-transparent hover:border border-naranja hover:text-naranja" icon="fa-solid fa-arrow-right"/>
+                        <MainButton text="Mas Información" estilos="hover:bg-white text-white bg-naranja hover:border border-naranja hover:text-naranja lg:w-full" icon="fa-solid fa-arrow-right"/>
                     </div>
                 </div>
                 
@@ -151,7 +151,7 @@ import MainButton from "./MainButton.astro"
                         </p>
                         <MainButton
                             text="Mas Información"
-                            estilos="hover:bg-transparent hover:border border-naranja hover:text-naranja"
+                            estilos="hover:bg-white text-white bg-naranja hover:border border-naranja hover:text-naranja lg:w-full"
                             icon="fa-solid fa-arrow-right"
                         />
                     </div>
@@ -184,11 +184,11 @@ import MainButton from "./MainButton.astro"
 }
 
 .swiper-slide-active .content-wrapper {
-    background-color: #f9ede4; /* Color de fondo para el div activo */
+    background-color: #cad1e3; /* Color de fondo para el div activo */
 }
 
 .content-wrapper {
-    background-color: #4154ff; /* Color de fondo por defecto */
+    background-color: #f9ede4; /* Color de fondo por defecto */
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -200,7 +200,7 @@ import MainButton from "./MainButton.astro"
 
 @media (max-width: 360px) {
     .swiper-container {
-        width: 100vw; /* Asegura que el contenedor ocupe el ancho completo de la pantalla */
+        width: 100%; /* Asegura que el contenedor ocupe el ancho completo de la pantalla */
     }
 
     .swiper-slide {

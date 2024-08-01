@@ -1,5 +1,5 @@
 ---
-
+import MainButton from "./MainButton.astro";
 ---
 
 <div>
@@ -21,8 +21,8 @@
       </div>
   </dl>
   </div>
-  <div class="slider-container swiper 2xl:max-w-[1500px] xl:max-w-[1300px] w-full sm:py-0 sm:mb-10 lg:my-10">
-    <div class="slider-content h-[450px]">
+  <div class="slider-container swiper 2xl:max-w-[1500px] xl:max-w-[1300px] w-full sm:py-0 sm:mb-10 lg:my-10 ">
+    <div class="slider-content h-[450px] sm:px-4">
       <div class="card-wrapper swiper-wrapper ">
 
         <div class=" swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
@@ -30,11 +30,11 @@
             <h3 class="text-white text-center">EJE DELANTERO</h3>
           </div>
     
-          <img src="/public/img/EJE DELANTERO.png" alt="imagen2" class="h-[320px] pt-4">
+          <img src="/public/img/EJE DELANTERO.webp" alt="" class="h-[320px] pt-4">
+          <div class="info px-4">
+            <MainButton url="/especialidades/eje-delantero/" icon="fa-solid fa-arrow-right" text="Mas Sobre Eje Delantero" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 "/>
+          </div>
           
-          <div class="text-center info">
-            <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
-        </div>
         </div>
 
         <div class=" swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
@@ -42,11 +42,11 @@
             <h3 class="text-white text-center">MOTOR</h3>
           </div>
     
-          <img src="/public/img/motor.png" alt="imagen2" class="pt-4 h-[320px]">
+          <img src="/public/img/motor.webp" alt="imagen2" class="pt-4 h-[320px]">
           
-          <div class="text-center info">
-            <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
-        </div>
+          <div class="info px-4">
+            <MainButton url="/especialidades/motor/" icon="fa-solid fa-arrow-right" text="Mas Sobre Motor" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 "/>
+          </div>
         </div>
 
 
@@ -55,11 +55,11 @@
             <h3 class="text-white text-center">SUSPENSIÓN</h3>
           </div>
     
-          <img src="/public/img/suspension.png" alt="imagen2" class="pt-4 h-[320px]">
+          <img src="/public/img/suspension.webp" alt="imagen2" class="pt-4 h-[320px]">
           
-          <div class="text-center info">
-            <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
-        </div>
+          <div class="info px-4">
+            <MainButton url="/especialidades/suspensión/" icon="fa-solid fa-arrow-right" text="Mas Sobre Suspensión" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 "/>
+          </div>
         </div>
 
 
@@ -68,11 +68,76 @@
             <h3 class="text-white text-center">FILTRACIÓN</h3>
           </div>
     
-          <img src="/public/img/FILTRACION.png" alt="imagen2" class="pt-4 h-[320px]">
+          <img src="/public/img/FILTRACION.webp" alt="imagen2" class="pt-4 h-[320px]">
           
-          <a href="#" class="text-center info">
-            <h4 class="bg-naranja text-white display inline-block py-2 px-4 rounded info hover:bg-white hover:border border-naranja hover:text-naranja">Mas Información</h4>
-          </a>
+          <div class="info px-4">
+            <MainButton url="/especialidades/filtración/" icon="fa-solid fa-arrow-right" text="Mas Sobre Filtración" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 "/>
+          </div>
+
+        </div>
+
+        <div class=" swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
+          <div class="bg-naranja py-4 rounded-t-lg">
+            <h3 class="text-white text-center">CARDAN Y DIFERENCIAL</h3>
+          </div>
+    
+          <img src="/public/img/CARDAN-Y-DIFERENCIAL.webp" alt="imagen2" class="pt-4 h-[320px]">
+          
+          <div class="info px-4">
+            <MainButton url="/especialidades/cardan-y-diferencial" icon="fa-solid fa-arrow-right" text="Mas Sobre Cardan y Diferencial" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 "/>
+          </div>
+
+        </div>
+
+        <div class=" swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
+          <div class="bg-naranja py-4 rounded-t-lg">
+            <h3 class="text-white text-center">EMBRAGUE Y TRANSMISIÓN</h3>
+          </div>
+    
+          <img src="/public/img/EMBRAGUE-Y-TRANSMISIÓN.webp" alt="imagen2" class="pt-4 h-[320px]">
+          
+          <div class="info px-4">
+            <MainButton url="/especialidades/embrague-y-transmisión/" icon="fa-solid fa-arrow-right" text="Mas Sobre Embrague y Transmisión" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 !px-0 "/>
+          </div>
+
+        </div>
+
+        <div class=" swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
+          <div class="bg-naranja py-4 rounded-t-lg">
+            <h3 class="text-white text-center">SISTEMA DE REFRIGERACIÓN</h3>
+          </div>
+    
+          <img src="/public/img/SISTEMA-DE-REFRIGERACIÓN.webp" alt="imagen2" class="pt-4 h-[320px]">
+          
+          <div class="info px-4">
+            <MainButton url="/especialidades/sistema-de-refrigeración/" icon="fa-solid fa-arrow-right" text="Mas Sobre Sistema de Refrigeración" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 !px-0 "/>
+          </div>
+
+        </div>
+
+        <div class=" swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
+          <div class="bg-naranja py-4 rounded-t-lg">
+            <h3 class="text-white text-center">RODAMIENTOS</h3>
+          </div>
+    
+          <img src="/public/img/RODAMIENTOS.webp" alt="imagen2" class="pt-4 h-[320px]">
+          
+          <div class="info px-4">
+            <MainButton url="/especialidades/rodamientos/" icon="fa-solid fa-arrow-right" text="Mas Sobre Rodamientos" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 "/>
+          </div>
+
+        </div>
+
+        <div class=" swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
+          <div class="bg-naranja py-4 rounded-t-lg">
+            <h3 class="text-white text-center">SISTEMA DE AIRE Y FRENADO</h3>
+          </div>
+    
+          <img src="/public/img/SISTEMA-DE-AIRE-Y-FRENADO.webp" alt="imagen2" class="pt-4 h-[320px]">
+          
+          <div class="info px-4">
+            <MainButton url="/especialidades/sistema-de-aire-y-frenado/" icon="fa-solid fa-arrow-right" text="Mas Sobre Sistema de Aire y Frenado" estilos="lg:w-full bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 !px-0"/>
+          </div>
 
         </div>
 
@@ -98,8 +163,6 @@
 }
 .slider-content {
   overflow: hidden;
-
-  margin: 0 40px;
 }
 
 .swiper-button-next{
@@ -113,9 +176,6 @@
 
 
 @media screen and (max-width:768px) {
-  .slider-content{
-    margin: 0 10px;
-  }
   .swiper-navBtn{
     display: block;
   }

@@ -23,9 +23,6 @@ export default {
 				"xl" : "1536px",
 				"2xl" : "1900px",	
 			},
-			letterSpacing : {
-				"wider" : "10px"
-			},
 			
 		},
 	},

@@ -1,18 +1,18 @@
-<section class="Testimonials mb-24 mt-8">
-  <div class="flex flex-col items-center justify-center gap-8">
+<section class="Testimonials lg:mb-24  sm:mb-4 mt-8 sm:px-4">
+  <div class="flex flex-col items-center justify-center lg:gap-8 sm:gap-2 mb-4">
     <h2>
         Testimonios
     </h2>
-    <h4 class="lg:w-2/4 text-center">
-      Sus experiencias reflejan nuestro compromiso con la satisfacción y la confianza que han depositado en nosotros. Desde la eficiencia en la entrega hasta el asesoramiento experto, nuestros clientes destacan la dedicación y profesionalismo que nos caracteriza
+    <h4 class="lg:w-2/4">
+      Sus experiencias reflejan nuestro compromiso con la satisfacción y la confianza que han depositado en nosotros.
     </h4>
   </div>
-    <div class="slider-container swiper 2xl:max-w-[1500px] xl:max-w-[2000px] w-full sm:py-0 sm:mb-10 lg:my-10">
+    <div class="slider-container  swiper 2xl:max-w-[1500px] xl:max-w-[2000px] w-full sm:py-0 sm:mb-10 lg:my-10">
       
-      <div class="slider-content">
+      <div class="slider-content lg:mx-12">
         <div class="card-wrapper swiper-wrapper ">
   
-          <div class=" swiper-slide w-full flex flex-col justify-start items-center relative p-10 gap-5 bg-[#f9ede4] rounded-lg">
+          <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#cad1e3] rounded-lg">
             <div class="flex w-full gap-5 items-center">
                 <div class="img-box w-[100px] h-[100px] rounded-full border-2 border-black">
                     <img src="/public/img/avatar1.png" alt="" class="bg-cover">
@@ -35,7 +35,7 @@
           </div>
   
   
-         <div class=" swiper-slide w-full flex flex-col justify-start items-center relative p-10 gap-5 bg-[#f9ede4] rounded-lg">
+         <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#cad1e3] rounded-lg">
               <div class="flex w-full gap-5 items-center">
                   <div class="img-box w-[100px] h-[100px] rounded-full border-2 border-black">
                       <img src="/public/img/avatar1.png" alt="" class="bg-cover">
@@ -58,7 +58,7 @@
             </div>
   
   
-            <div class=" swiper-slide w-full flex flex-col justify-start items-center relative p-10 gap-5 bg-[#f9ede4] rounded-lg">
+            <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#cad1e3] rounded-lg">
               <div class="flex w-full gap-5 items-center">
                   <div class="img-box w-[100px] h-[100px] rounded-full border-2 border-black">
                       <img src="/public/img/avatar1.png" alt="" class="bg-cover">
@@ -81,7 +81,7 @@
             </div>
   
   
-            <div class=" swiper-slide w-full flex flex-col justify-start items-center relative p-10 gap-5 bg-[#f9ede4] rounded-lg">
+            <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#cad1e3] rounded-lg">
               <div class="flex w-full gap-5 items-center">
                   <div class="img-box w-[100px] h-[100px] rounded-full border-2 border-black">
                       <img src="/public/img/avatar1.png" alt="" class="bg-cover">
@@ -128,7 +128,6 @@
 .slider-content {
   overflow: hidden;
 
-  margin: 0 40px;
 }
 
 .swiper-button-next{
@@ -142,20 +141,18 @@
 
 
 @media screen and (max-width:768px) {
-  .slider-content{
-    margin: 0 10px;
-  }
   .swiper-navBtn{
     display: block;
   }
 
   .swiper-button-next{
   right: 20px;
+  display: none;
 
 }
 .swiper-button-prev{
   left: 20px;
-
+  display: none;
 }
 }
 </style>
