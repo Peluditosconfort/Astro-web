@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/PostLayouts.astro
 pubDate: "17 Julio 2024"
-title: "GRAN PREMIO MOBIL DELVAC™ EDICIÓN 36 AÑOS"
+title: "Gran premio movil delvac 2024"
 author: "Edwin Camilo"
 image:
     url: "/public/img/santiago.webp"
     alt: "imagen de post"
-tags: ["Noticias"]
+tags: ["Eventos"]
 previewText: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor"
 ---
 

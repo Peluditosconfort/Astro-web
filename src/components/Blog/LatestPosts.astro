@@ -17,8 +17,8 @@ const postsArray = Object.values(postList).map(post => ({
 const latestPosts = postsArray.slice(0, 4);
 ---
 
-<div class="blog-inicio max-w-screen-xl mx-auto p-5 sm:p-2 sm:my-8 md:p-16 bg-gray-100 rounded-2xl">
-    <ul class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-10">
+<div class="blog-inicio max-w-screen-xl mx-auto sm:my-8 md:p-16">
+    <ul class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-8">
             {latestPosts.map(post => (
                 <li><CardsInicio title={post.title} image={post.image} url={post.url} previewText={post.previewText} pubDate={post.pubDate} tags={post.tags} /></li>
               

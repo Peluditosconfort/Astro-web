@@ -9,8 +9,7 @@ const specificUrl = specificPost ? specificPost.url : "#";
 
 ---
 <section class="creative-parallax--slider">
-    <div class="slider-inner">
-        <div class="slider-row">
+
             <div class="parallax-slider slider-wrap">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
@@ -24,7 +23,7 @@ const specificUrl = specificPost ? specificPost.url : "#";
                                     <p class="text-white lg:text-left sm:text-justify font-bold leading-[25px]">Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
                                 </div>
                                 <div class="slide-cta ">
-                                    <span class="slide-btn"><MainButton url="https://api.whatsapp.com/send?phone=573124615606&text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre..." icon="fa-brands fa-whatsapp" text="Asesoria" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white mr-2 "/></span> 
+                                    <span class="slide-btn"><MainButton url="https://api.whatsapp.com/send?phone=573124615606&text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre..." icon="fa-brands fa-whatsapp" text="Solicita una Cotización " estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white mr-2 "/></span> 
                                 </div>
                                 
                             </div>							
@@ -67,18 +66,24 @@ const specificUrl = specificPost ? specificPost.url : "#";
 
 					
                 </div>
-                <div class="swiper-button-next slide-btns"></div>
-                <div class="swiper-button-prev slide-btns"></div>
+                <div class="swiper-button-next slide-btns bg-naranja hover:bg-white"></div>
+                <div class="swiper-button-prev slide-btns bg-naranja hover:bg-white"></div>
                 <div class="autoplay-progress">
                     <div class="progress-fill"></div>
                 </div>
             </div>
-        </div>
-    </div>
 </section>
 
 
 <style>
+
+.swiper-button-prev {
+    left: 70px;
+}
+
+.swiper-button-next {
+    right: 70px;
+}
 
 .slider-wrap{
     overflow: hidden;
@@ -254,7 +259,6 @@ to {
 .parallax-slider .slide-btns{
         width: 54px;
     height: 54px;
-    background: 0 0;
     border: 1px solid rgba(255, 255, 255, .2);
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;

@@ -1,5 +1,5 @@
 ---
-
+import MegaMenu from "../components/MegaMenu.astro";
 import SpecialityCards from "../components/SpecialityCards.astro";
 import MainHero from "../components/MainHero.astro";
 import MainButton from "../components/MainButton.astro";
@@ -8,13 +8,16 @@ import MainLayout from "../layouts/MainLayout.astro";
 import CarouselTestimonial from "../components/CarouselTestimonial.astro";
 import Services from "../components/Services.astro";
 
-const title = "Inicio";
+const title = "Fertrac - Repuestos Originales Tractocamiones";
 ---
 
 <MainLayout title={title}>
     <!-- HEADER CARRUSEL -->
-    <MainHero />
-
+    
+    <header>
+        <MegaMenu positionNav="fixed" bgNav="bg-transparent"/>
+        <MainHero />
+      </header>
     <main>
         <!-- SLIDER PROVEEDORES -->
         <section class="marcas py-4">
@@ -88,7 +91,7 @@ const title = "Inicio";
                             productos destacados de tus marcas favoritas.
                         </p>
         
-                        <MainButton url="#" text="Mas Información" estilos="bg-white hover:bg-transparent hover:text-white hover:border text-naranja mr-2 " icon="fa-solid fa-arrow-right"/>
+                        <MainButton url="#" text="Ver Novedades" estilos="bg-white hover:bg-transparent hover:text-white hover:border text-naranja mr-2 " icon="fa-regular fa-lightbulb"/>
                     </div>
                 </div>
             </div>
@@ -156,8 +159,8 @@ const title = "Inicio";
                    
                 </div>  
                 <div class="flex flex-col lg:gap-8 sm:gap-4 lg:w-auto sm:w-full">
-                    <MainButton url="#" text="Enviar Hoja de Vida" estilos="bg-naranja hover:bg-transparent hover:text-white hover:border text-white mr-2 " icon="fa-solid fa-paper-plane"/>
-                <MainButton url="#" text="Quiero Ser Proveedor" estilos="bg-naranja hover:bg-transparent hover:text-white hover:border text-white mr-2 " icon="fa-solid fa-handshake"/>
+                    <MainButton url="https://co.indeed.com/cmp/Fertrac-SAS" text="Ofertas Laborales" estilos="bg-naranja hover:bg-transparent hover:text-white hover:border text-white mr-2 " icon="fa-solid fa-paper-plane"/>
+                <MainButton url="https://api.whatsapp.com/send?phone=573058716393" text="Quiero Ser Proveedor" estilos="bg-naranja hover:bg-transparent hover:text-white hover:border text-white mr-2 " icon="fa-solid fa-handshake"/>
                 </div>
                 
                

@@ -1,14 +1,13 @@
 ---
-const {url} = Astro.props;
+const { url } = Astro.props;
 ---
-<span>
-    <a href="#" class="relative effect text-naranja pb-2 hover:text-azul">Leer mas</a>
-    </span>    
 
+<button class="relative effect text-naranja py-2  hover:text-azul "
+  >Seguir Leyendo</button
+>
 
 <style>
-
-    .effect:after {    
+  .effect:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -16,14 +15,12 @@ const {url} = Astro.props;
     left: 50%;
     position: absolute;
     background: #04297e;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  
+    transition:
+      width 0.3s ease 0s,
+      left 0.3s ease 0s;
   }
-  .effect:hover:after { 
-    width: 100%; 
-    left: 0; 
+  .effect:hover:after {
+    width: 100%;
+    left: 0;
   }
 </style>
-
-
-  

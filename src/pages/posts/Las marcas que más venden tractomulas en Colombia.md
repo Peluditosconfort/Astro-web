@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/PostLayouts.astro
-pubDate: "2024-12-03"
-title: "Exporpartes 2024 Medellin"
+pubDate: "2023-12-03"
+title: "Las marcas que más venden tractomulas en Colombia"
 author: "Edwin Camilo"
 image:
-    url: "/public/img/03.jpg"
+    url: "/public/img/kenworth-colombia.webp"
     alt: "imagen de post"
-tags: ["Novedades"]
+tags: ["Noticias"]
 previewText: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor"
 ---
 

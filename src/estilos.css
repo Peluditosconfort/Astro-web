@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 .titulos {
-    @apply  text-azul lg:text-6xl font-myriad font-bold  sm:text-center lg:text-left;
+    @apply sm:text-[40px] text-azul lg:text-6xl font-myriad font-bold  sm:text-center lg:text-left;
 }
 .subtitulos {
     @apply sm:text-3xl lg:text-5xl font-myriad font-extrabold text-azul text-justify;
 }
 
 .parrafo {
-    @apply text-xl font-lato text-black;
+    @apply text-xl font-lato text-black sm:text-justify;
 }
 
 .titulos-blog {
