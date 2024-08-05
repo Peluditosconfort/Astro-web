@@ -8,15 +8,15 @@ const specificPost = Object.values(postList).find(post => post.frontmatter.title
 const specificUrl = specificPost ? specificPost.url : "#";
 
 ---
-<section class="creative-parallax--slider">
+<section class="creative-parallax--slider mt-[-110px]">
 
             <div class="parallax-slider slider-wrap">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide" style="background-image: url(/public/img/bg.jpg);">           
                         <div class="swiper-slide--inner">
-                            <div class="slide-detail 2xl:w-2/4 lg:top-[25%] sm:top-[17%] lg:left-[10%] sm:px-4 lg:mx-0 relative">
-                                    <h1 class="text-white text-left lg:text-8xl sm:text-[34px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left" >Venta de respuestos originales para tractocamiones
+                            <div class="slide-detail 2xl:w-2/4 lg:top-[25%] sm:top-[20%] lg:left-[10%] sm:px-4 lg:mx-0 relative">
+                                    <h1 class="text-white text-left xl:text-8xl lg:text-7xl sm:text-[34px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left" >Venta de respuestos originales para tractocamiones
                                     </h1>
 
                                 <div class="slide-des  border-0 p-0 pb-[25px] tracking-normal max-w-[600px]  opacity-0">
@@ -32,45 +32,26 @@ const specificUrl = specificPost ? specificPost.url : "#";
 
                     <div class="swiper-slide" style="background-image: url(/public/img/santiago-figueroa.jpg);">           
                         <div class="swiper-slide--inner">
-                            <div class="slide-detail w-fit top-[25%] left-[10%] relative">
-                                <div class="slide-main--heading">
-                                    <div class="from-left">Santiago Figueroa</div>
-                                    <div class="from-right">Campeon 2024 <br>GPNT</div>
-                                </div>
-                                <div class="slide-des">
-                                    <p>El Nariñense Santiago Figueroa logró ser el mejor novato del año y entrar en el top 20 del Gran Premio Nacional de Tractomulas (GPNT) 2018, realizado este 28 y 29 de julio en la autopista del Autódromo de Tocancipá.</p>
-                                </div>
-                                    <MainButton url={specificUrl} text="Seguir Leyendo" estilos="slide-btn bg-naranja hover:bg-white hover:text-naranja hover:border text-white px-8 py-2 mr-2 "/>
-                            </div>							
-                        </div>
-                    </div>
+                            <div class="slide-detail 2xl:w-2/4 lg:top-[25%] sm:top-[20%] lg:left-[10%] sm:px-4 lg:mx-0 relative">
+                                    <h1 class="text-white text-left xl:text-8xl lg:text-7xl sm:text-[34px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left" >Santiago Figueroa, Campeon 2024 GPN
+                                    </h1>
 
-                    <div class="swiper-slide" style="background-image: url(/public/img/2.jpg);">           
-                        <div class="swiper-slide--inner">
-                            <div class="slide-detail w-fit top-[25%] left-[10%] relative">
-                                <div class="slide-main--heading lg:leading-[80px] sm:leading-[10px];">
-                                    <div class="from-left">Santiago Figueroa</div>
-                                    <div class="from-right">Campeon 2024<br>GPNT</div>
+                                <div class="slide-des  border-0 p-0 pb-[25px] tracking-normal max-w-[600px]  opacity-0">
+                                    <p class="text-white lg:text-left sm:text-justify font-bold leading-[25px]">El Nariñense Santiago Figueroa logró ser el mejor novato del año y entrar en el top 20 del Gran Premio Nacional de Tractomulas (GPNT) 2018, realizado este 28 y 29 de julio en la autopista del Autódromo de Tocancipá.</p>
                                 </div>
-                                <div class="slide-des">
-                                    <p>Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
-                                </div>
-                                <div class="slide-cta">
-                                    <span class="slide-btn"><MainButton text="Asesoria" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white px-8 py-2 mr-2 "/></span> 
-                                    <span class="slide-btn"><MainButton text="Nuestas Marcas" estilos="hover:bg-white hover:text-naranja hover:border text-white border px-8 py-2 text-white hover:bg-naranja hover:text-naranja"/></span>
+                                <div class="slide-cta ">
+                                    <span class="slide-btn"><MainButton url="https://api.whatsapp.com/send?phone=573124615606&text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre..." icon="fa-brands fa-whatsapp" text="Solicita una Cotización " estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white mr-2 "/></span> 
                                 </div>
                                 
                             </div>							
                         </div>
-                    </div>
-
+                    </div> 
+                   
+                    
 					
                 </div>
                 <div class="swiper-button-next slide-btns bg-naranja hover:bg-white"></div>
-                <div class="swiper-button-prev slide-btns bg-naranja hover:bg-white"></div>
-                <div class="autoplay-progress">
-                    <div class="progress-fill"></div>
-                </div>
+                <div class="swiper-button-prev slide-btns bg-naranja hover:bg-white "></div>
             </div>
 </section>
 
@@ -84,6 +65,18 @@ const specificUrl = specificPost ? specificPost.url : "#";
 .swiper-button-next {
     right: 70px;
 }
+
+
+@media screen and (max-width: 1080px) {
+    .swiper-button-prev {
+    left: 30px;
+}
+.swiper-button-next {
+    right: 30px;
+}
+
+}
+
 
 .slider-wrap{
     overflow: hidden;
@@ -344,11 +337,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var swiper = new Swiper(".parallax-slider", {
         speed: 1000,
         parallax: true,
-        loop: true,
-        /* autoplay: {
-            delay: 10000, // Adjust autoplay delay as needed
+        loop: true, 
+        autoplay: {
+            delay: 9000, // Adjust autoplay delay as needed
             disableOnInteraction: false
-        }, */
+        },
         grabCursor: true,
         effect: "creative",
         creativeEffect: {
@@ -368,16 +361,6 @@ document.addEventListener('DOMContentLoaded', function() {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
         },
-        on: {
-            slideChange: function () {
-                // Reset progress bar when slide changes
-                progressFill.style.width = '0%';
-            },
-            autoplayTimeLeft: function(s, time, progress) {
-                // Update progress bar width based on autoplay time left
-                progressFill.style.width = (1 - progress) * 100 + '%';
-            }
-        }
     });
 });
 
