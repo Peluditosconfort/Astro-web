@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .titulos {
-    @apply sm:text-[40px] text-azul lg:text-6xl font-myriad font-bold  sm:text-center lg:text-left;
+    @apply sm:text-[40px] text-azul lg:text-5xl xl:text-6xl font-myriad font-bold sm:text-justify sm:leading-none lg:text-left;
 }
 .subtitulos {
-    @apply sm:text-3xl lg:text-5xl font-myriad font-extrabold text-azul text-justify;
+    @apply sm:text-3xl lg:text-4xl xl:text-5xl font-myriad font-extrabold text-azul text-justify;
 }
 
 .parrafo {
@@ -23,4 +23,8 @@
 
 .introduce {
     @apply text-black lg:text-2xl sm:text-xl  sm:text-justify lg:text-center;
+}
+
+summary {
+    @apply font-bold font-lato text-black  bg-orange-200 rounded-md py-2 px-4;
 }

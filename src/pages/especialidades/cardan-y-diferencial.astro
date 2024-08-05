@@ -1,72 +1,72 @@
 ---
-import LayoutSimple from "../../layouts/LayoutSimple.astro";
+import MegaMenu from "../../components/MegaMenu.astro";
+
 import MainButton from "../../components/MainButton.astro";
-const title = "Cardan y Diferencial";
+import MainLayout from "../../layouts/MainLayout.astro";
+import FAQS from "../../components/FAQS.astro";
+const title = "Nuestras Marcas en Motor";
 ---
 
-<LayoutSimple title={title}>
-  <div class="sm:mt-24 lg:h-[500px]">
-    <img class="w-full h-full object-bottom object-cover" src="/public/img/fertrac-diferenciales.jpg" alt="" />
+<MainLayout title={title}>
+
+  <MegaMenu positionNav="fixed" bgNav="bg-naranja"/>
+
+  <div class="lg:h-[500px] sm:h-[300px]  flex justify-center items-center  sm:p-8 bg-cover" style="background-image: url(/public/img/especialidades-motor.jpg);">
+<!--     <h1 class="text-white text-center lg:text-8xl sm:text-[34px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left titulos uppercase drop-shadow-lg;">Completa gama de repuestos de alta calidad para motores de tractocamiones.</h1> -->
   </div>
 
   <div
-    class="flex justify-center flex-col text-center lg:w-[1000px] sm:w-auto lg:mx-auto sm:mx-4 my-12"
+    class="flex justify-center flex-col text-center lg:w-[1000px] sm:w-auto lg:mx-auto sm:mx-4 lg:my-12 sm:my-4"
   >
-    <div>
-      <h1 class="mb-4">CARDAN Y DIFERENCIAL</h1>
-      <p class="text-center font-bold">
-        El eje delantero es una pieza clave en el sistema de dirección y suspensión de su vehículo. Su función principal es soportar el peso del vehículo y permitir un control preciso durante la conducción, garantizando una experiencia de manejo segura y estable. Ya sea en vehículos de pasajeros, camiones o maquinaria pesada, la calidad y el mantenimiento del eje delantero son esenciales para la durabilidad y el rendimiento.
-      </p>
-    </div>
 
+  <div class="mb-12">
+    <h2 class="mb-4">Cardan y Diferencial</h2>
+    <p class="text-justify font-bold">
+      componentes  cruciales para la transmisión de potencia y el funcionamiento suave de tu vehículo. Estos incluyen componentes como juntas universales, ejes de transmisión y engranajes de diferencial, diseñados para garantizar una distribución eficiente de la fuerza del motor a las ruedas.
+      En Fertrac, ofrecemos una amplia gama de repuestos de cardan y diferencial de las mejores marcas del mercado. Nos dedicamos a proporcionar productos de alta calidad y durabilidad, asegurando que tu vehículo funcione de manera óptima y fiable.
+      
 
-    <div class="mb-16">
-      <img class="mx-auto" src="/public/img/EJE DELANTERO.png" alt=""/>
-<!--       <div class="flex justify-center">
-        <div>
-          <img class="w-64" src="/public/img/c1.png" alt="">
-        </div>
-
-        <img class="w-64" src="/public/img/c1.png" alt="">
-        <img class="w-64" src="/public/img/c1.png" alt="">
-      </div> -->
-    </div>
-    
-
-    <div class="flex flex-wrap justify-center items-center gap-28 mx-auto">
-      <img class="w-56" src="/public/img/ft-parts.png" alt="" />
-      <img class="w-56" src="/public/img/sampa.png" alt="" />
-      <img class="w-56" src="/public/img/dana-spicer.png" alt="" />
-      <img class="w-56" src="/public/img/spicer-select.png" alt="" />
-      <img class="w-56" src="/public/img/sys.png" alt="" />
-      <img class="w-56" src="/public/img/transejes.png" alt="" />
-      <img class="w-56" src="/public/img/meritor.png" alt="" />
-      <img class="w-56" src="/public/img/pai.png" alt="" />
+    </p>
   </div>
+
+      <div class="logos flex flex-wrap justify-center items-center lg:gap-28 sm:gap-8 mx-auto">
+        <img class="w-56" src="/public/img/ft-parts.png" alt="" />
+        <img class="w-56" src="/public/img/sampa.png" alt="" />
+        <img class="w-56" src="/public/img/dana-spicer.png" alt="" />
+        <img class="w-56" src="/public/img/spicer-select.png" alt="" />
+        <img class="w-56" src="/public/img/sys.png" alt="" />
+        <img class="w-56" src="/public/img/transejes.png" alt="" />
+        <img class="w-56" src="/public/img/meritor.png" alt="" />
+        <img class="w-56" src="/public/img/pai.png" alt="" />
+      </div>
+
+      
+  </div>
+  </div>
+
+
 
   </div>
 
-  <section>
-    <div
-        class="w-full flex justify-center items-center sm:p-8 lg:py-12 flex-wrap lg:gap-16 bg-cover bg-center h-2/4 bg-slate-800 my-16"
-        style="background-image: url(/public/img/asesoria.jpg"
-    >
-        <div class="text-left">
-            <h2 class="text-white">
-                ¿Tienes alguna duda o necesitas Asesoria?
-            </h2>
-            <p class="text-white py-4">
-                ¡Nos encantaría saber de ti! Si tienes alguna pregunta,
-                comentario o sugerencia, no dudes en ponerte en contacto con
-                nosotros.
-            </p>
-        </div>
 
-        <MainButton
-            text="Contactar"
-            estilos="bg-white px-8 py-2 hover:text-white"
-        />
-    </div>
-</section>
 
-</LayoutSimple>
+</MainLayout>
+<style>
+img {
+    width: 14rem;
+  }
+
+  @media (min-width: 360px) {
+    img  {
+        width: 8rem;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    img {
+        width: 14rem;
+    }
+  }
+</style>
+
+

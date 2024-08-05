@@ -283,94 +283,13 @@ const {bgNav} = Astro.props;
         </div>
       </li>
 
-      <li class="relative px-3 py-2 group cursor-pointer">
-        <a href="#">Sobre nosotros</a>
-        <i class="fa-solid fa-caret-down"></i>
-
-        <div
-          class="absolute w-[800px] top-0 left-[-335px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[560px] transform">
-          <div class="relative w-full p-6 bg-white shadow-xl top-6 rounded-xl">
-            <div
-              class="absolute top-0 z-0 w-10 h-10  right-[405px] transition-transform duration-500 ease-in-out transform rotate-45 -translate-x-4 bg-white rounded-sm group-hover:translate-x-3">
-            </div>
-
-            <div class="relative z-10 justify-between">
-              <div class="grid items-stretch grid-cols-2 gap-6">
-                <div>
-                  <ul class="mt-3 text-[15px] space-y-4">
-
-                      <li>
-                        <a href="/sobre-nosotros/"
-                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-orange-200">
-                          <div class="p-2 bg-orange-500 rounded-xl">
-                            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/conference-call.png" alt="conference-call"/>
-                          </div>
-                          <div>
-                            ¿Quienes Somos?
-                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
-                          </div>
-                        </a>
-                      </li>
-
-<!--                       <li>
-                        <a href="/especialidades/motor/"
-                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-orange-200">
-                          <div class="p-2 bg-yellow-500 rounded-xl">
-                            <img width="30" height="30" src="https://img.icons8.com/pastel-glyph/64/FFFFFF/brain-3--v2.png" alt="brain-3--v2"/>
-                          </div>
-                          <div>
-                           Filosofia
-                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
-                          </div>
-                        </a>
-                      </li> -->      
-
-                  </ul>
-                </div>
-
-                <div>
-                  <ul class="mt-3 text-[15px] space-y-4">
-
-                      <li>
-                        <a href="/sobre-nosotros/"
-                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-200">
-                          <div class="p-2 bg-green-500 rounded-xl">
-                            <img width="30" height="30" src="https://img.icons8.com/pastel-glyph/64/FFFFFF/brain-3--v2.png" alt="brain-3--v2"/>
-                          </div>
-                          <div>
-                            Misión y Visión
-                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
-                          </div>
-                        </a>
-                      </li>
-
-<!--                       <li>
-                        <a href="/especialidades/motor/"
-                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-fuchsia-200">
-                          <div class="p-2 bg-fuchsia-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-like.png" alt="facebook-like"/>
-                          </div>
-                          <div>
-                            Ventajas fertrac
-                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
-                          </div>
-                        </a>
-                      </li> -->
-
-                  </ul>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
+      <li class="relative px-3 py-2 group">
+        <a href="/sobre-nosotros/" class="effect">Sobre Nosotros</a>
       </li>
-
 
       <li class="relative px-3 py-2 group">
         <a href="/contactanos/" class="effect">Contactanos</a>
-        
+      </li> 
         <!-- <div
           class="absolute top-0 -left-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform">
           <div class="relative w-full p-6 bg-white shadow-xl top-6 rounded-xl">
@@ -407,7 +326,7 @@ const {bgNav} = Astro.props;
             </div>
           </div>
         </div> -->
-      </li>
+
       
     </ul>
   </nav>
@@ -468,8 +387,8 @@ const {bgNav} = Astro.props;
 </div>
 
     <div id="mobile-menu" class="hidden w-full min-h-screen bg-naranja md:hidden fixed z-40 ">
-      <nav class="px-4 pt-28">
-        <ul class="flex flex-col items-start justify-start w-full gap-2 font-semibold border-b">
+      <nav class="px-4 pt-24">
+        <ul class="flex flex-col items-start justify-start w-full gap-2 font-semibold border-b py-2">
           <li class="relative w-full">
             <a href="/inicio/" class="flex items-center text-base text-white w-full p-2 cursor-pointer active:bg-gray-100 active:rounded-xl dropdown-toggle"><i class="fa-solid fa-house mr-4"></i>Inicio</a>
 
@@ -677,7 +596,8 @@ const {bgNav} = Astro.props;
           </li>
 
 
-          <li class="relative w-full">
+<!--           <li class="relative w-full">
+
             <button
               class="flex items-center w-full p-2 dropdown-toggle text-white"><i class="fa-solid fa-people-group mr-4"></i>
               Sobre Nosotros
@@ -741,6 +661,10 @@ const {bgNav} = Astro.props;
                 </div>
               </div>
             </div>
+          </li> -->
+          <li class="relative w-full">
+            <a href="/sobre-nosotros/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-solid fa-people-group mr-4"></i>
+              Sobre Nosotros </a>
           </li>
 
           <li class="relative w-full">
@@ -936,10 +860,6 @@ ul {
   background: #f2790c;
 }
 
-li {
-  margin-bottom: 10px;
-  height: fit-content;
-}
 </style>
 
 <script>

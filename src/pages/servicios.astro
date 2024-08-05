@@ -1,266 +1,40 @@
 ---
-import LayoutSimple from "../layouts/LayoutSimple.astro"
+import MainLayout from "../layouts/MainLayout.astro"
 import MainButton from "../components/MainButton.astro";
-
+import MegaMenu from "../components/MegaMenu.astro";
+import FAQS from "../components/FAQS.astro";
 const title="Servicios"
 ---
 
-<LayoutSimple title={title}>
-    <div>
-        <img class="w-full" src="/public/img/fertrac-diferenciales.jpg" alt="" />
+<MainLayout title={title}>
+  <MegaMenu positionNav="fixed" bgNav="bg-naranja"/>
+
+  <div class="grid lg:grid-cols-2 sm:grid-cols-1 grid-rows-5 gap-4 lg:m-48 sm:m-4">
+
+    <div ><img src="/public/img/servicios-asesoria-tecnica.jpg" alt=""></div>
+    <div class="p-12">
+      <h2 class="mb-4">ASESORÍA TÉCNICA</h2>
+      <ul class="list-disc flex flex-col gap-4">
+        <li>Ofrecemos asistencia técnica respaldada por un profundo conocimiento del producto y los ensambles, garantizando una asesoría al cliente que asegura el 100% de satisfacción.</li>
+        <li>Nos comprometemos a acompañar de cerca a nuestros clientes en la búsqueda constante de mejoras en sus servicios y portafolios, mediante el respaldo en la investigación de nuevas tendencias</li>
+        <li>Contamos con un equipo altamente capacitado que no sólo ofrece respuestas oportunas, sino que también se dedica a innovar constantemente en la prestación de nuestros servicios.</li>
+        </ul>
       </div>
 
-      <section class="flex flex-col justify-center w-3/5 mx-auto text-center">
-
-        <!-- <div class="">
-          <h1>
-            Gestión de Garantías
-          </h1>
-          <p class="">
-            En [Nombre de tu Empresa], nos comprometemos a ofrecer productos de alta calidad y servicios excepcionales. Nuestra política de garantías asegura que nuestros clientes reciban el respaldo necesario en caso de cualquier inconveniente con los repuestos adquiridos.
-          </p>
-        </div> -->
-
-
-        <section>
-          <h2 class="text-center mt-12 mb-8"> 
-            Cobertura de la Garantia
-          </h2>
-          <p class="text-center text-2xl mb-8">
-            En Fertrac, nos comprometemos a ofrecer productos de alta calidad y servicios excepcionales. Nuestra política de garantías asegura que nuestros clientes reciban el respaldo necesario en caso de cualquier inconveniente con los repuestos adquiridos.
-          </p>
-
-          <div class="flex flex-wrap justify-center mx-1 lg:-mx-4 gap-12">
-           
-            <article class="overflow-hidden rounded-lg shadow-lg my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 flex flex-col justify-between">
-  
-                <a href="#">
-                    <img alt="Placeholder" class="block h-auto w-full" src="/public/img/duracion.svg">
-                </a>
-                
-                <div class="py-8">
-                  <h3 class="text-2xl font-myriad font-bold text-azul text-left">Duración</h3>
-                <p> La garantía de nuestros repuestos cubre un período de [X meses/años] desde la fecha de compra.</p>
-                </div>
-                
-  
-            </article>
-
-            <article class="overflow-hidden rounded-lg shadow-lg my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 flex flex-col justify-between">
-  
-              <a href="#">
-                  <img alt="Placeholder" class="block h-auto w-full" src="/public/img/terminos.svg">
-              </a>
-
-              <div class="py-8">
-                <h3 class="text-2xl font-myriad font-bold text-azul text-left">Condiciones</h3>
-              <p> La garantía de nuestros repuestos cubre un período de [X meses/años] desde la fecha de compra.</p>
-              </div>
-
-          </article>
-
-          <article class="overflow-hidden rounded-lg shadow-lg my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 flex flex-col justify-between">
-  
-            <a href="#">
-                <img alt="Placeholder" class="block h-auto w-full pt-16" src="/public/img/asd.svg">
-            </a>
-
-            <div class="py-8">
-              <h3 class="text-2xl font-myriad font-bold text-azul text-left">Exclusiones</h3>
-            <p> La garantía de nuestros repuestos cubre un período de [X meses/años] desde la fecha de compra.</p>
-            </div>
-        </article>
-  
-
-        </div>
-        </section>
-
-      </section>
-
-<!-- component -->
-<div>
-  <section class="text-gray-700">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="text-center mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-          Frequently Asked Question
-        </h1>
-        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-          The most common questions about how our business works and what
-          can do for you.
-        </p>
-      </div>
-      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-        <div class="w-full lg:w-1/2 px-4 pt-2 lg:pb-2">
-          <details class="mb-4">
-            <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
-              How Long is this site live?
-            </summary>
-
-            <span>
-              Laboris qui labore cillum culpa in sunt quis sint veniam.
-              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-              minim velit nostrud pariatur culpa magna in aute.
-            </span>
-          </details>
-          <details class="mb-4">
-            <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
-              Can I install/upload anything I want on there?
-            </summary>
-
-            <span>
-              Laboris qui labore cillum culpa in sunt quis sint veniam.
-              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-              minim velit nostrud pariatur culpa magna in aute.
-            </span>
-          </details>
-          <details class="mb-4">
-            <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-              How can I migrate to another site?
-            </summary>
-
-            <span>
-              Laboris qui labore cillum culpa in sunt quis sint veniam.
-              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-              minim velit nostrud pariatur culpa magna in aute.
-            </span>
-          </details>
-        </div>
-        <div class="w-full lg:w-1/2 px-4 pb-2 lg:pt-2">
-          <details class="mb-4">
-            <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-              Can I change the domain you give me?
-            </summary>
-
-            <span class="px-4 py-2">
-              Laboris qui labore cillum culpa in sunt quis sint veniam.
-              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-              minim velit nostrud pariatur culpa magna in aute.
-            </span>
-          </details>
-          <details class="mb-4">
-            <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-              How many sites I can create at once?
-            </summary>
-
-            <span class="px-4 py-2">
-              Laboris qui labore cillum culpa in sunt quis sint veniam.
-              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-              minim velit nostrud pariatur culpa magna in aute.
-            </span>
-          </details>
-          <details class="mb-4">
-            <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-              How can I communicate with you?
-            </summary>
-
-            <span class="px-4 py-2">
-              Laboris qui labore cillum culpa in sunt quis sint veniam.
-              Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-              minim velit nostrud pariatur culpa magna in aute.
-            </span>
-          </details>
-        </div>
-      </div>
+    <div >
+      <h2 class="mb-4">ASESORÍA TÉCNICA</h2>
+      <p>Nos dedicamos a la constante investigación y entendimiento de los nuevos equipos de carga. Asegurando tener información precisa y a la vanguardia de los nuevos productos y demandas del mercado.</p>
     </div>
-  </section>
+    <div ><img src="/public/img/servicios-asesoria-tecnica.jpg" alt=""></div>
+    <div >5</div>
+    <div >6</div>
+    <div >7</div>
+    <div >8</div>
+    <div >9</div>
+    <div >10</div>
 </div>
 
-      <section>
-        <div
-            class="w-full flex justify-center items-center sm:p-4 sm:py-8 lg:py-12 flex-wrap lg:gap-16 bg-cover bg-center h-2/4 bg-slate-800"
-            style="background-image: url(/public/img/asesoria.jpg"
-        >
-            <div class="text-left">
-                <h2 class="text-white">
-                    ¿Tienes alguna duda o necesitas Asesoria?
-                </h2>
-                <p class="text-white py-4">
-                    ¡Nos encantaría saber de ti! Si tienes alguna pregunta,
-                    comentario o sugerencia, no dudes en ponerte en contacto con
-                    nosotros.
-                </p>
-            </div>
-    
-            <MainButton
-                text="Contactar"
-                url="#"
-                estilos="bg-white px-8 py-2 hover:text-white"
-            />
-        </div>
-    </section>
-    
-<!--         <div>
-          <h2>
-            Proceso de Reclamo
-          </h2>
 
-          <li>
-            <h3>
-              Identificación del Problema:
-            </h3>
-            <p>
-              Inspecciona el repuesto y documenta el problema con fotos o videos.
-            </p>
-          </li>
-
-          <li>
-            <h3>
-              Contacto con Soporte:
-
-            </h3>
-            <p>
-              Comunícate con nuestro equipo de soporte a través de [Teléfono/Correo Electrónico/Chat en Línea].
-Proporciona los detalles del problema junto con la documentación visual y la prueba de compra.
-            </p>
-          </li>
-
-          <li>
-            <h3>
-              Evaluación del Reclamo:
-
-            </h3>
-            <p>
-              Nuestro equipo técnico evaluará el reclamo y te dará una respuesta en un plazo de [X días hábiles].
-            </p>
-          </li>
-        </div>
+      <FAQS/>
         
-      </section>
-
-      <section>
-        <h2>
-          Recomendaciones para Mantener la Garantía
-        </h2>
-
-        <div>
-          <div>
-            <h3>Instalación Profesional</h3>
-          <p>
-            Asegúrate de que los repuestos sean instalados por técnicos calificados.
-          </p>
-          </div>
-
-          <div>
-            <h3>Mantenimiento Regular:</h3>
-          <p>
-            Mantenimiento Regular:
-          </p>
-          </div>
-
-          <div>
-            <h3>Uso Adecuado</h3>
-          <p>
-            Utiliza los repuestos de acuerdo con las especificaciones y condiciones de uso recomendadas.
-          </p>
-          </div>
-          
-        </div>
-      </section>
-
-
-      <section>
-        <h2>Contacto para Garantías</h2>
-
-      </section> -->
-</LayoutSimple
+    </MainLayout>
