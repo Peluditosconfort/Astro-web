@@ -36,23 +36,22 @@
 
     <div class="slider">
         <div class="slide-track-2">
+            <div class="slide"><img src="/public/img/ftparts.png" alt="logo de Ftparts"></div>
             <div class="slide"><img src="/public/img/mahle.png" alt="logo de MAHLE"></div>
             <div class="slide"><img src="/public/img/clevite.png" alt="logo de CLEVITE"></div>
             <div class="slide"><img src="/public/img/neway.png" alt="logo de NEWAY"></div>
             <div class="slide"><img src="/public/img/monroe.png" alt="logo de MONROE"></div>
             <div class="slide"><img src="/public/img/transtec.png" alt="logo de TRANSTEC"></div>
             <div class="slide"><img src="/public/img/alliance.png" alt="logo de ALLIANCE"></div>
-            <div class="slide"><img src="/public/img/freightline.png" alt="logo de FREIGHTLINER"></div>
+            <div class="slide"><img src="/public/img/freightliner.png" alt="logo de FREIGHTLINER"></div>
             <div class="slide"><img src="/public/img/skf.png" alt="logo de SKF"></div>
             <div class="slide"><img src="/public/img/link-belt.png" alt="logo de Link-Belt"></div>
             <div class="slide"><img src="/public/img/sampa.png" alt="logo de SAMPA"></div>
             <div class="slide"><img src="/public/img/tas.png" alt="logo de TAS"></div>
-            <div class="slide"><img src="/public/img/ftparts-belt.png" alt="logo de Ftparts"></div>
             <div class="slide"><img src="/public/img/torctite.png" alt="logo de TorcTite"></div>
             <div class="slide"><img src="/public/img/gabriel.png" alt="logo de Gabriel"></div>
 
             <div class="slide"><img src="/public/img/ftparts.png" alt="logo de Ftparts"></div>
-            
             <div class="slide"><img src="/public/img/qualcast.png" alt="logo de QualCast"></div>
             <div class="slide"><img src="/public/img/flexfab.png" alt="logo de Flexfab"></div>
             <div class="slide"><img src="/public/img/tyj.png" alt="TYJ"></div>
@@ -116,7 +115,7 @@
     width: calc(250px * 28); /* Ancho ajustado para 36 imágenes (18 originales + 18 duplicadas) */
 }
 .slider .slide-track-2 {
-    animation: scroll-r 10s linear infinite;
+    animation: scroll-r 60s linear infinite;
     display: flex;
     width: calc(250px * 28); /* Ancho ajustado para 36 imágenes (18 originales + 18 duplicadas) */
 }
@@ -130,9 +129,9 @@
     text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 360px) {
     .slider .slide {
-        width: 150px; /* Ajusta el ancho para pantallas de 360px */
+        width: 100px; /* Ajusta el ancho para pantallas de 360px */
     }
 
     .slider .slide img {
@@ -140,15 +139,39 @@
     }
 
     .slider .slide-track-1 {
-        width: calc(150px * 28);
+        width: calc(100px * 28);
         animation: scroll-l 90s linear infinite;
     }
 
     .slider .slide-track-2 {
-        width: calc(150px * 28);
+        width: calc(100px * 28);
         animation: scroll-r 90s linear infinite;
     }
+
+    .slider:after,
+    .slider:before {
+        display: none;
+    }
+
+    @keyframes scroll-l {
+  0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100px * 18));
+    } 
 }
+
+@keyframes scroll-r {
+    100% {
+        transform: translateX(0);
+    }
+    0% {
+        transform: translateX(calc(-100px * 18));
+    } 
+}
+}
+
 
 
 
@@ -171,12 +194,12 @@
     } 
 }
 @keyframes scroll-r {
-/*     100% {
+    100% {
         transform: translateX(0);
     }
     0% {
         transform: translateX(calc(-250px * 18));
-    } */
+    } 
 }
 
 
