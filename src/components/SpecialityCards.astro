@@ -25,7 +25,7 @@ import MainButton from "./MainButton.astro";
     <div class="slider-content h-[450px] sm:px-4">
       <div class="card-wrapper swiper-wrapper ">
 
-        <div class=" swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
+        <div class="swiper-slide  group rounded-lg border-2 shadow-lg pb-4">
           <div class="bg-naranja py-4 rounded-t-lg">
             <h3 class="text-white text-center">EJE DELANTERO</h3>
           </div>
@@ -174,6 +174,17 @@ import MainButton from "./MainButton.astro";
   color: #04297e
 }
 
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.swiper-slide img {
+  height: auto;
+  object-fit: cover;
+  
+}
 
 @media screen and (max-width:768px) {
   .swiper-navBtn{

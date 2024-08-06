@@ -1,16 +1,16 @@
 ---
 import MainButton from "./MainButton.astro"
 ---
-<section class="services flex flex-col flex-wrap lg:gap-8 sm:gap-2 lg:mt-24 sm:mt-8 sm:px-4 ">
-    <div class="flex flex-col items-center justify-center lg:gap-8 sm:gap-2">
+<section class="services flex flex-col flex-wrap xl:gap-4 sm:gap-2 xl:mt-24 sm:mt-8 lg:mt-16 sm:px-4 ">
+    <div class="flex flex-col items-center justify-center xl:gap-8 sm:gap-2">
         <h2>Nuestros Servicios</h2>
-        <p class="lg:w-2/4 sm:w-full">
+        <p class="lg:w-2/4 sm:w-full lg:text-center">
             Estamos comprometidos a ofrecer soluciones completas para el mantenimiento y reparación de tractocamiones.
         </p>
     </div>
 
     <div class="swiper-container xl:w-[950px] 2xl:w-[1000px] sm:w-auto mb-8 mx-auto">
-        <div class="swiper-wrapper py-4">
+        <div class="swiper-wrapper py-8">
             <!-- Slides -->
 
             <div
@@ -157,10 +157,12 @@ import MainButton from "./MainButton.astro"
                     </div>
                 </div>
             </div>
-
+            
 
         </div>
+        <div class="swiper-pagination"></div>
     </div>
+    
 </section>
 
 <style>
@@ -208,6 +210,20 @@ import MainButton from "./MainButton.astro"
     }
 }
 
+.swiper-pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Asegura que esté encima de otros elementos pero debajo del contenido */
+}
+
+.swiper-pagination-bullet {
+    background: #000; /* Color de los bullets */
+}
+
+.swiper-pagination-bullet-active {
+    background: #f57c00; /* Color del bullet activo */
+}
 
 </style>
 
@@ -235,6 +251,11 @@ import MainButton from "./MainButton.astro"
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
         },
+
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
         breakpoints: {
         360: {
             slidesPerView: 1, // Muestra solo una tarjeta en pantallas de hasta 360px
