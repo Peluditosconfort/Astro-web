@@ -5,14 +5,14 @@ const {positionNav} = Astro.props;
 const {bgNav} = Astro.props;
 ---
 
-<div class={`navbar sm:border-b  lg:border-none w-full transition duration-1000 ease-in-out flex items-center justify-between px-4 py-6 md:justify-around top-0 ${positionNav} ${bgNav} z-50`}>
+<div class={`navbar sm:border-b  lg:border-none w-full transition duration-1000 ease-in-out flex items-center sm:justify-between px-8 py-6 lg:justify-around top-0 ${positionNav} ${bgNav} z-50`}>
   <a href="#">
     <!-- <img id="imagen1" src="/public/img/fertrac-footer.png" alt="" class="w-44 hidden" > -->
     <img id="imagen2" src="/public/img/fertrac-footerb.png" class="sm:w-32 lg:w-44" alt=""
       />
   </a>
 
-  <nav class="hidden md:flex">
+  <nav class="sm:hidden lg:block">
     <ul class="flex items-center justify-center font-semibold text-white">
         <li class="relative px-3 py-2 group">
             <a href="/inicio/" class="effect">Inicio</a>
@@ -61,18 +61,30 @@ const {bgNav} = Astro.props;
                       </li>
 
                       <li>
-                        <a href="/especialidades/suspensión/"
-                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-yellow-200">
-                          <div class="p-2 bg-yellow-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-suspension-equipments-icongeek26-glyph-icongeek26-2.png" alt="icono de una suspensión"/>
+                        <a href="/especialidades/embrague-y-transmisión/"
+                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-fuchsia-200">
+                          <div class="p-2 bg-fuchsia-500 rounded-full">
+                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague de transmisión"/>
                           </div>
                           <div>
-                            Suspensión
+                            Embrague y Transmisión
                             <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
                           </div>
                         </a>
                       </li>
 
+                      <li>
+                        <a href="/especialidades/embrague-y-transmisión/"
+                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-fuchsia-200">
+                          <div class="p-2 bg-fuchsia-500 rounded-full">
+                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague de transmisión"/>
+                          </div>
+                          <div>
+                            Embrague y Transmisión
+                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
+                          </div>
+                        </a>
+                      </li>
                   </ul>
                 </div>
 
@@ -92,31 +104,48 @@ const {bgNav} = Astro.props;
                         </a>
                       </li>
 
+
+                      <li>
+                        <a href="/especialidades/suspensión/"
+                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-yellow-200">
+                          <div class="p-2 bg-yellow-500 rounded-full">
+                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-suspension-equipments-icongeek26-glyph-icongeek26-2.png" alt="icono de una suspensión"/>
+                          </div>
+                          <div>
+                            Suspensión
+                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
+                          </div>
+                        </a>
+                      </li>
+
+
                       <li>
                         <a href="/especialidades/cardan-y-diferencial/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-200">
                           <div class="p-2 bg-green-500 rounded-xl">
-                            <img width="30" height="30" src="https://img.icons8.com/external-solid-style-bomsymbols-/65/FFFFFF/external-car-car-engine-dashboard-lights-solid-style-set-2-solid-style-bomsymbols--9.png" alt="icono de un diferencial"/>
+                            <img width="30" height="30" src="/public/img/diferencial.webp" alt="icono de un diferencial"/>
                           </div>
                           <div>
-                            Cardan y Diferencial
+                            Cardan
                             <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
                           </div>
                         </a>
                       </li>
 
                       <li>
-                        <a href="/especialidades/embrague-y-transmisión/"
-                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-fuchsia-200">
-                          <div class="p-2 bg-fuchsia-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague de transmisión"/>
+                        <a href="/especialidades/cardan-y-diferencial/"
+                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-200">
+                          <div class="p-2 bg-green-500 rounded-xl">
+                            <img width="30" height="30" src="https://img.icons8.com/external-obvious-glyph-kerismaker/96/FFFFFF/external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6.png" alt="external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6"/>
                           </div>
                           <div>
-                            Embrague y Transmisión
+                            Diferencial
                             <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
                           </div>
                         </a>
                       </li>
+
+                      
 
                   </ul>
                 </div>
@@ -137,6 +166,8 @@ const {bgNav} = Astro.props;
                         </a>
                       </li>
 
+                      
+
                       <li>
                         <a href="/especialidades/rodamientos/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-lime-200">
@@ -145,6 +176,19 @@ const {bgNav} = Astro.props;
                           </div>
                           <div>
                             Rodamientos
+                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="/especialidades/sistema-de-aire-y-frenado/"
+                          class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-slate-200">
+                          <div class="p-2 bg-slate-500 rounded-full">
+                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-break-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un freno de camión"/>
+                          </div>
+                          <div>
+                            Sistema de Aire y Frenado
                             <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
                           </div>
                         </a>
@@ -332,61 +376,61 @@ const {bgNav} = Astro.props;
   </nav>
 
 
-  <nav class="md:flex sm:hidden">
-    <ul>
-      <section class="flex justify-center items-center gap-4">
-        <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-solid fa-shop"></i>
-
+  <div class="flex gap-8">
+    <nav class="md:flex sm:hidden">
+      <ul>
+        <section class="flex justify-  items-center gap-4">
+          <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-solid fa-shop"></i>
+  
+            <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
+              Tienda
+            </span>
+        </a>
+  
+        <a href="/blog/" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-regular fa-newspaper"></i>
+  
           <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
-            Tienda
+            Blog
           </span>
       </a>
-
-      <a href="/blog/" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-regular fa-newspaper"></i>
-
-        <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
-          Blog
-        </span>
-    </a>
-        <!-- <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-facebook"></i>
-
+          <!-- <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-facebook"></i>
+  
+            <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
+              Facebook
+            </span>
+        </a>
+        <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-instagram"></i>
+  
           <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
-            Facebook
+            Instagram
           </span>
       </a>
-      <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-instagram"></i>
-
+      <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-tiktok"></i>
+  
         <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
-          Instagram
+          TikTok
         </span>
-    </a>
-    <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-tiktok"></i>
-
-      <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
-        TikTok
-      </span>
-  </a> -->
-      </section>
-      
-    </ul>
-      
-  </nav>
-
-
-
-
-
-  <button id="mobile-menu-button" class="md:hidden ">
-    <div class="barras_menu">
-      <span class="linea1__barras"></span>
-      <span class="linea2__barras"></span>
-      <span class="linea3__barras"></span>
+    </a> -->
+        </section>
+        
+      </ul>
+        
+    </nav>
+  
+    <button id="mobile-menu-button" class="lg:hidden ">
+      <div class="barras_menu">
+        <span class="linea1__barras"></span>
+        <span class="linea2__barras"></span>
+        <span class="linea3__barras"></span>
+    </div>
+    </button>
   </div>
-  </button>
+  
+
 
 </div>
 
-    <div id="mobile-menu" class="hidden w-full min-h-screen bg-naranja md:hidden fixed z-40 ">
+    <div id="mobile-menu" class="hidden w-full min-h-screen bg-naranja lg:hidden fixed z-40 ">
       <nav class="px-4 pt-2">
         <ul class="flex flex-col items-start justify-start w-full gap-2 font-semibold border-b py-2">
           <li class="relative w-full">
@@ -408,7 +452,7 @@ const {bgNav} = Astro.props;
                 <div class="">
                     <ul class="text-[12px] text-center grid grid-cols-3 grid-rows-2">
 
-                      <li class="h-fit">
+                      <li class="">
                         <a href="/especialidades/motor/" class="flex items-center flex-col justify-left  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
                           <div class="p-2 bg-blue-500 rounded-xl">
                             <img class="w-4 h-4" src="https://img.icons8.com/ios-filled/100/FFFFFF/engine.png" alt="icono de un motor"/>
@@ -418,16 +462,43 @@ const {bgNav} = Astro.props;
                         </a>
                       </li>
 
-                      <li class="row-start-2">
+                      <li class="">
                         <a href="/especialidades/eje-delantero/" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
                           <div class="p-2 bg-orange-500 rounded-xl">
                             <img class="w-4 h-4" src="https://img.icons8.com/external-obvious-glyph-kerismaker/96/FFFFFF/external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6.png" alt="icono de un eje delantero"/>
                           </div>
                             Eje Delantero
-
                         </a>
                       </li>
                       
+                      <li class="">
+                        <a href="/especialidades/embrague-y-transmisión/#" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
+                          <div class="p-2 bg-fuchsia-500 rounded-xl">
+                            <img class="w-4 h-4" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague de transmisión"/>
+                          </div>
+                            Embrague y Transmisión
+                        </a>
+                      </li>
+
+                      <li class="">
+                        <a href="/especialidades/embrague-y-transmisión/#" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
+                          <div class="p-2 bg-fuchsia-500 rounded-xl">
+                            <img class="w-4 h-4" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague de transmisión"/>
+                          </div>
+                            Embrague y Transmisión
+                        </a>
+                      </li>
+
+                      <li class="">
+                        <a href="/especialidades/filtración/" class="flex items-center flex-col justify-left  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
+                          <div class="p-2 bg-blue-500 rounded-xl">
+                            <img class="w-4 h-4" src="https://img.icons8.com/ios-filled/100/FFFFFF/engine.png" alt="">
+                          </div>
+                            Filtración
+
+                        </a>
+                      </li>
+
                       <li class="">
                         <a href="/especialidades/suspensión/" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
                           <div class="p-2 bg-yellow-500 rounded-xl">
@@ -439,73 +510,62 @@ const {bgNav} = Astro.props;
                       </li>
 
                       <li class="">
-                        <a href="/especialidades/filtración/" class="flex items-center flex-col justify-left  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
-                          <div class="p-2 bg-blue-500 rounded-xl">
-                            <img class="w-4 h-4"src="https://img.icons8.com/ios-filled/100/FFFFFF/engine.png" alt="">
-                          </div>
-                            Filtración
-
-                        </a>
-                      </li>
-
-                      <li class="row-start-2">
                         <a href="/especialidades/cardan-y-diferencial/" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
                           <div class="p-2 bg-green-500 rounded-xl">
-                            <img class="w-4 h-4" src="https://img.icons8.com/external-solid-style-bomsymbols-/65/FFFFFF/external-car-car-engine-dashboard-lights-solid-style-set-2-solid-style-bomsymbols--9.png" alt="icono de un diferencial"/>
+                            <img class="w-4" height="h-4" src="/public/img/diferencial.webp" alt="icono de un diferencial"/>
                           </div>
-                            Cardan y Diferencial
+                            Cardan
 
                         </a>
                       </li>
 
-                      <li class="row-start-3">
-                        <a href="/especialidades/embrague-y-transmisión/#" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
-                          <div class="p-2 bg-fuchsia-500 rounded-xl">
-                            <img class="w-4 h-4" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague de transmisión"/>
+                      <li class="">
+                        <a href="/especialidades/cardan-y-diferencial/" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
+                          <div class="p-2 bg-green-500 rounded-xl">
+                            <img class="w-4 h-4" src="https://img.icons8.com/external-obvious-glyph-kerismaker/96/FFFFFF/external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6.png" alt="external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6"/>
                           </div>
-                            Embrague y Transmisión
+                            Diferencial
 
                         </a>
                       </li>
 
-                      <li class="row-start-3">
+                      <li class="">
                         <a href="/especialidades/sistema-de-refrigeración/" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
                           <div class="p-2 bg-teal-500 rounded-xl">
                             <img class="w-4 h-4" src="https://img.icons8.com/ios-filled/100/FFFFFF/heating.png" alt="icono representando un filtro de un camion"/>
                           </div>
                             Sistema de Refrigeración
-
                         </a>
                       </li>
 
-                      <li class="row-start-2">
+                      <li class="">
                         <a href="/especialidades/rodamientos/" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
                           <div class="p-2 bg-lime-500 rounded-xl">
                             <img class="w-4 h-4" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-ball-bearing-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un rodamiento"/>
                           </div>
                             Rodamientos
-
                         </a>
                       </li>
-                  
 
-                      
-
-                      
-                      <li class="row-start-3">
+                      <li class="">
                         <a href="/especialidades/sistema-de-aire-y-frenado/" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
                           <div class="p-2 bg-slate-500 rounded-xl">
                             <img class="w-4 h-4" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-break-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un freno de camión"/>
                           </div>
                             Sistema de Aire y Frenado
-
                         </a>
-                      </li>
+                      </li> 
+
+                      <li class="">
+                        <a href="/especialidades/sistema-de-aire-y-frenado/" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
+                          <div class="p-2 bg-slate-500 rounded-xl">
+                            <img class="w-4 h-4" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-break-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un freno de camión"/>
+                          </div>
+                            Sistema de Aire y Frenado
+                        </a>
+                      </li>      
                     </ul>
-                  
-                 
-
-
+                
                 </div>
               </div>
             </div>

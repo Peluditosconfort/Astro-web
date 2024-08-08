@@ -3,7 +3,6 @@ import MegaMenu from "../components/MegaMenu.astro";
 import Footer from "../components/Footer.astro";
 import LatestPosts from "../components/Blog/LatestPosts.astro"
 import FloatButtons from "../components/FloatButtons.astro";
-import Asesoria from "../components/Asesoria.astro";
 interface Props {
   title: string;
 }
@@ -49,7 +48,6 @@ const { title } = Astro.props;
     
     <main>
       <slot />
-      <Asesoria/>
       <FloatButtons/>
       <LatestPosts/>
 

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .titulos {
-    @apply sm:text-[40px] text-azul lg:text-5xl xl:text-6xl font-myriad font-bold sm:text-justify sm:leading-none lg:text-left;
+    @apply sm:text-[40px] md:text-[60px] text-azul lg:text-5xl xl:text-6xl font-myriad font-bold sm:text-justify sm:leading-none lg:text-left;
 }
 .subtitulos {
     @apply sm:text-3xl lg:text-4xl xl:text-5xl font-myriad font-extrabold text-azul text-justify;

@@ -7,6 +7,7 @@ import Brands from "../components/Brands.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import CarouselTestimonial from "../components/CarouselTestimonial.astro";
 import Services from "../components/Services.astro";
+import Asesoria from "../components/Asesoria.astro";
 
 const title = "Fertrac - Repuestos Originales Tractocamiones";
 ---
@@ -41,6 +42,23 @@ const title = "Fertrac - Repuestos Originales Tractocamiones";
                         Nuestro equipo está formado por expertos en la industria, listos para asistirte en cada paso del camino. Ya sea que necesites asesoramiento sobre qué repuesto es el adecuado para tu vehículo o asistencia con la instalación, estamos aquí para ayudarte
                     </p>
                 </div>
+                <div>
+                    <dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-3 lg:px-24 sm:items-start sm:p-8">
+                      <div class="flex flex-col items-center justify-center">
+                          <dt class="mb-2 text-4xl font-extrabold text-azul">50+</dt>
+                          <dd class="text-gray-500 dark:text-gray-400">Marcas de repuestos</dd>
+                      </div>
+                     
+                      <div class="flex flex-col items-center justify-center">
+                          <dt class="mb-2 text-4xl font-extrabold text-azul">20+</dt>
+                          <dd class="text-gray-500 dark:text-gray-400 text-center">Años de Experiencia en el mercado</dd>
+                      </div>
+                      <div class="flex flex-col items-center justify-center">
+                          <dt class="mb-2 text-4xl font-extrabold text-azul">12+</dt>
+                          <dd class="text-gray-500 dark:text-gray-400">Especialidades</dd>
+                      </div>
+                  </dl>
+                  </div>
             </div>
         </section>
 
@@ -90,6 +108,7 @@ const title = "Fertrac - Repuestos Originales Tractocamiones";
 
         <!-- TESTIMONIOS -->
         <CarouselTestimonial/>
+        <Asesoria/>
 
 </MainLayout>
 

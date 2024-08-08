@@ -15,8 +15,8 @@ const specificUrl = specificPost ? specificPost.url : "#";
                     <!-- Slide 1 -->
                     <div class="swiper-slide" style="background-image: url(/public/img/bg.jpg);">           
                         <div class="swiper-slide--inner">
-                            <div class="slide-detail 2xl:w-2/4 lg:top-[25%] sm:top-[20%] lg:left-[10%] sm:px-4 lg:mx-0 relative">
-                                    <h1 class="text-white text-left xl:text-8xl lg:text-7xl sm:text-[34px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left" >Venta de respuestos originales para tractocamiones
+                            <div class="slide-detail lg:w-[70%] xl:w-[55%] lg:top-[25%] sm:top-[20%] lg:left-[10%] sm:px-4 md:px-8  relative">
+                                    <h1 class="text-white text-left xl:text-8xl lg:text-7xl sm:text-[34px] md:text-[60px] slide-main--heading lg:leading-none sm:leading-2 sm:w-full from-left" >Venta de respuestos originales para tractocamiones
                                     </h1>
 
                                 <div class="slide-des  border-0 p-0 pb-[25px] tracking-normal max-w-[600px]  opacity-0">
@@ -57,13 +57,11 @@ const specificUrl = specificPost ? specificPost.url : "#";
 
 
 <style>
-
-.swiper-button-prev {
-    left: 70px;
+@media (min-width: 360px) and (max-width: 1080px) {
+    .swiper-button-prev,
+    .swiper-button-next{
+    display: none;
 }
-
-.swiper-button-next {
-    right: 70px;
 }
 
 
@@ -100,7 +98,6 @@ const specificUrl = specificPost ? specificPost.url : "#";
 .slide-main--heading {
     display: block;
     color: #fff;
-    
     text-shadow: 2px 0px 0px rgba(0,0,0,0.6);
     padding: 0px 0px 23px;
     font-weight: 700;
@@ -117,24 +114,6 @@ const specificUrl = specificPost ? specificPost.url : "#";
   animation: fadeInLeft 1s ease forwards;
   animation-delay: 0.8s; 
 }
-
-
-/* .slide-des {
-    text-align: center; text-center
-    line-height: 25px; leading-[25px]
-    border-width: 0px; 
-    padding: 0px 0px 25px; pb-[25px]
-    letter-spacing: 0px; 
-    font-weight: 300; 
-    font-size: 14px;
-    white-space: normal;
-    min-height: 0px;
-    min-width: 347px;
-    max-height: none;
-    max-width: 347px;
-    color: rgb(255, 255, 255);
-    opacity: 0;
-} */
 
 .swiper-slide-active .slide-des{
    transition: opacity 0.5s ease, filter 0.5s ease; 
@@ -153,19 +132,6 @@ const specificUrl = specificPost ? specificPost.url : "#";
 }
 
 
-
-/* Keyframe animations for Badge */
-@keyframes fadeInUp3 {
-  0% {
-    opacity: 0;
-    transform: translateY(50px); 
-}
-100% {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0); 
-}
-}
 /* Keyframe animations for CTA */
 @keyframes fadeInUp2 {
   0% {
@@ -190,18 +156,8 @@ const specificUrl = specificPost ? specificPost.url : "#";
     filter: blur(0); 
 }
 }
-/* Keyframe animations for Sub Heading */
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px); 
-}
-100% {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0); 
-}
-}
+
+
 /* Keyframe animations for Main Heading */
 @keyframes fadeInLeft {
   0% {
@@ -286,44 +242,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #fff;
 }
 
-
-/* ==================== Responsive Ipad ========================== */
-@media only screen and (max-width: 981px) {
-.slider-wrap{
-    height: 750px;
-}
-
-}
-
-/* ==================== Responsive Ipad ========================== */
-@media only screen and (max-width: 480px) {
-    .slider-wrap {
-        height: 736px;
-    }
-        .slide--bg {
-        min-height: 550px;
-        min-width: 550px;
-        max-height: 550px;
-        max-width: 550px;
-    }
-    .slide--bg .slide-bg--inner {
-        width: 450px;
-        height: 450px;
-    }
-    .parallax-slider .slide-btns{
-        display: none;
-    }
-    .swiper-pagination{
-            display: flex;
-    column-gap: 15px;
-    justify-content: center;
-    bottom: 100px !important;
-    }
-    span.swiper-pagination-bullet{
-        display: block;
-    }
-
-}
 </style>
 
 <script>
@@ -338,10 +256,10 @@ document.addEventListener('DOMContentLoaded', function() {
         speed: 1000,
         parallax: true,
         loop: true, 
-        autoplay: {
+        /* autoplay: {
             delay: 9000, // Adjust autoplay delay as needed
             disableOnInteraction: false
-        },
+        }, */
         grabCursor: true,
         effect: "creative",
         creativeEffect: {

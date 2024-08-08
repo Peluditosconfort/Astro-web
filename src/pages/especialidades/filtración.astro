@@ -4,42 +4,47 @@ import MegaMenu from "../../components/MegaMenu.astro";
 import MainButton from "../../components/MainButton.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import FAQS from "../../components/FAQS.astro";
+import AsesoriaEspecialidades from "../../components/AsesoriaEspecialidades.astro";
 const title = "Nuestras Marcas en Motor";
 ---
 
 <MainLayout title={title}>
 
-  <MegaMenu positionNav="sticky" bgNav="bg-naranja"/>
 
-  <div class="lg:h-[500px] sm:h-[300px]  flex justify-center items-center  sm:p-8 bg-cover" style="background-image: url(/public/img/especialidades-motor.jpg);">
-<!--     <h1 class="text-white text-center lg:text-8xl sm:text-[34px] slide-main--heading lg:leading-none sm:leading-2 lg:w-3/4 sm:w-full from-left titulos uppercase drop-shadow-lg;">Completa gama de repuestos de alta calidad para motores de tractocamiones.</h1> -->
-  </div>
+  <MegaMenu positionNav="sticky" bgNav="lg:bg-naranja sm:bg-naranja"/>
 
-  <div
-    class="flex justify-center flex-col text-center lg:w-[1000px] sm:w-auto lg:mx-auto sm:mx-4 lg:my-12 sm:my-4"
-  >
-
-  <div class="mb-12">
-    <h2 class="mb-4">Eje Delantero</h2>
-    <p class="text-justify font-bold">
-      Componentes esenciales para mantener el motor y otros sistemas de tu vehículo libres de impurezas. Incluyen filtros de aire, aceite, combustible y cabina, diseñados para atrapar partículas dañinas y garantizar un rendimiento óptimo del vehículo.
-      En Fertrac, ofrecemos una amplia gama de repuestos de filtración de las mejores marcas del mercado. Nos comprometemos a proporcionar productos de alta calidad y durabilidad, asegurando que tu vehículo funcione de manera eficiente y segura.
-      
-
-
-    </p>
-  </div>
-
-      <div class="logos flex flex-wrap justify-center items-center lg:gap-28 sm:gap-8 mx-auto">
-        <img class="w-56" src="/public/img/fleetguard.png" alt="" />
+  <div class="">
+    <div class="flex items-center justify-center flex-wrap sm:p-8 md:flex-row sm:flex-col-reverse bg-cover content-center" style="background-image: url(/public/img/banner-especialidades.jpg);">
+      <img class="animacion from-left md:w-[250px] lg:w-[440px] xl:w-[800px]  h-auto" src="/public/img/FILTRACION.webp" alt="">
+      <h1 class="animacion from-left text-white text-center xl:text-[150px] lg:text-[100px] sm:text-[70px] slide-main--heading lg:leading-none sm:leading-2 titulos uppercase drop-shadow-lg w-auto"><span class="text-naranja xl:text-[120px] lg:text-[75px] sm:text-[30px] bg-white px-8" style="text-shadow: 2px 1px 0px rgba(0,0,0,1);">ESPECIALIDAD</span> <br> MOTOR.</h1>
       </div>
+    
+      <div
+        class="flex justify-center flex-col text-center lg:w-[1000px] sm:w-auto lg:mx-auto sm:mx-4 lg:my-12 sm:my-4"
+      >
+    
+      <div class="mb-12">
+        <p class="text-justify font-bold animacion from-left">
+          Componentes esenciales para mantener el motor y otros sistemas de tu vehículo libres de impurezas. Incluyen filtros de aire, aceite, combustible y cabina, diseñados para atrapar partículas dañinas y garantizar un rendimiento óptimo del vehículo.
+      En Fertrac, ofrecemos una amplia gama de repuestos de filtración de las mejores marcas del mercado. Nos comprometemos a proporcionar productos de alta calidad y durabilidad, asegurando que tu vehículo funcione de manera eficiente y segura.
+    
+        </p>
+      </div>
+    
+          <div class="animacion from-left logos flex flex-wrap justify-center items-center lg:gap-28 sm:gap-8 mx-auto">
+            <img class="w-56" src="/public/img/fleetguard.png" alt="" />
+
 
       
-  </div>
+          </div>
+          
+          
+          
+      </div>
   </div>
 
-    <FAQS/>
-
+  <AsesoriaEspecialidades/>
+  </div>
   </div>
 
 
@@ -47,21 +52,50 @@ const title = "Nuestras Marcas en Motor";
 
 </MainLayout>
 <style>
-img {
+.animacion img {
     width: 14rem;
   }
 
   @media (min-width: 360px) {
-    img  {
+    .animacion img  {
         width: 8rem;
     }
   }
 
   @media (min-width: 1080px) {
-    img {
+    .animacion img {
         width: 14rem;
     }
   }
+
+  .animacion{
+   transition: opacity 0s ease, filter 0.5s ease; 
+   animation: fadeInUp 1s ease forwards; 
+   animation-delay: 1s;
+}
+
+.from-left {
+  opacity: 0;
+  filter: blur(4px); 
+  animation: fadeInLeft 2s ease forwards;
+  animation-delay: 0.8s; 
+}
+
+
+
+  @keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+}
+
+
+
+
 </style>
-
-
