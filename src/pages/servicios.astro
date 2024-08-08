@@ -7,14 +7,14 @@ const title="Servicios"
 ---
 
 <MainLayout title={title}>
-  <MegaMenu positionNav="sticky" bgNav="bg-naranja"/>
+  <MegaMenu positionNav="sticky" bgNav="lg:bg-naranja sm:bg-naranja"/>
 
-  <div class="grid lg:grid-cols-2 sm:grid-cols-1 lg:grid-rows-5 gap-4 lg:m-32  sm:m-4 items-center">
+  <div class="grid lg:grid-cols-2 sm:grid-cols-1 lg:grid-rows-5 gap-4 lg:mx-32 lg:my-18  sm:m-4 items-center">
 
     <div ><img src="/public/img/servicios-asesoria-tecnica.jpg" alt=""></div>
     <div class="lg:py-12 lg:px-36 sm:py-2 sm:px-0 flex flex-col justify-center items-left">
       <h2 class="mb-4">ASESORÍA TÉCNICA</h2>
-      <ul class="list-disc flex flex-col gap-4">
+      <ul class="lg:list-disc sm:list-none flex flex-col gap-4 text-xl text-normal font-lato">
         <li>Ofrecemos asistencia técnica respaldada por un profundo conocimiento del producto y los ensambles, garantizando una asesoría al cliente que asegura el 100% de satisfacción.</li>
         <li>Nos comprometemos a acompañar de cerca a nuestros clientes en la búsqueda constante de mejoras en sus servicios y portafolios, mediante el respaldo en la investigación de nuevas tendencias</li>
         <li>Contamos con un equipo altamente capacitado que no sólo ofrece respuestas oportunas, sino que también se dedica a innovar constantemente en la prestación de nuestros servicios.</li>
@@ -25,20 +25,22 @@ const title="Servicios"
       <h2 class="mb-4">INNOVACION E INVESTIGACIÓN</h2>
       <p>Nos dedicamos a la constante investigación y entendimiento de los nuevos equipos de carga. Asegurando tener información precisa y a la vanguardia de los nuevos productos y demandas del mercado.</p>
     </div>
-    <div ><img src="/public/img/servicios-asesoria-tecnica.jpg" alt=""></div>
+    <div ><img src="/public/img/innovación.png" alt=""></div>
 
-    <div ><img src="/public/img/servicios-asesoria-tecnica.jpg" alt=""></div>
+    <div ><img src="/public/img/catalogo-en-linea.webp" alt=""></div>
     <div class="lg:py-12 lg:px-36 sm:py-2 sm:px-0 flex flex-col justify-center items-left" >
       <h2 class="mb-4">CATALOGO EN LINEA</h2>
       <p>En Fertrac entendemos la importancia de que realices tus pedidos de acuerdo a tus necesidades específicas. Por eso, te ofrecemos múltiples opciones de servicio: a través de nuestro canal de WhatsApp Comercial,  por teléfono, por correo o accediendo a nuestra tienda virtual. Contactanos por cualquiera de nuestros canales para guiarte en todo el proceso de compra, asegurando que encuentres todas las soluciones que necesitas.</p>
+      <MainButton url="/especialidades/eje-delantero/" icon="fa-solid fa-arrow-right" text="Catalogo Quincenal" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 "/>
     </div>
 
     <div class="lg:py-12 lg:px-36 sm:py-2 sm:px-0 flex flex-col justify-center items-left">
       <h2 class="mb-4">SOLICITUD DE CREDITO</h2>
       <p>Nos esforzamos cada día por facilitar tu acceso al crédito con Fertrac. Innovamos constantemente para ofrecerte opciones de pago que se adapten perfectamente a tus necesidades, asegurando que puedas obtener lo que necesitas de manera ágil y conveniente.
         </p>
+        <MainButton url="/especialidades/eje-delantero/" icon="fa-solid fa-arrow-right" text="Descargar Formato" estilos="bg-naranja hover:bg-white hover:text-naranja hover:border border-naranja text-white mr-2 "/>
     </div>
-    <div ><img src="/public/img/servicios-asesoria-tecnica.jpg" alt=""></div>
+    <div ><img src="/public/img/solicitud-de-credito.jpg" alt=""></div>
 </div>
 
 

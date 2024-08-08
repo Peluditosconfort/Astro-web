@@ -1,6 +1,7 @@
 <div class="slider-container">
     <div class="slider">
         <div class="slide-track-1">
+            <!-- Imágenes del primer slider -->
             <div class="slide"><img src="/public/img/meritor.png" alt="logo de MERITOR"></div>
             <div class="slide"><img src="/public/img/cummins.png" alt="logo de Cummins"></div>
             <div class="slide"><img src="/public/img/cummins-meritor.png" alt="logo de Cummins-Meritor"></div>
@@ -15,7 +16,6 @@
             <div class="slide"><img src="/public/img/pai-genuine.png" alt="logo de Pai-GENUINE"></div>
             <div class="slide"><img src="/public/img/pai.png" alt="logo de Pai"></div>
             <div class="slide"><img src="/public/img/stemco.png" alt="logo de STEMCO"></div>
-
             <div class="slide"><img src="/public/img/timken.png" alt="logo de TIMKEN"></div>
             <div class="slide"><img src="/public/img/hendrickson.png" alt="logo de HENDRICKSON"></div>
             <div class="slide"><img src="/public/img/fersa.png" alt="logo de Fersa"></div>
@@ -30,12 +30,12 @@
             <div class="slide"><img src="/public/img/sys.png" alt="logo de sys"></div>
             <div class="slide"><img src="/public/img/firestone.png" alt="logo de Firestone"></div>
             <div class="slide"><img src="/public/img/firestone-airide.png" alt="logo de Firestone AIRIDE"></div>
-
         </div>
     </div>
 
     <div class="slider">
         <div class="slide-track-2">
+            <!-- Imágenes del segundo slider -->
             <div class="slide"><img src="/public/img/ftparts.png" alt="logo de Ftparts"></div>
             <div class="slide"><img src="/public/img/mahle.png" alt="logo de MAHLE"></div>
             <div class="slide"><img src="/public/img/clevite.png" alt="logo de CLEVITE"></div>
@@ -50,7 +50,6 @@
             <div class="slide"><img src="/public/img/tas.png" alt="logo de TAS"></div>
             <div class="slide"><img src="/public/img/torctite.png" alt="logo de TorcTite"></div>
             <div class="slide"><img src="/public/img/gabriel.png" alt="logo de Gabriel"></div>
-
             <div class="slide"><img src="/public/img/ftparts.png" alt="logo de Ftparts"></div>
             <div class="slide"><img src="/public/img/qualcast.png" alt="logo de QualCast"></div>
             <div class="slide"><img src="/public/img/flexfab.png" alt="logo de Flexfab"></div>
@@ -66,10 +65,11 @@
             <div class="slide"><img src="/public/img/elgin.png" alt="logo de ELGIN"></div>
             <div class="slide"><img src="/public/img/sealco.png" alt="logo de SEALCO"></div>
         </div>
+    </div>
 </div>
 
 <style>
-    .slider-container {
+.slider-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,18 +108,18 @@
     width: 200px;
     z-index: 2;
 }
+
 .slider .slide-track-1 {
-    padding: 0 50px;
-    animation: scroll-l 60s linear infinite;
+    animation: scroll-l 90s linear infinite;
     display: flex;
-    width: calc(250px * 28); /* Ancho ajustado para 36 imágenes (18 originales + 18 duplicadas) */
-}
-.slider .slide-track-2 {
-    animation: scroll-r 60s linear infinite;
-    display: flex;
-    width: calc(250px * 28); /* Ancho ajustado para 36 imágenes (18 originales + 18 duplicadas) */
+    width: calc(250px * 28);
 }
 
+.slider .slide-track-2 {
+    animation: scroll-r 90s linear infinite;
+    display: flex;
+    width: calc(250px * 28);
+}
 
 .slider .slide {
     height: 75pt;
@@ -128,52 +128,6 @@
     align-items: center;
     text-align: center;
 }
-
-@media screen and (max-width: 360px) {
-    .slider .slide {
-        width: 100px; /* Ajusta el ancho para pantallas de 360px */
-    }
-
-    .slider .slide img {
-        width: 120px; /* Ajusta el tamaño de la imagen */
-    }
-
-    .slider .slide-track-1 {
-        width: calc(100px * 28);
-        animation: scroll-l 90s linear infinite;
-    }
-
-    .slider .slide-track-2 {
-        width: calc(100px * 28);
-        animation: scroll-r 90s linear infinite;
-    }
-
-    .slider:after,
-    .slider:before {
-        display: none;
-    }
-
-    @keyframes scroll-l {
-  0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-100px * 18));
-    } 
-}
-
-@keyframes scroll-r {
-    100% {
-        transform: translateX(0);
-    }
-    0% {
-        transform: translateX(calc(-100px * 18));
-    } 
-}
-}
-
-
-
 
 .slider .slide img {
     width: 180px;
@@ -186,13 +140,14 @@
 }
 
 @keyframes scroll-l {
-  0% {
+    0% {
         transform: translateX(0);
     }
     100% {
         transform: translateX(calc(-250px * 18));
     } 
 }
+
 @keyframes scroll-r {
     100% {
         transform: translateX(0);
@@ -202,5 +157,51 @@
     } 
 }
 
+@media screen and (max-width: 360px) {
+    
+    .slider{
+    height: auto;
+    }
 
+    .slider .slide {
+        width: 100px;
+        height: 50px;
+    }
+
+    .slider .slide-track-1,
+    .slider .slide-track-2 {
+        width: calc(100px * 28);
+    }
+
+    .slider .slide-track-1 {
+        animation: scroll-l-360 90s linear infinite;
+    }
+
+    .slider .slide-track-2 {
+        animation: scroll-r-360 90s linear infinite;
+    }
+
+    .slider:after,
+    .slider:before {
+        display: none;
+    }
+
+    @keyframes scroll-l-360 {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-100px * 18));
+        } 
+    }
+
+    @keyframes scroll-r-360 {
+        100% {
+            transform: translateX(0);
+        }
+        0% {
+            transform: translateX(calc(-100px * 18));
+        } 
+    }
+}
 </style>
