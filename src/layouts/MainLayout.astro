@@ -42,11 +42,11 @@ const { title } = Astro.props;
 
   <body class=" overflow-x-hidden">
 
-    <header>
-      
-    </header>
-    
-    <main>
+<header>
+  <MegaMenu positionNav="fixed" bgNav=""/>
+</header>
+
+    <main class="mt-[90px]">
       <slot />
       <FloatButtons/>
       <LatestPosts/>

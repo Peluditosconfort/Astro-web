@@ -46,6 +46,36 @@ import MainButton from "./MainButton.astro";
             >
           </a>
         </div>
+
+        <div
+        class="flex flex-col items-center bg-white rounded-lg shadow-md shadow-[0px_0px_5px_1px_#cbd5e0] px-4"
+      >
+        <div class="pt-4 px-16 flex flex-col items-center">
+          <div class="w-fit bg-blue-200 p-4 rounded-full">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/parakeet-line/96/04297e/communication.png"
+              alt="communication"
+            />
+          </div>
+
+          <h3 class="text-2xl text-center">Chatear con Asesor</h3>
+          <p class="text-lg pb-2 text-center">Te respondemos enseguida!</p>
+        </div>
+
+        <a
+          href="#"
+          class="text-center w-full border-black py-4"
+          style="border-top: 1px solid rgba(179, 179, 179, 0.5);"
+        >
+          <span
+            class="bg-naranja w-full text-white display inline-block py-2 px-4 rounded hover:bg-white hover:border border-naranja hover:text-naranja"
+            >Empezar Chat <i class="fa-solid fa-arrow-right ml-2"></i></span
+          >
+        </a>
+      </div>
+
   
         <div
           class="flex flex-col items-center bg-white rounded-lg shadow-md pt-4 px-4 shadow-[0px_0px_5px_1px_#cbd5e0]"
@@ -74,66 +104,100 @@ import MainButton from "./MainButton.astro";
           </button>
         </div>
       </div>
+      <div>
+        <form id="form" class="bg-white p-6 rounded-lg">
 
-      <form id="form" class="bg-white p-6 rounded-lg">
-
-        <div class="field">
-          <label for="nombre">Nombre</label>
-  
-          <div class="relative"><div
-            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
-          <input type="text" id="nombre" name="nombre" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
-          />
+          <div class="field">
+            <label for="nombre">Nombre</label>
+    
+            <div class="relative"><div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
+            <input type="text" id="nombre" name="nombre" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
+            />
+            </div>
           </div>
-        </div>
-
   
-        <div class="field">
-          <label for="empresa">Empresa</label>
-  
-          <div class="relative"><div
-            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
-          <input type="text" id="empresa" name="empresa" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
-          />
+    
+          <div class="field">
+            <label for="empresa">Empresa</label>
+    
+            <div class="relative"><div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
+            <input type="text" id="empresa" name="empresa" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
+            />
+            </div>
           </div>
-        </div>
-  
-  
-        <div class="field">
-          <label for="celular">Numero</label>
-          <div class="relative"><div
-            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
-          <input type="text" id="celular" name="celular" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="+XX XXXXXXXXXX" required
-          />
+    
+    
+          <div class="field">
+            <label for="celular">Numero</label>
+            <div class="relative"><div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
+            <input type="text" id="celular" name="celular" class="w-full border-gray-300 bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="+XX XXXXXXXXXX" required
+            />
+            </div>
           </div>
-        </div>
-        
-        <div class="field">
-          <label for="correo">Correo electronico</label>
-          <div class="relative"><div
-            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
-          <input type="text" id="correo" name="correo" class="w-full border-gray-300  bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
-          />
-          </div>
-        </div>
-  
-        <div class="field">
-          <label for="correo">Mensaje</label>
-          <div class="relative"><div
-            class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"></div>
-          <textarea rows="6" id="correo" name="correo" class="w-full border-gray-300  bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block " placeholder="Hola, quiero saber mas sobre..." required
-          />
-          </div>
-        </div>
-
-        <button class="w-full">
           
-          <input class="cursor-pointer text-white hover:text-naranja w-full bg-naranja w-full display inline-block py-2 px-4 rounded hover:bg-white hover:border border-naranja hover:text-naranja " type="submit" id="button" value="Enviar Correo"/>
-        </button>
+          <div class="field">
+            <label for="correo">Correo electronico</label>
+            <div class="relative"><div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"><i class="fa-solid fa-user-tie"></i></div>
+            <input type="text" id="correo" name="correo" class="w-full border-gray-300  bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block ps-10 p-2.5" placeholder="Carlos" required
+            />
+            </div>
+          </div>
+    
+          <div class="field">
+            <label for="correo">Mensaje</label>
+            <div class="relative"><div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none"></div>
+            <textarea rows="6" id="correo" name="correo" class="w-full border-gray-300  bg-gray-100 rounded-lg py-3 px-4 text-gray-800 text-sm block " placeholder="Hola, quiero saber mas sobre..." required
+            />
+            </div>
+          </div>
+  
+          <button class="w-full">
+            
+            <input class="cursor-pointer text-white hover:text-naranja w-full bg-naranja w-full display inline-block py-2 px-4 rounded hover:bg-white hover:border border-naranja hover:text-naranja " type="submit" id="button" value="Enviar Correo"/>
+          </button>
+          
+    
+        </form>
+    
         
-  
-      </form>
-  
+      <div
+      class="flex flex-col items-center bg-white rounded-lg shadow-md shadow-[0px_0px_5px_1px_#cbd5e0] px-4"
+    >
+      <div class="pt-4 px-16 flex flex-col items-center">
+        <div class="w-fit bg-blue-200 p-4 rounded-full">
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/parakeet-line/96/04297e/communication.png"
+            alt="communication"
+          />
+        </div>
+
+        <h3 class="text-2xl text-center">Chatear con Asesor</h3>
+        <p class="text-lg pb-2 text-center">Te respondemos enseguida!</p>
+      </div>
+
+      <a
+        href="#"
+        class="text-center w-full border-black py-4"
+        style="border-top: 1px solid rgba(179, 179, 179, 0.5);"
+      >
+        <span
+          class="bg-naranja w-full text-white display inline-block py-2 px-4 rounded hover:bg-white hover:border border-naranja hover:text-naranja"
+          >Empezar Chat <i class="fa-solid fa-arrow-right ml-2"></i></span
+        >
+      </a>
+    </div>
+      </div>
+      <div>
+
+      </div>
+      
       
     </section>
     

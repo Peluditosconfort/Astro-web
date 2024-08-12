@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 .titulos {
-    @apply sm:text-[40px] md:text-[60px] text-azul lg:text-5xl xl:text-6xl font-myriad font-bold sm:text-justify sm:leading-none lg:text-left;
+    @apply sm:text-[35px] md:text-[60px] text-azul lg:text-4xl xl:text-5xl font-myriad font-bold sm:text-justify sm:leading-none lg:text-left;
 }
 .subtitulos {
-    @apply sm:text-3xl lg:text-4xl xl:text-5xl font-myriad font-extrabold text-azul text-justify;
+    @apply sm:text-2xl lg:text-3xl xl:text-4xl font-myriad font-extrabold text-azul sm:text-left lg:text-left sm:leading-none;
 }
 
 .parrafo {
-    @apply text-xl font-lato text-black sm:text-justify;
+    @apply lg:text-xl sm:text-base font-lato text-black sm:text-justify;
 }
 
 .titulos-blog {

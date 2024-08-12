@@ -14,7 +14,9 @@ export default {
 			},
 			colors : {
 				"naranja" : "#f2790c",
-				"azul" : "#04297e"
+				"azul" : "#04297e",
+				"naranja-opaco": "#F4780B1A",
+				"azul-opaco": "#04287C0D",
 			},
 			screens :{
 				"sm" : "360px",
