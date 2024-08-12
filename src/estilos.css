@@ -10,7 +10,7 @@
 }
 
 .parrafo {
-    @apply lg:text-xl sm:text-base font-lato text-black sm:text-justify;
+    @apply lg:text-xl sm:text-lg font-lato text-black sm:text-justify;
 }
 
 .titulos-blog {
