@@ -9,7 +9,7 @@ import MainButton from "./MainButton.astro"
         </p>
     </div>
 
-    <div class="swiper-container xl:w-[950px] 2xl:w-[1000px] sm:w-auto mb-8 mx-auto">
+    <div class="swiper-container carrusel1 xl:w-[950px] 2xl:w-[1000px] sm:w-auto mb-8 mx-auto">
         <div class="swiper-wrapper py-8">
             <!-- Slides -->
 
@@ -46,7 +46,7 @@ import MainButton from "./MainButton.astro"
                 </div>
             </div>
 
-            <div
+           <!--  <div
                 class="swiper-slide w-full flex flex-col justify-start items-center relative gap-5 rounded-lg"
             >
                 <div
@@ -77,7 +77,7 @@ import MainButton from "./MainButton.astro"
                         />
                     </div>
                 </div>
-            </div>
+            </div> -->
                         
 
             <div class="swiper-slide w-full flex flex-col justify-start items-center relative gap-5 rounded-lg">
@@ -194,10 +194,12 @@ import MainButton from "./MainButton.astro"
                     </div>
                 </div>
             </div>
-            
 
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next carrusel1-next"></div>
+        <div class="swiper-button-prev carrusel1-prev"></div>
+
+        <div class="swiper-pagination carrusel1-pagination"></div>
     </div>
     
 </section>
@@ -247,28 +249,13 @@ import MainButton from "./MainButton.astro"
     }
 }
 
-.swiper-pagination {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10; /* Asegura que esté encima de otros elementos pero debajo del contenido */
-}
-
-.swiper-pagination-bullet {
-    background: #000; /* Color de los bullets */
-}
-
-.swiper-pagination-bullet-active {
-    background: #f57c00; /* Color del bullet activo */
-}
-
 </style>
 
 <script>
     import Swiper from "swiper/bundle";
     import "swiper/swiper-bundle.css";
 
-    var mySwiper = new Swiper(".swiper-container", {
+    var mySwiper = new Swiper(".carrusel1", {
         
         loop: true,
         speed: 1000,
@@ -290,9 +277,15 @@ import MainButton from "./MainButton.astro"
         },
 
         pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      el: ".carrusel1-pagination",
+      clickable: true,
+      dynamicBullets:true,
     },
+    navigation: {
+      nextEl: ".carrusel1-next",
+      prevEl: ".carrusel1-prev",
+    },
+
         breakpoints: {
         360: {
             slidesPerView: 1, // Muestra solo una tarjeta en pantallas de hasta 360px

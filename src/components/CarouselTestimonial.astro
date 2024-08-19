@@ -7,9 +7,7 @@
       Sus experiencias reflejan nuestro compromiso con la satisfacción y la confianza que han depositado en nosotros.
     </p>
   </div>
-    <div class="slider-container  swiper 2xl:max-w-[1500px] xl:max-w-[2000px] w-full sm:py-0 sm:mb-10 lg:my-10">
-      
-      <div class="slider-content lg:mx-12">
+    <div class="swiper-container relative carrusel2 overflow-hidden mx-auto 2xl:max-w-[1500px] xl:max-w-[2000px] w-full sm:py-0 sm:mb-10 lg:my-10">
         <div class="card-wrapper swiper-wrapper ">
   
           <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#04287C0D] rounded-lg">
@@ -103,58 +101,35 @@
               <p class="text-lg font-semibold tracking-widest">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut omnis repudiandae sapiente"</p>
             </div>
   
-  
-        </div>
       </div>
-  
-      <div class="swiper-button-next swiper-navBtn"></div>
-      <div class="swiper-button-prev swiper-navBtn"></div>
-  
-  
-  
-   
-     
-  
+      <div class="swiper-button-next carrusel2-next"></div>
+      <div class="swiper-button-prev carrusel2-prev"></div>
   </div>
+  <div class="swiper-pagination carrusel2-pagination"></div>
 </section>
 
 
 
 <style>
-  .slider-container{
+  .swiper-container{
   width: 100%;
-
-}
-.slider-content {
-  overflow: hidden;
-
 }
 
 .swiper-button-next{
   right: 0;
   color: #04297e;
+  position: absolute;
 }
 .swiper-button-prev{
   left: 0;
-  color: #04297e
+  color: #04297e;
+  position: absolute;
 }
 
-
-@media screen and (max-width:768px) {
-  .swiper-navBtn{
-    display: block;
-  }
-
-  .swiper-button-next{
-  right: 20px;
-  display: none;
-
+.swiper-pagination{
+  position: relative;
 }
-.swiper-button-prev{
-  left: 20px;
-  display: none;
-}
-}
+
 </style>
 
 <script>
@@ -162,7 +137,7 @@
     import Swiper from "swiper/bundle";
     import "swiper/swiper-bundle.css";
 
-  var swiper = new Swiper(".slider-content", {
+  var swiper = new Swiper(".carrusel2", {
     slidesPerView: 3,
     spaceBetween: 25,
     loop: true,
@@ -170,13 +145,13 @@
     fade:'true',
     grabCursor:'true',
     pagination: {
-      el: ".swiper-pagination",
+      el: ".carrusel2-pagination",
       clickable: true,
       dynamicBullets:true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".carrusel2-next",
+      prevEl: ".carrusel2-prev",
     },
     breakpoints:{
         0:{
@@ -188,6 +163,6 @@
         950:{
             slidesPerView:3,
         },
-    }
+    },
   });
 </script>
