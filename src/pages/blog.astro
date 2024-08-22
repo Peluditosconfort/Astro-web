@@ -3,10 +3,11 @@ import BlogLayout from "../layouts/BlogLayout.astro";
 import PostCard from "../components/Blog/PostCard.astro";
 const postList = await Astro.glob("../pages/posts/*.md");
 
-const title = "BlogInterfaz";
+const title = "Fertrac Blog - Novedades y Consejos para el Mundo de los Tractocamiones";
+const description = "Descubre las últimas novedades, tendencias y consejos en el mundo de los tractocamiones. En el blog de Fertrac, te mantenemos informado sobre innovaciones, guías de mantenimiento, y los mejores consejos para maximizar el rendimiento de tus vehículos pesados.";
 ---
 
-<BlogLayout title={title}>
+<BlogLayout title={title} description={description}>
 
   <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 bg-gray-100 rounded-2xl">
     <ul class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-10">

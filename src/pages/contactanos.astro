@@ -1,11 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Contact from "../components/Contact.astro";
-import MegaMenu from "../components/MegaMenu.astro";
-const title="Contactanos"
+import Contacto from "../components/Contacto.astro";
+
+
+const title = "Contáctanos - Fertrac";
+const description = "¿Tienes preguntas o necesitas más información sobre nuestros repuestos para tractocamiones? En Fertrac, estamos aquí para ayudarte. Completa nuestro formulario de contacto o envíanos un mensaje por WhatsApp y un miembro de nuestro equipo se pondrá en contacto contigo a la brevedad.";
 ---
 
-<MainLayout title={title}>
+<MainLayout title={title} description={description}>
     
-    <Contact positionNav=""/>
+    <Contacto positionNav=""/>
 </MainLayout>

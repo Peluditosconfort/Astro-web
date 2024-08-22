@@ -1,6 +1,6 @@
 ---
 const { image, url, title, pubDate, previewText, tags} = Astro.props;
-import ButtonBlog from "../ButtonBlog.astro";
+import BotonBlog from "../BotonBlog.astro";
 ---
 
 <section class=" transition-transform duration-300 hover:scale-110 sm:px-4">
@@ -17,6 +17,6 @@ import ButtonBlog from "../ButtonBlog.astro";
         <h3 class="uppercase">{title}</h3>
 
         <p class="text-gray-800 text-lg text-justify">{previewText}</p>
-        <ButtonBlog/>
+        <BotonBlog/>
     </a>
 </section>

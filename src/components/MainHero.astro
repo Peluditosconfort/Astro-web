@@ -1,5 +1,5 @@
 ---
-import MainButton from "./MainButton.astro";
+import BotonPrincipal from "./BotonPrincipal.astro";
 
 const postList = await Astro.glob("/src/pages/posts/*.md");
 
@@ -23,7 +23,7 @@ const specificUrl = specificPost ? specificPost.url : "#";
                                     <p class="text-white lg:text-left sm:text-justify font-bold leading-[25px]">Nos especializamos en ofrecer una amplia gama de componentes de alta calidad para mantener sus vehículos pesados en óptimas condiciones.</p>
                                 </div>
                                 <div class="slide-cta ">
-                                    <span class="slide-btn"><MainButton url="https://api.whatsapp.com/send?phone=573124615606&text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre..." icon="fa-brands fa-whatsapp" text="Solicita una Cotización " estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white mr-2 "/></span> 
+                                    <span class="slide-btn"><BotonPrincipal url="https://api.whatsapp.com/send?phone=573124615606&text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre..." icon="fa-brands fa-whatsapp" text="Solicita una Cotización " estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white mr-2 !w-auto"/></span> 
                                 </div>
                                 
                             </div>							
@@ -40,7 +40,7 @@ const specificUrl = specificPost ? specificPost.url : "#";
                                     <p class="text-white lg:text-left sm:text-justify font-bold leading-[25px]">El Nariñense Santiago Figueroa logró ser el mejor novato del año y entrar en el top 20 del Gran Premio Nacional de Tractomulas (GPNT) 2018, realizado este 28 y 29 de julio en la autopista del Autódromo de Tocancipá.</p>
                                 </div>
                                 <div class="slide-cta ">
-                                    <span class="slide-btn"><MainButton url="https://api.whatsapp.com/send?phone=573124615606&text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre..." icon="fa-brands fa-whatsapp" text="Solicita una Cotización " estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white mr-2 "/></span> 
+                                    <span class="slide-btn"><BotonPrincipal url="https://api.whatsapp.com/send?phone=573124615606&text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre..." icon="fa-brands fa-whatsapp" text="Solicita una Cotización " estilos="bg-naranja hover:bg-white hover:text-naranja hover:border text-white mr-2 "/></span> 
                                 </div>
                                 
                             </div>							

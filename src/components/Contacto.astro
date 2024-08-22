@@ -1,5 +1,5 @@
 ---
-import MainButton from "./MainButton.astro";
+import BotonPrincipal from "./BotonPrincipal.astro";
 ---
 
 <div class="lg:mt-56 sm:mt-4  sm:mx-4 sm:w-auto lg:w-[1000px] lg:mx-auto ">
@@ -158,6 +158,11 @@ import MainButton from "./MainButton.astro";
             />
             </div>
           </div>
+
+          <label>
+            <input type="checkbox" name="dataConsent" id="dataConsent" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">terms and conditions</a>.</label>
+          </label>
   
           <button class="w-full">
             
@@ -232,23 +237,37 @@ import MainButton from "./MainButton.astro";
 <script>
   const btn = document.getElementById("button");
 
-  document.getElementById("form").addEventListener("submit", function (event) {
-    event.preventDefault();
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
 
-    btn.value = "Sending...";
+  btn.value = "Sending..."; // Cambia el texto del botón a "Sending..."
 
-    const serviceID = "default_service";
-    const templateID = "template_0rtmj7n";
+  // Crear un objeto FormData a partir del formulario
+  const formData = new FormData(this);
 
-    emailjs.sendForm(serviceID, templateID, this).then(
-      () => {
-        btn.value = "Send Email";
-        alert("Sent!");
-      },
-      (err) => {
-        btn.value = "Send Email";
-        alert(JSON.stringify(err));
-      },
-    );
-  });
+  // Agregar el estado del checkbox con un mensaje personalizado
+  const dataConsent = document.getElementById("dataConsent").checked 
+      ? 'He aceptado el tratamiento de mis datos personales.' 
+      : 'No he aceptado el tratamiento de mis datos personales.';
+  
+  formData.append("dataConsent", dataConsent); // Agrega el estado del checkbox a los datos
+
+  const serviceID = "default_service";
+  const templateID = "template_0rtmj7n";
+
+  // Enviar el formulario a EmailJS
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      btn.value = "Send Email"; // Restaura el texto del botón
+      alert("Sent!"); // Muestra un mensaje de éxito
+    },
+    (err) => {
+      btn.value = "Send Email"; // Restaura el texto del botón
+      alert(JSON.stringify(err)); // Muestra un mensaje de error
+    },
+  );
+});
+
+
+
 </script>

@@ -1,25 +1,25 @@
 ---
-import MegaMenu from "../components/MegaMenu.astro";
-import SpecialityCards from "../components/SpecialityCards.astro";
+import TarjetasEspecialidades from "../components/TarjetasEspecialidades.astro";
 import MainHero from "../components/MainHero.astro";
-import MainButton from "../components/MainButton.astro";
-import Brands from "../components/Brands.astro";
+import BotonPrincipal from "../components/BotonPrincipal.astro";
+import LogosProveedores from "../components/LogosProveedores.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import CarouselTestimonial from "../components/CarouselTestimonial.astro";
-import Services from "../components/Services.astro";
+import Testimonios from "../components/Testimonios.astro";
+import Servicios from "../components/Servicios.astro";
 import Asesoria from "../components/Asesoria.astro";
 
-const title = "Fertrac - Repuestos Originales Tractocamiones";
+const title = "Fertrac - Venta de repuestos originales para tractocamiones y componentes de alta calidad";
+const description = "Especialistas en la venta de repuestos originales y de alta calidad para tractocamiones. En Fertrac, ofrecemos una amplia gama de componentes para mantener tus vehículos pesados en óptimas condiciones, con más de 20 años de experiencia en el mercado.";
 ---
 
-<MainLayout title={title}>
+<MainLayout title={title} descripción={description}>
     <!-- HEADER CARRUSEL -->
  
         <MainHero />
 
         <!-- SLIDER PROVEEDORES -->
         <section class="marcas py-4">
-            <Brands />
+            <LogosProveedores />
         </section>
 
         <!-- FERTRAC -->
@@ -63,7 +63,7 @@ const title = "Fertrac - Repuestos Originales Tractocamiones";
 
         <!-- ESPECIALIDADES -->
 
-        <SpecialityCards />
+        <TarjetasEspecialidades />
 
         <!-- NOVEDADES BLOG -->
         
@@ -95,7 +95,7 @@ const title = "Fertrac - Repuestos Originales Tractocamiones";
                         Te mantenemos al tanto de las últimas tendencias y lanzamientos en el mundo de las piezas de recambio para vehículos pesados. Descubre las incorporaciones más recientes a nuestro catálogo y mantente informado sobre las innovaciones y productos destacados de tus marcas favoritas.
                         </p>
         
-                        <MainButton url="#" text="Ver Novedades" estilos="bg-white hover:bg-transparent hover:text-white hover:border text-naranja mr-2 " icon="fa-regular fa-lightbulb"/>
+                        <BotonPrincipal url="#" text="Ver Novedades" estilos="bg-white hover:bg-transparent hover:text-white hover:border text-naranja mr-2 " icon="fa-regular fa-lightbulb"/>
                     </div>
                 </div>
             </div>
@@ -103,10 +103,10 @@ const title = "Fertrac - Repuestos Originales Tractocamiones";
 
        <!--  SERVICIOS -->
 
-        <Services/>
+        <Servicios/>
 
         <!-- TESTIMONIOS -->
-        <CarouselTestimonial/>
+        <Testimonios/>
         <Asesoria/>
 
 </MainLayout>
