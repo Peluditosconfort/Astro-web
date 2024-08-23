@@ -9,12 +9,12 @@ const { frontmatter, image, title, tags } = Astro.props;
 <BlogLayout title={frontmatter.title}>
     <div class="max-w-screen-xl mx-auto p-5 sm:p-4 md:p-12 relative">      
             <article class="flex flex-col justify-center  md:gap-6 sm:gap-2">
-                    <h1 class="text-azul md:text-6xl sm:text-5xl text-center mb-2">
-                        {frontmatter.title}</h1>
-                        <p class="text-center md:mb-8 sm:mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, ad.</p>
+                    
                         <div class="w-full h-[500px]">
                             <img class="w-full h-full object-cover" src={frontmatter.image.url} alt="" />
                         </div>
+                        <h1 class="text-azul md:text-6xl sm:text-5xl text-center mb-2">
+                            {frontmatter.title}</h1>
 
         <section class="post-body md:px-24">
             <div class="flex items-center">   

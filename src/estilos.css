@@ -18,7 +18,7 @@
 }
 
 .text-blog {
-    @apply text-black text-base;
+    @apply text-black text-xl;
 }
 
 .introduce {
