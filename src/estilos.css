@@ -14,11 +14,15 @@
 }
 
 .titulos-blog {
-    @apply text-black font-myriad font-bold  text-2xl;
+    @apply sm:text-2xl lg:text-xl xl:text-2xl font-myriad font-extrabold text-azul sm:text-left lg:text-left sm:leading-none;
+}
+
+.subtitulos-blog {
+    @apply sm:text-2xl lg:text-xl xl:text-3xl font-myriad font-extrabold text-azul sm:text-left lg:text-left sm:leading-none;
 }
 
 .text-blog {
-    @apply text-black text-xl;
+    @apply text-black text-base;
 }
 
 .introduce {

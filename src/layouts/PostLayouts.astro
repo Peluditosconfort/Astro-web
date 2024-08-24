@@ -7,34 +7,39 @@ const { frontmatter, image, title, tags } = Astro.props;
 ---
 
 <BlogLayout title={frontmatter.title}>
-    <div class="max-w-screen-xl mx-auto p-5 sm:p-4 md:p-12 relative">      
-            <article class="flex flex-col justify-center  md:gap-6 sm:gap-2">
-                    
-                        <div class="w-full h-[500px]">
-                            <img class="w-full h-full object-cover" src={frontmatter.image.url} alt="" />
-                        </div>
-                        <h1 class="text-azul md:text-6xl sm:text-5xl text-center mb-2">
-                            {frontmatter.title}</h1>
-
-        <section class="post-body md:px-24">
-            <div class="flex items-center">   
-                <a
-                href="#"
-                class="text-lg uppercase font-medium hover:text-azul hover:underline"
-            >
-                {frontmatter.tags}
-            </a>
-
-            <hr class="h-4 w-[1px] border-0 bg-black mx-4">
-
-            <span class="text-lg font-lato font-light text-gray-400">{frontmatter.pubDate}</span>
-
+    <div class="w-[1300px] mx-auto md:p-0 sm:p-4 relative">
+        <article
+            class="flex flex-col justify-center md:gap-6 sm:gap-2 bg-gray-100"
+        >
+            <div class="w-full h-[500px]">
+                <img
+                    class="w-full h-full object-cover"
+                    src={frontmatter.image.url}
+                    alt=""
+                />
             </div>
-            <slot />
-        </section>
-    
-                </article>
 
-        </div>
+            <section class="post-body md:px-36 md:py-16">
+                <div class="flex items-center">
+                    <a
+                        href="#"
+                        class="text-lg uppercase font-medium hover:text-azul hover:underline"
+                    >
+                        {frontmatter.tags}
+                    </a>
+
+                    <hr class="h-4 w-[1px] border-0 bg-black mx-4" />
+
+                    <span class="text-lg font-lato font-light text-gray-400"
+                        >{frontmatter.pubDate}</span
+                    >
+                </div>
+                <h1 class="sm:text-2xl lg:text-2xl xl:text-5xl font-myriad font-extrabold text-azul sm:text-left lg:text-left sm:leading-none uppercase my-4">
+                    {frontmatter.title}
+                </h1>
+
+                <slot />
+            </section>
+        </article>
+    </div>
 </BlogLayout>
-
