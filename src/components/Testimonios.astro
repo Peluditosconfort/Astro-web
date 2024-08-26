@@ -10,7 +10,7 @@
     <div class="swiper-container relative carrusel2 overflow-hidden mx-auto 2xl:max-w-[1500px] xl:max-w-[2000px] w-full sm:py-0 sm:mb-10 lg:my-10">
         <div class="card-wrapper swiper-wrapper ">
   
-          <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#04287C0D] rounded-lg">
+          <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#faf4f2] rounded-lg">
             <div class="flex w-full gap-5 items-center">
                 <div class="img-box w-[100px] h-[100px] rounded-full border-2 border-black">
                     <img src="/public/img/avatar1.png" alt="" class="bg-cover">
@@ -22,7 +22,7 @@
                 </div>
                 
             </div>
-            <div class="text-2xl text-naranja py-4">
+            <div class="text-2xl text-[#f19700] py-4">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -33,7 +33,7 @@
           </div>
   
   
-         <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#04287C0D] rounded-lg">
+         <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#faf4f2] rounded-lg">
               <div class="flex w-full gap-5 items-center">
                   <div class="img-box w-[100px] h-[100px] rounded-full border-2 border-black">
                       <img src="/public/img/avatar1.png" alt="" class="bg-cover">
@@ -45,7 +45,7 @@
                   </div>
                   
               </div>
-              <div class="text-2xl text-naranja py-4">
+              <div class="text-2xl text-[#f19700] py-4">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -56,7 +56,7 @@
             </div>
   
   
-            <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#04287C0D] rounded-lg">
+            <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#faf4f2] rounded-lg">
               <div class="flex w-full gap-5 items-center">
                   <div class="img-box w-[100px] h-[100px] rounded-full border-2 border-black">
                       <img src="/public/img/avatar1.png" alt="" class="bg-cover">
@@ -68,7 +68,7 @@
                   </div>
                   
               </div>
-              <div class="text-2xl text-naranja py-4">
+              <div class="text-2xl text-[#f19700] py-4">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -79,7 +79,7 @@
             </div>
   
   
-            <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#04287C0D] rounded-lg">
+            <div class=" swiper-slide w-full flex flex-col justify-start items-center relative lg:p-10 sm:p-5 gap-5 bg-[#faf4f2] rounded-lg">
               <div class="flex w-full gap-5 items-center">
                   <div class="img-box w-[100px] h-[100px] rounded-full border-2 border-black">
                       <img src="/public/img/avatar1.png" alt="" class="bg-cover">
@@ -91,7 +91,7 @@
                   </div>
                   
               </div>
-              <div class="text-2xl text-naranja py-4">
+              <div class="text-2xl text-[#f19700] py-4">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -111,25 +111,38 @@
 
 
 <style>
-  .swiper-container{
-  width: 100%;
-}
 
-.swiper-button-next{
-  right: 0;
-  color: #04297e;
-  position: absolute;
-}
-.swiper-button-prev{
-  left: 0;
-  color: #04297e;
-  position: absolute;
-}
+ .swiper-pagination-bullet {
+            background-color: #ff0000 !important; /* Color inicial de los bullets */
+            opacity: 1 !important; /* Para asegurar que el color se vea bien */
+        }
 
-.swiper-pagination{
-  position: relative;
-}
+        .swiper-pagination-bullet-active {
+            background-color: #f2790c !important; /* Color de los bullets activos */
+            transform: scale(1.2) !important; /* Aumenta el tamaño del bullet activo */
+        }
 
+        .swiper-container {
+            width: 100%;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #f2790c;
+            position: absolute;
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+
+        .swiper-pagination {
+            position: relative;
+        }
 </style>
 
 <script>

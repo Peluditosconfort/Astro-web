@@ -104,7 +104,7 @@ import BotonPrincipal from "./BotonPrincipal.astro"
                 >
                     <img
                         class="rounded-t-lg"
-                        src="/public/img/solicitud-credito.jpg"
+                        src="/img/solicitud-credito.jpg"
                         alt=""
                     />
                     <div class="p-5">
@@ -121,7 +121,7 @@ import BotonPrincipal from "./BotonPrincipal.astro"
                         </p>
                        
                         <BotonPrincipal
-                            url="/public/img/formato-credito.pdf"
+                            url="/img/formato-credito.pdf"
                             download="formato-datos.pdf"
                             text="Mas Información"
                             estilos="hover:bg-white text-white bg-naranja hover:border border-naranja hover:text-naranja lg:w-full"
@@ -139,7 +139,7 @@ import BotonPrincipal from "./BotonPrincipal.astro"
                 >
                     <img
                         class="rounded-t-lg"
-                        src="/public/img/catalogos-fertrac.png"
+                        src="/img/catalogos-fertrac.png"
                         alt=""
                     />
                     <div class="p-5">
@@ -171,7 +171,7 @@ import BotonPrincipal from "./BotonPrincipal.astro"
                 >
                     <img
                         class="rounded-t-lg"
-                        src="/public/img/innovación-fertrac.jpg"
+                        src="/img/innovación-fertrac.jpg"
                         alt=""
                     />
                     <div class="p-5">
@@ -225,14 +225,46 @@ import BotonPrincipal from "./BotonPrincipal.astro"
 }
 
 .swiper-slide-active .content-wrapper {
-    background-color: #04287C0D; /* Color de fondo para el div activo */
+    background-color: #fae1cd; /* Color de fondo para el div activo */
 }
 
 .content-wrapper {
-    background-color: #F4780B1A; /* Color de fondo por defecto */
+    background-color: #04287C0D; /* Color de fondo por defecto */
     transition: background-color 0.3s ease-in-out;
 }
 
+.swiper-pagination-bullet {
+            background-color: #ccc !important; /* Color inicial de los bullets */
+            opacity: 1 !important; /* Para asegurar que el color se vea bien */
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #f2790c !important; /* Color de los bullets activos */
+            transform: scale(1.2) !important; /* Aumenta el tamaño del bullet activo */
+        }
+
+        .swiper-container {
+            width: 100%;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #f2790c;
+            position: absolute;
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+
+        .swiper-pagination {
+            position: relative;
+        }
+        
 @media (min-width: 1080px) {
     .swiper-slide {
         width: 300px; /* Tamaño fijo de las tarjetas para pantallas grandes */
