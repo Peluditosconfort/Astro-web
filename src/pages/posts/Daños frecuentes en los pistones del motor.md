@@ -1,47 +1,54 @@
 ---
 layout: ../../layouts/PostLayouts.astro
-pubDate: "22 Agosto 2024"
+pubDate: "22/08/2024"
 title: "Daños frecuentes en los pistones del motor"
 author: "Edwin Camilo"
 image:
     url: "/public/img/pistones-del-motor.webp"
     alt: "imagen de post"
-tags: ["Eventos"]
+tags: ["Eventos"] 
 previewText: "Las camisas del motor Diesel son un elemento demasiado importante en el motor, pues estas son las que alojan los pistones que en conjunto son los que hacen que la combustión suceda. "
 ---
 
-<h2 class="title-blog md:my-4 sm:my-4">Daños frecuentes en los pistones del motor</h2>
 
-<span class="text-blog"> El piston del motor es un elemento sumamente importante y fundamental para que se produzca la combustion, pues este elemento esta en constante movimiento comprimiendo aire y recibiendo el efecto inicial de la combustion, tambien aloja en su cabeza la camara de combustion que es donde se mezcla el aire con el combustible, a continuacion revisamos los daños mas frecuentes que se presentan en estos elementos:<span>
+<div class="grid grid-cols-2 "> 
+
+<div class="flex flex-col mr-8"> 
+<p class="text-blog"> El pistón del motor es un elemento sumamente importante y fundamental para que se produzca la combustión, pues este elemento está en constante movimiento comprimiendo aire y recibiendo el efecto inicial de la combustión, también aloja en su cabeza la camara de combustion que es donde se mezcla el aire con el combustible, a continuación revisamos los daños más frecuentes que se presentan en estos elementos:
+</p>
+
+<h2 class="subtitulos-blog my-4"> GRIPADO EN LA FALDA DEL PISTÓN:  </h2> 
+<p class="text-blog"> Normalmente aparece luego de corto tiempo de puesta a punto del motor, justo después del asentamiento de las piezas, se produce por deformación de las camisas, o medidas incorrectas del pistón.
+</p>
+<img class="rounded-t-lg w-[200px]" src="/public/img/gripado-en-la-falta-del-pistón.png" alt=""> </img>
 
 
-<section class="text-blog flex flex-col my-8">ñx
- <ul>
- <span> </span>
-<img
-                        class="rounded-t-lg"
-                        src="/public/img/gripado-en-la-falta-del-pistón.png"
-                        alt=""
-                    />
-                    <img
-                        class="rounded-t-lg"
-                        src="/public/img/gripado-unilateral-de-pistones.png"
-                        alt=""
-                    />
-                    <img
-                        class="rounded-t-lg"
-                        src="/public/img/gripado-en-la-cabeza-del-piston.png"
-                        alt=""
-                    />
-                    <img
-                        class="rounded-t-lg"
-                        src="/public/img/fundición-en-la-cabeza-del-pistón.png"
-                        alt=""
-                    />
 
-</section>
+<h2 class="subtitulos-blog my-4"> GRIPADO UNILATERAL DE PISTONES: </h2> 
+<p class="text-blog"> Es un gripado que se encuentra presente solo en una de las caras de la falda del pistón, puede ocurrir por falla del rociador, o pérdida lateral de lubricación de la camisa, cuando ocurre normalmente el lado contrario se encuentra sin afectaciones.
 
-<span class="text-blog flex flex-col my-8">
-Entre los pilotos habían representantes de distintos departamentos de Colombia como Nariño, Cundinamarca, Huila, Santander, Atlántico y el ya mencionado Boyacá. Además, se contó con la participación especial del ecuatoriano Andrés Vivero, quien quedó eliminado del GP en la jornada del sábado luego de un vibrante duelo que consistió en el frenar y acelerar en diferentes tramos de la pista en el menor tiempo posible.
-    
-<span>
+ </p>
+<img class="rounded-t-lg w-auto" src="/public/img/gripado-unilateral-de-pistones.png" alt=""> </img>
+
+</div>
+
+<div class="flex flex-col ml-8"> 
+<h2 class="subtitulos-blog "> GRIPADO EN LA CABEZA DEL PISTÓN: </h2> 
+<p class="text-blog"> Se presenta con pérdidas de material, dado que produce un desprendimiento justo en la zona de fuego del pistón, se produce cuando por sobrecalentamiento de esta pared empieza a fundirse con la camisa y el ciclaje produce el desprendimiento de material, puede ocurrir por inyectores en mal estado, obstruidos, o con fuga o por falta de sincronización en los tiempos de inyección (inyección incorrecta)
+
+</p>
+<img class="rounded-t-lg w-[200px]" src="/public/img/gripado-en-la-cabeza-del-piston.png" alt=""> </img>
+
+<h2 class="subtitulos-blog "> FUNDICIÓN DE LA CABEZA DEL PISTÓN: </h2> 
+<p class="text-blog"> Puede presentarse como destrucción total de la cabeza o erosión alrededor de esta, si el inyector está presentando fallas o el motor está vibrando demasiado esto puede afectar al inyector levantando la aguja y sacándola de posición, haciendo que el combustible gotee sobre la cabeza del piston acumulandose y quemandose a alta temperatura, puede presentarse también por falla en las válvulas de reducción de presión del sistema de combustible, un caudal de inyección incorrecto, turbocargador averiado que produce un llenado incorrecto o por un encendido con demasiado retraso.
+
+
+</p>
+<img class="rounded-t-lg w-auto" src="/public/img/fundición-en-la-cabeza-del-pistón.png" alt=""> </img>
+
+
+</div>
+
+</div>
+
+

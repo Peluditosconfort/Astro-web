@@ -4,7 +4,7 @@ pubDate: "22/08/2024"
 title: "Como interpretar el desgaste en las llantas"
 author: "Edwin Camilo"
 image:
-    url: "/public/img/pistones-del-motor.webp"
+    url: "/public/img/desgaste-en-las-llantas.jpg"
     alt: "imagen de post"
 tags: ["Eventos"] 
 previewText: "Las camisas del motor Diesel son un elemento demasiado importante en el motor, pues estas son las que alojan los pistones que en conjunto son los que hacen que la combustión suceda. "
