@@ -41,7 +41,7 @@ previewText: "Las camisas del motor Diesel son un elemento demasiado importante 
 
 <h2 class="subtitulos-blog "> FUNDICIÓN DE LA CABEZA DEL PISTÓN: </h2> 
 <p class="text-blog"> Puede presentarse como destrucción total de la cabeza o erosión alrededor de esta, si el inyector está presentando fallas o el motor está vibrando demasiado esto puede afectar al inyector levantando la aguja y sacándola de posición, haciendo que el combustible gotee sobre la cabeza del piston acumulandose y quemandose a alta temperatura, puede presentarse también por falla en las válvulas de reducción de presión del sistema de combustible, un caudal de inyección incorrecto, turbocargador averiado que produce un llenado incorrecto o por un encendido con demasiado retraso.
-
+asdsadsadadasd
 
 </p>
 <img class="rounded-t-lg w-auto" src="/public/img/fundición-en-la-cabeza-del-pistón.png" alt=""> </img>
