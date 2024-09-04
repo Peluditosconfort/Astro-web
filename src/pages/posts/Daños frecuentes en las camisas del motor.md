@@ -6,7 +6,7 @@ author: "Edwin Camilo"
 image:
     url: "/public/img/camisas-del-motor.webp"
     alt: "imagen de post"
-tags: ["Eventos"] 
+tags: ["Articulo"] 
 previewText: "Las camisas del motor Diesel son un elemento demasiado importante en el motor, pues estas son las que alojan los pistones que en conjunto son los que hacen que la combustión suceda. "
 ---
 
