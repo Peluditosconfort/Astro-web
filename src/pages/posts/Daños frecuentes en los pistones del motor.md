@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/PostLayouts.astro
 pubDate: "22/08/2024"
-title: "Daños frecuentes en los pistones del motor"
+title: "DAÑOS FRECUENTES EN LOS PISTONES DEL MOTOR"
 author: "Edwin Camilo"
 image:
     url: "/public/img/pistones-del-motor.webp"
     alt: "imagen de post"
-tags: ["Eventos"] 
+tags: ["Articulo"] 
 previewText: "Las camisas del motor Diesel son un elemento demasiado importante en el motor, pues estas son las que alojan los pistones que en conjunto son los que hacen que la combustión suceda. "
 ---
 
