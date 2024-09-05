@@ -5,11 +5,11 @@ const { frontmatter, image, title, tags } = Astro.props;
 ---
 
 <BlogLayout title={frontmatter.title}>
-    <div class="lg:w-[1300px] mx-auto md:p-0 sm:p-4 relative mt-[90px]">
+    <div class="lg:w-[700px] mx-auto md:p-0 sm:p-4 relative mt-[90px]">
         <article
-            class="flex flex-col justify-center md:gap-6 sm:gap-0 bg-gray-100 sm:p-4"
+            class="flex flex-col justify-center md:gap-6 sm:gap-0 sm:p-4"
         >
-            <div class="w-full h-[500px]">
+            <div class="w-full h-[300px]">
                 <img
                     class="w-full h-full object-cover"
                     src={frontmatter.image.url}
@@ -17,7 +17,7 @@ const { frontmatter, image, title, tags } = Astro.props;
                 />
             </div>
 
-            <section class="post-body md:px-36 md:py-16">
+            <section class="post-body">
                 <div class="flex items-center">
                     <a
                         href="#"
@@ -32,7 +32,7 @@ const { frontmatter, image, title, tags } = Astro.props;
                         >{frontmatter.pubDate}</span
                     >
                 </div>
-                <h1 class="sm:text-2xl lg:text-2xl xl:text-5xl font-myriad font-extrabold text-azul sm:text-left lg:text-left sm:leading-none uppercase my-4">
+                <h1 class="sm:text-2xl lg:text-1xl xl:text-4xl font-myriad font-extrabold text-azul sm:text-left lg:text-left sm:leading-none uppercase my-4">
                     {frontmatter.title}
                 </h1>
 

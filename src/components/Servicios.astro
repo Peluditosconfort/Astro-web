@@ -9,7 +9,7 @@ import BotonPrincipal from "./BotonPrincipal.astro"
         </p>
     </div>
 
-    <div class="swiper-container carrusel1 xl:w-[950px] 2xl:w-[1000px] sm:w-auto mb-8 mx-auto">
+    <div class="swiper-container carrusel1 sm:w-auto mb-8 mx-auto">
         <div class="swiper-wrapper py-8">
             <!-- Slides -->
 
@@ -321,6 +321,10 @@ import BotonPrincipal from "./BotonPrincipal.astro"
         breakpoints: {
         360: {
             slidesPerView: 1, // Muestra solo una tarjeta en pantallas de hasta 360px
+            spaceBetween: 0, // Espacio entre tarjetas
+        },
+        768: {
+            slidesPerView: 2, // Muestra solo una tarjeta en pantallas de hasta 360px
             spaceBetween: 0, // Espacio entre tarjetas
         },
         1080: {
