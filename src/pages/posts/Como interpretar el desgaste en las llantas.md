@@ -7,7 +7,7 @@ image:
     url: "/public/img/desgaste-en-las-llantas.jpg"
     alt: "imagen de post"
 tags: ["Articulo"] 
-previewText: "Las camisas del motor Diesel son un elemento demasiado importante en el motor, pues estas son las que alojan los pistones que en conjunto son los que hacen que la combustión suceda. "
+previewText: " El desgaste en llantas suele afectar a la flota dado que se traduce en más consumo de combustible, por lo que es importante mantener el buen estado de los elementos que inciden en un desgaste prematuro de estas, por esto es importante realizar inspección periódica de los neumáticos. "
 ---
 
 <div class="">

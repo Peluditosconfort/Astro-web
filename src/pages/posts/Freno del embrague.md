@@ -11,8 +11,6 @@ previewText: "Las camisas del motor Diesel son un elemento demasiado importante 
 ---
 
 
-<div class="grid grid-cols-2 "> 
-
 <div class="flex flex-col md:mr-8 sm:mr-4"> 
 <p class="text-blog"> El pistón del motor es un elemento sumamente importante y fundamental para que se produzca la combustión, pues este elemento está en constante movimiento comprimiendo aire y recibiendo el efecto inicial de la combustión, también aloja en su cabeza la camara de combustion que es donde se mezcla el aire con el combustible, a continuación revisamos los daños más frecuentes que se presentan en estos elementos:
 </p>
@@ -49,6 +47,5 @@ previewText: "Las camisas del motor Diesel son un elemento demasiado importante 
 
 </div>
 
-</div>
 
 

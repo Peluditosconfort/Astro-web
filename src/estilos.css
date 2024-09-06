@@ -26,7 +26,7 @@
 }
 
 .introduce {
-    @apply text-black lg:text-2xl sm:text-xl  sm:text-justify lg:text-center;
+    @apply text-black lg:text-base sm:text-xl  sm:text-justify lg:text-center;
 }
 
 summary {
