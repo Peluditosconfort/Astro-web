@@ -1,15 +1,16 @@
 ---
 import BotonPrincipal from "../components/BotonPrincipal.astro";
 import MegaMenu from "../components/MegaMenu.astro";
+import LayoutSecundario from "../layouts/LayoutSecundario.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 
 const title = "Fertrac - Conociendo Nuestro Compromiso con la Calidad";
 const description = "En Fertrac, somos expertos en la venta de repuestos originales para tractocamiones. Con más de 20 años en el mercado, nuestro compromiso es proporcionar productos de alta calidad y un servicio excepcional. Conoce a nuestro equipo de profesionales dedicados a garantizar que tus vehículos pesados funcionen de manera óptima y eficiente.";
 ---
 
-<MainLayout title={title}>  
+<LayoutSecundario title={title}>  
 
-<div class="container mx-auto lg:mt-14 sm:mt-14 px-4 lg:px-0 xl:px-44 sm:pt-8 lg:pt-0">
+<div class="container mx-auto lg:mt-56 sm:mt-14 px-4 lg:px-0 xl:px-44 sm:pt-8 lg:pt-0">
 
     <h1 class="text-center mb-14">Conoce a Fertrac; Tu Aliado en el Camino: <br> Calidad y Confianza en Repuestos</h1>
     <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-12 lg:px-12">
@@ -95,5 +96,4 @@ const description = "En Fertrac, somos expertos en la venta de repuestos origina
     </div>
 
 </div>
-
-</MainLayout>
+</LayoutSecundario>

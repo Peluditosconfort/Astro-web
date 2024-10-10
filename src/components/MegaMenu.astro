@@ -5,7 +5,7 @@ const {positionNav} = Astro.props;
 const {bgNav} = Astro.props;
 ---
 
-<div class={`navbar sm:border-b  lg:border-none w-full transition duration-1000 ease-in-out flex items-center sm:justify-between px-8 py-6 lg:justify-around top-0 ${positionNav} ${bgNav} bg-naranja z-50`}>
+<div class={`navbar w-full transition duration-1000 ease-in-out flex items-center sm:justify-between px-8 py-6 lg:justify-around top-0 ${positionNav} ${bgNav} z-50 `}>
   <a href="#">
     <!-- <img id="imagen1" src="/public/img/fertrac-footer.png" alt="" class="w-44 hidden" > -->
     <img id="imagen2" src="/public/img/fertrac-footerb.png" class="sm:w-32 lg:w-44" alt=""
@@ -14,14 +14,15 @@ const {bgNav} = Astro.props;
 
   <nav class="sm:hidden lg:block">
     <ul class="flex items-center justify-center font-semibold text-white">
-        <li class="relative px-3 py-2 group">
-            <a href="/inicio/" class="effect">Inicio</a>
+        <li class="background relative px-3 py-2 group">
+            <a href="/inicio/" class="effect"><!-- <i class="fa-solid fa-house mr-2"> --></i>Inicio</a>
           </li>
 
-      <li class="relative px-3 py-2  cursor-pointer group">
-        <a href="#">Especialidades</a>
+      <li class="background relative px-3 py-2  cursor-pointer group">
+        <a href="#"><!-- <i class="fa-solid fa-gear mr-2"> --></i>
+          Especialidades
         <i class="fa-solid fa-caret-down"></i>
-
+      </a>
         <div
           class="absolute w-[800px] top-0 -left-[320px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[560px] transform">
           <div class="relative w-full p-6 bg-white shadow-xl top-6 rounded-xl">
@@ -40,11 +41,11 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/motor/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-blue-200">
                           <div class="p-2 bg-blue-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/ios-filled/100/FFFFFF/engine.png" alt="icono de un motor"/>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-filled/100/FFFFFF/engine.png" alt="icono de un motor"/>
                           </div>
                           <div>
                             Motor
-                            <p class="text-sm font-bold text-gray-600">Los motores son el corazón de nuestros vehículos.</p>
+                            <p class="text-sm font-bold text-gray-600">El corazón de cualquier vehículo.</p>
                           </div>
                         </a>
                       </li>
@@ -52,12 +53,12 @@ const {bgNav} = Astro.props;
                       <li>
                         <a href="/especialidades/tren-delantero/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-orange-200">
-                          <div class="p-2 bg-orange-500 rounded-xl">
-                            <img width="30" height="30" src="https://img.icons8.com/external-obvious-glyph-kerismaker/96/FFFFFF/external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6.png" alt="icono de un eje delantero"/>
+                          <div class="p-2 bg-orange-500 rounded-full">
+                            <img width="24" height="24" src="https://img.icons8.com/external-obvious-glyph-kerismaker/96/FFFFFF/external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6.png" alt="icono de un eje delantero"/>
                           </div>
                           <div>
                             Tren Delantero
-                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
+                            <p class="text-sm font-bold text-gray-600">Asegura una conducción suave y segura</p>
                           </div>
                         </a>
                       </li>
@@ -66,11 +67,11 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/embrague-y-transmisión/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-fuchsia-200">
                           <div class="p-2 bg-fuchsia-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague"/>
+                            <img width="24" height="24" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague"/>
                           </div>
                           <div>
                             Embrague y Transmisión
-                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
+                            <p class="text-sm font-bold text-gray-600">Transferencia de potencia del motor a las ruedas.</p>
                           </div>
                         </a>
                       </li>
@@ -84,11 +85,11 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/filtración/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-red-200">
                           <div class="p-2 bg-red-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-bottle-travel-accessories-icongeek26-glyph-icongeek26.png" alt="external-bottle-travel-accessories-icongeek26-glyph-icongeek26"/>
+                            <img width="24" height="24" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-bottle-travel-accessories-icongeek26-glyph-icongeek26.png" alt="external-bottle-travel-accessories-icongeek26-glyph-icongeek26"/>
                           </div>
                           <div>
                             Filtración
-                            <p class="text-sm font-bold text-gray-600">Los motores son el corazón de nuestros vehículos.</p>
+                            <p class="text-sm font-bold text-gray-600">Sistemas de tu vehículo libres de impurezas.</p>
                           </div>
                         </a>
                       </li>
@@ -98,11 +99,11 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/suspensión/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-yellow-200">
                           <div class="p-2 bg-yellow-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-suspension-equipments-icongeek26-glyph-icongeek26-2.png" alt="icono de una suspensión"/>
+                            <img width="24" height="24" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-suspension-equipments-icongeek26-glyph-icongeek26-2.png" alt="icono de una suspensión"/>
                           </div>
                           <div>
                             Suspensión
-                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
+                            <p class="text-sm font-bold text-gray-600">Garantiza una conducción cómoda y segura.</p>
                           </div>
                         </a>
                       </li>
@@ -112,11 +113,11 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/cardan/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-200">
                           <div class="p-2 bg-green-500 rounded-xl">
-                            <img width="30" height="30" src="/public/img/cardan.png" alt="icono de un diferencial"/>
+                            <img width="24" height="24" src="/public/img/cardan.png" alt="icono de un diferencial"/>
                           </div>
                           <div>
                             Cardan
-                            <p class="text-sm font-bold text-gray-600">Componente vital del sistema de transmisión.</p>
+                            <p class="text-sm font-bold text-gray-600">Distribución de la fuerza del motor a las ruedas.</p>
                           </div>
                         </a>
                       </li>
@@ -125,7 +126,7 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/diferencial/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-200">
                           <div class="p-2 bg-green-900 rounded-xl">
-                            <img width="30" height="30" src="https://img.icons8.com/external-obvious-glyph-kerismaker/96/FFFFFF/external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6.png" alt="external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6"/>
+                            <img width="24" height="24" src="https://img.icons8.com/external-obvious-glyph-kerismaker/96/FFFFFF/external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6.png" alt="external-accessories-car-auto-parts-glyph-obvious-glyph-kerismaker-6"/>
                           </div>
                           <div>
                             Diferencial
@@ -146,7 +147,7 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/sistema-de-refrigeración/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-teal-200">
                           <div class="p-2 bg-teal-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/ios-filled/100/FFFFFF/heating.png" alt="icono representando un filtro de un camion"/>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-filled/100/FFFFFF/heating.png" alt="icono representando un filtro de un camion"/>
                           </div>
                           <div>
                             Sistema de Refrigeración
@@ -161,7 +162,7 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/rodamientos/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-lime-200">
                           <div class="p-2 bg-lime-300 rounded-xl">
-                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-ball-bearing-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un rodamiento"/>
+                            <img width="24" height="24" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-ball-bearing-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un rodamiento"/>
                           </div>
                           <div>
                             Rodamientos
@@ -174,7 +175,7 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/sistema-de-aire/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-slate-200">
                           <div class="p-2 bg-slate-500 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-break-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un freno de camión"/>
+                            <img width="24" height="24" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-break-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un freno de camión"/>
                           </div>
                           <div>
                             Sistema de Aire
@@ -187,7 +188,7 @@ const {bgNav} = Astro.props;
                         <a href="/especialidades/sistema-de-frenado/"
                           class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-slate-200">
                           <div class="p-2 bg-slate-900 rounded-full">
-                            <img width="30" height="30" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-break-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un freno de camión"/>
+                            <img width="24" height="24" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-break-car-parts-and-service-icongeek26-glyph-icongeek26.png" alt="icono de un freno de camión"/>
                           </div>
                           <div>
                             Sistema de Frenado
@@ -210,10 +211,10 @@ const {bgNav} = Astro.props;
       
 
 
-      <li class="relative px-3 py-2 group cursor-pointer">
-        <a href="#">Servicios</a>
+      <li class="background relative px-3 py-2 group cursor-pointer">
+        <a href="#"><!-- <i class="fa-regular fa-square-check mr-2"> --></i>Servicios
         <i class="fa-solid fa-caret-down"></i>
-
+      </a>
         <div
           class="absolute w-[800px] top-0 left-[-335px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[560px] transform">
           <div class="relative w-full p-6 bg-white shadow-xl top-6 rounded-xl">
@@ -229,8 +230,8 @@ const {bgNav} = Astro.props;
                     <li>
                       <a href="/servicios#ventas"
                         class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-blue-200">
-                        <div class="p-2 bg-blue-500 rounded-xl">
-                          <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked-truck.png" alt="checked-truck"/>
+                        <div class="p-2 bg-blue-500 rounded-full">
+                          <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/FFFFFF/checked-truck.png" alt="checked-truck"/>
                         </div>
                         <div>
                           Venta de repuestos para Tractocamiones
@@ -256,7 +257,7 @@ const {bgNav} = Astro.props;
                       <a href="/servicios#tienda-online"
                         class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-fuchsia-200">
                         <div class="p-2 bg-fuchsia-500  rounded-full">
-                          <img width="30" height="30" src="https://img.icons8.com/glyph-neue/64/FFFFFF/pdf-2.png" alt="pdf-2"/>
+                          <img width="24" height="24" src="https://img.icons8.com/glyph-neue/64/FFFFFF/pdf-2.png" alt="pdf-2"/>
                         </div>
                         <div>
                           Catalogo En Linea
@@ -276,8 +277,8 @@ const {bgNav} = Astro.props;
                     <li>
                       <a href="/servicios#catalogo-online"
                         class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-200">
-                        <div class="p-2 bg-green-500 rounded-xl">
-                          <img width="30" height="30" src="https://img.icons8.com/external-anggara-glyph-anggara-putra/32/FFFFFF/external-Banking-Card-accounting-anggara-glyph-anggara-putra.png" alt="external-Banking-Card-accounting-anggara-glyph-anggara-putra"/>
+                        <div class="p-2 bg-green-500 rounded-full">
+                          <img width="24" height="24" src="https://img.icons8.com/external-anggara-glyph-anggara-putra/32/FFFFFF/external-Banking-Card-accounting-anggara-glyph-anggara-putra.png" alt="external-Banking-Card-accounting-anggara-glyph-anggara-putra"/>
                         </div>
                         <div>
                           Solicitud de Credito
@@ -289,8 +290,8 @@ const {bgNav} = Astro.props;
                     <li>
                       <a href="/servicios#solicitud-credito"
                         class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-yellow-200">
-                        <div class="p-2 bg-yellow-500 rounded-xl">
-                          <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/service.png" alt="icono representando una mano con tuerca encima"/>
+                        <div class="p-2 bg-yellow-500 rounded-full">
+                          <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/FFFFFF/service.png" alt="icono representando una mano con tuerca encima"/>
                         </div>
                         <div>
                           Asesoria Tecnica
@@ -302,8 +303,8 @@ const {bgNav} = Astro.props;
                     <li>
                       <a href="/servicios#asesoria-tecnica"
                         class="flex items-center p-2 -mx-2 space-x-2 font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-teal-200">
-                        <div class="p-2 bg-teal-500 rounded-xl">
-                          <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/light-automation.png" alt="light-automation"/>
+                        <div class="p-2 bg-teal-500 rounded-full">
+                          <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/FFFFFF/light-automation.png" alt="light-automation"/>
                         </div>
                         <div>
                           Innovación e Investigación
@@ -323,12 +324,17 @@ const {bgNav} = Astro.props;
         </div>
       </li>
 
-      <li class="relative px-3 py-2 group">
-        <a href="/sobre-nosotros/" class="effect">Sobre Nosotros</a>
+      <li class="background relative px-3 py-2 group">
+        <a href="/sobre-nosotros/" class="effect"><!-- <i class="fa-solid fa-people-group mr-2"> --></i>Sobre Nosotros</a>
       </li>
 
-      <li class="relative px-3 py-2 group">
-        <a href="/contactanos/" class="effect">Contactanos</a>
+      <li class="background relative px-3 py-2 group">
+        <a href="/contactanos/" class="effect"><!-- <i class="fa-solid fa-phone mr-2"> --></i>Contactanos</a>
+      </li> 
+
+      <li class="background relative px-3 py-2 group ">
+        
+        <a href="/blog/" class="effect"><!-- <i class="fa-regular fa-newspaper"> --></i> Blog</a>
       </li> 
         <!-- <div
           class="absolute top-0 -left-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform">
@@ -375,38 +381,30 @@ const {bgNav} = Astro.props;
   <div class="flex gap-8">
     <nav class="md:flex sm:hidden">
       <ul>
-        <section class="flex justify-  items-center gap-4">
-          <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-solid fa-shop"></i>
-  
-            <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
-              Tienda
-            </span>
-        </a>
-  
-        <a href="/blog/" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-regular fa-newspaper"></i>
-  
-          <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
-            Blog
-          </span>
-      </a>
-          <!-- <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-facebook"></i>
-  
+        <section class="flex justify-  items-center gap-4">    
+          <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-brands fa-facebook"></i>
             <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
               Facebook
             </span>
         </a>
-        <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-instagram"></i>
-  
+
+        <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-brands fa-instagram"></i>
           <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
             Instagram
           </span>
       </a>
-      <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-naranja text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:text-naranja hover:bg-white"><i class="fa-brands fa-tiktok"></i>
-  
+
+      <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-brands fa-tiktok"></i>
         <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
           TikTok
         </span>
-    </a> -->
+    </a>
+
+    <a href="#" class="group social flex justify-center p-2 rounded-md drop-shadow-xl bg-white text-naranja font-semibold hover:rounded-[50%] transition-all duration-500"><i class="fa-brands fa-linkedin-in"></i>
+      <span class="pointer-events-none absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-8 duration-700">
+        LinkedIn
+      </span>
+  </a>
         </section>
         
       </ul>
@@ -426,7 +424,7 @@ const {bgNav} = Astro.props;
 
 </div>
 
-    <div id="mobile-menu" class="hidden w-full min-h-screen bg-naranja lg:hidden fixed z-40  ">
+    <div id="mobile-menu" class="hidden w-full min-h-screen bg-naranja lg:hidden fixed z-40  mt-[90px]">
       <nav class="px-4 pt-2">
         <ul class="flex flex-col items-start justify-start w-full gap-2 font-semibold border-b py-2">
           <li class="relative w-full">
@@ -471,16 +469,7 @@ const {bgNav} = Astro.props;
                           <div class="p-2 bg-fuchsia-500 rounded-xl">
                             <img class="w-4 h-4" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-clutch-disc-equipments-icongeek26-glyph-icongeek26.png" alt="icono de un embrague de transmisión"/>
                           </div>
-                            Embrague
-                        </a>
-                      </li>
-
-                      <li class="">
-                        <a href="/especialidades/transmisión/#" class="flex items-center justify-between flex-col  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
-                          <div class="p-2 bg-fuchsia-900 rounded-xl">
-                            <img class="w-4 h-4" src="/public/img/transmisión.png" alt="icono de un embrague de transmisión"/>
-                          </div>
-                            Transmisión
+                            Embrague y Transmisión
                         </a>
                       </li>
                     </ul>
@@ -488,8 +477,8 @@ const {bgNav} = Astro.props;
                     <ul class="text-[12px] text-center flex flex-col gap-2">
                       <li class="">
                         <a href="/especialidades/filtración/" class="flex items-center flex-col justify-left  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
-                          <div class="p-2 bg-blue-500 rounded-xl">
-                            <img class="w-4 h-4" src="https://img.icons8.com/ios-filled/100/FFFFFF/engine.png" alt="">
+                          <div class="p-2 bg-red-500 rounded-xl">
+                            <img class="w-4 h-4" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-bottle-travel-accessories-icongeek26-glyph-icongeek26.png" alt="">
                           </div>
                             Filtración
   
@@ -600,7 +589,7 @@ const {bgNav} = Astro.props;
                       <li class="">
                         <a href="/servicios/" class="flex items-center flex-col justify-left  font-bold text-gray-800 transition duration-300 ease-in-out rounded-lg hover:bg-green-50 hover:text-green-600">
                           <div class="p-2 bg-blue-500 rounded-xl">
-                            <img class="w-4 h-w4" src="https://img.icons8.com/ios-filled/50/FFFFFF/service.png" alt="icono representando una mano con tuerca encima"/>
+                            <img class="w-4 h-4" src="https://img.icons8.com/ios-filled/50/FFFFFF/service.png" alt="icono representando una mano con tuerca encima"/>
                           </div>
                             Asesoria Tecnica
 
@@ -734,18 +723,35 @@ const {bgNav} = Astro.props;
             <a href="/contactanos/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-solid fa-phone mr-4"></i>
               Contactanos </a>
           </li>
+
+          <li class="relative w-full">
+            <a href="/contactanos/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-regular fa-newspaper mr-4"></i>
+              Blog </a>
+          </li>
         </ul>
 
         <ul class="pt-4">
           <li class="relative w-full">
-            <a href="/blog/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-regular fa-newspaper mr-4"></i>
-              Blog </a>
+            <a href="/blog/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-brands fa-facebook mr-4"></i>
+              Facebook </a>
           </li>
 
           <li class="relative w-full">
-            <a href="/inicio/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-solid fa-shop mr-4"></i>
-              Tienda Virtual </a>
+            <a href="/blog/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-brands fa-instagram mr-4"></i>
+              Instagram </a>
           </li>
+
+          <li class="relative w-full">
+            <a href="/blog/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-brands fa-tiktok mr-4"></i>
+              TikTok </a>
+          </li>
+
+          <li class="relative w-full">
+            <a href="/inicio/" class="flex items-center w-full p-2  text-white dropdown-toggle"><i class="fa-brands fa-linkedin-in mr-4"></i>
+              LinkedIn </a>
+          </li>
+
+          
         </ul>
 
         
@@ -773,7 +779,7 @@ const {bgNav} = Astro.props;
     <style>
 
 
-.effect:after {    
+/* .effect:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -787,7 +793,7 @@ const {bgNav} = Astro.props;
 .effect:hover:after { 
   width: 100%; 
   left: 0; 
-}
+} */
 
 
 
@@ -803,89 +809,9 @@ ul {
 
 .content ul li {
   height: 70px  ;
-}
 
-.example-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.example-2 .icon-content {
-  margin: 0 10px;
-  position: relative;
-}
-.example-2 .icon-content .tooltip {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 5px;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-.example-2 .icon-content:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  top: -50px;
-}
-.example-2 .icon-content a {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: #4d4d4d;
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover {
-  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-}
-.example-2 .icon-content a svg {
-  position: relative;
-  z-index: 1;
-  width: 30px;
-  height: 30px;
-}
-.example-2 .icon-content a:hover {
-  color: white;
-}
-.example-2 .icon-content a .filled {
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: #000;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover .filled {
-  height: 100%;
-}
-.example-2 .icon-content a[data-social="spotify"] .filled,
-.example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
-  background-color: #1db954;
-}
-.example-2 .icon-content a[data-social="pinterest"] .filled,
-.example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
-  background-color: #bd081c;
-}
-.example-2 .icon-content a[data-social="dribbble"] .filled,
-.example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
-  background-color: #ea4c89;
-}
-.example-2 .icon-content a[data-social="telegram"] .filled,
-.example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
-  background-color: #0088cc;
-}
+
+ }
 
 
 
